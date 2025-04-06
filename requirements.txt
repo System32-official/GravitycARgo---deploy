@@ -12,6 +12,8 @@ gevent==23.9.1
 gevent-websocket==0.10.1
 python-engineio==4.3.0
 python-socketio==5.4.0
+# Visualization dependencies
+plotly==5.18.0
 # Additional dependencies
 setuptools>=58.0.0
 wheel>=0.37.0
