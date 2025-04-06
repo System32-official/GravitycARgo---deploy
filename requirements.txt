@@ -49,5 +49,8 @@ packaging==24.2  # Required by various packages
 # Environment variables
 python-dotenv==1.0.1
 
+# API/HTTP clients
+aiohttp==3.9.5  # Required for async HTTP requests
+
 # For serialization/deserialization
 PyYAML==6.0  # For YAML configuration
