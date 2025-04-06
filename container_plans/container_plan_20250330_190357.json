@@ -1,0 +1,994 @@
+{
+    "timestamp": "20250330_190357",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "dimensions": "6.06m \u00d7 2.44m \u00d7 2.59m",
+        "route_temperature": 28.0
+    },
+    "container_dimensions": [
+        6.06,
+        2.44,
+        2.59
+    ],
+    "statistics": {
+        "container_dims": [
+            6.06,
+            2.44,
+            2.59
+        ],
+        "volume_utilization": 0.0,
+        "items_packed": 0,
+        "total_items": 20,
+        "remaining_volume": 38.296775999999994,
+        "center_of_gravity": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "total_weight": 0.0
+    },
+    "packed_items": [],
+    "unpacked_items": [
+        {
+            "name": "PackagingSupplies_1",
+            "dimensions": [
+                1.2,
+                0.8,
+                0.4
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "reason": "Temperature-sensitive item could not be placed with proper wall clearance: Temperature-sensitive item could not be placed away from container walls. These items must maintain a 10cm buffer from all walls and top of container."
+        },
+        {
+            "name": "PackagingSupplies_2",
+            "dimensions": [
+                1.2,
+                0.8,
+                0.4
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "reason": "Temperature-sensitive item could not be placed with proper wall clearance: Temperature-sensitive item could not be placed away from container walls. These items must maintain a 10cm buffer from all walls and top of container."
+        },
+        {
+            "name": "PackagingSupplies_3",
+            "dimensions": [
+                1.2,
+                0.8,
+                0.4
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "reason": "Temperature-sensitive item could not be placed with proper wall clearance: Temperature-sensitive item could not be placed away from container walls. These items must maintain a 10cm buffer from all walls and top of container."
+        },
+        {
+            "name": "PackagingSupplies_4",
+            "dimensions": [
+                1.2,
+                0.8,
+                0.4
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "reason": "Temperature-sensitive item could not be placed with proper wall clearance: Temperature-sensitive item could not be placed away from container walls. These items must maintain a 10cm buffer from all walls and top of container."
+        },
+        {
+            "name": "SteelDrums_1",
+            "dimensions": [
+                0.6,
+                0.6,
+                0.9
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "reason": "Temperature-sensitive item could not be placed with proper wall clearance: Temperature-sensitive item could not be placed away from container walls. These items must maintain a 10cm buffer from all walls and top of container."
+        },
+        {
+            "name": "SteelDrums_2",
+            "dimensions": [
+                0.6,
+                0.6,
+                0.9
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "reason": "Temperature-sensitive item could not be placed with proper wall clearance: Temperature-sensitive item could not be placed away from container walls. These items must maintain a 10cm buffer from all walls and top of container."
+        },
+        {
+            "name": "SteelDrums_3",
+            "dimensions": [
+                0.6,
+                0.6,
+                0.9
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "reason": "Temperature-sensitive item could not be placed with proper wall clearance: Temperature-sensitive item could not be placed away from container walls. These items must maintain a 10cm buffer from all walls and top of container."
+        },
+        {
+            "name": "ToolBoxes_1",
+            "dimensions": [
+                0.5,
+                0.4,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "reason": "Temperature-sensitive item could not be placed with proper wall clearance: Temperature-sensitive item could not be placed away from container walls. These items must maintain a 10cm buffer from all walls and top of container."
+        },
+        {
+            "name": "ToolBoxes_2",
+            "dimensions": [
+                0.5,
+                0.4,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "reason": "Temperature-sensitive item could not be placed with proper wall clearance: Temperature-sensitive item could not be placed away from container walls. These items must maintain a 10cm buffer from all walls and top of container."
+        },
+        {
+            "name": "ToolBoxes_3",
+            "dimensions": [
+                0.5,
+                0.4,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "reason": "Temperature-sensitive item could not be placed with proper wall clearance: Temperature-sensitive item could not be placed away from container walls. These items must maintain a 10cm buffer from all walls and top of container."
+        },
+        {
+            "name": "ToolBoxes_4",
+            "dimensions": [
+                0.5,
+                0.4,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "reason": "Temperature-sensitive item could not be placed with proper wall clearance: Temperature-sensitive item could not be placed away from container walls. These items must maintain a 10cm buffer from all walls and top of container."
+        },
+        {
+            "name": "HeavyMachinery_1",
+            "dimensions": [
+                2.0,
+                1.5,
+                1.8
+            ],
+            "weight": 800.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "MetalFrames_1",
+            "dimensions": [
+                2.4,
+                0.8,
+                0.4
+            ],
+            "weight": 100.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "FRAME",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "MetalFrames_2",
+            "dimensions": [
+                2.4,
+                0.8,
+                0.4
+            ],
+            "weight": 100.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "FRAME",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "StandardPallet1_1",
+            "dimensions": [
+                1.2,
+                1.0,
+                1.2
+            ],
+            "weight": 450.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "StandardPallet1_2",
+            "dimensions": [
+                1.2,
+                1.0,
+                1.2
+            ],
+            "weight": 450.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "WoodCrates_1",
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 80.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "WoodCrates_2",
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 80.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "StorageBox_1",
+            "dimensions": [
+                1.2,
+                0.8,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "StorageBox_2",
+            "dimensions": [
+                1.2,
+                0.8,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "StorageBox_3",
+            "dimensions": [
+                1.2,
+                0.8,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "StorageBox_4",
+            "dimensions": [
+                1.2,
+                0.8,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "MachineParts_1",
+            "dimensions": [
+                1.2,
+                0.8,
+                0.8
+            ],
+            "weight": 180.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "MachineParts_2",
+            "dimensions": [
+                1.2,
+                0.8,
+                0.8
+            ],
+            "weight": 180.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "AutoParts_1",
+            "dimensions": [
+                1.0,
+                0.8,
+                0.6
+            ],
+            "weight": 100.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "AutoParts_2",
+            "dimensions": [
+                1.0,
+                0.8,
+                0.6
+            ],
+            "weight": 100.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "AutoParts_3",
+            "dimensions": [
+                1.0,
+                0.8,
+                0.6
+            ],
+            "weight": 100.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "IndustrialPump_1",
+            "dimensions": [
+                1.0,
+                0.8,
+                0.9
+            ],
+            "weight": 150.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "IndustrialPump_2",
+            "dimensions": [
+                1.0,
+                0.8,
+                0.9
+            ],
+            "weight": 150.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "IndustrialFans_1",
+            "dimensions": [
+                0.8,
+                0.8,
+                1.0
+            ],
+            "weight": 50.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "IndustrialFans_2",
+            "dimensions": [
+                0.8,
+                0.8,
+                1.0
+            ],
+            "weight": 50.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "IndustrialFans_3",
+            "dimensions": [
+                0.8,
+                0.8,
+                1.0
+            ],
+            "weight": 50.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "PlasticContainers_1",
+            "dimensions": [
+                0.8,
+                0.6,
+                0.6
+            ],
+            "weight": 25.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "PlasticContainers_2",
+            "dimensions": [
+                0.8,
+                0.6,
+                0.6
+            ],
+            "weight": 25.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "PlasticContainers_3",
+            "dimensions": [
+                0.8,
+                0.6,
+                0.6
+            ],
+            "weight": 25.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ElectronicCabinet_1",
+            "dimensions": [
+                0.8,
+                0.6,
+                1.8
+            ],
+            "weight": 80.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ElectronicCabinet_2",
+            "dimensions": [
+                0.8,
+                0.6,
+                1.8
+            ],
+            "weight": 80.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "LightFixtures_1",
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "LightFixtures_2",
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "LightFixtures_3",
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "LightFixtures_4",
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "LightFixtures_5",
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "LightFixtures_6",
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ChemicalBarrels_1",
+            "dimensions": [
+                0.6,
+                0.6,
+                1.0
+            ],
+            "weight": 140.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ChemicalBarrels_2",
+            "dimensions": [
+                0.6,
+                0.6,
+                1.0
+            ],
+            "weight": 140.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "CardboardBoxes_1",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "CardboardBoxes_2",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "CardboardBoxes_3",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "CardboardBoxes_4",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "CardboardBoxes_5",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "CardboardBoxes_6",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "PackagedGoods_1",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.5
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "PackagedGoods_2",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.5
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "PackagedGoods_3",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.5
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "PackagedGoods_4",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.5
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "PackagedGoods_5",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.5
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "PackagedGoods_6",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.5
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "SafetyEquipment_1",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.6
+            ],
+            "weight": 20.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "SafetyEquipment_2",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.6
+            ],
+            "weight": 20.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "SafetyEquipment_3",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.6
+            ],
+            "weight": 20.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ElectricalBoxes_1",
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 12.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ElectricalBoxes_2",
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 12.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ElectricalBoxes_3",
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 12.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ElectricalBoxes_4",
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 12.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        }
+    ]
+}

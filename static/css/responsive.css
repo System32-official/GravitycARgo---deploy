@@ -1,0 +1,285 @@
+/* Responsive Design Styles */
+
+/* Large Desktops (1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Desktop and Smaller (1199px and down) */
+@media (max-width: 1199px) {
+  .cube-3d {
+    width: 250px;
+    height: 250px;
+  }
+
+  .cube-face {
+    width: 250px;
+    height: 250px;
+  }
+
+  .face-front,
+  .face-back {
+    transform: translateZ(125px);
+  }
+
+  .face-back {
+    transform: translateZ(-125px) rotateY(180deg);
+  }
+
+  .face-right {
+    transform: translateX(125px) rotateY(90deg);
+  }
+
+  .face-left {
+    transform: translateX(-125px) rotateY(-90deg);
+  }
+
+  .face-top {
+    transform: translateY(-125px) rotateX(90deg);
+  }
+
+  .face-bottom {
+    transform: translateY(125px) rotateX(-90deg);
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tablets and Medium Screens (992px and down) */
+@media (max-width: 992px) {
+  section {
+    padding: 6rem 0;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
+
+  .container-animation {
+    height: 400px;
+    margin-top: 2rem;
+  }
+
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  .navbar-collapse {
+    background: var(--glass-dark);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0;
+  }
+
+  .hero-title {
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+  }
+}
+
+/* Small Tablets and Large Phones (768px and down) */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container-animation {
+    height: 350px;
+  }
+
+  .feature-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .cube-3d {
+    width: 200px;
+    height: 200px;
+  }
+
+  .cube-face {
+    width: 200px;
+    height: 200px;
+  }
+
+  .face-front,
+  .face-back {
+    transform: translateZ(100px);
+  }
+
+  .face-back {
+    transform: translateZ(-100px) rotateY(180deg);
+  }
+
+  .face-right {
+    transform: translateX(100px) rotateY(90deg);
+  }
+
+  .face-left {
+    transform: translateX(-100px) rotateY(-90deg);
+  }
+
+  .face-top {
+    transform: translateY(-100px) rotateX(90deg);
+  }
+
+  .face-bottom {
+    transform: translateY(100px) rotateX(-90deg);
+  }
+
+  .brand-badge {
+    padding: 0.6rem 1.2rem;
+  }
+
+  .brand-badge .team-logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .brand-badge .team-name {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Phones (576px and down) */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .container-animation {
+    height: 250px;
+  }
+
+  .cube-3d {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cube-face {
+    width: 150px;
+    height: 150px;
+  }
+
+  .face-front,
+  .face-back {
+    transform: translateZ(75px);
+  }
+
+  .face-back {
+    transform: translateZ(-75px) rotateY(180deg);
+  }
+
+  .face-right {
+    transform: translateX(75px) rotateY(90deg);
+  }
+
+  .face-left {
+    transform: translateX(-75px) rotateY(-90deg);
+  }
+
+  .face-top {
+    transform: translateY(-75px) rotateX(90deg);
+  }
+
+  .face-bottom {
+    transform: translateY(75px) rotateX(-90deg);
+  }
+
+  .ar-badge {
+    top: 20px;
+    right: 20px;
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .brand-badge {
+    margin-bottom: 1rem;
+  }
+
+  .team-modal-content {
+    padding: 1.5rem;
+  }
+
+  .team-modal-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .feature-card {
+    padding: 1.8rem 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2.8rem;
+  }
+}
+
+/* Very Small Devices (400px and down) */
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .brand-badge {
+    padding: 0.5rem 1rem;
+  }
+
+  .brand-badge .team-logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .brand-badge .label {
+    font-size: 0.7rem;
+  }
+
+  .brand-badge .team-name {
+    font-size: 0.8rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

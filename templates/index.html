@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GravitycARgo | Container Loading Optimizer</title>
+
+    <!-- External CSS Libraries -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/base.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/layout.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/components.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/animations.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/responsive.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style-index.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/container-visualization.css') }}"
+    />
+  </head>
+
+  <body data-scroll-container>
+    <!-- 3D Background Elements -->
+    <div class="floating-elements">
+      <div class="floating-cube"></div>
+      <div class="floating-cube"></div>
+      <div class="floating-cube"></div>
+      <div class="floating-pyramid"></div>
+      <div class="floating-sphere"></div>
+      <div class="gradient-blob"></div>
+      <div class="gradient-blob blob-secondary"></div>
+    </div>
+
+    <!-- Animated Background Grid -->
+    <div class="background-grid">
+      <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <i class="fas fa-cube logo-icon"></i>
+          <span class="logo-text"
+            >Gravity<span class="highlight">cARgo</span></span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features"
+                ><i class="fas fa-star"></i> Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                ><i class="fas fa-cubes"></i> Optimizer</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-it-works"
+                ><i class="fas fa-info-circle"></i> How it Works</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="optimizer-container">
+      <div class="container">
+        <!-- Header Section -->
+        <div class="optimizer-header" data-scroll data-scroll-speed="1">
+          <div class="tech-badge" data-aos="fade-down">
+            <span class="badge-icon"><i class="fas fa-rocket"></i></span>
+            <span class="badge-text">AI-Enhanced Packing Solution</span>
+          </div>
+          <h1 class="optimizer-title" data-aos="fade-up" data-aos-delay="100">
+            Container <span class="text-gradient">Loading Optimizer</span>
+          </h1>
+          <p class="optimizer-subtitle" data-aos="fade-up" data-aos-delay="200">
+            Transform your logistics with our advanced 3D space optimization
+            algorithm
+          </p>
+        </div>
+
+        <!-- Main Form Card -->
+        <div class="wizard-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card-glow"></div>
+
+          <!-- Progress Steps -->
+          <div class="progress-steps">
+            <div class="step active" id="step1">
+              <div class="step-icon">
+                <i class="fas fa-truck"></i>
+              </div>
+              <div class="step-label">Transport</div>
+            </div>
+            <div class="step" id="step2">
+              <div class="step-icon">
+                <i class="fas fa-box"></i>
+              </div>
+              <div class="step-label">Container</div>
+            </div>
+            <div class="step" id="step3">
+              <div class="step-icon">
+                <i class="fas fa-file-import"></i>
+              </div>
+              <div class="step-label">Inventory</div>
+            </div>
+            <div class="step" id="step4">
+              <div class="step-icon">
+                <i class="fas fa-sliders-h"></i>
+              </div>
+              <div class="step-label">Settings</div>
+            </div>
+          </div>
+
+          <!-- Form Container -->
+          <form
+            id="optimizerForm"
+            action="/optimize"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <div class="form-sections">
+              <!-- Step 1: Transport Mode -->
+              <div class="form-section active" id="section1">
+                <h3 class="section-title">
+                  <i class="fas fa-truck-moving"></i> Select Transport Mode
+                </h3>
+                <p class="section-description">
+                  Choose the transportation method for your cargo
+                </p>
+
+                <div class="transport-cards">
+                  {% for mode in data.transport_modes %}
+                  <div
+                    class="transport-option transport-3d"
+                    data-value="{{ mode.id }}"
+                  >
+                    <div class="transport-option-inner">
+                      <div class="option-icon-wrapper">
+                        {% if mode.name == 'Sea Container' %}
+                        <i class="fas fa-ship"></i>
+                        <div class="icon-effect sea-effect">
+                          <div class="wave"></div>
+                          <div class="wave"></div>
+                        </div>
+                        {% elif mode.name == 'Air Freight' %}
+                        <i class="fas fa-plane"></i>
+                        <div class="icon-effect air-effect">
+                          <div class="cloud"></div>
+                          <div class="cloud"></div>
+                        </div>
+                        {% elif mode.name == 'Truck' %}
+                        <i class="fas fa-truck-container"></i>
+                        <div class="icon-effect road-effect">
+                          <div class="road-line"></div>
+                          <div class="road-line"></div>
+                        </div>
+                        {% elif mode.name == 'Rail' %}
+                        <i class="fas fa-train"></i>
+                        <div class="icon-effect rail-effect">
+                          <div class="track"></div>
+                          <div class="track"></div>
+                        </div>
+                        {% else %}
+                        <i class="fas fa-boxes-stacked"></i>
+                        <div class="icon-effect generic-effect">
+                          <div class="pulse"></div>
+                        </div>
+                        {% endif %}
+                      </div>
+                      <h4 class="option-title">{{ mode.name }}</h4>
+                      <p class="option-description">
+                        {{ mode.containers|length }} container types available
+                      </p>
+                      <div class="option-badges">
+                        {% if mode.name == 'Sea Container' %}
+                        <span class="option-badge"
+                          ><i class="fas fa-globe-americas"></i> Global</span
+                        >
+                        <span class="option-badge"
+                          ><i class="fas fa-weight-hanging"></i> Heavy
+                          Loads</span
+                        >
+                        {% elif mode.name == 'Air Freight' %}
+                        <span class="option-badge"
+                          ><i class="fas fa-bolt"></i> Fast</span
+                        >
+                        <span class="option-badge"
+                          ><i class="fas fa-clock"></i> Time-Sensitive</span
+                        >
+                        {% elif mode.name == 'Truck' %}
+                        <span class="option-badge"
+                          ><i class="fas fa-route"></i> Flexible</span
+                        >
+                        <span class="option-badge"
+                          ><i class="fas fa-map-marker-alt"></i>
+                          Door-to-Door</span
+                        >
+                        {% elif mode.name == 'Rail' %}
+                        <span class="option-badge"
+                          ><i class="fas fa-leaf"></i> Eco-Friendly</span
+                        >
+                        <span class="option-badge"
+                          ><i class="fas fa-boxes"></i> Bulk Transport</span
+                        >
+                        {% endif %}
+                      </div>
+                      <div class="option-check">
+                        <i class="fas fa-check"></i>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                  <div class="transport-option transport-3d" data-value="5">
+                    <div class="transport-option-inner">
+                      <div class="option-icon-wrapper">
+                        <i class="fas fa-edit"></i>
+                        <div class="icon-effect custom-effect">
+                          <div class="pulse-ring"></div>
+                          <div class="pulse-ring"></div>
+                        </div>
+                      </div>
+                      <h4 class="option-title">Custom</h4>
+                      <p class="option-description">
+                        Define your own container dimensions
+                      </p>
+                      <div class="option-badges">
+                        <span class="option-badge"
+                          ><i class="fas fa-sliders-h"></i> Customizable</span
+                        >
+                        <span class="option-badge"
+                          ><i class="fas fa-ruler-combined"></i> Any Size</span
+                        >
+                      </div>
+                      <div class="option-check">
+                        <i class="fas fa-check"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <input
+                  type="hidden"
+                  name="transport_mode"
+                  id="transport_mode"
+                  value=""
+                />
+
+                <div class="form-navigation">
+                  <button type="button" class="btn btn-next" id="next1">
+                    Continue <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Step 2: Container Selection -->
+              <div class="form-section" id="section2">
+                <h3 class="section-title">
+                  <i class="fas fa-box-open"></i> Select Container Type
+                </h3>
+                <p class="section-description">
+                  Choose the container or define custom dimensions
+                </p>
+
+                <div id="container_type_group" class="container-selection">
+                  <div class="standard-container-options">
+                    <div class="container-grid" id="container_options">
+                      <!-- Container options will be populated by JS -->
+                    </div>
+                  </div>
+
+                  <div class="custom-dimensions" id="custom_dimensions">
+                    <h4><i class="fas fa-ruler"></i> Custom Dimensions</h4>
+                    <div class="dimension-inputs">
+                      <div class="dimension-input">
+                        <label for="length">Length (m)</label>
+                        <input
+                          type="number"
+                          step="0.01"
+                          class="form-control"
+                          name="length"
+                          id="length"
+                          placeholder="e.g., 12.0"
+                        />
+                        <i class="dimension-icon fas fa-arrows-alt-h"></i>
+                      </div>
+                      <div class="dimension-input">
+                        <label for="width">Width (m)</label>
+                        <input
+                          type="number"
+                          step="0.01"
+                          class="form-control"
+                          name="width"
+                          id="width"
+                          placeholder="e.g., 2.4"
+                        />
+                        <i class="dimension-icon fas fa-arrows-alt-h"></i>
+                      </div>
+                      <div class="dimension-input">
+                        <label for="height">Height (m)</label>
+                        <input
+                          type="number"
+                          step="0.01"
+                          class="form-control"
+                          name="height"
+                          id="height"
+                          placeholder="e.g., 2.6"
+                        />
+                        <i class="dimension-icon fas fa-arrows-alt-v"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <input
+                    type="hidden"
+                    name="container_type"
+                    id="container_type"
+                    value=""
+                  />
+
+                  <div class="container-preview" id="containerPreview">
+                    <h4>Container Specifications</h4>
+                    <div class="container-model">
+                      <div class="container-3d">
+                        <div class="container-face front"></div>
+                        <div class="container-face back"></div>
+                        <div class="container-face right"></div>
+                        <div class="container-face left"></div>
+                        <div class="container-face top"></div>
+                        <div class="container-face bottom"></div>
+                      </div>
+                    </div>
+                    <div class="container-specs">
+                      <div class="spec-item">
+                        <i class="fas fa-arrows-alt-h"></i>
+                        <span class="spec-label">Length:</span>
+                        <span class="spec-value" id="lengthValue">-</span>
+                      </div>
+                      <div class="spec-item">
+                        <i class="fas fa-arrows-alt-h"></i>
+                        <span class="spec-label">Width:</span>
+                        <span class="spec-value" id="widthValue">-</span>
+                      </div>
+                      <div class="spec-item">
+                        <i class="fas fa-arrows-alt-v"></i>
+                        <span class="spec-label">Height:</span>
+                        <span class="spec-value" id="heightValue">-</span>
+                      </div>
+                      <div class="spec-item">
+                        <i class="fas fa-cube"></i>
+                        <span class="spec-label">Volume:</span>
+                        <span class="spec-value" id="volumeValue">-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-navigation">
+                  <button type="button" class="btn btn-prev" id="prev2">
+                    <i class="fas fa-arrow-left"></i> Back
+                  </button>
+                  <button type="button" class="btn btn-next" id="next2">
+                    Continue <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Step 3: Inventory Upload -->
+              <div class="form-section" id="section3">
+                <h3 class="section-title">
+                  <i class="fas fa-boxes"></i> Upload Inventory
+                </h3>
+                <p class="section-description">
+                  Import your cargo items via CSV or Excel file
+                </p>
+
+                <div class="file-upload-container">
+                  <div class="upload-zone" id="dropZone">
+                    <div class="upload-animation">
+                      <div class="upload-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                      </div>
+                      <div class="upload-rings">
+                        <div class="ring"></div>
+                        <div class="ring"></div>
+                        <div class="ring"></div>
+                      </div>
+                    </div>
+
+                    <h4>Drag & Drop Your Inventory File</h4>
+                    <p class="upload-formats">
+                      <span class="format-badge"
+                        ><i class="fas fa-file-csv"></i> CSV</span
+                      >
+                      <span class="format-badge"
+                        ><i class="fas fa-file-excel"></i> Excel</span
+                      >
+                    </p>
+
+                    <input
+                      type="file"
+                      name="file"
+                      id="file_input"
+                      accept=".csv, .xlsx, .xls"
+                      required
+                      class="file-input"
+                    />
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary browse-btn"
+                    >
+                      <i class="fas fa-folder-open"></i> Browse Files
+                    </button>
+
+                    <div class="file-info" id="fileInfo">
+                      <div class="file-preview">
+                        <i class="file-icon fas fa-file-csv"></i>
+                        <div class="file-details">
+                          <span class="file-name" id="fileName"
+                            >No file selected</span
+                          >
+                          <span class="file-size" id="fileSize"></span>
+                        </div>
+                        <button
+                          type="button"
+                          class="remove-file"
+                          id="removeFile"
+                        >
+                          <i class="fas fa-times"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="template-downloads">
+                    <p><i class="fas fa-info-circle"></i> Need a template?</p>
+                    <div class="template-buttons">
+                      <a
+                        href="{{ url_for('static', filename='templates/template.csv') }}"
+                        class="btn btn-sm btn-template"
+                      >
+                        <i class="fas fa-download"></i> CSV Template
+                      </a>
+                      <a
+                        href="{{ url_for('static', filename='templates/template.xlsx') }}"
+                        class="btn btn-sm btn-template"
+                      >
+                        <i class="fas fa-download"></i> Excel Template
+                      </a>
+                    </div>
+                  </div>
+
+                  <div id="csvPreview" class="data-preview">
+                    <h5><i class="fas fa-table"></i> File Preview</h5>
+                    <div class="table-responsive">
+                      <table class="table table-sm table-hover">
+                        <thead id="csvHeader" class="table-light"></thead>
+                        <tbody id="csvData"></tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-navigation">
+                  <button type="button" class="btn btn-prev" id="prev3">
+                    <i class="fas fa-arrow-left"></i> Back
+                  </button>
+                  <button type="button" class="btn btn-next" id="next3">
+                    Continue <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Step 4: Additional Settings -->
+              <div class="form-section" id="section4">
+                <h3 class="section-title">
+                  <i class="fas fa-sliders-h"></i> Optimization Settings
+                </h3>
+                <p class="section-description">
+                  Configure additional parameters for best results
+                </p>
+
+                <div class="settings-container">
+                  <div class="setting-group temperature-setting">
+                    <div class="setting-icon">
+                      <i class="fas fa-temperature-high"></i>
+                    </div>
+                    <div class="setting-content">
+                      <h4>Route Temperature (°C)</h4>
+                      <p>Set the average temperature during transport</p>
+                      <div class="temperature-slider-container">
+                        <div class="temperature-range">
+                          <span class="temp-min">-20°C</span>
+                          <div class="temp-slider-wrapper">
+                            <input
+                              type="range"
+                              min="-20"
+                              max="50"
+                              value="25"
+                              class="temp-slider"
+                              id="temp_slider"
+                            />
+                            <div class="temp-tooltip">25°C</div>
+                          </div>
+                          <span class="temp-max">50°C</span>
+                        </div>
+                        <input
+                          type="number"
+                          step="0.1"
+                          class="form-control"
+                          name="route_temperature"
+                          id="route_temperature"
+                          value="25"
+                        />
+                      </div>
+                      <div class="temperature-info">
+                        <div class="temp-info-item cold">
+                          <i class="fas fa-snowflake"></i>
+                          <span>Cold items need insulation below 10°C</span>
+                        </div>
+                        <div class="temp-info-item hot">
+                          <i class="fas fa-fire"></i>
+                          <span
+                            >Heat-sensitive items need insulation above
+                            30°C</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="setting-group ai-setting">
+                    <div class="setting-icon">
+                      <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="setting-content">
+                      <div class="ai-toggle-container">
+                        <h4>AI-Enhanced Genetic Algorithm</h4>
+                        <label class="toggle-switch">
+                          <input
+                            type="checkbox"
+                            id="use_genetic"
+                            name="use_genetic"
+                            value="true"
+                          />
+                          <span class="toggle-slider"></span>
+                        </label>
+                      </div>
+                      <p>
+                        Enable our cutting-edge AI algorithms for optimized
+                        packing
+                      </p>
+                      <div class="algorithm-comparison">
+                        <div class="algorithm-option">
+                          <h5>Standard Algorithm</h5>
+                          <ul>
+                            <li><i class="fas fa-check"></i> Fast execution</li>
+                            <li>
+                              <i class="fas fa-check"></i> Basic constraints
+                            </li>
+                            <li>
+                              <i class="fas fa-check"></i> Good for simple loads
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="algorithm-option enhanced">
+                          <div class="new-badge">NEW</div>
+                          <h5>AI-Enhanced Algorithm</h5>
+                          <ul>
+                            <li>
+                              <i class="fas fa-check"></i> Advanced optimization
+                            </li>
+                            <li>
+                              <i class="fas fa-check"></i> Better space
+                              utilization
+                            </li>
+                            <li>
+                              <i class="fas fa-check"></i> Temperature zone
+                              optimization
+                            </li>
+                            <li>
+                              <i class="fas fa-check"></i> Adaptive mutation
+                              strategies
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-navigation">
+                  <button type="button" class="btn btn-prev" id="prev4">
+                    <i class="fas fa-arrow-left"></i> Back
+                  </button>
+                  <button type="submit" class="btn btn-optimize">
+                    <span class="optimize-text">Optimize Container</span>
+                    <div class="optimize-icon">
+                      <i class="fas fa-rocket"></i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="how-it-works" id="how-it-works" data-aos="fade-up">
+          <h2 class="section-title">How It Works</h2>
+          <div class="process-steps">
+            <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+              <div class="step-number">1</div>
+              <div class="step-icon">
+                <i class="fas fa-upload"></i>
+              </div>
+              <h4>Upload Inventory</h4>
+              <p>
+                Import your cargo items with dimensions, weight, and constraints
+              </p>
+            </div>
+            <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+              <div class="step-number">2</div>
+              <div class="step-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h4>AI Processing</h4>
+              <p>
+                Our genetic algorithm optimizes placement considering all
+                constraints
+              </p>
+            </div>
+            <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+              <div class="step-number">3</div>
+              <div class="step-icon">
+                <i class="fas fa-cubes"></i>
+              </div>
+              <h4>View Results</h4>
+              <p>
+                Explore the optimized container with interactive 3D
+                visualization
+              </p>
+            </div>
+            <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+              <div class="step-number">4</div>
+              <div class="step-icon">
+                <i class="fas fa-file-export"></i>
+              </div>
+              <h4>Export Plan</h4>
+              <p>Download detailed loading instructions and reports</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <i class="fas fa-cube"></i> GravitycARgo
+            <span class="version">v2.5.0</span>
+          </div>
+          <div class="footer-links">
+            <a href="#"><i class="fas fa-shield-alt"></i> Privacy</a>
+            <a href="#"><i class="fas fa-file-contract"></i> Terms</a>
+            <a href="#"><i class="fas fa-question-circle"></i> Support</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2025 System32 Team. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="loading-container">
+        <div class="loading-spinner">
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+        </div>
+        <h3 class="loading-text">Optimizing Container</h3>
+        <div class="loading-progress">
+          <div class="progress-bar" id="optimizationProgress"></div>
+        </div>
+        <div class="loading-status">
+          Analyzing constraints and calculating optimal placement...
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{ url_for('static', filename='js/container-visualization.js') }}"></script>
+    <script>
+      // Initialize AOS animations
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+      });
+
+      // Initialize Locomotive Scroll for smooth scrolling
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        smartphone: { smooth: false },
+        tablet: { smooth: false }
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const defaultData = {{ data|tojson|safe if data else '{}' }};
+        const transportMode = document.getElementById('transport_mode');
+        const containerType = document.getElementById('container_type');
+        const customDimensions = document.getElementById('custom_dimensions');
+        const containerPreview = document.getElementById('containerPreview');
+        const fileInput = document.getElementById('file_input');
+        const dropZone = document.getElementById('dropZone');
+        const fileInfo = document.getElementById('fileInfo');
+        const fileName = document.getElementById('fileName');
+        const fileSize = document.getElementById('fileSize');
+        const removeFile = document.getElementById('removeFile');
+        const tempSlider = document.getElementById('temp_slider');
+        const tempInput = document.getElementById('route_temperature');
+        const tempTooltip = document.querySelector('.temp-tooltip');
+
+        // Multi-step form navigation
+        const sections = document.querySelectorAll('.form-section');
+        const steps = document.querySelectorAll('.step');
+
+        function goToStep(stepIndex) {
+          sections.forEach(section => section.classList.remove('active'));
+          steps.forEach(step => step.classList.remove('active'));
+
+          sections[stepIndex - 1].classList.add('active');
+          steps[stepIndex - 1].classList.add('active');
+
+          // Animate entrance
+          sections[stepIndex - 1].classList.add('animate-entrance');
+          setTimeout(() => {
+            sections[stepIndex - 1].classList.remove('animate-entrance');
+          }, 500);
+        }
+
+        // Navigation buttons
+        document.getElementById('next1').addEventListener('click', () => {
+          if (!transportMode.value) {
+            showError('Please select a transport mode');
+            return;
+          }
+          goToStep(2);
+          loadContainerOptions();
+        });
+
+        document.getElementById('prev2').addEventListener('click', () => goToStep(1));
+
+        document.getElementById('next2').addEventListener('click', () => {
+          if (transportMode.value !== '5' && !containerType.value) {
+            showError('Please select a container type');
+            return;
+          }
+          if (transportMode.value === '5') {
+            const length = document.getElementById('length').value;
+            const width = document.getElementById('width').value;
+            const height = document.getElementById('height').value;
+
+            if (!length || !width || !height) {
+              showError('Please enter all dimensions');
+              return;
+            }
+          }
+          goToStep(3);
+        });
+
+        document.getElementById('prev3').addEventListener('click', () => goToStep(2));
+
+        document.getElementById('next3').addEventListener('click', () => {
+          if (!fileInput.files || !fileInput.files[0]) {
+            showError('Please upload an inventory file');
+            return;
+          }
+          goToStep(4);
+        });
+
+        document.getElementById('prev4').addEventListener('click', () => goToStep(3));
+
+        // Transport mode selection
+        document.querySelectorAll('.transport-option').forEach(option => {
+          option.addEventListener('click', function() {
+            document.querySelectorAll('.transport-option').forEach(opt => opt.classList.remove('selected'));
+            this.classList.add('selected');
+            transportMode.value = this.dataset.value;
+
+            if (this.dataset.value === '5') {
+              customDimensions.style.display = 'block';
+              document.getElementById('container_options').style.display = 'none';
+            } else {
+              customDimensions.style.display = 'none';
+              document.getElementById('container_options').style.display = 'grid';
+            }
+          });
+        });
+
+        // Load container options based on transport mode
+        function loadContainerOptions() {
+          const containerOptionsDiv = document.getElementById('container_options');
+          containerOptionsDiv.innerHTML = '';
+          containerType.value = '';
+
+          if (transportMode.value === '5') {
+            customDimensions.style.display = 'block';
+            containerOptionsDiv.style.display = 'none';
+            containerPreview.style.display = 'none';
+          } else {
+            customDimensions.style.display = 'none';
+            containerOptionsDiv.style.display = 'grid';
+
+            const mode = defaultData.transport_modes.find(m => m.id === transportMode.value);
+            if (mode && mode.containers) {
+              mode.containers.forEach(container => {
+                const containerCard = document.createElement('div');
+                containerCard.className = 'container-option';
+                containerCard.dataset.value = container.name;
+
+                const volume = (container.dimensions[0] * container.dimensions[1] * container.dimensions[2]).toFixed(2);
+
+                containerCard.innerHTML = `
+                  <div class="container-icon">
+                    ${getContainerIcon(container.name)}
+                  </div>
+                  <h4 class="container-name">${container.name}</h4>
+                  <div class="container-dims">
+                    <span>${container.dimensions.join('m × ')}m</span>
+                  </div>
+                  <div class="container-volume">${volume} m³</div>
+                  <div class="container-check"><i class="fas fa-check"></i></div>
+                `;
+
+                containerCard.addEventListener('click', function() {
+                  document.querySelectorAll('.container-option').forEach(c => c.classList.remove('selected'));
+                  this.classList.add('selected');
+                  containerType.value = this.dataset.value;
+
+                  document.getElementById('lengthValue').textContent = container.dimensions[0] + 'm';
+                  document.getElementById('widthValue').textContent = container.dimensions[1] + 'm';
+                  document.getElementById('heightValue').textContent = container.dimensions[2] + 'm';
+                  document.getElementById('volumeValue').textContent = volume + ' m³';
+
+                  containerPreview.style.display = 'flex';
+
+                  // Update 3D model proportions
+                  updateContainerModel(container.dimensions);
+                });
+
+                containerOptionsDiv.appendChild(containerCard);
+              });
+            }
+          }
+        }
+
+        // Helper to get appropriate icon for container types
+        function getContainerIcon(name) {
+          if (name.includes('Reefer') && name.includes('20')) return '<i class="fas fa-snowflake"></i>';
+          if (name.includes('Reefer') && name.includes('40')) return '<i class="fas fa-snowflake"></i>';
+          if (name.includes('20')) return '<i class="fas fa-container-storage"></i>';
+          if (name.includes('40')) return '<i class="fas fa-truck-container"></i>';
+          if (name.includes('Air')) return '<i class="fas fa-plane-cargo"></i>';
+          if (name.includes('Van')) return '<i class="fas fa-truck-moving"></i>';
+          if (name.includes('Rail')) return '<i class="fas fa-train"></i>';
+          return '<i class="fas fa-box"></i>';
+        }
+
+        // Update 3D container model
+        function updateContainerModel(dimensions) {
+          const [length, width, height] = dimensions;
+          const model = document.querySelector('.container-3d');
+
+          // Calculate scale factor to keep model within bounds
+          const maxDim = Math.max(length, width, height);
+          const scaleFactor = 100 / maxDim;
+
+          // Apply dimensions with proper aspect ratio
+          model.style.setProperty('--length', `${length * scaleFactor}px`);
+          model.style.setProperty('--width', `${width * scaleFactor}px`);
+          model.style.setProperty('--height', `${height * scaleFactor}px`);
+        }
+
+        // File upload handling
+        fileInput.addEventListener('change', handleFileSelect);
+
+        function handleFileSelect(e) {
+          const file = e.target.files[0];
+          if (!file) return;
+
+          const fileExtension = file.name.split('.').pop().toLowerCase();
+          let fileIconClass = 'fas fa-file';
+
+          if (fileExtension === 'csv') {
+            fileIconClass = 'fas fa-file-csv';
+          } else if (['xlsx', 'xls'].includes(fileExtension)) {
+            fileIconClass = 'fas fa-file-excel';
+          }
+
+          fileName.textContent = file.name;
+          fileSize.textContent = formatFileSize(file.size);
+          document.querySelector('.file-icon').className = `file-icon ${fileIconClass}`;
+          fileInfo.style.display = 'flex';
+
+          // Validate file and show preview
+          if (fileExtension === 'csv') {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+              try {
+                parseCSV(event.target.result);
+              } catch (error) {
+                showError('Invalid CSV format: ' + error.message);
+              }
+            };
+            reader.readAsText(file);
+          } else if (['xlsx', 'xls'].includes(fileExtension)) {
+            // For Excel files, we would need a library like SheetJS
+            // This is a simplified version
+            document.getElementById('csvPreview').style.display = 'block';
+            document.getElementById('csvHeader').innerHTML = '<tr><th>Excel previews are supported on the server</th></tr>';
+            document.getElementById('csvData').innerHTML = '<tr><td>File will be processed after submission</td></tr>';
+          }
+
+          // Visual feedback
+          dropZone.classList.add('file-dropped');
+        }
+
+        // Parse and preview CSV
+        function parseCSV(csvText) {
+          const lines = csvText.split('\n');
+          const headers = lines[0].split(',');
+
+          let headerHTML = '<tr>';
+          headers.forEach(header => {
+            headerHTML += `<th>${header.trim()}</th>`;
+          });
+          headerHTML += '</tr>';
+
+          let dataHTML = '';
+          const maxRows = Math.min(5, lines.length - 1);
+
+          for (let i = 1; i <= maxRows; i++) {
+            if (lines[i].trim()) {
+              const cells = lines[i].split(',');
+              dataHTML += '<tr>';
+              cells.forEach(cell => {
+                dataHTML += `<td>${cell.trim()}</td>`;
+              });
+              dataHTML += '</tr>';
+            }
+          }
+
+          document.getElementById('csvHeader').innerHTML = headerHTML;
+          document.getElementById('csvData').innerHTML = dataHTML;
+          document.getElementById('csvPreview').style.display = 'block';
+        }
+
+        // Remove file handler
+        removeFile.addEventListener('click', function() {
+          fileInput.value = '';
+          fileInfo.style.display = 'none';
+          document.getElementById('csvPreview').style.display = 'none';
+          dropZone.classList.remove('file-dropped');
+        });
+
+        // Drag and drop functionality
+        ['dragover', 'dragenter'].forEach(eventName => {
+          dropZone.addEventListener(eventName, e => {
+            e.preventDefault();
+            dropZone.classList.add('drag-over');
+          });
+        });
+
+        ['dragleave', 'dragend'].forEach(eventName => {
+          dropZone.addEventListener(eventName, e => {
+            e.preventDefault();
+            dropZone.classList.remove('drag-over');
+          });
+        });
+
+        dropZone.addEventListener('drop', e => {
+          e.preventDefault();
+          dropZone.classList.remove('drag-over');
+
+          if (e.dataTransfer.files.length) {
+            fileInput.files = e.dataTransfer.files;
+            handleFileSelect({target: {files: e.dataTransfer.files}});
+          }
+        });
+
+        // Browse button
+        document.querySelector('.browse-btn').addEventListener('click', () => {
+          fileInput.click();
+        });
+
+        // Temperature slider
+        tempSlider.addEventListener('input', function() {
+          tempInput.value = this.value;
+          tempTooltip.textContent = this.value + '°C';
+          tempTooltip.style.left = `${(this.value - this.min) / (this.max - this.min) * 100}%`;
+
+          // Update visual temperature indicator
+          if (this.value < 0) {
+            this.classList.add('cold');
+            this.classList.remove('hot');
+          } else if (this.value > 30) {
+            this.classList.add('hot');
+            this.classList.remove('cold');
+          } else {
+            this.classList.remove('cold');
+            this.classList.remove('hot');
+          }
+        });
+
+        tempInput.addEventListener('input', function() {
+          if (this.value > 50) this.value = 50;
+          if (this.value < -20) this.value = -20;
+          tempSlider.value = this.value;
+          tempTooltip.textContent = this.value + '°C';
+          tempTooltip.style.left = `${(this.value - tempSlider.min) / (tempSlider.max - tempSlider.min) * 100}%`;
+
+          // Update visual temperature indicator
+          if (this.value < 0) {
+            tempSlider.classList.add('cold');
+            tempSlider.classList.remove('hot');
+          } else if (this.value > 30) {
+            tempSlider.classList.add('hot');
+            tempSlider.classList.remove('cold');
+          } else {
+            tempSlider.classList.remove('cold');
+            tempSlider.classList.remove('hot');
+          }
+        });
+
+        // AI algorithm toggle animation
+        document.getElementById('use_genetic').addEventListener('change', function() {
+          const aiSetting = document.querySelector('.ai-setting');
+          if (this.checked) {
+            aiSetting.classList.add('activated');
+          } else {
+            aiSetting.classList.remove('activated');
+          }
+        });
+
+        // Form submission
+        document.getElementById('optimizerForm').addEventListener('submit', function(e) {
+          const loadingOverlay = document.getElementById('loadingOverlay');
+          const progressBar = document.getElementById('optimizationProgress');
+
+          loadingOverlay.classList.add('visible');
+
+          // Simulated progress for better UX
+          let progress = 0;
+          const progressInterval = setInterval(() => {
+            progress += Math.random() * 3;
+            if (progress > 90) progress = 90; // Leave the last 10% for server completion
+            progressBar.style.width = `${progress}%`;
+          }, 300);
+
+          // Store interval ID in window to clear it when page unloads
+          window.progressInterval = progressInterval;
+        });
+
+        // Helper functions
+        function formatFileSize(bytes) {
+          if (bytes < 1024) return bytes + ' bytes';
+          else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+          else return (bytes / 1048576).toFixed(1) + ' MB';
+        }
+
+        function showError(message) {
+          // Create error notification
+          const notification = document.createElement('div');
+          notification.className = 'error-notification';
+          notification.innerHTML = `
+            <div class="error-icon"><i class="fas fa-exclamation-circle"></i></div>
+            <div class="error-message">${message}</div>
+          `;
+
+          document.body.appendChild(notification);
+
+          // Animate in
+          setTimeout(() => {
+            notification.classList.add('visible');
+          }, 10);
+
+          // Remove after timeout
+          setTimeout(() => {
+            notification.classList.remove('visible');
+            setTimeout(() => {
+              notification.remove();
+            }, 300);
+          }, 3000);
+        }
+
+        // Create floating elements for background
+        createFloatingElements();
+      });
+
+      // Create floating background elements
+      function createFloatingElements() {
+        const container = document.querySelector('.floating-elements');
+
+        // Create animated grid lines
+        const gridContainer = document.querySelector('.background-grid');
+        for (let i = 0; i < 15; i++) {
+          const horizontalLine = document.createElement('div');
+          horizontalLine.className = 'grid-line horizontal';
+          horizontalLine.style.top = `${i * 7.5}%`;
+
+          const verticalLine = document.createElement('div');
+          verticalLine.className = 'grid-line vertical';
+          verticalLine.style.left = `${i * 7.5}%`;
+
+          gridContainer.appendChild(horizontalLine);
+          gridContainer.appendChild(verticalLine);
+        }
+      }
+
+      // Handle navbar appearance on scroll
+      window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    </script>
+  </body>
+</html>

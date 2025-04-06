@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GravitycARgo | Advanced Container Optimization</title>
+    <!-- External CSS Libraries -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/base.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/layout.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/components.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/animations.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/responsive.css') }}"
+    />
+  </head>
+  <body data-scroll-container>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <i class="fas fa-cube"></i> GravitycARgo</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="fas fa-bars" style="color: white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#solutions">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#technology">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="get-started-btn btn ms-3" href="/start">Get Started</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" data-scroll-section>
+      <div class="particles">
+        <!-- These will be populated by JS -->
+      </div>
+      <div class="hero-grid"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div
+            class="col-lg-6"
+            data-scroll
+            data-scroll-speed="1"
+            data-scroll-direction="horizontal"
+          >
+            <!-- Team Badge -->
+            <div class="brand-badge">
+              <div class="team-logo"></div>
+              <span class="label">Powered by</span>
+              <span class="team-name">System32</span>
+              <button class="team-info-btn" id="teamInfoBtn">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+
+            <h1 class="hero-title" data-scroll data-scroll-delay="0.1">
+              Optimize Space with
+              <span class="highlight">AI-Powered</span> Container Loading
+            </h1>
+            <p class="hero-subtitle" data-scroll data-scroll-delay="0.2">
+              OptiGenix combines genetic algorithms with temperature constraints
+              to deliver exceptional efficiency in 3D space utilization with
+              real-time AR visualization.
+            </p>
+            <div class="cta-buttons" data-scroll data-scroll-delay="0.3">
+              <a href="/start" class="btn btn-primary">
+                Start Optimizing
+                <i class="fas fa-arrow-right icon"></i>
+              </a>
+              <a href="#demo" class="btn btn-secondary">
+                <i class="fas fa-play"></i>
+                Watch Demo
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-scroll data-scroll-speed="-1">
+            <div class="container-animation">
+              <div class="ar-badge">
+                <i class="fas fa-vr-cardboard"></i>
+                AR Ready
+              </div>
+              <div class="cube-3d">
+                <div class="cube-face face-front"></div>
+                <div class="cube-face face-back"></div>
+                <div class="cube-face face-right"></div>
+                <div class="cube-face face-left"></div>
+                <div class="cube-face face-top"></div>
+                <div class="cube-face face-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features" data-scroll-section>
+      <div class="container">
+        <h2 class="section-title" data-scroll data-scroll-offset="50">
+          Advanced Features
+        </h2>
+        <div class="feature-grid">
+          <div class="feature-card" data-scroll data-scroll-offset="30%">
+            <div class="icon-container">
+              <i class="fas fa-robot feature-icon"></i>
+            </div>
+            <h4>AI-Powered Optimization</h4>
+            <p>
+              Our genetic algorithms with adaptive mutation strategies ensure
+              optimal space utilization for complex loading scenarios.
+            </p>
+          </div>
+          <div class="feature-card" data-scroll data-scroll-offset="30%">
+            <div class="icon-container">
+              <i class="fas fa-temperature-high feature-icon"></i>
+            </div>
+            <h4>Temperature Management</h4>
+            <p>
+              Smart handling of temperature-sensitive items ensures product
+              integrity throughout the transport chain.
+            </p>
+          </div>
+          <div class="feature-card" data-scroll data-scroll-offset="30%">
+            <div class="icon-container">
+              <i class="fas fa-balance-scale feature-icon"></i>
+            </div>
+            <h4>Weight Distribution</h4>
+            <p>
+              Advanced algorithms for optimal load balancing and stability to
+              ensure safe transportation.
+            </p>
+          </div>
+          <div class="feature-card" data-scroll data-scroll-offset="30%">
+            <div class="icon-container">
+              <i class="fas fa-cube feature-icon"></i>
+            </div>
+            <h4>3D Visualization</h4>
+            <p>
+              Interactive 3D models of your packed container for easy inspection
+              and validation.
+            </p>
+          </div>
+          <div class="feature-card" data-scroll data-scroll-offset="30%">
+            <div class="icon-container">
+              <i class="fas fa-glasses feature-icon"></i>
+            </div>
+            <h4>AR Visualization</h4>
+            <p>
+              Real-time Augmented Reality experience that lets you visualize
+              your packed containers in your physical space.
+            </p>
+          </div>
+          <div class="feature-card" data-scroll data-scroll-offset="30%">
+            <div class="icon-container">
+              <i class="fas fa-chart-bar feature-icon"></i>
+            </div>
+            <h4>Advanced Analytics</h4>
+            <p>
+              Comprehensive metrics and reporting tools to optimize your
+              logistics chain performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" data-scroll-section>
+      <div class="stats-glow"></div>
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card" data-scroll data-scroll-offset="30%">
+            <div class="stat-number">95%</div>
+            <div class="stat-label">Space Utilization</div>
+          </div>
+          <div class="stat-card" data-scroll data-scroll-offset="30%">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Temperature Control</div>
+          </div>
+          <div class="stat-card" data-scroll data-scroll-offset="30%">
+            <div class="stat-number">50%</div>
+            <div class="stat-label">Time Saved</div>
+          </div>
+          <div class="stat-card" data-scroll data-scroll-offset="30%">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Optimization</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Info Modal -->
+    <div class="team-modal" id="teamModal">
+      <div class="team-modal-content">
+        <button class="team-modal-close" id="closeModal">
+          <i class="fas fa-times"></i>
+        </button>
+        <h3 class="team-modal-title">System32 Team</h3>
+        <div class="team-modal-body">
+          <p>
+            System32 is a team of expert developers specializing in advanced
+            logistics optimization and augmented reality solutions. Our mission
+            is to revolutionize container loading processes with cutting-edge
+            technology that brings efficiency and innovation to the logistics
+            industry.
+          </p>
+          <p>
+            Our unique approach combines genetic algorithms, 3D visualization,
+            and real-time AR capabilities to deliver unprecedented accuracy and
+            space utilization in container loading scenarios.
+          </p>
+          <div class="team-tech-stack">
+            <span class="tech-badge">AI Optimization</span>
+            <span class="tech-badge">3D Visualization</span>
+            <span class="tech-badge">Augmented Reality</span>
+            <span class="tech-badge">Genetic Algorithms</span>
+            <span class="tech-badge">Temperature Control</span>
+            <span class="tech-badge">Real-time Analytics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script>
+      // Initialize smooth scrolling
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+        smartphone: { smooth: false },
+        tablet: { smooth: false },
+      });
+
+      // Create particles
+      function createParticles() {
+        const container = document.querySelector(".particles");
+        for (let i = 0; i < 20; i++) {
+          const particle = document.createElement("div");
+          particle.classList.add("particle");
+          particle.style.top = `${Math.random() * 100}%`;
+          particle.style.left = `${Math.random() * 100}%`;
+          particle.style.width = `${Math.random() * 6 + 2}px`;
+          particle.style.height = particle.style.width;
+          particle.style.opacity = Math.random() * 0.5 + 0.1;
+          particle.style.animationDelay = `${Math.random() * 5}s`;
+          particle.style.animationDuration = `${Math.random() * 10 + 10}s`;
+          container.appendChild(particle);
+        }
+      }
+
+      // Handle navbar background change on scroll
+      function handleScroll() {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      }
+
+      // Handle stats visibility
+      const observerOptions = {
+        threshold: 0.5,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", function () {
+        createParticles();
+
+        // Observe scroll for navbar
+        window.addEventListener("scroll", handleScroll);
+
+        // Add smooth scrolling to nav links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              scroll.scrollTo(target);
+            }
+          });
+        });
+
+        // Observe stat elements
+        document.querySelectorAll(".stat-card").forEach((stat) => {
+          observer.observe(stat);
+        });
+
+        // Team Info Modal functionality
+        const teamModal = document.getElementById("teamModal");
+        const teamInfoBtn = document.getElementById("teamInfoBtn");
+        const closeModal = document.getElementById("closeModal");
+
+        // Open modal when info button is clicked
+        teamInfoBtn.addEventListener("click", function () {
+          teamModal.classList.add("show");
+          document.body.style.overflow = "hidden"; // Prevent scrolling
+        });
+
+        // Close modal when close button or outside is clicked
+        closeModal.addEventListener("click", function () {
+          teamModal.classList.remove("show");
+          document.body.style.overflow = "";
+        });
+
+        // Close modal when clicking outside content
+        teamModal.addEventListener("click", function (e) {
+          if (e.target === teamModal) {
+            teamModal.classList.remove("show");
+            document.body.style.overflow = "";
+          }
+        });
+
+        // Close modal on escape key press
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && teamModal.classList.contains("show")) {
+            teamModal.classList.remove("show");
+            document.body.style.overflow = "";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
