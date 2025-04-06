@@ -1,6 +1,6 @@
 # GravitycARgo - Advanced Container Optimization System
 
-![GravitycARgo Logo](static/images/logo.png)
+
 
 ## Live Demo
 
