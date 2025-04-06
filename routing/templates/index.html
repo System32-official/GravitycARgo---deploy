@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GravityCARgo Route Planner</title>
+    <!-- CSS imports in correct order -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #f8f9fa;
+        color: #212529;
+      }
+
+      .navbar {
+        background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0.8rem 1rem;
+      }
+
+      .main-container {
+        padding: 20px;
+        height: calc(100vh - 70px);
+      }
+
+      .side-panel {
+        height: 100%;
+        overflow-y: auto;
+        padding-right: 15px;
+      }
+
+      .map-container {
+        height: 100%;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      #map {
+        height: 100%;
+        border-radius: 12px;
+      }
+
+      .controls-panel {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        margin-bottom: 20px;
+      }
+
+      .info-panel {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        max-height: calc(100vh - 460px);
+        overflow-y: auto;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+        border: none;
+        box-shadow: 0 4px 6px rgba(13, 110, 253, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 8px rgba(13, 110, 253, 0.3);
+      }
+
+      .btn-outline-primary {
+        border-color: #0d6efd;
+        color: #0d6efd;
+        transition: all 0.3s ease;
+      }
+
+      .btn-outline-primary:hover {
+        background-color: #0d6efd;
+        color: white;
+      }
+
+      .btn-outline-secondary {
+        border-color: #6c757d;
+        color: #6c757d;
+        transition: all 0.3s ease;
+      }
+
+      .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: white;
+      }
+
+      .btn-outline-danger {
+        border-color: #dc3545;
+        color: #dc3545;
+        transition: all 0.3s ease;
+      }
+
+      .btn-outline-danger:hover {
+        background-color: #dc3545;
+        color: white;
+      }
+
+      .form-control {
+        border-radius: 8px;
+        padding: 10px 12px;
+      }
+
+      .input-group {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+      }
+
+      h5 {
+        font-weight: 600;
+        color: #0d6efd;
+        margin-bottom: 20px;
+      }
+
+      .route-card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+        border-left: 4px solid transparent;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+      }
+
+      .route-card:hover {
+        transform: translateX(5px);
+        background-color: #f8f9fa;
+      }
+
+      .route-card.active {
+        border-left: 4px solid #0d6efd;
+        background-color: #e9ecef;
+      }
+
+      .route-details {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 12px;
+      }
+
+      .route-stat {
+        display: inline-block;
+        padding: 4px 10px;
+        margin: 3px;
+        background: #e9ecef;
+        border-radius: 20px;
+        font-size: 0.85em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      .checkpoint-card {
+        margin-bottom: 15px;
+        border-radius: 8px;
+        background: #f8f9fa;
+        padding: 15px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+
+      .checkpoint-card:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        transform: translateY(-2px);
+      }
+
+      .weather-info {
+        display: flex;
+        gap: 10px;
+        margin: 10px 0;
+      }
+
+      .current-weather,
+      .forecast-weather {
+        flex: 1;
+        padding: 12px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .weather-summary-card,
+      .container-recs-card {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 992px) {
+        .main-container {
+          height: auto;
+        }
+
+        .map-container {
+          height: 50vh;
+          margin-bottom: 20px;
+        }
+
+        .side-panel {
+          height: auto;
+          padding-right: 0;
+        }
+
+        .info-panel {
+          max-height: none;
+        }
+      }
+
+      /* Loading animation */
+      .loading::after {
+        content: "";
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: white;
+        animation: spin 1s ease-in-out infinite;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Select2 customizations */
+      .select2-container--default .select2-selection--single {
+        height: 42px;
+        padding: 6px 12px;
+        border: 1px solid #ced4da;
+        border-radius: 8px;
+      }
+
+      .select2-container--default
+        .select2-selection--single
+        .select2-selection__rendered {
+        color: #212529;
+        line-height: 28px;
+      }
+
+      .select2-container--default
+        .select2-selection--single
+        .select2-selection__arrow {
+        height: 40px;
+      }
+
+      /* New styles for the weather section */
+      .weather-section {
+        margin-top: 25px;
+        padding: 20px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      }
+
+      .weather-section h5 {
+        margin-bottom: 20px;
+      }
+
+      .weather-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .weather-summary-card,
+      .container-recs-card {
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        padding: 20px;
+        border-radius: 12px;
+        height: 100%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      .checkpoints-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 992px) {
+        .main-container {
+          height: auto;
+        }
+
+        .weather-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><i class="bi bi-map"></i> GravityCARgo</a
+        >
+        <div class="d-flex align-items-center">
+          <span class="text-white me-3">Advanced Route Planner</span>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="bi bi-question-circle"></i> Help</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container main-container">
+      <div class="row">
+        <!-- Controls Panel (Left) -->
+        <div class="col-lg-4">
+          <!-- Route Planning Controls -->
+          <div class="controls-panel">
+            <h5><i class="bi bi-gear-fill"></i> Route Settings</h5>
+            <div class="mb-3">
+              <label class="form-label">Source Location</label>
+              <div class="input-group">
+                <select class="form-select location-select" id="source">
+                  <option value="">Type to search location...</option>
+                </select>
+                <button
+                  class="btn btn-outline-primary"
+                  type="button"
+                  onclick="getCurrentLocation()"
+                >
+                  <i class="bi bi-geo-alt-fill"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Destinations container -->
+            <div id="destinations-container">
+              <div class="mb-3 destination-entry">
+                <label class="form-label">Destination 1</label>
+                <div class="input-group">
+                  <select
+                    class="form-select location-select destination"
+                    data-index="1"
+                  >
+                    <option value="">Type to search location...</option>
+                  </select>
+                  <button
+                    class="btn btn-outline-danger remove-destination"
+                    type="button"
+                    style="display: none"
+                  >
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add destination button -->
+            <div class="mb-3">
+              <button
+                class="btn btn-outline-secondary w-100"
+                id="add-destination"
+              >
+                <i class="bi bi-plus-circle"></i> Add Destination
+              </button>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Journey Start Time</label>
+              <input
+                type="datetime-local"
+                class="form-control"
+                id="start-time"
+              />
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <label class="form-label mb-0">Checkpoints</label>
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="optimal-checkpoints"
+                  />
+                  <label class="form-check-label">Optimal</label>
+                </div>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="checkpoints"
+                value="5"
+                min="2"
+              />
+            </div>
+            <button class="btn btn-primary w-100" onclick="calculateRoute()">
+              <i class="bi bi-calculator"></i> Calculate Route
+            </button>
+          </div>
+
+          <div class="info-panel mt-3">
+            <div id="routeInfo"></div>
+            <div id="alternativeRoutes"></div>
+          </div>
+        </div>
+
+        <!-- Map Panel (Right) -->
+        <div class="col-lg-8">
+          <div class="map-container">
+            <div id="map"></div>
+            <!-- Loading overlay -->
+            <div id="map-loading" class="loading-overlay" style="display: none">
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather and Checkpoints Section (Below Map) -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="weather-section">
+            <h5><i class="bi bi-cloud-sun"></i> Weather & Route Information</h5>
+
+            <div class="weather-grid">
+              <div id="weather-summary"></div>
+              <div id="container-recommendations"></div>
+            </div>
+
+            <h5 class="mt-4"><i class="bi bi-pin-map"></i> Checkpoints</h5>
+            <div class="checkpoints-grid" id="checkpointsList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts in correct order -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+      // Set minimum date-time to now
+      document.addEventListener("DOMContentLoaded", function () {
+        const startTimeInput = document.getElementById("start-time");
+        if (startTimeInput) {
+          startTimeInput.min = new Date().toISOString().slice(0, 16);
+        }
+      });
+    </script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
