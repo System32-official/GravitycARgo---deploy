@@ -46,5 +46,8 @@ MarkupSafe==3.0.2  # Required by Jinja2
 tenacity==9.1.2  # Required by plotly
 packaging==24.2  # Required by various packages
 
+# Environment variables
+python-dotenv==1.0.1
+
 # For serialization/deserialization
 PyYAML==6.0  # For YAML configuration
