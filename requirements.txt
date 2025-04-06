@@ -1,19 +1,50 @@
 # Use pre-built wheels instead of building from source
 --only-binary=:all:
+
+# Core Flask dependencies
 Flask==2.0.1
-flask-socketio==5.1.1
-# Updated versions compatible with Python 3.11
-numpy==1.24.3
-pandas==1.5.3
 Werkzeug==2.0.1
+Jinja2==3.1.6
+itsdangerous==2.2.0
+click==8.1.8
+
+# Socket.IO for real-time communication
+flask-socketio==5.1.1
+python-socketio==5.4.0
+python-engineio==4.3.0
+
+# Web server and WebSocket support
 gunicorn==20.1.0
-# Updated gevent version for Python 3.11
 gevent==23.9.1
 gevent-websocket==0.10.1
-python-engineio==4.3.0
-python-socketio==5.4.0
-# Visualization dependencies
+greenlet==3.1.1
+
+# Data processing
+numpy==1.24.3
+pandas==1.5.3
+python-dateutil==2.9.0.post0
+pytz==2025.2
+six==1.17.0
+
+# Visualization
 plotly==5.18.0
-# Additional dependencies
+dash==2.16.1
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+dash-table==5.0.0
+matplotlib==3.7.2
+
+# Build tools
 setuptools>=58.0.0
-wheel>=0.37.0
+wheel>=0.45.1
+
+# Additional utilities
+bidict==0.23.1  # Required by python-socketio
+zope.event==5.0  # Required by gevent
+zope.interface==7.2  # Required by gevent
+MarkupSafe==3.0.2  # Required by Jinja2
+tenacity==9.1.2  # Required by plotly
+packaging==24.2  # Required by various packages
+
+# For serialization/deserialization
+PyYAML==6.0  # For YAML configuration

@@ -14,6 +14,11 @@ except ImportError as e:
         import subprocess
         subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
         from wsgi import app, socketio
+    elif "No module named 'dash'" in str(e):
+        print("Error: Missing dash dependency. Installing...")
+        import subprocess
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "dash"])
+        from wsgi import app, socketio
     else:
         print(f"Fatal import error: {e}")
         raise
