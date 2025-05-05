@@ -13,6 +13,9 @@ flask-socketio==5.1.1
 python-socketio==5.4.0
 python-engineio==4.3.0
 
+# System monitoring
+psutil>=5.9.0
+
 # Web server and WebSocket support
 gunicorn==20.1.0
 gevent==23.9.1
@@ -51,6 +54,10 @@ python-dotenv==1.0.1
 
 # API/HTTP clients
 aiohttp==3.9.5  # Required for async HTTP requests
+requests>=2.25.0  # Required for HTTP requests
+
+# LLM Integration - Note: Not using groq package, using direct API calls
+# But we'll keep the package in case future versions need it
 
 # For serialization/deserialization
 PyYAML==6.0  # For YAML configuration

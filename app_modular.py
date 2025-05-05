@@ -10,7 +10,32 @@ import json
 import time
 import logging
 import subprocess
-import psutil
+# Make psutil import optional with fallback
+try:
+    import psutil
+except ImportError:
+    logging.warning("psutil module not found. System monitoring features will be limited.")
+    # Create a minimal mock for basic functionality
+    class PsutilMock:
+        @staticmethod
+        def Process(pid):
+            class MockProcess:
+                @staticmethod
+                def memory_info():
+                    class MemInfo:
+                        rss = 0
+                    return MemInfo()
+                @staticmethod
+                def cpu_percent():
+                    return 0
+                @staticmethod
+                def is_running():
+                    return True
+                @staticmethod
+                def terminate():
+                    pass
+            return MockProcess()
+    psutil = PsutilMock()
 import signal
 import threading
 import http.server
