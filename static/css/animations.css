@@ -141,3 +141,73 @@
   opacity: 0.3;
   animation: float 8s infinite ease-in-out;
 }
+
+/* Page Transition Animations */
+.page-transition-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Page Enter Animation */
+@keyframes pageEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Page Exit Animation */
+@keyframes pageExit {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+}
+
+/* Applied Classes */
+.page-enter {
+  animation: pageEnter 0.6s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+.page-exit {
+  animation: pageExit 0.4s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+/* Form Section Transitions */
+.form-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: none;
+}
+
+.form-section.active {
+  opacity: 1;
+  transform: translateY(0);
+  display: block;
+}
+
+/* Enhanced animate entrance for form sections */
+.animate-entrance {
+  animation: smoothEntrance 0.6s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+@keyframes smoothEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

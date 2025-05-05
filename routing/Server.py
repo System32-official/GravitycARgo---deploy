@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify, request
-from route_checkpoints import fetch_route_checkpoints, geocode_location
-from osrm_services_demo import OSRMServices
-from weather_service import WeatherService
+from .route_checkpoints import fetch_route_checkpoints, geocode_location
+from .osrm_services_demo import OSRMServices
+from .weather_service import WeatherService
 import json
 import requests
 from datetime import datetime, timedelta

@@ -3,12 +3,9 @@ import os
 import json
 import requests
 import time
-import sys
 import random  # Add this missing import
-from typing import Dict, Any, Optional
 from dotenv import load_dotenv
 from functools import lru_cache
-import asyncio
 import aiohttp
 import concurrent.futures
 import logging
@@ -16,8 +13,11 @@ import logging
 # Load environment variables
 load_dotenv()
 
+# Global singleton instance
+_GLOBAL_CLIENT_INSTANCE = None
+
 class GroqClient:
-    """Simple client for Groq Cloud API"""
+    """Simple client for Groq Cloud API using singleton pattern"""
     
     def __init__(self, api_key=None, log_file="llm_strategies.log"):
         self.api_key = api_key or os.environ.get("GROQ_API_KEY")
@@ -32,9 +32,14 @@ class GroqClient:
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json"
         }
-        print(f"\n{'='*50}")
-        print(f"✅ LLM Connector initialized with Groq Cloud")
-        print(f"{'='*50}\n")
+        
+        # Only print initialization message once
+        if not hasattr(GroqClient, '_initialization_shown'):
+            print(f"\n{'='*50}")
+            print(f"✅ LLM Connector initialized with Groq Cloud")
+            print(f"{'='*50}\n")
+            GroqClient._initialization_shown = True
+            
         self.session = requests.Session()  # Create persistent session
         self.strategy_history = []  # Initialize strategy history
     
@@ -50,8 +55,9 @@ class GroqClient:
     def generate(self, prompt: str, max_tokens: int = 300) -> str:
         """Generate with model fallback for faster responses"""
         models = [
-            "llama-3.3-70b-versatile",  # Try faster model first
-            "llama-3.3-70b-specdec"  # Fallback to more powerful model if needed
+            "llama-3.3-70b-versatile", 
+            "deepseek-r1-distill-llama-70b",# Try faster model first
+            
         ]
         
         for model in models:
@@ -693,6 +699,47 @@ class GroqClient:
             print(f"\n{'='*60}\n")
             return self._get_fallback_strategy()
 
+    def ensure_temperature_constraints(self, context=None):
+        """
+        Ensure temperature constraints are properly initialized and applied
+        
+        Args:
+            context: Dictionary containing optimization context (items, container, etc.)
+            
+        Returns:
+            dict: Information about applied temperature constraints
+        """
+        # Get route temperature from environment
+        route_temp = float(os.environ.get("ROUTE_TEMPERATURE", 25.0))
+        print(f"LLM Client: Using ROUTE_TEMPERATURE={route_temp}°C")
+        
+        # If we have a context with items, initialize temperature processing
+        if context and 'items' in context:
+            from optigenix_module.optimization.temperature import TemperatureConstraintHandler
+            
+            # Initialize temperature handler
+            temp_handler = TemperatureConstraintHandler(route_temperature=route_temp)
+            print(f"LLM Client: Temperature handler initialized with route_temp={route_temp}°C")
+            
+            # Preprocess items for temperature sensitivity
+            context['items'] = temp_handler.preprocess_items_temperature(context['items'])
+            context['temp_handler'] = temp_handler
+            
+            # Count temperature sensitive items for logging
+            temp_sensitive_count = sum(1 for i in context['items'] if getattr(i, 'needs_insulation', False))
+            print(f"LLM Client: Found {temp_sensitive_count} temperature-sensitive items")
+            
+            return {
+                "route_temperature": route_temp,
+                "temp_sensitive_count": temp_sensitive_count,
+                "temp_handler": temp_handler
+            }
+        
+        return {"route_temperature": route_temp}
+
 def get_llm_client(api_key=None):
     """Get an instance of the Groq LLM client"""
-    return GroqClient(api_key)
+    global _GLOBAL_CLIENT_INSTANCE
+    if _GLOBAL_CLIENT_INSTANCE is None:
+        _GLOBAL_CLIENT_INSTANCE = GroqClient(api_key)
+    return _GLOBAL_CLIENT_INSTANCE

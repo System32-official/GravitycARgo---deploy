@@ -1,0 +1,1215 @@
+{
+    "timestamp": "20250413_094933",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "dimensions": "5.9m \u00d7 2.35m \u00d7 2.39m",
+        "route_temperature": 28.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 35.3800168088275,
+        "items_packed": 44,
+        "total_items": 20,
+        "remaining_volume": 21.413350000000005,
+        "center_of_gravity": [
+            2.787835522558538,
+            1.1085094231867505,
+            0.6649914334665906
+        ],
+        "total_weight": 1751.0
+    },
+    "packed_items": [
+        {
+            "name": "PackagingSupplies_1",
+            "position": [
+                0.3,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.8,
+                0.4
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "PackagingSupplies_2",
+            "position": [
+                0.3,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.8,
+                0.4
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "PackagingSupplies_3",
+            "position": [
+                1.5,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.4,
+                0.8
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "PackagingSupplies_4",
+            "position": [
+                2.7,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.4,
+                0.8
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SteelDrums_1",
+            "position": [
+                3.9000000000000004,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.9,
+                0.6,
+                0.6
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SteelDrums_2",
+            "position": [
+                4.800000000000001,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.6,
+                0.9
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SteelDrums_3",
+            "position": [
+                1.5,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.9,
+                0.6,
+                0.6
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "ToolBoxes_1",
+            "position": [
+                1.5,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "ToolBoxes_2",
+            "position": [
+                2.0,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "ToolBoxes_3",
+            "position": [
+                2.5,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "ToolBoxes_4",
+            "position": [
+                3.0,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "MetalFrames_1",
+            "position": [
+                1.5,
+                1.8,
+                0.0
+            ],
+            "dimensions": [
+                2.4,
+                0.4,
+                0.8
+            ],
+            "weight": 100.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "FRAME",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MetalFrames_2",
+            "position": [
+                2.4,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                2.4,
+                0.8,
+                0.4
+            ],
+            "weight": 100.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "FRAME",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StorageBox_1",
+            "position": [
+                3.9000000000000004,
+                1.7000000000000002,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.6,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "StorageBox_2",
+            "position": [
+                4.8,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.8,
+                1.2
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "StorageBox_3",
+            "position": [
+                2.4,
+                0.3,
+                0.4
+            ],
+            "dimensions": [
+                1.2,
+                0.8,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "StorageBox_4",
+            "position": [
+                3.5999999999999996,
+                0.3,
+                0.4
+            ],
+            "dimensions": [
+                1.2,
+                0.8,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "MachineParts_1",
+            "position": [
+                0.3,
+                1.1,
+                0.4
+            ],
+            "dimensions": [
+                1.2,
+                0.8,
+                0.8
+            ],
+            "weight": 180.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MachineParts_2",
+            "position": [
+                0.3,
+                0.3,
+                0.4
+            ],
+            "dimensions": [
+                1.2,
+                0.8,
+                0.8
+            ],
+            "weight": 180.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "AutoParts_1",
+            "position": [
+                2.4,
+                0.3,
+                1.0
+            ],
+            "dimensions": [
+                1.0,
+                0.6,
+                0.8
+            ],
+            "weight": 100.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "AutoParts_2",
+            "position": [
+                3.4,
+                0.3,
+                1.0
+            ],
+            "dimensions": [
+                1.0,
+                0.6,
+                0.8
+            ],
+            "weight": 100.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "PlasticContainers_1",
+            "position": [
+                3.9000000000000004,
+                1.1,
+                0.6
+            ],
+            "dimensions": [
+                0.8,
+                0.6,
+                0.6
+            ],
+            "weight": 25.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "PlasticContainers_2",
+            "position": [
+                1.5,
+                0.3,
+                0.6
+            ],
+            "dimensions": [
+                0.8,
+                0.6,
+                0.6
+            ],
+            "weight": 25.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "PlasticContainers_3",
+            "position": [
+                3.9000000000000004,
+                1.7000000000000002,
+                0.8
+            ],
+            "dimensions": [
+                0.8,
+                0.6,
+                0.6
+            ],
+            "weight": 25.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "LightFixtures_1",
+            "position": [
+                0.3,
+                1.9000000000000001,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "LightFixtures_2",
+            "position": [
+                1.5,
+                1.1,
+                0.8
+            ],
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "LightFixtures_3",
+            "position": [
+                2.5,
+                1.1,
+                0.8
+            ],
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "LightFixtures_4",
+            "position": [
+                1.5,
+                1.8,
+                0.8
+            ],
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "LightFixtures_5",
+            "position": [
+                2.5,
+                1.8,
+                0.8
+            ],
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "LightFixtures_6",
+            "position": [
+                0.3,
+                0.3,
+                1.2000000000000002
+            ],
+            "dimensions": [
+                1.0,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CardboardBoxes_1",
+            "position": [
+                5.1000000000000005,
+                1.7000000000000002,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CardboardBoxes_2",
+            "position": [
+                5.1000000000000005,
+                1.7000000000000002,
+                0.4
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CardboardBoxes_3",
+            "position": [
+                5.1000000000000005,
+                1.7000000000000002,
+                0.8
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CardboardBoxes_4",
+            "position": [
+                4.800000000000001,
+                1.1,
+                0.9
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CardboardBoxes_5",
+            "position": [
+                1.5,
+                0.3,
+                1.2
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CardboardBoxes_6",
+            "position": [
+                3.9000000000000004,
+                1.1,
+                1.2
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "PackagedGoods_1",
+            "position": [
+                4.8,
+                0.3,
+                1.2
+            ],
+            "dimensions": [
+                0.6,
+                0.5,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "PackagedGoods_2",
+            "position": [
+                0.3,
+                0.7,
+                1.2000000000000002
+            ],
+            "dimensions": [
+                0.6,
+                0.5,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "PackagedGoods_3",
+            "position": [
+                0.8999999999999999,
+                0.7,
+                1.2000000000000002
+            ],
+            "dimensions": [
+                0.6,
+                0.5,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "PackagedGoods_4",
+            "position": [
+                5.1000000000000005,
+                1.7000000000000002,
+                1.2000000000000002
+            ],
+            "dimensions": [
+                0.4,
+                0.5,
+                0.6
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "ElectricalBoxes_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.4
+            ],
+            "weight": 12.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ElectricalBoxes_2",
+            "position": [
+                0.3,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 12.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ElectricalBoxes_3",
+            "position": [
+                0.7,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 12.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ElectricalBoxes_4",
+            "position": [
+                1.1,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 12.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [
+        {
+            "name": "HeavyMachinery_1",
+            "dimensions": [
+                2.0,
+                1.5,
+                1.8
+            ],
+            "weight": 800.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "StandardPallet1_1",
+            "dimensions": [
+                1.2,
+                1.0,
+                1.2
+            ],
+            "weight": 450.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "StandardPallet1_2",
+            "dimensions": [
+                1.2,
+                1.0,
+                1.2
+            ],
+            "weight": 450.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "WoodCrates_1",
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 80.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "WoodCrates_2",
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 80.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "AutoParts_3",
+            "dimensions": [
+                1.0,
+                0.8,
+                0.6
+            ],
+            "weight": 100.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "IndustrialPump_1",
+            "dimensions": [
+                1.0,
+                0.8,
+                0.9
+            ],
+            "weight": 150.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "IndustrialPump_2",
+            "dimensions": [
+                1.0,
+                0.8,
+                0.9
+            ],
+            "weight": 150.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "IndustrialFans_1",
+            "dimensions": [
+                0.8,
+                0.8,
+                1.0
+            ],
+            "weight": 50.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "IndustrialFans_2",
+            "dimensions": [
+                0.8,
+                0.8,
+                1.0
+            ],
+            "weight": 50.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "IndustrialFans_3",
+            "dimensions": [
+                0.8,
+                0.8,
+                1.0
+            ],
+            "weight": 50.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ElectronicCabinet_1",
+            "dimensions": [
+                0.8,
+                0.6,
+                1.8
+            ],
+            "weight": 80.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ElectronicCabinet_2",
+            "dimensions": [
+                0.8,
+                0.6,
+                1.8
+            ],
+            "weight": 80.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ChemicalBarrels_1",
+            "dimensions": [
+                0.6,
+                0.6,
+                1.0
+            ],
+            "weight": 140.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "ChemicalBarrels_2",
+            "dimensions": [
+                0.6,
+                0.6,
+                1.0
+            ],
+            "weight": 140.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "PackagedGoods_5",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.5
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "PackagedGoods_6",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.5
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "SafetyEquipment_1",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.6
+            ],
+            "weight": 20.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "SafetyEquipment_2",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.6
+            ],
+            "weight": 20.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "SafetyEquipment_3",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.6
+            ],
+            "weight": 20.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        }
+    ]
+}

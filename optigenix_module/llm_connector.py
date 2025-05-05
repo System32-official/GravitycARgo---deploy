@@ -20,7 +20,7 @@ DEFAULT_MODEL = os.getenv("LLM_MODEL", "llama-3.3-70b-versatile")
 
 def get_llm_completion(
     prompt: str, 
-    temperature: float = 0.7, 
+    temperature: float = 0.4, 
     max_tokens: int = 1000,
     api_url: Optional[str] = None,
     api_key: Optional[str] = None,

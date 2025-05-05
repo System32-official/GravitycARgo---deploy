@@ -55,14 +55,23 @@ const mapState = {
   // Assign functions to window object to make them globally accessible
   window.getCurrentLocation = function () {
     if (navigator.geolocation) {
-      // Add loading indicator
-      document.getElementById("source").classList.add("loading");
+      // Add loading indicator to button instead of select element
+      const button = document.querySelector(
+        'button[onclick="getCurrentLocation()"]'
+      );
+      button.classList.add("loading");
+      button.disabled = true;
 
       navigator.geolocation.getCurrentPosition(
         async (position) => {
           const { latitude, longitude } = position.coords;
 
           try {
+            // Ensure the map is initialized
+            if (!mapState.map) {
+              initMap();
+            }
+
             // Reverse geocode the coordinates to get location name
             const response = await fetch(
               `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`,
@@ -76,7 +85,8 @@ const mapState = {
             const locationData = {
               id: `${latitude},${longitude}`,
               text:
-                data.display_name || `Location at ${latitude}, ${longitude}`,
+                data.display_name ||
+                `Location at ${latitude.toFixed(6)}, ${longitude.toFixed(6)}`,
               lat: latitude,
               lng: longitude,
             };
@@ -88,10 +98,12 @@ const mapState = {
               true,
               true
             );
-            $("#source").append(option).trigger("change");
 
-            // Update the select2 instance with the new value
-            $("#source").select2("data", [locationData]);
+            // Remove any existing options first except the placeholder
+            $("#source option").not('[value=""]').remove();
+
+            // Append new option and select it
+            $("#source").append(option).val(locationData.id).trigger("change");
 
             // Update map view
             mapState.map.setView([latitude, longitude], 13);
@@ -109,30 +121,57 @@ const mapState = {
               const pos = e.target.getLatLng();
               const newData = {
                 id: `${pos.lat},${pos.lng}`,
-                text: `Location at ${pos.lat.toFixed(4)}, ${pos.lng.toFixed(
-                  4
+                text: `Location at ${pos.lat.toFixed(6)}, ${pos.lng.toFixed(
+                  6
                 )}`,
                 lat: pos.lat,
                 lng: pos.lng,
               };
-              $("#source").select2("data", [newData]);
+
+              // Update the select2 with new position data
+              let newOption = new Option(newData.text, newData.id, true, true);
+              $("#source")
+                .empty()
+                .append(newOption)
+                .val(newData.id)
+                .trigger("change");
             });
 
             mapState.markers.push(marker);
+            console.log("Current location set successfully:", locationData);
           } catch (error) {
             console.error("Error setting location:", error);
             alert("Error setting location: " + error.message);
+          } finally {
+            // Remove loading indicator from button
+            button.classList.remove("loading");
+            button.disabled = false;
           }
-
-          document.getElementById("source").classList.remove("loading");
         },
         (error) => {
-          document.getElementById("source").classList.remove("loading");
-          alert("Error getting location: " + error.message);
+          console.error("Geolocation error:", error);
+          button.classList.remove("loading");
+          button.disabled = false;
+
+          let errorMsg = "Error getting your location";
+          switch (error.code) {
+            case error.PERMISSION_DENIED:
+              errorMsg =
+                "Location access denied. Please allow location access in your browser settings.";
+              break;
+            case error.POSITION_UNAVAILABLE:
+              errorMsg =
+                "Location information is unavailable. Please try again later.";
+              break;
+            case error.TIMEOUT:
+              errorMsg = "Location request timed out. Please try again.";
+              break;
+          }
+          alert(errorMsg);
         },
         {
           enableHighAccuracy: true,
-          timeout: 5000,
+          timeout: 10000, // Extended timeout
           maximumAge: 0,
         }
       );

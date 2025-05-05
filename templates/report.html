@@ -1,157 +1,761 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GravicARgo - Detailed Packing Report</title>
-  </head>
-  <link
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+      <link
+      <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    f="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    --accent: #576cbc; --light: #f8f9fa; --dark: #212529; --primary:
+    #0b2447;ef="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    --success: #2ecc71;376d;ylesheet" /> > --warning: #f1c40f; --danger:
+    #e74c3c;
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    --card-shadow: 0 8px 24px rgba(0,0,0,0.12); --transition: all 0.3s ease;
     <style>
-        .metric-card {
-            transition: transform 0.2s;
-        }
-        .metric-card:hover {
-            transform: translateY(-5px);
-        }
-        .stability-warning {
-            color: #dc3545;
-        }
-        .chart-container {
-            height: 300px;
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body class="bg-light">
-    <div class="container my-4">
-        <h1 class="text-center mb-4">Detailed Packing Report</h1>
-        
-        <!-- Summary Cards -->
-        <div class="row mb-4">
-            <div class="col-md-3">
-                <div class="card metric-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Volume Utilization</h5>
-                        <p class="display-6">{{ report.summary.volume_utilization }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card metric-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Weight Balance</h5>
-                        <p class="display-6">{{ report.summary.weight_balance_score }}</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more summary cards -->
-        </div>
-
-        <!-- Detailed Analysis -->
-        <div class="row">
-            <!-- Layer Distribution -->
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h5 class="card-title mb-0">Layer Distribution</h5>
-                    </div>
-                    <div class="card-body">
-                        <div id="layerChart" class="chart-container"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stability Analysis -->
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h5 class="card-title mb-0">Stability Analysis</h5>
-                    </div>
-                    <div class="card-body">
-                        <p>Overall Stability Score: {{ report.placement_analysis.stability_analysis.overall_stability }}</p>
-                        {% if report.placement_analysis.stability_analysis.critical_points %}
-                        <div class="alert alert-warning">
-                            <h6>Critical Points:</h6>
-                            <ul>
-                            {% for point in report.placement_analysis.stability_analysis.critical_points %}
-                                <li>{{ point.item }} - {{ point.issue }}</li>
-                            {% endfor %}
-                            </ul>
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Item Details Table -->
-        <div class="card mb-4">
-            <div class="card-header">
-                <h5 class="card-title mb-0">Packed Items Details</h5>
-            </div>
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Item</th>
-                                <th>Position</th>
-                                <th>Dimensions</th>
-                                <th>Weight</th>
-                                <th>Stability Score</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for item in report.packed_items %}
-                            <tr>
-                                <td>{{ item.name }}</td>
-                                <td>{{ item.position|join(', ') }}</td>
-                                <td>{{ item.dimensions|join(' × ') }}</td>
-                                <td>{{ item.weight }} kg</td>
-                                <td>{{ report.placement_analysis.stability_analysis.item_stability[item.name].overall }}</td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- Action Buttons -->
-        <div class="text-center">
-            <a href="/download_report" class="btn btn-primary">
+      .metric-card {
+        --card-radius: 16px; transition: transform 0.2s;
+        --gradient: linear-gradient(135deg, var(--primary), var(--accent));
+      }er {
+      slateY(-5px);
+      body {
+        background: #f8f9fa;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      art-container {
+      .navbar { height: 300px;
+        background: var(--gradient);in: 20px 0;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        padding: 1rem;768px) {
+      }
+      
+      .navbar-brand {        }
+        font-weight: 700;
+      }
+      
+      .metric-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-radius: var(--card-radius);h1>
+        border: none;
+        box-shadow: var(--card-shadow); Cards -->
+        overflow: hidden;="row mb-4">
+      }lass="col-md-3">
+      ric-card">
+      .metric-card:hover {
+        transform: translateY(-5px);">Volume Utilization</h5>
+        box-shadow: 0 12px 30px rgba(0,0,0,0.15);ume_utilization }}</p>
+      }
+      
+      .metric-card .card-body {
+        padding: 1.5rem;lass="col-md-3">
+      }>
+      <div class="card-body">
+      .card-title {              <h5 class="card-title">Weight Balance</h5>
+        font-size: 0.9rem;6">{{ report.summary.weight_balance_score }}</p>
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: var(--secondary);ds -->
+      }
+      
+      .display-6 {d Analysis -->
+        font-weight: 700;
+        margin-top: 0.5rem;
+        color: var(--primary);
+        font-size: 2.5rem;
+      }
+      ass="card-title mb-0">Layer Distribution</h5>
+      .card {
+        border: none;ody">
+        border-radius: var(--card-radius);"filter-controls mb-3">
+        box-shadow: var(--card-shadow);ect class="form-select form-select-sm" id="layerFilter">
+        overflow: hidden;s</option>
+        margin-bottom: 1.5rem;
+      }
+       value="{{ layer }}">Layer {{ layer }}</option>
+      .card-header {dfor %}
+        background: white;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        padding: 1.25rem 1.5rem;v class="chart-controls mb-3">
+      }ary" id="toggleGrid">
+      s="fas fa-grid"></i> Toggle Grid
+      .stability-warning {tton>
+        color: var(--danger);
+      }class="btn btn-sm btn-outline-primary"
+        id="toggleLabels"
+      .chart-container {  >
+        height: 300px;                  <i class="fas fa-tag"></i> Toggle Labels
+        margin: 0;
+        border-radius: 0 0 var(--card-radius) var(--card-radius);
+      }" class="chart-container"></div>
+      
+      .filter-controls {
+        padding: 0.5rem 0;
+      }
+      ility Analysis -->
+      .chart-controls {
+        display: flex;
+        gap: 0.5rem;lass="card-header">
+        flex-wrap: wrap;class="card-title mb-0">Stability Analysis</h5>
+      }
+       class="card-body">
+      .table-responsive {
+        border-radius: var(--card-radius);{{
+      }rt.placement_analysis.stability_analysis.overall_stability
+      
+      .table {
+        margin-bottom: 0;report.placement_analysis.stability_analysis.critical_points
+      }
+      t alert-warning">
+      .table thead th {ritical Points:</h6>
+        background-color: rgba(0,0,0,0.02);
+        font-weight: 600;point in
+        border-top: none;report.placement_analysis.stability_analysis.critical_points
+        border-bottom: 2px solid rgba(0,0,0,0.05);  %}
+      }    <li>{{ point.item }} - {{ point.issue }}</li>
+            {% endfor %}
+      .table tbody tr:hover {                </ul>
+        background-color: rgba(87, 108, 188, 0.05);
+      }
+      
+      .btn-primary {
+        background: var(--primary);
+        border-color: var(--primary);
+        box-shadow: 0 4px 10px rgba(11, 36, 71, 0.2);
+        padding: 0.6rem 1.5rem;
+        border-radius: 8px;d mb-4">
+        font-weight: 500;card-header">
+      } mb-0">Packed Items Details</h5>
+      
+      .btn-primary:hover {
+        background: var(--accent);nsive">
+        border-color: var(--accent);r">
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(11, 36, 71, 0.25);
+      }>Item</th>
+      
+      .btn-secondary {h>Dimensions</th>
+        background: white;
+        color: var(--primary);
+        border-color: #e2e8f0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        padding: 0.6rem 1.5rem;
+        border-radius: 8px; item in report.packed_items %}
+        font-weight: 500;
+      }{{ item.name }}</td>
+      { item.position|join(', ') }}</td>
+      .btn-secondary:hover {>{{ item.dimensions|join(' × ') }}</td>
+        background: #f8f9fa;m.weight }} kg</td>
+        color: var(--accent);
+        transform: translateY(-2px);{{
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);    report.placement_analysis.stability_analysis.item_stability[item.name].overall
+      }      }}
+            </td>
+      .action-buttons {                </tr>
+        padding: 1.5rem;
+        background: white;
+        border-radius: var(--card-radius);
+        box-shadow: var(--card-shadow);
+        margin-top: 1.5rem;v>
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: center;ction Buttons -->
+        gap: 1rem;lass="text-center">
+      } href="/download_report" class="btn btn-primary">
                 <i class="fas fa-download me-2"></i>Download Full Report
-            </a>
-            <a href="/" class="btn btn-secondary ms-2">
-                <i class="fas fa-redo me-2"></i>New Optimization
-            </a>
-        </div>
-    </div>
+      .comparison-toggle {
+        position: fixed;
+        bottom: 30px; class="fas fa-redo me-2"></i>New Optimization
+        right: 30px;
+        background: var(--primary);
+        color: white;    </div>
+        width: 60px;
+        height: 60px;m/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        border-radius: 50%;
+        display: flex;    <script>
+        align-items: center;r layer distribution and other charts
+        justify-content: center;a = {{ report.placement_analysis.layer_distribution|tojson }};
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        cursor: pointer;distribution chart
+        z-index: 100;layerData);
+        transition: var(--transition); itemCounts = layers.map(layer => layerData[layer].length);
+      }
+      
+      .comparison-toggle:hover {
+        transform: scale(1.1); y: itemCounts,
+        background: var(--accent);e: 'bar',
+      } name: 'Items per Layer'
+      ], {
+      .comparison-toggle i {          title: 'Items Distribution by Layer Height',
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script>
-        // Add visualization scripts for layer distribution and other charts
-        const layerData = {{ report.placement_analysis.layer_distribution|tojson }};
-        
-        // Create layer distribution chart
-        const layers = Object.keys(layerData);
-        const itemCounts = layers.map(layer => layerData[layer].length);
-        
-        Plotly.newPlot('layerChart', [{
-            x: layers,
-            y: itemCounts,
-            type: 'bar',
-            name: 'Items per Layer'
-        }], {
-            title: 'Items Distribution by Layer Height',
-            xaxis: { title: 'Layer Height (m)' },
-            yaxis: { title: 'Number of Items' }
-        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>  </body>    </script>      });        });          alert('Comparison view coming soon!');          // Compare implementation would go here        document.getElementById('compareToggle').addEventListener('click', function() {        // Add comparison toggle functionality                });          alert('Share functionality coming soon!');          // Share implementation would go here        document.getElementById('shareReport').addEventListener('click', function() {        // Share report functionality                });          alert('Export options coming soon!');          // Export implementation would go here        document.getElementById('exportItems').addEventListener('click', function() {        // Add export functionality                });          alert('Sorting options coming soon!');          // Sorting implementation would go here        document.getElementById('sortItems').addEventListener('click', function() {        // Add sorting functionality                });          alert('Filtering options coming soon!');          // Filter implementation would go here        document.getElementById('filterItems').addEventListener('click', function() {        // Add item filtering functionality                }          });            stack.appendChild(plate);                        });              // Trigger layer filter change event              document.getElementById('layerFilter').value = height;            plate.addEventListener('click', () => {            plate.setAttribute('data-height', height);            plate.textContent = `Layer ${height}m (${data[height].length} items)`;            plate.style.transform = `translateZ(${index * 20}px)`;            plate.className = 'layer-plate';            const plate = document.createElement('div');          layers.forEach((height, index) => {                    const layers = Object.keys(data).sort((a, b) => parseFloat(a) - parseFloat(b));                    stack.innerHTML = '';          const stack = document.getElementById('layerStack');        function createLayerStack(data) {        // Create 3D layer visualization                });          createLayerStack(layerData);          // Create 3D layer stack                    document.getElementById('layer3DView').classList.remove('d-none');          document.getElementById('layerChart').classList.add('d-none');          e.preventDefault();        document.getElementById('view3D').addEventListener('click', function(e) {                });          document.getElementById('layer3DView').classList.add('d-none');          document.getElementById('layerChart').classList.remove('d-none');          e.preventDefault();        document.getElementById('viewChart').addEventListener('click', function(e) {        // View toggle functionality                });          displayModeBar: false          responsive: true,        }, {          paper_bgcolor: 'rgba(0,0,0,0)'          plot_bgcolor: 'rgba(0,0,0,0)',          margin: { t: 25, r: 25, l: 25, b: 25 },        Plotly.newPlot('stabilityChart', stabilityData, {                ];          }            }              font: { size: 16 }              text: 'Overall Stability',            title: {            },              }                value: {{ report.placement_analysis.stability_analysis.overall_stability }}                thickness: 0.75,                line: { color: 'rgba(87, 108, 188, 0.8)', width: 4 },              threshold: {              ],                { range: [70, 100], color: 'rgba(46, 204, 113, 0.3)' }                { range: [30, 70], color: 'rgba(241, 196, 15, 0.3)' },                { range: [0, 30], color: 'rgba(231, 76, 60, 0.3)' },              steps: [              bordercolor: 'gray',              borderwidth: 2,              bgcolor: 'white',              bar: { color: 'rgba(87, 108, 188, 0.8)' },              },                tickcolor: 'darkblue'                tickwidth: 1,                range: [0, 100],              axis: {             gauge: {            value: {{ report.placement_analysis.stability_analysis.overall_stability }},            mode: 'gauge+number',            type: 'indicator',          {        const stabilityData = [        // Create stability chart                });          displayModeBar: false          responsive: true,        }, {          hovermode: 'closest'          font: { family: 'Inter, sans-serif' },          paper_bgcolor: 'rgba(0,0,0,0)',          plot_bgcolor: 'rgba(0,0,0,0)',          },            titlefont: { size: 12 },            title: 'Number of Items',          yaxis: {           },            titlefont: { size: 12 },            title: 'Layer Height (m)',          xaxis: {           margin: { t: 10, r: 10, b: 40, l: 40 },          title: '',        }], {          }            }              width: 1              color: 'rgba(27, 38, 118, 0.8)',            line: {            color: layers.map((_, i) => `rgba(87, 108, 188, ${0.5 + (i/layers.length) * 0.5})`),          marker: {          name: 'Items per Layer',          type: 'bar',          y: itemCounts,          x: layers,        Plotly.newPlot('layerChart', [{        // Create enhanced layer distribution chart                const itemCounts = layers.map(layer => layerData[layer].length);        const layers = Object.keys(layerData);        const layerData = {{ report.placement_analysis.layer_distribution|tojson }};        // Layer Distribution Chart      document.addEventListener('DOMContentLoaded', function() {      // Add visualization scripts for layer distribution and other charts          });        offset: 50        once: true,        duration: 800,      AOS.init({      // Initialize animations    <script>    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>    </div>      </div>        <i class="fas fa-exchange-alt"></i>      <div class="comparison-toggle" id="compareToggle" title="Compare with previous plans">      <!-- Comparison Toggle -->            </div>        </button>          <i class="fas fa-share-alt me-2"></i>Share Report        <button id="shareReport" class="btn btn-secondary">        </a>          <i class="fas fa-redo me-2"></i>New Optimization        <a href="/optimize" class="btn btn-secondary">        </a>          <i class="fas fa-download me-2"></i>Download Full Report        <a href="/download_report" class="btn btn-primary">      <div class="action-buttons" data-aos="fade-up" data-aos-delay="400">      <!-- Action Buttons -->      </div>        </div>          </div>            </table>              </tbody>                {% endfor %}                </tr>                  </td>                    </div>                      <span class="ms-2">{{ report.placement_analysis.stability_analysis.item_stability[item.name].overall }}%</span>                      </div>                        <div class="progress-bar {{ 'bg-success' if report.placement_analysis.stability_analysis.item_stability[item.name].overall >= 70 else 'bg-warning' if report.placement_analysis.stability_analysis.item_stability[item.name].overall >= 40 else 'bg-danger' }}" role="progressbar" style="width: {{ report.placement_analysis.stability_analysis.item_stability[item.name].overall }}%"></div>                      <div class="progress flex-grow-1" style="height: 6px;">                    <div class="d-flex align-items-center">                  <td>                  <td>{{ item.weight }} kg</td>                  <td>{{ item.dimensions|join(' × ') }}</td>                  <td>{{ item.position|join(', ') }}</td>                  <td>{{ item.name }}</td>                <tr>                {% for item in report.packed_items %}              <tbody>              </thead>                </tr>                  <th>Stability Score</th>                  <th>Weight</th>                  <th>Dimensions</th>                  <th>Position</th>                  <th>Item</th>                <tr>              <thead>            <table class="table table-hover">          <div class="table-responsive">        <div class="card-body p-0">        </div>          </div>            </button>              <i class="fas fa-file-export me-1"></i>Export            <button class="btn btn-outline-secondary" id="exportItems">            </button>              <i class="fas fa-sort me-1"></i>Sort            <button class="btn btn-outline-secondary" id="sortItems">            </button>              <i class="fas fa-filter me-1"></i>Filter            <button class="btn btn-outline-secondary" id="filterItems">          <div class="btn-group btn-group-sm">          <h5 class="card-title mb-0">Packed Items Details</h5>        <div class="card-header d-flex justify-content-between align-items-center">      <div class="card mb-4" data-aos="fade-up" data-aos-delay="300">      <!-- Item Details Table -->      </div>        </div>          </div>            </div>              {% endif %}              </div>                </div>                  <span>No stability issues detected</span>                  <i class="fas fa-check-circle me-2"></i>                <div class="d-flex align-items-center">              <div class="alert alert-success">              {% else %}              </div>                </ul>                {% endfor %}                  <li>{{ point.item }} - {{ point.issue }}</li>                {% for point in report.placement_analysis.stability_analysis.critical_points %}                <ul class="mb-0">                </div>                  <h6 class="mb-0">Critical Points Detected:</h6>                  <i class="fas fa-exclamation-triangle me-2"></i>                <div class="d-flex align-items-center mb-2">              <div class="alert alert-warning">              {% if report.placement_analysis.stability_analysis.critical_points %}                            <div id="stabilityChart" class="chart-container mb-3"></div>            <div class="card-body">            </div>              <span class="badge bg-primary">Score: {{ report.placement_analysis.stability_analysis.overall_stability }}</span>              <h5 class="card-title mb-0">Stability Analysis</h5>            <div class="card-header d-flex justify-content-between align-items-center">          <div class="card mb-4">        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">        <!-- Stability Analysis -->        </div>          </div>            </div>              </div>                </div>                  <!-- Will be populated by JavaScript -->                <div class="layer-stack" id="layerStack">              <div id="layer3DView" class="layer-distribution-3d d-none">                            <div id="layerChart" class="chart-container"></div>                            </div>                </div>                  </button>                    <i class="fas fa-tags me-1"></i>Labels                  <button class="btn btn-sm btn-outline-primary" id="toggleLabels">                  </button>                    <i class="fas fa-border-all me-1"></i>Grid                  <button class="btn btn-sm btn-outline-primary" id="toggleGrid">                <div class="chart-controls">                                </select>                  {% endfor %}                  <option value="{{ layer }}">Layer {{ layer }} m</option>                  {% for layer in report.placement_analysis.layer_distribution %}                  <option value="all">All Layers</option>                <select class="form-select form-select-sm w-auto" id="layerFilter">              <div class="filter-controls d-flex justify-content-between align-items-center mb-3">            <div class="card-body">            </div>              </div>                </ul>                  <li><a class="dropdown-item" href="#" id="viewChart">Chart View</a></li>                  <li><a class="dropdown-item" href="#" id="view3D">3D View</a></li>                <ul class="dropdown-menu dropdown-menu-end">                </button>                  <i class="fas fa-eye me-1"></i>View                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="layerViewToggle" data-bs-toggle="dropdown">              <div class="dropdown">              <h5 class="card-title mb-0">Layer Distribution</h5>            <div class="card-header d-flex justify-content-between align-items-center">          <div class="card mb-4">        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">        <!-- Layer Distribution -->      <div class="row">      <!-- Detailed Analysis -->      </div>        </div>          </div>            </div>              <p class="display-6">95%</p>              <h5 class="card-title">Temp Control</h5>              </div>                <i class="fas fa-temperature-high"></i>              <div class="metric-icon">            <div class="card-body">          <div class="card metric-card text-center">        <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="400">        </div>          </div>            </div>              <p class="display-6">{{ report.packed_items|length }}</p>              <h5 class="card-title">Items Packed</h5>              </div>                <i class="fas fa-cubes"></i>              <div class="metric-icon">            <div class="card-body">          <div class="card metric-card text-center">        <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">        </div>          </div>            </div>              <p class="display-6">{{ report.summary.weight_balance_score }}</p>              <h5 class="card-title">Weight Balance</h5>              </div>                <i class="fas fa-balance-scale"></i>              <div class="metric-icon">            <div class="card-body">          <div class="card metric-card text-center">        <div class="col-md-3 col-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">        </div>          </div>            </div>              <p class="display-6">{{ report.summary.volume_utilization }}</p>              <h5 class="card-title">Volume Utilization</h5>              </div>                <i class="fas fa-percentage"></i>              <div class="metric-icon">            <div class="card-body">          <div class="card metric-card text-center">        <div class="col-md-3 col-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">      <div class="row mb-4">      <!-- Summary Cards -->            <h1 class="text-center mb-4 slide-up">Detailed Packing Report</h1>    <div class="container my-4">        </nav>      </div>        </div>          </a>            <i class="fas fa-cogs me-1"></i>New Optimization          <a href="/optimize" class="btn btn-sm btn-outline-light ms-2">          </a>            <i class="fas fa-home me-1"></i>Home          <a href="/" class="btn btn-sm btn-outline-light">        <div>        </a>          <i class="fas fa-cube me-2"></i>GravicARgo        <a class="navbar-brand" href="/">      <div class="container">    <nav class="navbar navbar-dark mb-4">    <!-- Navbar -->  <body>  </head>    </style>      }        animation: slideUp 0.6s ease-out forwards;      .slide-up {            }        animation: fadeIn 0.6s ease-out forwards;      .fade-in {            }        }          opacity: 1;          transform: translateY(0);        to {        }          opacity: 0;          transform: translateY(20px);        from {      @keyframes slideUp {            }        }          opacity: 1;        to {        }          opacity: 0;        from {      @keyframes fadeIn {      /* Animations */            }        }          padding: 0.75rem 1rem;        .navbar {                }          margin-bottom: 1.5rem;        .section-header {                }          padding: 1rem;        .card-body {                }          padding: 1rem;        .card-header {                }          font-size: 1.75rem;        .display-6 {                }          height: 200px;        .chart-container {      @media (max-width: 576px) {            }        }          width: 100%;        .btn {                }          flex-direction: column;        .action-buttons {                }          font-size: 1.5rem;          height: 50px;          width: 50px;        .metric-icon {                }          font-size: 2rem;        .display-6 {                }          height: 220px;        .chart-container {      @media (max-width: 768px) {            }        }          font-size: 1.2rem;        .comparison-toggle i {                }          right: 20px;          bottom: 20px;          height: 50px;          width: 50px;        .comparison-toggle {                }          height: 250px;        .chart-container {      @media (max-width: 992px) {      /* Mobile Responsiveness */            }        transform: translateZ(10px);        background: rgba(87, 108, 188, 0.25);      .layer-plate:hover {            }        transition: all 0.3s ease;        cursor: pointer;        color: var(--primary);        font-weight: 600;        justify-content: center;        align-items: center;        display: flex;        transform-style: preserve-3d;        border: 1px solid rgba(87, 108, 188, 0.3);        background: rgba(87, 108, 188, 0.15);        left: 10%;        height: 80%;        width: 80%;        position: absolute;      .layer-plate {            }        transition: transform 0.5s ease;        transform: rotateX(60deg) rotateZ(-30deg);        transform-style: preserve-3d;        height: 100%;        width: 100%;        left: 0;        top: 0;        position: absolute;      .layer-stack {            }        margin-top: 1rem;        perspective: 1000px;        height: 350px;        position: relative;      .layer-distribution-3d {      /* 3D Layer visualization enhancements */            }        border-radius: 2px;        background: var(--gradient);        width: 60px;        height: 4px;        bottom: 0;        left: 0;        position: absolute;        content: '';      .section-header:after {            }        padding-bottom: 0.75rem;        margin-bottom: 2rem;        position: relative;      .section-header {      /* Animated headers */            }        margin: 0 auto 1rem;        border-radius: 12px;        justify-content: center;        align-items: center;        display: flex;        height: 60px;        width: 60px;        background: rgba(87, 108, 188, 0.1);        color: var(--accent);        margin-bottom: 1rem;        font-size: 2rem;      .metric-icon {            }        font-size: 1.5rem;          xaxis: { title: 'Layer Height (m)' },
+          yaxis: { title: 'Number of Items' }
+      });
     </script>
-</body>
-</html>
-
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  </body>
 </html>

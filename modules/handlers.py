@@ -1,31 +1,28 @@
 """
 Route handler functions for the container packing application
 """
-from flask import request, redirect, url_for, render_template, send_file, jsonify, session, Blueprint, current_app
+from flask import request, render_template, send_file, jsonify, Blueprint, current_app
 from werkzeug.utils import secure_filename
 import pandas as pd
 from io import BytesIO
+import csv
 
 # Import from config instead of app_modular
-from config import PLANS_FOLDER, ALLOWED_EXTENSIONS
+from config import PLANS_FOLDER
 
 import json
 import datetime
 import os
-import numpy as np
-import random  # Required for item color generation
 
 # Import directly from the new optigenix_module structure
 from optigenix_module.constants import CONTAINER_TYPES, TRANSPORT_MODES
 from optigenix_module.models.item import Item
 from optigenix_module.models.container import EnhancedContainer
-from optigenix_module.models.space import MaximalSpace
 
 from modules.models import ContainerStorage
-from modules.visualization import create_interactive_visualization, add_unpacked_table
+from modules.visualization import create_interactive_visualization
 from modules.report import generate_detailed_report
 from modules.utils import allowed_file, cleanup_old_files
-from modules.stability import analyze_layer_distribution, analyze_stability
 
 # Create a blueprint
 bp = Blueprint('handlers', __name__)
@@ -183,6 +180,10 @@ def optimize_handler():
                 route_temperature = float(request.form['route_temperature'])
                 current_app.logger.info(f"Using route temperature: {route_temperature}°C")
                 container_info['route_temperature'] = route_temperature
+                
+                # FIXED: Explicitly set route temperature as environment variable for both normal and LLM versions
+                os.environ["ROUTE_TEMPERATURE"] = str(route_temperature)
+                current_app.logger.info(f"Set ROUTE_TEMPERATURE={route_temperature} environment variable")
             except ValueError:
                 current_app.logger.warning(f"Invalid route temperature: {request.form['route_temperature']}")
         
@@ -253,12 +254,25 @@ def optimize_handler():
 
         if use_genetic:
             current_app.logger.info("Using genetic algorithm with LLM adaptive mutation")
+            # FIXED: Log environment variables before calling genetic algorithm
+            current_app.logger.info(f"ROUTE_TEMPERATURE environment variable: {os.environ.get('ROUTE_TEMPERATURE', 'Not set')}")
+            
+            # Get generations and population size from form or use defaults
+            try:
+                population_size = int(request.form.get('population_size', '80'))
+                generations = int(request.form.get('generations', '30'))
+                current_app.logger.info(f"Using custom optimization parameters: population_size={population_size}, generations={generations}")
+            except ValueError:
+                population_size = 80
+                generations = 30
+                current_app.logger.info(f"Using default optimization parameters: population_size={population_size}, generations={generations}")
+            
             from optigenix_module.optimization.genetic import optimize_packing_with_genetic_algorithm
             optimized_container = optimize_packing_with_genetic_algorithm(
                 items, 
                 dimensions,
-                population_size=20,  # Smaller for testing
-                generations=30       # Fewer generations for testing
+                population_size=population_size,
+                generations=generations
             )
             # Replace the container with our optimized one
             container = optimized_container
@@ -274,7 +288,7 @@ def optimize_handler():
         # Convert numpy arrays to lists for JSON serialization
         report_data = {
             'container_dims': list(dimensions),
-            'volume_utilization': float(container.volume_utilization),
+            'volume_utilization': float(container.volume_utilization * 100),  # Multiply by 100 to get percentage value
             'items_packed': len(container.items),
             'total_items': len(items),
             'remaining_volume': float(container.remaining_volume),
@@ -334,12 +348,20 @@ def optimize_handler():
         current_app.logger.info("Creating visualization")
         fig = create_interactive_visualization(container, container_info)
         
+        # Calculate item counts by category (boxing_type)
+        category_counts = {}
+        for item in container.items:
+            category = getattr(item, 'boxing_type', 'Other') # Use 'Other' if boxing_type is missing
+            category_counts[category] = category_counts.get(category, 0) + 1
+        current_app.logger.info(f"Calculated category counts: {category_counts}")
+
         return render_template('results.html',
                              plot=fig.to_html(),
                              container=container,
                              container_info=container_info,
                              report=report_data,
-                             warnings=warnings)
+                             warnings=warnings,
+                             category_counts=category_counts) # Pass category_counts to template
                              
     except ValueError as e:
         current_app.logger.error(f"Value error: {str(e)}")
@@ -381,23 +403,6 @@ def download_report_handler():
     except Exception as e:
         return jsonify({'error': f'Error generating report: {str(e)}'})
 
-def generate_alternative_handler():
-    """Handle the alternative arrangement generation route"""
-    if container_storage.current_container is None:
-        return jsonify({'error': 'No container data available'})
-    
-    container_storage.current_container.generate_alternative_arrangement()
-    fig = create_interactive_visualization(container_storage.current_container)
-    
-    return jsonify({
-        'plot': fig.to_html(),
-        'stats': {
-            'utilization': container_storage.current_container.volume_utilization,
-            'items_packed': len(container_storage.current_container.items),
-            'remaining_volume': container_storage.current_container.remaining_volume
-        }
-    })
-
 def view_report_handler():
     """Handle the view report route"""
     if container_storage.current_container is None:
@@ -435,7 +440,6 @@ def preview_csv_handler():
                         decoded_content = content.decode(encoding)
                         csv_data = list(csv.reader(decoded_content.splitlines()))
                         # Process the CSV data
-                        # ...
                         return jsonify({
                             'success': True,
                             'data': csv_data[:10],  # First 10 rows
@@ -444,16 +448,38 @@ def preview_csv_handler():
                         })
                     # For Excel files
                     elif file.filename.endswith(('.xlsx', '.xls')):
-                        # Excel handling code
-                        # ...
-                        pass
+                        # Create a BytesIO object from the content
+                        file_stream = BytesIO(content)
+                        
+                        # Use pandas to read Excel file
+                        excel_df = pd.read_excel(file_stream)
+                        
+                        # Convert DataFrame to list format similar to CSV
+                        excel_header = excel_df.columns.tolist()
+                        excel_data = [excel_header]  # First row is header
+                        
+                        # Add data rows (up to 10)
+                        for _, row in excel_df.head(10).iterrows():
+                            excel_data.append(row.tolist())
+                            
+                        return jsonify({
+                            'success': True,
+                            'data': excel_data,
+                            'header': excel_header,
+                            'file_type': 'excel'
+                        })
                 except UnicodeDecodeError:
                     continue
+                except Exception as e:
+                    # Log specific Excel parsing errors
+                    current_app.logger.error(f"Excel parsing error: {str(e)}")
+                    return jsonify({'error': f'Error parsing Excel file: {str(e)}'})
             
             # If we get here, all encodings failed
             return jsonify({'error': 'Could not decode file with any supported encoding'})
             
         except Exception as e:
+            current_app.logger.error(f"File preview error: {str(e)}")
             return jsonify({'error': f'Error processing file: {str(e)}'})
 
 def get_container_stats_handler():
@@ -464,7 +490,7 @@ def get_container_stats_handler():
     container = container_storage.current_container
     return jsonify({
         'dimensions': container.dimensions,
-        'volume_utilization': container.volume_utilization,
+        'volume_utilization': container.volume_utilization * 100,  # Convert to percentage for frontend
         'items_packed': len(container.items),
         'total_weight': container.total_weight,
         'center_of_gravity': container.center_of_gravity,
@@ -524,7 +550,7 @@ def get_container_status_handler():
     container = container_storage.current_container
     return jsonify({
         'status': 'ready',
-        'utilization': container.volume_utilization,
+        'utilization': container.volume_utilization * 100,  # Convert to percentage for frontend
         'items_packed': len(container.items),
         'unpacked_items': len(container.unpacked_reasons)
     })

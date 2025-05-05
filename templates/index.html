@@ -117,7 +117,7 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="optimizer-container">
+    <main class="optimizer-container page-transition-wrapper page-enter">
       <div class="container">
         <!-- Header Section -->
         <div class="optimizer-header" data-scroll data-scroll-speed="1">
@@ -175,7 +175,7 @@
           >
             <div class="form-sections">
               <!-- Step 1: Transport Mode -->
-              <div class="form-section active" id="section1">
+              <div class="form-section active animate-entrance" id="section1">
                 <h3 class="section-title">
                   <i class="fas fa-truck-moving"></i> Select Transport Mode
                 </h3>
@@ -308,7 +308,7 @@
               </div>
 
               <!-- Step 2: Container Selection -->
-              <div class="form-section" id="section2">
+              <div class="form-section animate-entrance" id="section2">
                 <h3 class="section-title">
                   <i class="fas fa-box-open"></i> Select Container Type
                 </h3>
@@ -420,7 +420,7 @@
               </div>
 
               <!-- Step 3: Inventory Upload -->
-              <div class="form-section" id="section3">
+              <div class="form-section animate-entrance" id="section3">
                 <h3 class="section-title">
                   <i class="fas fa-boxes"></i> Upload Inventory
                 </h3>
@@ -526,7 +526,7 @@
               </div>
 
               <!-- Step 4: Additional Settings -->
-              <div class="form-section" id="section4">
+              <div class="form-section animate-entrance" id="section4">
                 <h3 class="section-title">
                   <i class="fas fa-sliders-h"></i> Optimization Settings
                 </h3>
@@ -558,27 +558,94 @@
                           </div>
                           <span class="temp-max">50°C</span>
                         </div>
-                        <input
-                          type="number"
-                          step="0.1"
-                          class="form-control"
-                          name="route_temperature"
-                          id="route_temperature"
-                          value="25"
-                        />
+                        <div class="route-temp-controls">
+                          <input
+                            type="number"
+                            step="0.1"
+                            class="form-control"
+                            name="route_temperature"
+                            id="route_temperature"
+                            value="25"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-calculate-temp"
+                            id="calculateRouteTemp"
+                            onclick="window.open('http://localhost:5001', '_blank')"
+                          >
+                            <i class="fas fa-calculator"></i> Calculate Route
+                            Temperature
+                          </button>
+                        </div>
+                      </div>
+                      <div id="routeTempModal" class="modal fade" tabindex="-1">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">
+                                Calculate Route Temperature
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="mb-3">
+                                <label for="sourceLocation" class="form-label"
+                                  >Source Location</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="sourceLocation"
+                                  placeholder="Enter source location"
+                                />
+                                <input type="hidden" id="sourceCoords" />
+                              </div>
+                              <div class="mb-3">
+                                <label for="destLocation" class="form-label"
+                                  >Destination Location</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="destLocation"
+                                  placeholder="Enter destination location"
+                                />
+                                <input type="hidden" id="destCoords" />
+                              </div>
+                              <div
+                                class="location-suggestions"
+                                id="sourceSuggestions"
+                              ></div>
+                              <div
+                                class="location-suggestions"
+                                id="destSuggestions"
+                              ></div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                id="calculateTemp"
+                              >
+                                Calculate
+                              </button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <div class="temperature-info">
-                        <div class="temp-info-item cold">
-                          <i class="fas fa-snowflake"></i>
-                          <span>Cold items need insulation below 10°C</span>
-                        </div>
-                        <div class="temp-info-item hot">
-                          <i class="fas fa-fire"></i>
-                          <span
-                            >Heat-sensitive items need insulation above
-                            30°C</span
-                          >
-                        </div>
+                        <!-- Temperature information items removed as requested -->
                       </div>
                     </div>
                   </div>
@@ -604,6 +671,54 @@
                         Enable our cutting-edge AI algorithms for optimized
                         packing
                       </p>
+
+                      <!-- Add genetic algorithm parameters -->
+                      <div class="genetic-parameters" id="geneticParams">
+                        <div class="parameter-group">
+                          <label for="generations">Generations:</label>
+                          <div class="parameter-input">
+                            <input
+                              type="number"
+                              id="generations"
+                              name="generations"
+                              value="30"
+                              min="5"
+                              max="200"
+                              class="form-control"
+                            />
+                            <div class="input-info">
+                              <i class="fas fa-info-circle"></i>
+                              <span class="info-tooltip"
+                                >Number of evolutionary generations. Higher
+                                values may improve results but take
+                                longer.</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parameter-group">
+                          <label for="population_size">Population Size:</label>
+                          <div class="parameter-input">
+                            <input
+                              type="number"
+                              id="population_size"
+                              name="population_size"
+                              value="20"
+                              min="10"
+                              max="100"
+                              class="form-control"
+                            />
+                            <div class="input-info">
+                              <i class="fas fa-info-circle"></i>
+                              <span class="info-tooltip"
+                                >Size of the genetic population. Larger values
+                                improve solution diversity.</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                       <div class="algorithm-comparison">
                         <div class="algorithm-option">
                           <h5>Standard Algorithm</h5>
@@ -799,6 +914,26 @@
           setTimeout(() => {
             sections[stepIndex - 1].classList.remove('animate-entrance');
           }, 500);
+
+          // Reset scroll position explicitly
+          document.documentElement.scrollTop = 0; // For most browsers
+          document.body.scrollTop = 0; // For Safari
+
+          // Ensure compatibility with Locomotive Scroll or other libraries
+          if (typeof scroll !== 'undefined' && scroll.scrollTo) {
+            scroll.scrollTo(0, { duration: 0 }); // Reset Locomotive Scroll position
+          }
+
+          // Additional safety check for form container visibility
+          setTimeout(() => {
+            const formContainer = document.querySelector('.wizard-card');
+            if (formContainer) {
+              formContainer.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }, 100); // Small delay to ensure DOM updates have completed
         }
 
         // Navigation buttons
@@ -1098,10 +1233,22 @@
         // AI algorithm toggle animation
         document.getElementById('use_genetic').addEventListener('change', function() {
           const aiSetting = document.querySelector('.ai-setting');
+          const geneticParams = document.getElementById('geneticParams');
+
           if (this.checked) {
             aiSetting.classList.add('activated');
+            // Show genetic algorithm parameters with animation
+            setTimeout(() => {
+              geneticParams.style.display = 'block';
+            }, 50);
           } else {
             aiSetting.classList.remove('activated');
+            // Hide genetic algorithm parameters
+            setTimeout(() => {
+              if (!aiSetting.classList.contains('activated')) {
+                geneticParams.style.display = 'none';
+              }
+            }, 300);
           }
         });
 
@@ -1109,8 +1256,6 @@
         document.getElementById('optimizerForm').addEventListener('submit', function(e) {
           const loadingOverlay = document.getElementById('loadingOverlay');
           const progressBar = document.getElementById('optimizationProgress');
-
-          loadingOverlay.classList.add('visible');
 
           // Simulated progress for better UX
           let progress = 0;
@@ -1139,7 +1284,6 @@
             <div class="error-icon"><i class="fas fa-exclamation-circle"></i></div>
             <div class="error-message">${message}</div>
           `;
-
           document.body.appendChild(notification);
 
           // Animate in
@@ -1158,36 +1302,34 @@
 
         // Create floating elements for background
         createFloatingElements();
-      });
 
-      // Create floating background elements
-      function createFloatingElements() {
-        const container = document.querySelector('.floating-elements');
+        // Create floating background elements
+        function createFloatingElements() {
+          const container = document.querySelector('.floating-elements');
+          const gridContainer = document.querySelector('.background-grid');
 
-        // Create animated grid lines
-        const gridContainer = document.querySelector('.background-grid');
-        for (let i = 0; i < 15; i++) {
-          const horizontalLine = document.createElement('div');
-          horizontalLine.className = 'grid-line horizontal';
-          horizontalLine.style.top = `${i * 7.5}%`;
-
-          const verticalLine = document.createElement('div');
-          verticalLine.className = 'grid-line vertical';
-          verticalLine.style.left = `${i * 7.5}%`;
-
-          gridContainer.appendChild(horizontalLine);
-          gridContainer.appendChild(verticalLine);
+          // Create animated grid lines
+          for (let i = 0; i < 15; i++) {
+            const horizontalLine = document.createElement('div');
+            const verticalLine = document.createElement('div');
+            horizontalLine.className = 'grid-line horizontal';
+            verticalLine.className = 'grid-line vertical';
+            horizontalLine.style.top = `${i * 7.5}%`;
+            verticalLine.style.left = `${i * 7.5}%`;
+            gridContainer.appendChild(horizontalLine);
+            gridContainer.appendChild(verticalLine);
+          }
         }
-      }
 
-      // Handle navbar appearance on scroll
-      window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
+        // Handle navbar appearance on scroll
+        window.addEventListener('scroll', function() {
+          const navbar = document.querySelector('.navbar');
+          if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+          }
+        });
       });
     </script>
   </body>

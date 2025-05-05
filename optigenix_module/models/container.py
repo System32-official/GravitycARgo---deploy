@@ -86,3 +86,5 @@ class EnhancedContainer(ContainerCore, ContainerMetrics, ContainerPacking,
             print(f"   Temperature-sensitive items will use temperature-safe spaces")
             print(f"   Wall buffer: {wall_buffer*100:.1f}cm from all container walls")
             print(f"   Available space for temperature-sensitive items: {temp_safe_space.width:.2f}m × {temp_safe_space.depth:.2f}m × {temp_safe_space.height:.2f}m\n")
+
+    # generate_alternative_arrangement method removed

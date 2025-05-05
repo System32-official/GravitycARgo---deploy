@@ -16,8 +16,8 @@ class ContainerMetrics:
                 for item in self.items
             )
             
-            # Update metrics with bounds checking
-            self.volume_utilization = min(100, (packed_volume / max(0.001, self.total_volume)) * 100)
+            # Update metrics with bounds checking - store as decimal (0.0-1.0) not percentage
+            self.volume_utilization = min(1.0, packed_volume / max(0.001, self.total_volume))
             self.total_weight = sum(max(0, item.weight) for item in self.items)
             self.remaining_volume = max(0, self.total_volume - packed_volume)
 

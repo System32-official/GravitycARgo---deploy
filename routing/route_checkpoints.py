@@ -4,6 +4,8 @@ from tenacity import retry, stop_after_attempt, wait_exponential, before_log, af
 import polyline
 import logging
 import sys
+import numpy as np
+from math import sin, cos, radians, atan2, sqrt
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)  # Change DEBUG to INFO
@@ -103,6 +105,46 @@ def calculate_optimal_checkpoints(distance_km: float) -> int:
     else:
         return 8  # Maximum checkpoints for long routes
 
+def haversine_distance(lat1, lon1, lat2, lon2):
+    """Calculate distance between two points on Earth"""
+    R = 6371  # Earth's radius in kilometers
+
+    lat1, lon1, lat2, lon2 = map(radians, [lat1, lon1, lat2, lon2])
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+
+    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
+    c = 2 * atan2(sqrt(a), sqrt(1-a))
+    return R * c
+
+def geocode_location(location_name: str) -> Tuple[float, float]:
+    """Convert location name to coordinates using Nominatim API."""
+    try:
+        # Using Nominatim API
+        url = "https://nominatim.openstreetmap.org/search"
+        params = {
+            "q": location_name,
+            "format": "json",
+            "limit": 1
+        }
+        headers = {
+            "User-Agent": "GravityCARgo Route Planner"
+        }
+        
+        response = requests.get(url, params=params, headers=headers)
+        response.raise_for_status()
+        data = response.json()
+        
+        if not data:
+            raise ValueError(f"Location not found: {location_name}")
+        
+        location = data[0]
+        return (float(location["lat"]), float(location["lon"]))
+    
+    except Exception as e:
+        logger.error(f"Error geocoding location: {str(e)}")
+        raise
+
 def fetch_route_checkpoints(source: Tuple[float, float], destination: Tuple[float, float], num_checkpoints: int = None) -> List[Dict]:
     """Enhanced function to return checkpoints with location names"""
     # Get route first to calculate distance
@@ -136,34 +178,6 @@ def fetch_route_checkpoints(source: Tuple[float, float], destination: Tuple[floa
 def validate_coordinates(lat: float, lon: float) -> bool:
     """Validate latitude and longitude values."""
     return -90 <= lat <= 90 and -180 <= lon <= 180
-
-def geocode_location(location_name: str) -> Tuple[float, float]:
-    """Convert location name to coordinates using Nominatim API."""
-    try:
-        # Using Nominatim API
-        url = "https://nominatim.openstreetmap.org/search"
-        params = {
-            "q": location_name,
-            "format": "json",
-            "limit": 1
-        }
-        headers = {
-            "User-Agent": "GravityCARgo Route Planner"
-        }
-        
-        response = requests.get(url, params=params, headers=headers)
-        response.raise_for_status()
-        data = response.json()
-        
-        if not data:
-            raise ValueError(f"Location not found: {location_name}")
-        
-        location = data[0]
-        return (float(location["lat"]), float(location["lon"]))
-    
-    except Exception as e:
-        logger.error(f"Error geocoding location: {str(e)}")
-        raise
 
 def get_location_input(prompt: str) -> Tuple[str, Tuple[float, float]]:
     """Get location input from user and convert to coordinates."""
