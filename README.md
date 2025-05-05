@@ -1,7 +1,5 @@
 # GravitycARgo - Advanced Container Optimization System
 
-
-
 ## Live Demo
 
 [https://gravitycargo-deploy.onrender.com/](https://gravitycargo-deploy.onrender.com/)
