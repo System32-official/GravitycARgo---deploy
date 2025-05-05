@@ -1,6 +1,6 @@
 """
-Fallback module for groq package
-This provides minimal functionality to prevent import errors if the groq package is missing
+Fallback module for groq package.
+This provides minimal functionality to prevent import errors if the groq package is missing.
 """
 import logging
 

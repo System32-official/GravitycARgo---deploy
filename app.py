@@ -43,7 +43,26 @@ except ImportError:
         sys.path.append(fallback_path)
     # No need to import groq_fallback here, it will be imported as needed
 
+# Global variable to store the initialization error if one occurs
+INIT_ERROR = None
+
 try:
+    # Try to import polyline here to catch it early
+    try:
+        import polyline
+        logger.info("Polyline module imported successfully")
+    except ImportError:
+        logger.warning("Polyline module not found. Installing...")
+        import subprocess
+        try:
+            subprocess.check_call([sys.executable, "-m", "pip", "install", "polyline"])
+            import polyline
+            logger.info("Successfully installed polyline")
+        except Exception as e:
+            logger.error(f"Failed to install polyline: {e}")
+            raise ImportError(f"Failed to install required package polyline: {e}")
+    
+    # Now import and create our app
     from app_modular import create_app, create_socketio
     
     app = create_app()
@@ -52,6 +71,7 @@ try:
     if __name__ == "__main__":
         socketio.run(app)
 except Exception as e:
+    INIT_ERROR = str(e)
     logger.error(f"Error initializing application: {e}")
     # Create a minimal Flask app for debugging
     from flask import Flask, jsonify
@@ -60,7 +80,13 @@ except Exception as e:
     
     @app.route('/')
     def index():
-        return jsonify({"status": "error", "message": f"Application failed to initialize: {str(e)}"})
+        return jsonify({
+            "status": "error", 
+            "message": f"Application failed to initialize: {INIT_ERROR}",
+            "python_version": sys.version,
+            "current_directory": os.getcwd(),
+            "directory_contents": os.listdir('.')
+        })
     
     if __name__ == "__main__":
         app.run()

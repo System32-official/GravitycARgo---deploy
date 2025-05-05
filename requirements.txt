@@ -55,6 +55,7 @@ python-dotenv==1.0.1
 # API/HTTP clients
 aiohttp==3.9.5  # Required for async HTTP requests
 requests>=2.25.0  # Required for HTTP requests
+polyline>=2.0.0  # Required for routing functionality
 
 # LLM Integration - Note: Not using groq package, using direct API calls
 # But we'll keep the package in case future versions need it
