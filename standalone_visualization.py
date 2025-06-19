@@ -19,10 +19,32 @@ import requests
 def check_flask_server():
     """Check if Flask server is running"""
     try:
-        response = requests.get('http://localhost:5000/health', timeout=2)
+        # Try to detect the current environment
+        base_url = get_base_url()
+        response = requests.get(f'{base_url}/health', timeout=2)
         return response.status_code == 200
     except:
         return False
+
+def get_base_url():
+    """Get the correct base URL for the current environment"""
+    # Check if we're on Render (try to detect service name)
+    render_service_name = os.environ.get('RENDER_SERVICE_NAME')
+    if render_service_name:
+        return f"https://{render_service_name}.onrender.com"
+    
+    # Check for manual Render URL
+    render_url = os.environ.get('RENDER_EXTERNAL_URL')
+    if render_url:
+        return render_url
+    
+    # Check for other common production indicators
+    port = os.environ.get('PORT', '5000')
+    if os.environ.get('FLASK_ENV') == 'production':
+        return f'http://0.0.0.0:{port}'
+    
+    # Default to localhost for local development
+    return 'http://localhost:5000'
 
 def start_flask_server_instructions():
     """Provide instructions for starting Flask server"""
@@ -1428,8 +1450,7 @@ def create_3d_visualization(data_dir="container_plans", specific_file=None):
                 startARVisualization();
             }
         });
-        
-        // AR Visualization Functions
+          // AR Visualization Functions
         async function startARVisualization() {
             try {
                 // Show loading indicator
@@ -1453,13 +1474,23 @@ def create_3d_visualization(data_dir="container_plans", specific_file=None):
                 `;
                 document.body.appendChild(loadingEl);
                 
+                // Debug: Log current environment
+                console.log('Current URL:', window.location.href);
+                console.log('Current origin:', window.location.origin);
+                
                 // Start the JSON server for AR
                 const response = await fetch('/start_json_server', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                    }
+                    },
+                    // Add credentials for cross-origin requests
+                    credentials: 'same-origin'
                 });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
                 
                 const result = await response.json();
                 
@@ -1471,16 +1502,40 @@ def create_3d_visualization(data_dir="container_plans", specific_file=None):
                 } else {
                     throw new Error(result.error || 'Failed to start AR server');
                 }
-                
-            } catch (error) {
+                  } catch (error) {
                 console.error('Error starting AR visualization:', error);
+                console.error('Error details:', {
+                    message: error.message,
+                    name: error.name,
+                    stack: error.stack
+                });
+                
                 // Remove loading indicator if it exists
                 const loadingEl = document.getElementById('ar-loading');
                 if (loadingEl) {
                     document.body.removeChild(loadingEl);
                 }
                 
-                alert(`Failed to start AR visualization: ${error.message}`);
+                // Enhanced error message with debugging info
+                let errorMsg = `Failed to start AR visualization: ${error.message}`;
+                if (error.message.includes('ERR_BLOCKED_BY_CLIENT')) {
+                    errorMsg += '\\n\\nThis might be caused by:';
+                    errorMsg += '\\n1. Ad blocker or browser extension blocking the request';
+                    errorMsg += '\\n2. Browser security settings';
+                    errorMsg += '\\n3. Network connectivity issues';
+                    errorMsg += '\\n\\nTry:';
+                    errorMsg += '\\n- Disabling ad blockers temporarily';
+                    errorMsg += '\\n- Using incognito/private mode';
+                    errorMsg += '\\n- Checking browser console for more details';
+                } else if (error.message.includes('Failed to fetch')) {
+                    errorMsg += '\\n\\nThis might be caused by:';
+                    errorMsg += '\\n1. Server not responding';
+                    errorMsg += '\\n2. Network connectivity issues';
+                    errorMsg += '\\n3. CORS policy restrictions';
+                    errorMsg += '\\n\\nTry refreshing the page or check server logs.';
+                }
+                
+                alert(errorMsg);
                 
                 // Revert button state
                 const arBtn = document.getElementById('view-ar');

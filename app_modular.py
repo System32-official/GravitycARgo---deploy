@@ -215,9 +215,16 @@ class JSONServerService:
                 self._server_thread = threading.Thread(target=self._server.serve_forever)
                 self._server_thread.daemon = True
                 self._server_thread.start()
+                  # Set production URL (use the main app URL)
+                # Try to detect Render URL automatically
+                render_service_name = os.environ.get('RENDER_SERVICE_NAME')
+                if render_service_name:
+                    # Construct Render URL from service name
+                    base_url = f"https://{render_service_name}.onrender.com"
+                else:
+                    # Fallback to manual environment variable or localhost
+                    base_url = os.environ.get('RENDER_EXTERNAL_URL', f'http://localhost:{AppConfig.get_port()}')
                 
-                # Set production URL (use the main app URL)
-                base_url = os.environ.get('RENDER_EXTERNAL_URL', f'http://localhost:{AppConfig.get_port()}')
                 self._ngrok_url = f"{base_url}/api/container_plan.json"
                 
                 self._is_running = True
@@ -584,9 +591,7 @@ def create_app():
                 'success': False,
                 'error': str(e),
                 'running': False
-            })
-
-    # Health check endpoint for Render
+            })    # Health check endpoint for Render
     @app.route('/health')
     def health_check():
         """Health check endpoint for deployment monitoring"""
@@ -595,6 +600,28 @@ def create_app():
             'timestamp': time.time(),
             'environment': os.environ.get('FLASK_ENV', 'development'),
             'version': '1.0.0'
+        })
+    
+    # Server configuration endpoint for frontend
+    @app.route('/api/server-config')
+    def get_server_config():
+        """Get server configuration for frontend"""
+        render_service_name = os.environ.get('RENDER_SERVICE_NAME')
+        if render_service_name:
+            base_url = f"https://{render_service_name}.onrender.com"
+        else:
+            render_url = os.environ.get('RENDER_EXTERNAL_URL')
+            if render_url:
+                base_url = render_url
+            else:
+                port = AppConfig.get_port()
+                base_url = f'http://localhost:{port}'
+        
+        return jsonify({
+            'base_url': base_url,
+            'is_production': AppConfig.is_production(),
+            'environment': os.environ.get('FLASK_ENV', 'development'),
+            'port': AppConfig.get_port()
         })
     
     # Production API route for serving container plan JSON
