@@ -4,8 +4,8 @@ services:
     env: python
     region: oregon
     plan: starter
-    buildCommand: pip install -r requirements.txt && pip install gunicorn
-    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --timeout 300 --max-requests 1000 wsgi:app
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt && pip install gunicorn
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --timeout 300 --max-requests 1000 --preload wsgi:app
     envVars:
       - key: FLASK_ENV
         value: production
@@ -25,7 +25,9 @@ services:
         value: "16777216"
       - key: PYTHONPATH
         value: "/opt/render/project/src"
-    healthCheckPath: /
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    healthCheckPath: /health
     disk:
       name: gravitycargo-disk
       mountPath: /opt/render/project/src/uploads

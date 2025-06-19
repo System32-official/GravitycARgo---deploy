@@ -24,10 +24,9 @@ class GeminiClient:
     def __init__(self, api_key=None, log_file="llm_strategies.log"):
         self.api_key = api_key or os.environ.get("GEMINI_API_KEY")
         if not self.api_key:
-            print("⚠️  Warning: No Gemini API key found. LLM features will be disabled.")
+            print("[WARNING] No Gemini API key found. LLM features will be disabled.")
             self.enabled = False
             return
-            
         self.enabled = True
         self.model_name = "gemini-2.5-flash-preview-05-20"  # Updated to use the latest flash model
         
@@ -35,7 +34,7 @@ class GeminiClient:
             genai.configure(api_key=self.api_key)
             self.model = genai.GenerativeModel(self.model_name)
             print(f"\\n{'='*50}")
-            print(f"✅ LLM Connector initialized with Gemini AI")
+            print(f"[OK] LLM Connector initialized with Gemini AI")
             print(f"Model: {self.model_name}")
             print(f"{'='*50}\\n")
             self.safety_settings = {
@@ -45,7 +44,7 @@ class GeminiClient:
                 HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
             }
         except Exception as e:
-            print(f"⚠️  Warning: Failed to initialize Gemini client: {e}")
+            print(f"[WARNING] Failed to initialize Gemini client: {e}")
             self.enabled = False
             return
             
@@ -138,7 +137,7 @@ class GeminiClient:
                                 raise Exception(f"Gemini API response issue: Finish reason STOP (value={finish_reason_value}) but extracted text is empty. Full candidate: {candidate}")
                             
                             end_time = time.time()
-                            print(f"\\n✅ RESPONSE RECEIVED ({end_time - start_time:.2f}s)")
+                            print(f"\\n[OK] RESPONSE RECEIVED ({end_time - start_time:.2f}s)")
                             print(f"{'='*60}")
                             return content
                         else: # No parts or no text attribute
@@ -159,7 +158,7 @@ class GeminiClient:
                     
             except Exception as e:
                 error_msg = str(e)
-                print(f"\n⚠️ Retry {attempt + 1}/{max_retries} after error: {error_msg}")
+                print(f"\n[WARNING] Retry {attempt + 1}/{max_retries} after error: {error_msg}")
                 
                 if attempt < max_retries - 1:
                     time.sleep(retry_delay * (attempt + 1))
@@ -189,7 +188,7 @@ class GeminiClient:
                 return json.loads(cleaned)
                 
         except (json.JSONDecodeError, AttributeError) as e:
-            print(f"⚠️ JSON parsing failed: {e}")
+            print(f"[WARNING] JSON parsing failed: {e}")
             return self._get_fallback_strategy()
 
     def _get_fallback_strategy(self) -> dict:
@@ -259,7 +258,7 @@ class GeminiClient:
                     if self._validate_strategy(strat): # Assuming _validate_strategy exists and is suitable
                         validated_strategies.append(strat)
                     else:
-                        print(f"⚠️ Invalid strategy received in batch, using fallback: {strat}")
+                        print(f"[WARNING] Invalid strategy received in batch, using fallback: {strat}")
                         validated_strategies.append(self._get_fallback_strategy())
 
                 if len(validated_strategies) >= batch_size:
@@ -271,9 +270,9 @@ class GeminiClient:
                 # This case handles if parsed_response is already a single fallback strategy (dict)
                 # or if 'strategies' key is missing/invalid.
                 if isinstance(parsed_response, dict) and "mutation_rate_modifier" in parsed_response: # It's a single fallback
-                     print(f"⚠️ Batch strategy generation resulted in a single fallback strategy. Expected list.")
+                     print(f"[WARNING] Batch strategy generation resulted in a single fallback strategy. Expected list.")
                 else:
-                    print(f"⚠️ Batch strategy response missing 'strategies' list or invalid structure. Response: {parsed_response}")
+                    print(f"[WARNING] Batch strategy response missing 'strategies' list or invalid structure. Response: {parsed_response}")
                 
         except Exception as e:
             print(f"❌ Error processing batch strategies response: {e}")
@@ -452,7 +451,7 @@ class GeminiClient:
             response = self.generate(feedback_prompt)
             return response
         except Exception as e:
-            print(f"⚠️ Feedback sending failed: {e}")
+            print(f"[WARNING] Feedback sending failed: {e}")
             return json.dumps({
                 "insights": "Unable to generate insights due to API error",
                 "recommendations": "Continue with current approach",
@@ -511,7 +510,7 @@ class GeminiClient:
                     "constraints_applied": True
                 }
             except Exception as e:
-                print(f"⚠️ Temperature constraint processing error: {e}")
+                print(f"[WARNING] Temperature constraint processing error: {e}")
                 return {"route_temperature": route_temp, "constraints_applied": False}
         
         return {"route_temperature": route_temp, "constraints_applied": True}

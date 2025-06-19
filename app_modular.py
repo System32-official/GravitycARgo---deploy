@@ -518,7 +518,8 @@ def create_app():
             response['url'] = service.get_url()
         
         return jsonify(response)
-      @app.route('/check_local_server', methods=['GET'])
+
+    @app.route('/check_local_server', methods=['GET'])
     def check_local_server_handler():
         """Check if the local JSON server is running directly"""
         try:
@@ -546,7 +547,8 @@ def create_app():
                     'error': str(e),
                     'running': False
                 })
-        except Exception as e:            app.logger.error(f"Error checking local server: {str(e)}")
+        except Exception as e:
+            app.logger.error(f"Error checking local server: {str(e)}")
             return jsonify({
                 'success': False,
                 'error': str(e),

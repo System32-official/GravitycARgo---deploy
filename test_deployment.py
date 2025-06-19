@@ -14,19 +14,19 @@ def test_imports():
     try:
         # Test main application import
         from app_modular import create_app, AppConfig
-        print("✅ Main application imports successful")
+        print("[OK] Main application imports successful")
         
         # Test configuration
         from config import UPLOAD_FOLDER, PLANS_FOLDER, SECRET_KEY
-        print("✅ Configuration imports successful")
+        print("[OK] Configuration imports successful")
         
         # Test handlers
         from modules.handlers import bp
-        print("✅ Handler imports successful")
+        print("[OK] Handler imports successful")
         
         return True
     except ImportError as e:
-        print(f"❌ Import error: {e}")
+        print(f"[ERROR] Import error: {e}")
         return False
 
 def test_app_creation():
@@ -35,10 +35,10 @@ def test_app_creation():
     try:
         from app_modular import create_app
         app = create_app()
-        print("✅ Flask app created successfully")
+        print("[OK] Flask app created successfully")
         return True
     except Exception as e:
-        print(f"❌ App creation failed: {e}")
+        print(f"[ERROR] App creation failed: {e}")
         return False
 
 def test_environment_config():
@@ -53,9 +53,9 @@ def test_environment_config():
         from app_modular import AppConfig
         
         if AppConfig.is_production():
-            print("✅ Production mode detection works")
+            print("[OK] Production mode detection works")
         else:
-            print("❌ Production mode detection failed")
+            print("[ERROR] Production mode detection failed")
             return False
             
         # Test port configuration
@@ -64,14 +64,14 @@ def test_environment_config():
         actual_port = AppConfig.get_port()
         
         if actual_port == expected_port:
-            print("✅ Port configuration from environment works")
+            print("[OK] Port configuration from environment works")
         else:
-            print(f"❌ Port configuration failed: expected {expected_port}, got {actual_port}")
+            print(f"[ERROR] Port configuration failed: expected {expected_port}, got {actual_port}")
             return False
             
         return True
     except Exception as e:
-        print(f"❌ Environment configuration test failed: {e}")
+        print(f"[ERROR] Environment configuration test failed: {e}")
         return False
     finally:
         # Restore original environment
@@ -87,10 +87,10 @@ def test_wsgi_entry():
     try:
         import wsgi
         if hasattr(wsgi, 'app'):
-            print("✅ WSGI entry point works")
+            print("[OK] WSGI entry point works")
             return True
         else:
-            print("❌ WSGI entry point missing 'app' attribute")
+            print("[ERROR] WSGI entry point missing 'app' attribute")
             return False
     except Exception as e:
         print(f"❌ WSGI entry point test failed: {e}")
