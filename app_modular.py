@@ -38,6 +38,17 @@ class AppConfig:
     MAIN_APP_PORT = int(os.getenv('MAIN_APP_PORT', '5000'))
     LOG_MAX_BYTES = int(os.getenv('LOG_MAX_BYTES', str(1024 * 1024)))  # 1MB
     LOG_BACKUP_COUNT = int(os.getenv('LOG_BACKUP_COUNT', '10'))
+    
+    # Production configuration helpers
+    @staticmethod
+    def is_production():
+        """Check if running in production environment"""
+        return os.environ.get('FLASK_ENV') == 'production'
+    
+    @staticmethod
+    def get_port():
+        """Get port from environment variable (Render sets PORT)"""
+        return int(os.environ.get('PORT', AppConfig.MAIN_APP_PORT))
 
 # Import other modules
 from modules.handlers import (
@@ -168,6 +179,55 @@ class JSONServerService:
     
     def start_server(self):
         """Start the integrated JSON server"""
+        # In production, disable ngrok and use direct server URL
+        if AppConfig.is_production():
+            return self._start_production_server()
+        
+        # Original development implementation with ngrok
+        return self._start_development_server()
+    
+    def _start_production_server(self):
+        """Start server for production environment without ngrok"""
+        with self._lock:
+            if self._is_running:
+                print("JSON server is already running")
+                return True
+                
+            try:
+                # Update the JSON file first
+                if not self.update_json_file():
+                    return False
+                
+                port_to_use = AppConfig.JSON_SERVER_PORT
+                if self.is_port_in_use(port_to_use):
+                    port_to_use = self.find_available_port(port_to_use + 1)
+                    if port_to_use is None:
+                        raise Exception("Could not find an available port to start the JSON server")
+                
+                # Start the HTTP server
+                print(f"Starting production JSON server on port {port_to_use}...")
+                self._server = socketserver.TCPServer(("", port_to_use), self.handler_class)
+                
+                # Run in a thread
+                self._server_thread = threading.Thread(target=self._server.serve_forever)
+                self._server_thread.daemon = True
+                self._server_thread.start()
+                
+                # Set production URL (use the main app URL)
+                base_url = os.environ.get('RENDER_EXTERNAL_URL', f'http://localhost:{AppConfig.get_port()}')
+                self._ngrok_url = f"{base_url}/api/container_plan.json"
+                
+                self._is_running = True
+                print(f"Production JSON server is running. URL: {self._ngrok_url}")
+                return True
+                
+            except Exception as e:
+                print(f"Failed to start production JSON server: {e}")
+                self.stop_server()
+                return False
+    
+    def _start_development_server(self):
+        """Original development server implementation with ngrok"""
         with self._lock:
             if self._is_running:
                 print("JSON server is already running")
@@ -458,8 +518,7 @@ def create_app():
             response['url'] = service.get_url()
         
         return jsonify(response)
-    
-    @app.route('/check_local_server', methods=['GET'])
+      @app.route('/check_local_server', methods=['GET'])
     def check_local_server_handler():
         """Check if the local JSON server is running directly"""
         try:
@@ -470,8 +529,6 @@ def create_app():
             try:
                 response = requests.get(local_url, timeout=2)
                 if response.status_code == 200:
-                    # Server is running
-                    JsonServerManager._server_url = local_url
                     return jsonify({
                         'success': True,
                         'url': local_url,
@@ -489,13 +546,42 @@ def create_app():
                     'error': str(e),
                     'running': False
                 })
-        except Exception as e:
-            app.logger.error(f"Error checking local server: {str(e)}")
+        except Exception as e:            app.logger.error(f"Error checking local server: {str(e)}")
             return jsonify({
                 'success': False,
                 'error': str(e),
                 'running': False
             })
+
+    # Health check endpoint for Render
+    @app.route('/health')
+    def health_check():
+        """Health check endpoint for deployment monitoring"""
+        return jsonify({
+            'status': 'healthy',
+            'timestamp': time.time(),
+            'environment': os.environ.get('FLASK_ENV', 'development'),
+            'version': '1.0.0'
+        })
+    
+    # Production API route for serving container plan JSON
+    @app.route('/api/container_plan.json')
+    def serve_container_plan():
+        """Serve the latest container plan JSON for production"""
+        try:
+            service = JSONServerService.get_instance()
+            service.update_json_file()
+            
+            # Read and return the JSON file
+            with open(service.json_path, 'r') as file:
+                data = json.load(file)
+            
+            return jsonify(data)
+        except FileNotFoundError:
+            return jsonify({'error': 'No container plan available'}), 404
+        except Exception as e:
+            app.logger.error(f"Error serving container plan: {str(e)}")
+            return jsonify({'error': 'Internal server error'}), 500
     
     # Register blueprint
     app.register_blueprint(bp)
@@ -594,24 +680,30 @@ if __name__ == '__main__':
     app = create_app()
     socketio = create_socketio(app)
     
+    # Get port from environment (Render requirement)
+    port = AppConfig.get_port()
+    
     try:
-        # Check if route temperature server is already running
-        if not is_port_in_use(AppConfig.ROUTE_TEMP_PORT):
-            try:
-                # Start route temperature server in a separate process
-                route_temp_process = multiprocessing.Process(target=start_route_temp_server)
-                route_temp_process.daemon = True  # This ensures the process is terminated when the main process ends
-                route_temp_process.start()
-                print(f"Route temperature server started at http://localhost:{AppConfig.ROUTE_TEMP_PORT}")
-            except Exception as e:
-                print(f"Warning: Could not start route temperature server: {e}")
-        else:
-            print(f"Route temperature server already running at http://localhost:{AppConfig.ROUTE_TEMP_PORT}")
+        # In production, don't start additional processes
+        if not AppConfig.is_production():
+            # Only start route temp server in development
+            if not is_port_in_use(AppConfig.ROUTE_TEMP_PORT):
+                try:
+                    route_temp_process = multiprocessing.Process(target=start_route_temp_server)
+                    route_temp_process.daemon = True
+                    route_temp_process.start()
+                    print(f"Route temperature server started at http://localhost:{AppConfig.ROUTE_TEMP_PORT}")
+                except Exception as e:
+                    print(f"Warning: Could not start route temperature server: {e}")
         
         # Run main application
-        print(f"Starting application at http://localhost:{AppConfig.MAIN_APP_PORT} using optigenix_module")
-        print("Enhanced with LLM-powered dynamic fitness function and adaptive mutation")
-        socketio.run(app, debug=True, host='0.0.0.0', port=AppConfig.MAIN_APP_PORT, use_reloader=False)
+        debug_mode = not AppConfig.is_production()
+        print(f"Starting application on port {port}")
+        if AppConfig.is_production():
+            print("Running in production mode")
+        else:
+            print("Enhanced with LLM-powered dynamic fitness function and adaptive mutation")
+        socketio.run(app, debug=debug_mode, host='0.0.0.0', port=port, use_reloader=False)
     except Exception as e:
         print(f"Failed to start application: {e}")
         raise

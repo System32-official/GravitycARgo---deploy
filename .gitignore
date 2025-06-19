@@ -1,0 +1,65 @@
+# Environment and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv
+.envrc
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Application specific
+uploads/*
+!uploads/.gitkeep
+container_plans/*
+!container_plans/.gitkeep
+logs/*
+!logs/.gitkeep
+serving/*
+!serving/.gitkeep
+*.log
+
+# Test files
+test_uploads/
+test_plans/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# Documentation
+docs/_build/
+
+# Local development
+.ngrok/
+ngrok.yml
+
+# Backup files
+*.backup
+*.bak
+
+# Temporary files
+*.tmp
+*.temp

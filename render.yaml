@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: gravitycargo
+    env: python
+    region: oregon
+    plan: starter
+    buildCommand: pip install -r requirements.txt && pip install gunicorn
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --timeout 300 --max-requests 1000 wsgi:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: MAIN_APP_PORT
+        value: $PORT
+      - key: JSON_SERVER_PORT
+        value: "8000"
+      - key: ROUTE_TEMP_PORT
+        value: "5001"
+      - key: LOG_LEVEL
+        value: "INFO"
+      - key: MAX_CONTENT_LENGTH
+        value: "16777216"
+      - key: PYTHONPATH
+        value: "/opt/render/project/src"
+    healthCheckPath: /
+    disk:
+      name: gravitycargo-disk
+      mountPath: /opt/render/project/src/uploads
+      sizeGB: 1
