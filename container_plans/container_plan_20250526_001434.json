@@ -1,0 +1,118 @@
+{
+    "timestamp": "20250526_001434",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1",
+        "route_temperature": 25.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 0.0,
+        "items_packed": 4,
+        "total_items": 3,
+        "remaining_volume": 33.137350000000005,
+        "center_of_gravity": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "total_weight": 0.0
+    },
+    "best_fitness": 0.27376472157386716,
+    "generation_count": 0,
+    "algorithm_used": "Genetic Algorithm",
+    "optimization_method": "genetic",
+    "packed_items": [
+        {
+            "name": "Box1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Single",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Box3",
+            "position": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                2.0,
+                1.0
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Single",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Box2_2",
+            "position": [
+                0.0,
+                1.0,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Single",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Box2_1",
+            "position": [
+                1.5,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Single",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": []
+}

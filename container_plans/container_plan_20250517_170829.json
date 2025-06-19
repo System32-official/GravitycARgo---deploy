@@ -1,0 +1,4383 @@
+{
+    "timestamp": "20250517_170829",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "dimensions": "5.9m \u00d7 2.35m \u00d7 2.39m",
+        "route_temperature": 28.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 45.70069724947821,
+        "items_packed": 158,
+        "total_items": 10,
+        "remaining_volume": 17.993350000000035,
+        "center_of_gravity": [
+            3.2155318567131537,
+            1.1031856713152859,
+            0.8542247744052504
+        ],
+        "total_weight": 3657.0
+    },
+    "packed_items": [
+        {
+            "name": "TempControlBox_A_1",
+            "position": [
+                0.3,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_2",
+            "position": [
+                0.3,
+                0.6,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_3",
+            "position": [
+                0.7,
+                0.6,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_4",
+            "position": [
+                0.7,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_5",
+            "position": [
+                1.1,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_6",
+            "position": [
+                1.5,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_7",
+            "position": [
+                1.9,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_8",
+            "position": [
+                2.3,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_9",
+            "position": [
+                2.6999999999999997,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_10",
+            "position": [
+                3.0999999999999996,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_11",
+            "position": [
+                3.4999999999999996,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_12",
+            "position": [
+                1.9,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_13",
+            "position": [
+                2.3,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_14",
+            "position": [
+                2.6999999999999997,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_15",
+            "position": [
+                3.0999999999999996,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_16",
+            "position": [
+                3.4999999999999996,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_17",
+            "position": [
+                3.8999999999999995,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_18",
+            "position": [
+                1.5,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_19",
+            "position": [
+                1.1,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "TempControlBox_A_20",
+            "position": [
+                3.8999999999999995,
+                1.2999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "StackablePallet_A_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.2,
+                0.8
+            ],
+            "weight": 60.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_A_2",
+            "position": [
+                1.2,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.2,
+                0.8
+            ],
+            "weight": 60.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_A_3",
+            "position": [
+                2.4,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.2,
+                0.8
+            ],
+            "weight": 60.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_A_4",
+            "position": [
+                3.5999999999999996,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.2,
+                0.8
+            ],
+            "weight": 60.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_A_5",
+            "position": [
+                0.0,
+                0.2,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                1.2,
+                0.8
+            ],
+            "weight": 60.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_A_6",
+            "position": [
+                4.8,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                1.2,
+                0.8
+            ],
+            "weight": 60.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_A_7",
+            "position": [
+                5.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                1.2,
+                0.8
+            ],
+            "weight": 60.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_A_8",
+            "position": [
+                5.2,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                1.2,
+                0.8
+            ],
+            "weight": 60.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_B_1",
+            "position": [
+                0.0,
+                1.4,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                0.2,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_B_2",
+            "position": [
+                0.0,
+                1.5999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                0.2,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_B_3",
+            "position": [
+                5.4,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                1.0,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_B_4",
+            "position": [
+                5.6000000000000005,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                1.0,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_B_5",
+            "position": [
+                4.8,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                0.2,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_B_6",
+            "position": [
+                1.1,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                0.2,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_B_7",
+            "position": [
+                2.1,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                0.2,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_B_8",
+            "position": [
+                3.1,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.2,
+                1.0
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_B_9",
+            "position": [
+                4.199999999999999,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.2,
+                1.0
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StackablePallet_B_10",
+            "position": [
+                4.199999999999999,
+                1.0999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.2,
+                1.0
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_A_1",
+            "position": [
+                1.2,
+                0.2,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                0.7,
+                0.6
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_A_2",
+            "position": [
+                2.0,
+                0.2,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                0.7,
+                0.6
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_A_3",
+            "position": [
+                2.8,
+                0.2,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                0.7,
+                0.6
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_A_4",
+            "position": [
+                3.5999999999999996,
+                0.2,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                0.7,
+                0.6
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_A_5",
+            "position": [
+                1.1,
+                1.7,
+                0.0
+            ],
+            "dimensions": [
+                0.7,
+                0.6,
+                0.8
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_A_6",
+            "position": [
+                1.8,
+                1.7,
+                0.0
+            ],
+            "dimensions": [
+                0.7,
+                0.6,
+                0.8
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_B_1",
+            "position": [
+                2.5,
+                1.7,
+                0.0
+            ],
+            "dimensions": [
+                0.7,
+                0.6,
+                0.5
+            ],
+            "weight": 35.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_B_2",
+            "position": [
+                4.3,
+                1.2999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.6,
+                0.7
+            ],
+            "weight": 35.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_B_3",
+            "position": [
+                4.8,
+                1.4,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.5,
+                0.7
+            ],
+            "weight": 35.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_B_4",
+            "position": [
+                3.2,
+                1.7,
+                0.0
+            ],
+            "dimensions": [
+                0.7,
+                0.6,
+                0.5
+            ],
+            "weight": 35.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_B_5",
+            "position": [
+                2.5,
+                1.7,
+                0.5
+            ],
+            "dimensions": [
+                0.7,
+                0.6,
+                0.5
+            ],
+            "weight": 35.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_B_6",
+            "position": [
+                3.2,
+                1.7,
+                0.5
+            ],
+            "dimensions": [
+                0.7,
+                0.6,
+                0.5
+            ],
+            "weight": 35.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_B_7",
+            "position": [
+                1.2,
+                0.2,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.6,
+                0.7
+            ],
+            "weight": 35.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "CompactCrate_B_8",
+            "position": [
+                1.7,
+                0.2,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.6,
+                0.7
+            ],
+            "weight": 35.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "5\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_1",
+            "position": [
+                0.0,
+                1.7999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_2",
+            "position": [
+                0.5,
+                1.7999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_3",
+            "position": [
+                0.0,
+                1.7999999999999998,
+                0.5
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_4",
+            "position": [
+                0.5,
+                1.7999999999999998,
+                0.5
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_5",
+            "position": [
+                2.2,
+                0.2,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_6",
+            "position": [
+                2.7,
+                0.2,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_7",
+            "position": [
+                3.5999999999999996,
+                0.2,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_8",
+            "position": [
+                4.3,
+                1.2999999999999998,
+                0.7
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_9",
+            "position": [
+                4.8,
+                1.4,
+                0.7
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_10",
+            "position": [
+                4.8,
+                0.0,
+                0.8
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_11",
+            "position": [
+                4.8,
+                0.5,
+                0.8
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_12",
+            "position": [
+                1.1,
+                1.7,
+                0.8
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_13",
+            "position": [
+                1.6,
+                1.7,
+                0.8
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_14",
+            "position": [
+                0.0,
+                1.7999999999999998,
+                1.0
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_15",
+            "position": [
+                0.5,
+                1.7999999999999998,
+                1.0
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_16",
+            "position": [
+                2.5,
+                1.7,
+                1.0
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_17",
+            "position": [
+                3.0,
+                1.7,
+                1.0
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_18",
+            "position": [
+                2.2,
+                0.2,
+                1.1
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_19",
+            "position": [
+                2.7,
+                0.2,
+                1.1
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_20",
+            "position": [
+                3.5999999999999996,
+                0.2,
+                1.1
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_21",
+            "position": [
+                4.3,
+                1.2999999999999998,
+                1.2
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_22",
+            "position": [
+                4.8,
+                1.4,
+                1.2
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_23",
+            "position": [
+                1.2,
+                0.2,
+                1.2999999999999998
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_24",
+            "position": [
+                1.7,
+                0.2,
+                1.2999999999999998
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_25",
+            "position": [
+                4.8,
+                0.0,
+                1.3
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_26",
+            "position": [
+                4.8,
+                0.5,
+                1.3
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_27",
+            "position": [
+                0.0,
+                1.7999999999999998,
+                1.5
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_28",
+            "position": [
+                0.5,
+                1.7999999999999998,
+                1.5
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_29",
+            "position": [
+                2.2,
+                0.2,
+                1.6
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_A_30",
+            "position": [
+                2.7,
+                0.2,
+                1.6
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 30.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_1",
+            "position": [
+                4.3999999999999995,
+                0.2,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_2",
+            "position": [
+                0.7,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.6
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_3",
+            "position": [
+                0.3,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.6
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_4",
+            "position": [
+                5.3999999999999995,
+                1.4,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_5",
+            "position": [
+                4.8,
+                1.9,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_6",
+            "position": [
+                3.9000000000000004,
+                1.7,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.6
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_7",
+            "position": [
+                4.3,
+                1.9,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.6
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_8",
+            "position": [
+                4.3999999999999995,
+                0.2,
+                0.3
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_9",
+            "position": [
+                5.3999999999999995,
+                1.4,
+                0.3
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_10",
+            "position": [
+                4.8,
+                1.9,
+                0.3
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_11",
+            "position": [
+                4.3999999999999995,
+                0.2,
+                0.6
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_12",
+            "position": [
+                5.4,
+                0.0,
+                0.6
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_13",
+            "position": [
+                4.1,
+                0.2,
+                0.6
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.6
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_14",
+            "position": [
+                4.8,
+                1.9,
+                0.6
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_15",
+            "position": [
+                5.3999999999999995,
+                1.4,
+                0.6
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_16",
+            "position": [
+                3.2,
+                0.2,
+                0.6
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.6
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_17",
+            "position": [
+                5.4,
+                0.6,
+                0.6
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_18",
+            "position": [
+                0.3,
+                0.8999999999999999,
+                0.6
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_19",
+            "position": [
+                3.9000000000000004,
+                1.7,
+                0.6
+            ],
+            "dimensions": [
+                0.3,
+                0.6,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_20",
+            "position": [
+                0.7,
+                0.3,
+                0.6
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_21",
+            "position": [
+                2.1,
+                1.7,
+                0.8
+            ],
+            "dimensions": [
+                0.3,
+                0.6,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_22",
+            "position": [
+                4.3999999999999995,
+                0.2,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_23",
+            "position": [
+                5.4,
+                0.0,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_24",
+            "position": [
+                4.8,
+                1.9,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.6,
+                0.3,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_A_25",
+            "position": [
+                5.4,
+                0.6,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.3
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_1",
+            "position": [
+                5.3999999999999995,
+                1.4,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_2",
+            "position": [
+                0.7,
+                0.3,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_3",
+            "position": [
+                0.3,
+                0.8999999999999999,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_4",
+            "position": [
+                4.3999999999999995,
+                0.2,
+                1.2
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_5",
+            "position": [
+                5.4,
+                0.0,
+                1.2
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_6",
+            "position": [
+                5.4,
+                0.6,
+                1.2
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_7",
+            "position": [
+                0.7,
+                0.3,
+                1.2999999999999998
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_8",
+            "position": [
+                5.3999999999999995,
+                1.4,
+                1.2999999999999998
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_9",
+            "position": [
+                0.3,
+                0.8999999999999999,
+                1.2999999999999998
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_10",
+            "position": [
+                1.1,
+                1.7,
+                1.3
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_11",
+            "position": [
+                1.5,
+                1.7,
+                1.3
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_12",
+            "position": [
+                5.4,
+                0.0,
+                1.6
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_13",
+            "position": [
+                4.3999999999999995,
+                0.2,
+                1.6
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_14",
+            "position": [
+                5.4,
+                0.6,
+                1.6
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_15",
+            "position": [
+                3.5999999999999996,
+                0.2,
+                1.6
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_16",
+            "position": [
+                5.3999999999999995,
+                1.4,
+                1.6999999999999997
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_17",
+            "position": [
+                4.8,
+                1.4,
+                1.7
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_18",
+            "position": [
+                1.2,
+                0.2,
+                1.7999999999999998
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_19",
+            "position": [
+                1.6,
+                0.2,
+                1.7999999999999998
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_20",
+            "position": [
+                4.8,
+                0.0,
+                1.8
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_B_21",
+            "position": [
+                4.8,
+                0.5,
+                1.8
+            ],
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_1",
+            "position": [
+                3.5,
+                1.7,
+                1.0
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_2",
+            "position": [
+                3.9000000000000004,
+                1.7,
+                1.0
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_3",
+            "position": [
+                4.1,
+                0.2,
+                1.2
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_4",
+            "position": [
+                3.2,
+                0.2,
+                1.2
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_5",
+            "position": [
+                2.1,
+                1.7,
+                1.2000000000000002
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_6",
+            "position": [
+                4.8,
+                1.9,
+                1.2999999999999998
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_7",
+            "position": [
+                3.5,
+                1.7,
+                1.3
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.5
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_8",
+            "position": [
+                3.9000000000000004,
+                1.7,
+                1.3
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.5
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_9",
+            "position": [
+                4.1,
+                0.2,
+                1.5
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_10",
+            "position": [
+                3.2,
+                0.2,
+                1.5
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_11",
+            "position": [
+                4.8,
+                1.9,
+                1.5999999999999999
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_12",
+            "position": [
+                4.1,
+                0.2,
+                1.8
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_13",
+            "position": [
+                3.2,
+                0.2,
+                1.8
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_14",
+            "position": [
+                4.8,
+                1.9,
+                1.9
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_15",
+            "position": [
+                0.0,
+                1.7999999999999998,
+                2.0
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "RegularCarton_B_16",
+            "position": [
+                0.5,
+                1.7999999999999998,
+                2.0
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_1",
+            "position": [
+                5.3999999999999995,
+                2.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_2",
+            "position": [
+                5.3999999999999995,
+                2.0,
+                0.3
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_3",
+            "position": [
+                5.3999999999999995,
+                2.0,
+                0.6
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_4",
+            "position": [
+                4.3,
+                1.9,
+                0.6
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_5",
+            "position": [
+                5.3999999999999995,
+                2.0,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_6",
+            "position": [
+                4.3,
+                1.9,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_7",
+            "position": [
+                5.3999999999999995,
+                2.0,
+                1.2
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_8",
+            "position": [
+                4.3,
+                1.9,
+                1.2
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_9",
+            "position": [
+                5.3999999999999995,
+                2.0,
+                1.5
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_10",
+            "position": [
+                5.3999999999999995,
+                2.0,
+                1.8
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_11",
+            "position": [
+                5.4,
+                0.0,
+                2.0
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_12",
+            "position": [
+                4.3999999999999995,
+                0.2,
+                2.0
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_13",
+            "position": [
+                3.5999999999999996,
+                0.2,
+                2.0
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "UniformBox_C_14",
+            "position": [
+                5.4,
+                0.6,
+                2.0
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [
+        {
+            "name": "UniformBox_B_22",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_23",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_24",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_25",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_26",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_27",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_28",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_29",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_30",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_31",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_32",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_33",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_34",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_35",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_36",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_37",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_38",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_39",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "UniformBox_B_40",
+            "dimensions": [
+                0.4,
+                0.4,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "RegularCarton_B_17",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_18",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_19",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_20",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_21",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_22",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_23",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_24",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_25",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_26",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_27",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_28",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_29",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "RegularCarton_B_30",
+            "dimensions": [
+                0.5,
+                0.3,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_2)"
+        },
+        {
+            "name": "UniformBox_C_15",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_16",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_17",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_18",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_19",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_20",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_21",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_22",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_23",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_24",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_25",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_26",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_27",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_28",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_29",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_30",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_31",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_32",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_33",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_34",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_35",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_36",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_37",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_38",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_39",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_40",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_41",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_42",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_43",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_44",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_45",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_46",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_47",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_48",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_49",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_50",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_51",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_52",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_53",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_54",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_55",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_56",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_57",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_58",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_59",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        },
+        {
+            "name": "UniformBox_C_60",
+            "dimensions": [
+                0.3,
+                0.3,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (TempControlBox_A_1)"
+        }
+    ],
+    "best_fitness": 0.3427552293710866,
+    "generation_count": 8,
+    "optimization_method": "regular"
+}

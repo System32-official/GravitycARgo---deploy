@@ -3,6 +3,7 @@ Metrics calculation for the EnhancedContainer class
 """
 import numpy as np
 from typing import Tuple, List
+from modules.utils import calculate_overlap_area, check_overlap_2d
 
 class ContainerMetrics:
     """Contains methods for calculating metrics and scores"""
@@ -206,34 +207,30 @@ class ContainerMetrics:
         
         # Check for surface contact on each face with tolerance
         tolerance = 0.001
-        
-        # Bottom face contact
+          # Bottom face contact
         if abs(z1 - (z2 + h2)) < tolerance:
-            if self._check_overlap_2d(
+            if check_overlap_2d(
                 (x1, y1, l1, w1),
                 (x2, y2, l2, w2)
             ):
                 return True
-                
-        # Top face contact
+                  # Top face contact
         if abs((z1 + h1) - z2) < tolerance:
-            if self._check_overlap_2d(
+            if check_overlap_2d(
                 (x1, y1, l1, w1),
                 (x2, y2, l2, w2)
             ):
                 return True
-                
-        # Front/back face contacts
+                  # Front/back face contacts
         if abs(y1 - (y2 + w2)) < tolerance or abs((y1 + w1) - y2) < tolerance:
-            if self._check_overlap_2d(
+            if check_overlap_2d(
                 (x1, z1, l1, h1),
                 (x2, z2, l2, h2)
             ):
                 return True
-                
-        # Left/right face contacts
+                  # Left/right face contacts
         if abs(x1 - (x2 + l2)) < tolerance or abs((x1 + l1) - x2) < tolerance:
-            if self._check_overlap_2d(
+            if check_overlap_2d(
                 (y1, z1, w1, h1),
                 (y2, z2, w2, h2)
             ):
@@ -287,3 +284,116 @@ class ContainerMetrics:
         except (ValueError, IndexError):
             # If we can't parse the temperature range, assume it's fine
             return True
+    
+    def calculate_overall_stability_score(self) -> float:
+        """Calculate overall stability score for all items in the container"""
+        if not self.items:
+            return 0.0
+            
+        total_score = 0.0
+        item_count = 0
+        
+        for item in self.items:
+            if hasattr(item, 'position') and item.position and hasattr(item, 'dimensions'):
+                stability_score = self._calculate_stability_score(item, item.position, item.dimensions)
+                total_score += stability_score
+                item_count += 1
+        
+        return total_score / item_count if item_count > 0 else 0.0
+    
+    def calculate_overall_contact_ratio(self) -> float:
+        """Calculate overall contact ratio for all items in the container"""
+        if not self.items or len(self.items) < 2:
+            return 0.0
+            
+        total_contact_area = 0.0
+        total_surface_area = 0.0
+        
+        for item in self.items:
+            if not (hasattr(item, 'position') and item.position and hasattr(item, 'dimensions')):
+                continue
+                
+            # Calculate total surface area for this item
+            w, d, h = item.dimensions
+            item_surface_area = 2 * (w*d + w*h + d*h)
+            total_surface_area += item_surface_area
+            
+            # Calculate contact area with other items
+            for other_item in self.items:
+                if item != other_item and hasattr(other_item, 'position') and other_item.position:
+                    contact_area = self._calculate_contact_area_between_items(
+                        item.position, item.dimensions, other_item
+                    )
+                    total_contact_area += contact_area
+        
+        # Avoid double counting (each contact is counted twice in the loop above)
+        total_contact_area /= 2
+        
+        return total_contact_area / total_surface_area if total_surface_area > 0 else 0.0
+    
+    def _calculate_contact_area_between_items(self, pos, dims, other_item):
+        """Calculate contact area between two items (helper method)"""
+        if not other_item.position:
+            return 0.0
+            
+        x1, y1, z1 = pos
+        w1, d1, h1 = dims
+        x2, y2, z2 = other_item.position
+        w2, d2, h2 = other_item.dimensions
+        
+        contact_area = 0.0
+        tolerance = 0.001
+        
+        # Check X-face contact (left/right)
+        if abs(x1 - (x2 + w2)) < tolerance or abs(x2 - (x1 + w1)) < tolerance:
+            y_overlap = max(0, min(y1 + d1, y2 + d2) - max(y1, y2))
+            z_overlap = max(0, min(z1 + h1, z2 + h2) - max(z1, z2))
+            contact_area += y_overlap * z_overlap
+        
+        # Check Y-face contact (front/back)
+        if abs(y1 - (y2 + d2)) < tolerance or abs(y2 - (y1 + d1)) < tolerance:
+            x_overlap = max(0, min(x1 + w1, x2 + w2) - max(x1, x2))
+            z_overlap = max(0, min(z1 + h1, z2 + h2) - max(z1, z2))
+            contact_area += x_overlap * z_overlap
+        
+        # Check Z-face contact (top/bottom)
+        if abs(z1 - (z2 + h2)) < tolerance or abs(z2 - (z1 + h1)) < tolerance:
+            x_overlap = max(0, min(x1 + w1, x2 + w2) - max(x1, x2))
+            y_overlap = max(0, min(y1 + d1, y2 + d2) - max(y1, y2))
+            contact_area += x_overlap * y_overlap
+        
+        return contact_area
+    
+    def _get_items_below(self, pos, base_dims):
+        """Get items that are below a given position (helper method)"""
+        x, y = pos[0], pos[1]
+        z = pos[2]
+        w, d = base_dims
+        
+        items_below = []
+        for item in self.items:
+            if not (hasattr(item, 'position') and item.position):
+                continue
+                
+            ix, iy, iz = item.position
+            iw, id, ih = item.dimensions
+            
+            # Check if item is below and overlaps in XY plane
+            if iz + ih <= z + 0.001:  # Item is below (with small tolerance)
+                # Check XY overlap
+                if (ix < x + w and ix + iw > x and 
+                    iy < y + d and iy + id > y):
+                    items_below.append(item)
+        
+        return items_below
+    
+    def _calculate_overlap_area(self, rect1, rect2):
+        """Calculate overlap area between two rectangles (helper method)"""
+        x1, y1, w1, h1 = rect1
+        x2, y2, w2, h2 = rect2
+        
+        # Calculate overlap
+        x_overlap = max(0, min(x1 + w1, x2 + w2) - max(x1, x2))
+        y_overlap = max(0, min(y1 + h1, y2 + h2) - max(y1, y2))
+        
+        return x_overlap * y_overlap

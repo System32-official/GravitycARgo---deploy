@@ -72,11 +72,12 @@ def main():
         if not items:
             print("No items entered. Exiting.")
             return
-            
-        # Run genetic algorithm packing
+              # Run genetic algorithm packing with user input for parameters
         print("\nOptimizing container packing with genetic algorithm...")
+        population_size = int(input("Enter population size: "))
+        generations = int(input("Enter number of generations: "))
         container = optimize_packing_with_genetic_algorithm(
-            items, container_dims, population_size=50, generations=100
+            items, container_dims, population_size=population_size, generations=generations
         )
         
         # Generate visualization

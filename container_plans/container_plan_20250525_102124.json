@@ -1,0 +1,56 @@
+{
+    "timestamp": "20250525_102124",
+    "container_info": {
+        "type": "Custom",
+        "transport_mode": "Custom",
+        "transport_mode_id": "5"
+    },
+    "container_dimensions": [
+        50.0,
+        50.0,
+        50.0
+    ],
+    "statistics": {
+        "container_dims": [
+            50.0,
+            50.0,
+            50.0
+        ],
+        "volume_utilization": 0.0,
+        "items_packed": 1,
+        "total_items": 1,
+        "remaining_volume": 125000.0,
+        "center_of_gravity": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "total_weight": 0.0
+    },
+    "packed_items": [
+        {
+            "name": "Box1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                10.0,
+                10.0,
+                10.0
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [],
+    "best_fitness": 0.15,
+    "generation_count": 8,
+    "optimization_method": "regular"
+}

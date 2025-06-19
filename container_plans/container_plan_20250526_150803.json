@@ -1,0 +1,60 @@
+{
+    "timestamp": "20250526_150803",
+    "container_info": {
+        "type": "Custom",
+        "transport_mode": "Custom",
+        "transport_mode_id": "5"
+    },
+    "container_dimensions": [
+        50.0,
+        50.0,
+        50.0
+    ],
+    "statistics": {
+        "container_dims": [
+            50.0,
+            50.0,
+            50.0
+        ],
+        "volume_utilization": 0.8,
+        "items_packed": 1,
+        "total_items": 1,
+        "remaining_volume": 124000.0,
+        "center_of_gravity": [
+            5.0,
+            5.0,
+            5.0
+        ],
+        "total_weight": 5.0,
+        "best_fitness": 0.0,
+        "generation_count": 0,
+        "algorithm_used": "Genetic Algorithm"
+    },
+    "best_fitness": 0.006,
+    "generation_count": 0,
+    "algorithm_used": "Genetic Algorithm",
+    "optimization_method": "genetic",
+    "packed_items": [
+        {
+            "name": "Box1_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                10.0,
+                10.0,
+                10.0
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "NORMAL",
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": []
+}

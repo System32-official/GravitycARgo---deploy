@@ -1,0 +1,56 @@
+{
+    "timestamp": "20250609_211953",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1"
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 0.0,
+        "items_packed": 0,
+        "total_items": 1,
+        "remaining_volume": 33.137350000000005,
+        "center_of_gravity": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "total_weight": 0.0,
+        "best_fitness": 0.0,
+        "generation_count": 0,
+        "algorithm_used": "Regular Algorithm"
+    },
+    "best_fitness": 0.0,
+    "generation_count": 0,
+    "algorithm_used": "Regular Algorithm",
+    "optimization_method": "regular",
+    "packed_items": [],
+    "unpacked_items": [
+        {
+            "name": "SingleBox_1",
+            "dimensions": [
+                10.0,
+                10.0,
+                10.0
+            ],
+            "weight": 5.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (10.00\u00d710.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        }
+    ]
+}

@@ -1,87 +1,140 @@
 let currentStep = 1;
-
 let csvData = null;
+
+// Transport mode mapping
+const transportModeMapping = {
+  "1": "Truck",
+  "2": "Ship", 
+  "3": "Plane",
+  "4": "Train",
+  "5": "Custom"
+};
 
 function navigateStep(direction) {
   const newStep = currentStep + direction;
-  if (newStep < 1 || newStep > 3) return;
+  if (newStep < 1 || newStep > 4) return;
 
   if (!validateStep(currentStep)) return;
 
-  document.querySelector(`#step${currentStep}`).classList.remove("active");
-  document.querySelector(`#step${newStep}`).classList.add("active");
+  // Hide current step
+  const currentSection = document.querySelector(`[data-step="${currentStep}"]`);
+  if (currentSection) {
+    currentSection.classList.remove("active");
+  }
+
+  // Show new step
+  const newSection = document.querySelector(`[data-step="${newStep}"]`);
+  if (newSection) {
+    newSection.classList.add("active");
+  }
 
   // Update step indicators
-  document.querySelectorAll(".step-bubble").forEach((bubble, index) => {
-    bubble.classList.toggle("active", index + 1 <= newStep);
+  document.querySelectorAll(".step").forEach((step, index) => {
+    step.classList.toggle("active", index + 1 <= newStep);
   });
 
   currentStep = newStep;
   updateNavigationButtons();
 
-  if (currentStep === 3) {
+  if (currentStep === 4) {
     updateReviewPage();
   }
 }
 
 function updateReviewPage() {
-  // Update container details
-  document.getElementById("reviewTransportMode").textContent =
-    document.getElementById("transport_mode").options[
-      document.getElementById("transport_mode").selectedIndex
-    ].text;
-  document.getElementById("reviewContainerType").textContent =
-    document.getElementById("container_type").value;
-  document.getElementById("reviewDimensions").textContent =
-    document.getElementById("lengthValue").textContent +
-    " × " +
-    document.getElementById("widthValue").textContent +
-    " × " +
-    document.getElementById("heightValue").textContent;
+  // Update transport mode
+  const transportSelect = document.getElementById("transport_mode");
+  const reviewTransportMode = document.getElementById("reviewTransportMode");
+  if (transportSelect && reviewTransportMode) {
+    const selectedTransport = document.querySelector('.transport-option.selected');
+    reviewTransportMode.textContent = selectedTransport ? 
+      selectedTransport.querySelector('.option-title').textContent : "Not selected";
+  }
 
-  // Add route temperature to review
-  const routeTemp = document.getElementById("route_temperature").value;
-  document.getElementById("reviewRouteTemperature").textContent = routeTemp
-    ? `${routeTemp}°C`
-    : "Not specified";
+  // Update container type
+  const containerTypeInput = document.getElementById("container_type");
+  const reviewContainerType = document.getElementById("reviewContainerType");
+  if (reviewContainerType) {
+    reviewContainerType.textContent = containerTypeInput ? containerTypeInput.value : "Not selected";
+  }
+
+  // Update route temperature
+  const routeTemp = document.getElementById("route_temperature");
+  const reviewRouteTemperature = document.getElementById("reviewRouteTemperature");
+  if (reviewRouteTemperature) {
+    reviewRouteTemperature.textContent = routeTemp && routeTemp.value
+      ? `${routeTemp.value}°C`
+      : "Not specified";
+  }
+
+  // Update file info
+  const reviewFileName = document.getElementById("reviewFileName");
+  if (reviewFileName) {
+    const fileInput = document.getElementById("file_input");
+    reviewFileName.textContent = fileInput && fileInput.files && fileInput.files[0] 
+      ? fileInput.files[0].name 
+      : "No file uploaded";
+  }
 
   // Update CSV summary if available
   if (csvData) {
-    document.getElementById("reviewTotalItems").textContent = csvData.length;
-    const totalWeight = csvData.reduce(
-      (sum, row) => sum + (parseFloat(row.Weight) || 0),
-      0
-    );
-    document.getElementById("reviewTotalWeight").textContent =
-      totalWeight.toFixed(2) + " kg";
+    const reviewTotalItems = document.getElementById("reviewTotalItems");
+    const reviewTotalWeight = document.getElementById("reviewTotalWeight");
+    
+    if (reviewTotalItems) {
+      reviewTotalItems.textContent = csvData.length;
+    }
+    
+    if (reviewTotalWeight) {
+      const totalWeight = csvData.reduce(
+        (sum, row) => sum + (parseFloat(row.Weight) || 0),
+        0
+      );
+      reviewTotalWeight.textContent = totalWeight.toFixed(2) + " kg";
+    }
   }
 }
 
 function validateStep(step) {
   switch (step) {
     case 1:
-      // Validate container configuration
-      const transportMode = document.getElementById("transport_mode").value;
-      const containerType = document.getElementById("container_type").value;
-      const routeTemp = document.getElementById("route_temperature").value;
+      // Validate transport mode and container selection
+      const transportMode = document.getElementById("transport_mode");
+      const containerType = document.getElementById("container_type");
 
-      if (!transportMode) {
+      if (!transportMode || !transportMode.value) {
         alert("Please select a transport mode");
         return false;
       }
-      if (transportMode !== "5" && !containerType) {
+      
+      if (transportMode.value !== "5" && (!containerType || !containerType.value)) {
         alert("Please select a container type");
         return false;
       }
-      // Route temperature is optional, so no validation needed
+      
+      if (transportMode.value === "5") {
+        const length = document.getElementById("length");
+        const width = document.getElementById("width");
+        const height = document.getElementById("height");
+        
+        if (!length || !length.value || !width || !width.value || !height || !height.value) {
+          alert("Please enter all custom dimensions");
+          return false;
+        }
+      }
       return true;
 
     case 2:
       // Validate file upload
-      if (!csvData) {
+      const fileInput = document.getElementById("file_input");
+      if (!fileInput || !fileInput.files || !fileInput.files[0]) {
         alert("Please upload a file");
         return false;
       }
+      return true;
+
+    case 3:
+      // Settings are optional
       return true;
 
     default:
@@ -90,68 +143,32 @@ function validateStep(step) {
 }
 
 function updateNavigationButtons() {
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
+  const prevBtn = document.getElementById("prev1");
+  const nextBtn = document.getElementById("next1");
 
-  prevBtn.style.display = currentStep === 1 ? "none" : "block";
-  if (currentStep === 3) {
-    nextBtn.textContent = "Submit";
-    nextBtn.onclick = submitForm;
-  } else {
-    nextBtn.textContent = "Next";
-    nextBtn.onclick = () => navigateStep(1);
+  if (prevBtn) {
+    prevBtn.style.display = currentStep === 1 ? "none" : "block";
+  }
+  
+  if (nextBtn) {
+    if (currentStep === 4) {
+      nextBtn.innerHTML = '<i class="fas fa-rocket"></i> Optimize';
+      nextBtn.type = "submit";
+    } else {
+      nextBtn.innerHTML = 'Next <i class="fas fa-arrow-right"></i>';
+      nextBtn.type = "button";
+    }
   }
 }
 
 function submitForm() {
-  const form = new FormData();
-
-  // Add container configuration
-  form.append(
-    "transport_mode",
-    document.getElementById("transport_mode").value
-  );
-  form.append(
-    "container_type",
-    document.getElementById("container_type").value
-  );
-
-  // Add route temperature if specified
-  const routeTemp = document.getElementById("route_temperature").value;
-  if (routeTemp) {
-    form.append("route_temperature", routeTemp);
+  const form = document.getElementById("optimizerForm");
+  if (form) {
+    form.submit();
   }
-
-  // Add file if available
-  const fileInput = document.getElementById("csvFile");
-  if (fileInput.files[0]) {
-    form.append("file", fileInput.files[0]);
-  }
-
-  // Update UI to show loading state
-  const nextBtn = document.getElementById("nextBtn");
-  nextBtn.disabled = true;
-  nextBtn.innerHTML =
-    '<i class="fas fa-circle-notch fa-spin"></i> Processing...';
-
-  // Submit the form
-  fetch("/optimize", {
-    method: "POST",
-    body: form,
-  })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Optimization failed");
-      }
-      return response.text();
-    })
-    .then((html) => {
-      // Replace the current page content with the results
-      document.documentElement.innerHTML = html;
-    })
-    .catch((error) => {
-      alert("Error during optimization: " + error.message);
-      nextBtn.disabled = false;
-      nextBtn.innerHTML = "Submit";
-    });
 }
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  updateNavigationButtons();
+});

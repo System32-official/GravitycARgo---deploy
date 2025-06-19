@@ -41,3 +41,22 @@ def calculate_overlap_area(rect1, rect2):
     y_overlap = max(0, min(y1 + d1, y2 + d2) - max(y1, y2))
     
     return x_overlap * y_overlap
+
+def check_overlap_2d(rect1, rect2):
+    """
+    Check if two 2D rectangles overlap.
+    
+    Args:
+        rect1 (tuple): First rectangle (x, y, width, depth)
+        rect2 (tuple): Second rectangle (x, y, width, depth)
+    
+    Returns:
+        bool: True if rectangles overlap, False otherwise
+    """
+    x1, y1, w1, d1 = rect1
+    x2, y2, w2, d2 = rect2
+    
+    return not (x1 + w1 <= x2 or  # rect1 is left of rect2
+               x2 + w2 <= x1 or    # rect2 is left of rect1
+               y1 + d1 <= y2 or    # rect1 is below rect2
+               y2 + d2 <= y1)      # rect2 is below rect1

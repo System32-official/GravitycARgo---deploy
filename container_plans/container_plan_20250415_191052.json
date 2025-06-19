@@ -1711,5 +1711,8 @@
             "temperature_sensitivity": null,
             "reason": "Item dimensions (0.80\u00d72.40\u00d70.50m) exceed container dimensions (12.00\u00d72.35\u00d72.39m)"
         }
-    ]
+    ],
+    "best_fitness": 0.3544022077806463,
+    "generation_count": 8,
+    "optimization_method": "regular"
 }

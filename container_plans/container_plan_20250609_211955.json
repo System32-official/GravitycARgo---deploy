@@ -1,0 +1,1640 @@
+{
+    "timestamp": "20250609_211955",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1"
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 0.0,
+        "items_packed": 0,
+        "total_items": 1,
+        "remaining_volume": 33.137350000000005,
+        "center_of_gravity": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "total_weight": 0.0,
+        "best_fitness": 0.0,
+        "generation_count": 0,
+        "algorithm_used": "Regular Algorithm"
+    },
+    "best_fitness": 0.0,
+    "generation_count": 0,
+    "algorithm_used": "Regular Algorithm",
+    "optimization_method": "regular",
+    "packed_items": [],
+    "unpacked_items": [
+        {
+            "name": "ManyBoxes_1",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_2",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_3",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_4",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_5",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_6",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_7",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_8",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_9",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_10",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_11",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_12",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_13",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_14",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_15",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_16",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_17",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_18",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_19",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_20",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_21",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_22",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_23",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_24",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_25",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_26",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_27",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_28",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_29",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_30",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_31",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_32",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_33",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_34",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_35",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_36",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_37",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_38",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_39",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_40",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_41",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_42",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_43",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_44",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_45",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_46",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_47",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_48",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_49",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_50",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_51",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_52",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_53",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_54",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_55",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_56",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_57",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_58",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_59",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_60",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_61",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_62",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_63",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_64",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_65",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_66",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_67",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_68",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_69",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_70",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_71",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_72",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_73",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_74",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_75",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_76",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_77",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_78",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_79",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_80",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_81",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_82",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_83",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_84",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_85",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_86",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_87",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_88",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_89",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_90",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_91",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_92",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_93",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_94",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_95",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_96",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_97",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_98",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_99",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "ManyBoxes_100",
+            "dimensions": [
+                5.0,
+                5.0,
+                5.0
+            ],
+            "weight": 2.0,
+            "fragility": "Low",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (5.00\u00d75.00\u00d75.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        }
+    ]
+}

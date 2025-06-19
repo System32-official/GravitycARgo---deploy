@@ -3,16 +3,42 @@ Packing algorithms for the EnhancedContainer class
 """
 from typing import List, Tuple, Dict
 import numpy as np
+import logging
 
 from optigenix_module.models.item import Item
 from optigenix_module.models.space import MaximalSpace
+from modules.utils import check_overlap_2d
+
+# Initialize logger
+logger = logging.getLogger(__name__)
+
+"""Converted to use utility function - contents moved to utils.py"""
 
 class ContainerPacking:
     """Contains methods for packing items into the container"""
     
-    def pack_items(self, items: List[Item], route_temperature=None):
-        """Pack items with improved temperature constraint handling"""
+    def pack_items(self, items: List[Item], route_temperature=None, constraint_weights=None):
+        """Pack items with improved temperature constraint handling and constraint weights"""
         self.route_temperature = route_temperature  # Store route temperature for constraint checking
+        
+        # Initialize constraint weights with defaults if not provided
+        self.constraint_weights = constraint_weights or {
+            'volume_utilization_weight': 0.75,
+            'stability_score_weight': 0.50,
+            'contact_ratio_weight': 0.50,
+            'weight_balance_weight': 0.25,
+            'items_packed_ratio_weight': 0.25,
+            'temperature_constraint_weight': 0.30
+        }
+        
+        logger.info("Standard packing using constraint weights:")
+        logger.info(f"  Volume: {self.constraint_weights['volume_utilization_weight']:.2f} | " +
+                    f"Stability: {self.constraint_weights['stability_score_weight']:.2f} | " + 
+                    f"Contact: {self.constraint_weights['contact_ratio_weight']:.2f} | " +
+                    f"Balance: {self.constraint_weights['weight_balance_weight']:.2f} | " +
+                    f"Packed: {self.constraint_weights['items_packed_ratio_weight']:.2f} | " +
+                    f"Temperature: {self.constraint_weights.get('temperature_constraint_weight', 0):.2f}")
+        
         expanded_items = []
         
         for item in items:
@@ -275,129 +301,123 @@ class ContainerPacking:
             return False
 
     def _evaluate_position_enhanced(self, item, pos, dims):
-        """Enhanced position evaluation with temperature constraint considerations"""
-        score = 0
+        """Enhanced position evaluation with weighted constraints"""
+        # Base scores for each constraint category
+        constraint_scores = {
+            'volume_utilization': 0,
+            'stability_score': 0,
+            'contact_ratio': 0,
+            'weight_balance': 0,
+            'temperature_constraint': 0,
+            'items_packed_ratio': 100  # Default high score for packing this item
+        }
+        
         x, y, z = pos
         w, d, h = dims
         
-        # Check support and stability
+        # --- STABILITY SCORE ---
         support_score = self._calculate_support_score(item, pos, dims)
-        score += support_score * 5
+        constraint_scores['stability_score'] = support_score * 100  # Normalize to 0-100
         
-        # For temperature-sensitive items, evaluate position with strict penalties
+        # --- VOLUME UTILIZATION ---
+        # Prefer positions that minimize empty space
+        # Check how well the item fits in its surrounding space
+        item_volume = w * d * h
+        container_volume = self.dimensions[0] * self.dimensions[1] * self.dimensions[2]
+        
+        # Find nearest items in all 6 directions
+        nearest_distances = self._find_nearest_distances(pos, dims)
+        wasted_space = sum(nearest_distances)
+        
+        # Lower wasted space means better volume utilization
+        space_efficiency = 1.0 - min(1.0, wasted_space / (container_volume ** (1/3)))
+        constraint_scores['volume_utilization'] = space_efficiency * 100
+        
+        # --- TEMPERATURE CONSTRAINTS ---
         if getattr(item, 'needs_insulation', False):
-            # Check if position is near any wall or top
-            wall_buffer = 0.3  # 30cm buffer - FIXED: Consistent with other parts of the code
+            # Calculate distance from walls (minimum of all 6 directions)
+            wall_buffer = 0.3  # 30cm buffer
+            wall_distances = [
+                x,                              # Left wall
+                y,                              # Front wall
+                self.dimensions[0] - (x + w),   # Right wall
+                self.dimensions[1] - (y + d),   # Back wall
+                z,                              # Bottom
+                self.dimensions[2] - (z + h)    # Top
+            ]
+            min_wall_distance = min(wall_distances)
             
-            # Calculate distance from walls
-            distance_from_walls = min(
-                x,                              # Distance from left wall
-                y,                              # Distance from front wall
-                self.dimensions[0] - (x + w),   # Distance from right wall
-                self.dimensions[1] - (y + d),   # Distance from back wall
-                self.dimensions[2] - (z + h)    # Distance from top
-            )
-            
-            # Use much stricter wall penalties for temperature-sensitive items
-            if distance_from_walls <= wall_buffer:
-                # Apply a very significant penalty for being too close to walls
-                # Use -500 to make it almost impossible to place against walls
-                # unless there's exceptional insulation or central placement
-                score -= 500 * (1 - distance_from_walls/wall_buffer)
+            # Calculate temperature constraint score based on wall distance
+            if min_wall_distance < wall_buffer:
+                wall_distance_score = (min_wall_distance / wall_buffer) * 50  # 0-50 range
             else:
-                # Give strong bonus for positions further from walls
-                distance_bonus = min(50, distance_from_walls * 30)
-                score += distance_bonus
+                wall_distance_score = 50 + min(50, (min_wall_distance - wall_buffer) * 50)  # 50-100 range
             
-            # Count surrounding items (which can provide insulation)
+            # Count surrounding items for insulation
             surrounding_items = 0
             insulating_items = 0
-            
             for placed_item in self.items:
                 if self._has_surface_contact(pos, dims, placed_item):
                     surrounding_items += 1
-                    # Extra bonus if surrounding item is not temperature-sensitive
                     if not getattr(placed_item, 'needs_insulation', False):
                         insulating_items += 1
-                        score += 20  # Increased bonus for each non-sensitive item providing insulation
             
-            # Being away from walls becomes less important if well insulated by other items
-            # But require more insulation than before
-            if surrounding_items >= 3 and insulating_items >= 2 and distance_from_walls <= wall_buffer:
-                score += 200  # Partial recovery if very well insulated by other items
-                
-            # Add much stronger preference for central area of container
-            center_x = self.dimensions[0] / 2
-            center_y = self.dimensions[1] / 2
-            item_center_x = x + w/2
-            item_center_y = y + d/2
+            # Calculate insulation score
+            insulation_score = min(100, (surrounding_items * 10) + (insulating_items * 20))
             
-            # Check if position is in central third of container
-            is_central = (
-                center_x - self.dimensions[0]/6 <= item_center_x <= center_x + self.dimensions[0]/6 and
-                center_y - self.dimensions[1]/6 <= item_center_y <= center_y + self.dimensions[1]/6
-            )
-            
-            if is_central:
-                score += 250  # Very significant bonus for central placement
-        else:
-            # Non-temperature sensitive items are encouraged to use walls
-            wall_contacts = 0
-            if x == 0 or x + w == self.dimensions[0]: wall_contacts += 1
-            if y == 0 or y + d == self.dimensions[1]: wall_contacts += 1
-            if z == 0: wall_contacts += 1
-            score += wall_contacts * 15  # Increased encouragement for non-sensitive items to use walls
+            # Combine wall distance and insulation scores
+            constraint_scores['temperature_constraint'] = (wall_distance_score * 0.7) + (insulation_score * 0.3)
         
-        # Rest of the evaluation logic remains unchanged
-        contact_score = 0
+        # --- CONTACT RATIO ---
         contact_count = 0
+        contact_area = 0
+        total_surface_area = 2 * (w*d + w*h + d*h)
+        
         for placed_item in self.items:
             if self._has_surface_contact(pos, dims, placed_item):
                 contact_count += 1
-                # Higher score for similar sized items touching
-                size_ratio = min(
-                    (w * d) / (placed_item.dimensions[0] * placed_item.dimensions[1]),
-                    (placed_item.dimensions[0] * placed_item.dimensions[1]) / (w * d)
-                )
-                contact_score += size_ratio
-                
-                # Extra bonus for temperature-sensitive items touching non-temperature-sensitive items
-                if getattr(item, 'needs_insulation', False) and not getattr(placed_item, 'needs_insulation', False):
-                    contact_score += 10  # Increased from 2 to 10
+                contact_area += self._calculate_contact_area(pos, dims, placed_item)
         
-        score += (contact_score * 4) + (contact_count * 3)
+        contact_ratio = min(1.0, contact_area / total_surface_area)
+        constraint_scores['contact_ratio'] = contact_ratio * 100
         
-        # Consider fragility and load bearing constraints
-        if z > 0:
-            items_below = self._get_items_below(pos, (w, d))
-            
-            if any(below.fragility == 'HIGH' for below in items_below):
-                score -= 50
-            
-            for below_item in items_below:
-                if below_item.load_bearing > 0:
-                    overlap_area = self._calculate_overlap_area(
-                        (x, y, w, d),
-                        (below_item.position[0], below_item.position[1],
-                         below_item.dimensions[0], below_item.dimensions[1])
-                    )
-                    total_area = below_item.dimensions[0] * below_item.dimensions[1]
-                    weight_ratio = overlap_area / total_area
-                    
-                    capacity_usage = item.weight / (below_item.load_bearing * weight_ratio)
-                    if capacity_usage > 0.8:
-                        score -= (capacity_usage - 0.8) * 20
-            
-            if item.fragility == 'HIGH':
-                score -= 30
-            
-            if support_score > 0.8:
-                score += 10
+        # --- WEIGHT BALANCE ---
+        # Calculate center of gravity impact
+        current_cog = self._calculate_current_cog()
+        new_cog = self._calculate_cog_with_new_item(item, pos)
         
-        if z == 0 and (item.weight > 100 or item.fragility == 'HIGH'):
-            score += 15
-            
-        return score
+        # Distance from ideal center
+        ideal_cog = (self.dimensions[0]/2, self.dimensions[1]/2, self.dimensions[2]/4)
+        current_distance = self._calculate_distance(current_cog, ideal_cog)
+        new_distance = self._calculate_distance(new_cog, ideal_cog)
+        
+        # Better balance = lower distance to ideal center
+        if current_distance > 0:
+            balance_improvement = max(-100, min(100, (current_distance - new_distance) * 100 / current_distance))
+        else:
+            balance_improvement = 0
+        
+        constraint_scores['weight_balance'] = 50 + balance_improvement/2  # Center at 50, range 0-100
+    
+        # --- APPLY WEIGHTS ---
+        weighted_score = 0
+        for constraint, score in constraint_scores.items():
+            weight_key = f"{constraint}_weight"
+            if hasattr(self, 'constraint_weights') and weight_key in self.constraint_weights:
+                weighted_score += score * self.constraint_weights[weight_key]
+            else:
+                # Default weights if not provided
+                default_weights = {
+                    'volume_utilization_weight': 0.75,
+                    'stability_score_weight': 0.50,
+                    'contact_ratio_weight': 0.50,
+                    'weight_balance_weight': 0.25,
+                    'items_packed_ratio_weight': 0.25,
+                    'temperature_constraint_weight': 0.30
+                }
+                weighted_score += score * default_weights.get(weight_key, 0.1)
+        
+        return weighted_score
 
     def _calculate_support_score(self, item, pos, dims):
         """Calculate support score with reduced constraints"""
@@ -809,3 +829,154 @@ class ContainerPacking:
                 else:
                     self.weight_exceeded = False
                     print(f"✅ Weight check passed: {self.total_weight:.1f} kg / {max_payload} kg")
+    
+    def _find_nearest_distances(self, pos, dims):
+        """Find the nearest items or walls in all 6 directions"""
+        x, y, z = pos
+        w, d, h = dims
+        
+        # Initialize with distances to walls
+        nearest_distances = [
+            x,                              # Distance to left wall
+            y,                              # Distance to front wall
+            self.dimensions[0] - (x + w),   # Distance to right wall
+            self.dimensions[1] - (y + d),   # Distance to back wall
+            z,                              # Distance to bottom
+            self.dimensions[2] - (z + h)    # Distance to top
+        ]
+        
+        # Check all items for closer distances
+        for item in self.items:
+            if item.position is None:
+                continue
+                
+            ix, iy, iz = item.position
+            iw, id, ih = item.dimensions
+            
+            # Left distance (-X direction)
+            if iy < y + d and iy + id > y and iz < z + h and iz + ih > z and ix + iw <= x:
+                nearest_distances[0] = min(nearest_distances[0], x - (ix + iw))
+                
+            # Front distance (-Y direction)
+            if ix < x + w and ix + iw > x and iz < z + h and iz + ih > z and iy + id <= y:
+                nearest_distances[1] = min(nearest_distances[1], y - (iy + id))
+                
+            # Right distance (+X direction)
+            if iy < y + d and iy + id > y and iz < z + h and iz + ih > z and ix >= x + w:
+                nearest_distances[2] = min(nearest_distances[2], ix - (x + w))
+                
+            # Back distance (+Y direction)
+            if ix < x + w and ix + iw > x and iz < z + h and iz + ih > z and iy >= y + d:
+                nearest_distances[3] = min(nearest_distances[3], iy - (y + d))
+                
+            # Bottom distance (-Z direction)
+            if ix < x + w and ix + iw > x and iy < y + d and iy + id > y and iz + ih <= z:
+                nearest_distances[4] = min(nearest_distances[4], z - (iz + ih))
+                
+            # Top distance (+Z direction)
+            if ix < x + w and ix + iw > x and iy < y + d and iy + id > y and iz >= z + h:
+                nearest_distances[5] = min(nearest_distances[5], iz - (z + h))
+                
+        return nearest_distances
+
+    def _calculate_contact_area(self, pos, dims, other_item):
+        """Calculate contact area between two items"""
+        if other_item.position is None:
+            return 0
+            
+        x1, y1, z1 = pos
+        w1, d1, h1 = dims
+        x2, y2, z2 = other_item.position
+        w2, d2, h2 = other_item.dimensions
+        
+        contact_area = 0
+        
+        # Check X-face contact
+        if abs(x1 - (x2 + w2)) < 0.001 or abs(x2 - (x1 + w1)) < 0.001:
+            # Items are adjacent in X direction
+            # Calculate overlap area in YZ plane
+            y_overlap = max(0, min(y1 + d1, y2 + d2) - max(y1, y2))
+            z_overlap = max(0, min(z1 + h1, z2 + h2) - max(z1, z2))
+            contact_area += y_overlap * z_overlap
+        
+        # Check Y-face contact
+        if abs(y1 - (y2 + d2)) < 0.001 or abs(y2 - (y1 + d1)) < 0.001:
+            # Items are adjacent in Y direction
+            # Calculate overlap area in XZ plane
+            x_overlap = max(0, min(x1 + w1, x2 + w2) - max(x1, x2))
+            z_overlap = max(0, min(z1 + h1, z2 + h2) - max(z1, z2))
+            contact_area += x_overlap * z_overlap
+        
+        # Check Z-face contact
+        if abs(z1 - (z2 + h2)) < 0.001 or abs(z2 - (z1 + h1)) < 0.001:
+            # Items are adjacent in Z direction
+            # Calculate overlap area in XY plane
+            x_overlap = max(0, min(x1 + w1, x2 + w2) - max(x1, x2))
+            y_overlap = max(0, min(y1 + d1, y2 + d2) - max(y1, y2))
+            contact_area += x_overlap * y_overlap
+        
+        return contact_area
+
+    def _calculate_current_cog(self):
+        """Calculate current center of gravity of packed items"""
+        total_weight = 0
+        weighted_x = 0
+        weighted_y = 0
+        weighted_z = 0
+        
+        for item in self.items:
+            if item.position is None:
+                continue
+                
+            x, y, z = item.position
+            w, d, h = item.dimensions
+            
+            # Calculate item's center position
+            center_x = x + w/2
+            center_y = y + d/2
+            center_z = z + h/2
+            
+            weighted_x += center_x * item.weight
+            weighted_y += center_y * item.weight
+            weighted_z += center_z * item.weight
+            total_weight += item.weight
+        
+        if total_weight == 0:
+            # If no items yet, return container center
+            return (self.dimensions[0]/2, self.dimensions[1]/2, self.dimensions[2]/2)
+        
+        return (weighted_x/total_weight, weighted_y/total_weight, weighted_z/total_weight)
+
+    def _calculate_cog_with_new_item(self, item, pos):
+        """Calculate what the CoG would be with a new item added"""
+        x, y, z = pos
+        w, d, h = item.dimensions
+        
+        # Calculate total weight and weighted position sums with existing items
+        total_weight = item.weight
+        weighted_x = (x + w/2) * item.weight
+        weighted_y = (y + d/2) * item.weight
+        weighted_z = (z + h/2) * item.weight
+        
+        for packed_item in self.items:
+            if packed_item.position is None:
+                continue
+                
+            ix, iy, iz = packed_item.position
+            iw, id, ih = packed_item.dimensions
+            
+            weighted_x += (ix + iw/2) * packed_item.weight
+            weighted_y += (iy + id/2) * packed_item.weight
+            weighted_z += (iz + ih/2) * packed_item.weight
+            total_weight += packed_item.weight
+        
+        if total_weight == 0:
+            return (self.dimensions[0]/2, self.dimensions[1]/2, self.dimensions[2]/2)
+        
+        return (weighted_x/total_weight, weighted_y/total_weight, weighted_z/total_weight)
+
+    def _calculate_distance(self, point1, point2):
+        """Calculate distance between two 3D points"""
+        return ((point1[0] - point2[0])**2 + 
+                (point1[1] - point2[1])**2 + 
+                (point1[2] - point2[2])**2) ** 0.5

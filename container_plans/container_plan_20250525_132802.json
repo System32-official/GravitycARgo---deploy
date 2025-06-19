@@ -1,0 +1,76 @@
+{
+    "timestamp": "20250525_132802",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1"
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 0.27159685370133696,
+        "items_packed": 2,
+        "total_items": 2,
+        "remaining_volume": 33.04735,
+        "center_of_gravity": [
+            0.28076923076923077,
+            0.3153846153846154,
+            0.1346153846153846
+        ],
+        "total_weight": 13.0
+    },
+    "packed_items": [
+        {
+            "name": "BoxB_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.25
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BoxA_1",
+            "position": [
+                0.0,
+                0.4,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.2,
+                0.3
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [],
+    "best_fitness": 0.002036976402760027,
+    "generation_count": 8,
+    "optimization_method": "regular"
+}

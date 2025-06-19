@@ -1,0 +1,2977 @@
+{
+    "timestamp": "20250525_121557",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1",
+        "route_temperature": 25.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 4.7097429335779815,
+        "items_packed": 147,
+        "total_items": 147,
+        "remaining_volume": 31.576666000000003,
+        "center_of_gravity": [
+            1.5030190706419546,
+            1.0633473005640615,
+            0.14770158474348644
+        ],
+        "total_weight": 372.30000000000007
+    },
+    "packed_items": [
+        {
+            "name": "Phone_084",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.08,
+                0.008
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_055",
+            "position": [
+                0.0,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.15,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_019",
+            "position": [
+                0.2,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.15
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_135",
+            "position": [
+                0.2,
+                0.28,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.25,
+                0.4
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_133",
+            "position": [
+                0.2,
+                0.53,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.1
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_106",
+            "position": [
+                0.6000000000000001,
+                0.53,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.1
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_119",
+            "position": [
+                0.15,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.02,
+                0.3
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_145",
+            "position": [
+                0.0,
+                0.22999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.2,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_082",
+            "position": [
+                0.4,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.15,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_088",
+            "position": [
+                0.0,
+                0.43,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.4,
+                0.6
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_070",
+            "position": [
+                0.1,
+                0.43,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.6,
+                0.4
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_126",
+            "position": [
+                0.6000000000000001,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.3,
+                0.4
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_008",
+            "position": [
+                0.8500000000000001,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.2,
+                0.45
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_125",
+            "position": [
+                0.6000000000000001,
+                0.93,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.45,
+                0.35
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_052",
+            "position": [
+                0.0,
+                0.8300000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.4,
+                0.6
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_095",
+            "position": [
+                0.15,
+                0.02,
+                0.0
+            ],
+            "dimensions": [
+                0.24,
+                0.03,
+                0.16
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_063",
+            "position": [
+                0.2,
+                1.13,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.25
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_013",
+            "position": [
+                0.1,
+                1.03,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.35,
+                0.25
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_060",
+            "position": [
+                0.8500000000000001,
+                0.28,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.18,
+                0.01
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_129",
+            "position": [
+                0.15,
+                0.22999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.008,
+                0.08,
+                0.15
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_027",
+            "position": [
+                1.2000000000000002,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.25
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_025",
+            "position": [
+                0.8,
+                0.93,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.4,
+                0.6
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_004",
+            "position": [
+                0.13,
+                1.03,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.35,
+                0.25
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_061",
+            "position": [
+                1.2000000000000002,
+                0.48000000000000004,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.1,
+                0.6
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_044",
+            "position": [
+                0.9,
+                0.93,
+                0.0
+            ],
+            "dimensions": [
+                0.45,
+                0.2,
+                0.35
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_077",
+            "position": [
+                1.2000000000000002,
+                0.5800000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.16,
+                0.24,
+                0.03
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_099",
+            "position": [
+                0.2,
+                1.43,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.25,
+                0.4
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_062",
+            "position": [
+                0.9,
+                1.1300000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.45,
+                0.35
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_068",
+            "position": [
+                0.5,
+                0.28,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.24,
+                0.16
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_089",
+            "position": [
+                1.36,
+                0.5800000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.45,
+                0.35,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_043",
+            "position": [
+                1.5000000000000002,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.1
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_143",
+            "position": [
+                1.1,
+                1.1300000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.45,
+                0.2,
+                0.35
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_109",
+            "position": [
+                0.6000000000000001,
+                1.3800000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.2,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_039",
+            "position": [
+                0.158,
+                0.22999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.008,
+                0.08,
+                0.15
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_103",
+            "position": [
+                0.53,
+                0.28,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.25,
+                0.35
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_029",
+            "position": [
+                0.6000000000000001,
+                1.58,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.21,
+                0.02
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_073",
+            "position": [
+                1.35,
+                0.93,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.15
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_005",
+            "position": [
+                0.56,
+                0.28,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.24,
+                0.16
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_131",
+            "position": [
+                0.15,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.16,
+                0.03,
+                0.24
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_050",
+            "position": [
+                0.31,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.24,
+                0.03,
+                0.16
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_051",
+            "position": [
+                0.36,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.01,
+                0.18
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_021",
+            "position": [
+                0.6000000000000001,
+                0.38,
+                0.0
+            ],
+            "dimensions": [
+                0.08,
+                0.15,
+                0.008
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_028",
+            "position": [
+                0.2,
+                1.68,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.2,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_128",
+            "position": [
+                0.16,
+                1.03,
+                0.0
+            ],
+            "dimensions": [
+                0.02,
+                0.21,
+                0.3
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_040",
+            "position": [
+                1.1,
+                1.33,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.25,
+                0.03
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_102",
+            "position": [
+                0.68,
+                0.38,
+                0.0
+            ],
+            "dimensions": [
+                0.08,
+                0.15,
+                0.008
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_132",
+            "position": [
+                0.5900000000000001,
+                0.28,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.25,
+                0.18
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_096",
+            "position": [
+                0.18,
+                1.03,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.25,
+                0.18
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_037",
+            "position": [
+                0.35,
+                1.68,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.2,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_117",
+            "position": [
+                1.55,
+                0.93,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.3,
+                0.4
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_001",
+            "position": [
+                0.9000000000000001,
+                1.58,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.15,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_064",
+            "position": [
+                0.6000000000000001,
+                1.79,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.15,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_122",
+            "position": [
+                1.1,
+                0.28,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.24,
+                0.16
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_042",
+            "position": [
+                0.36,
+                0.01,
+                0.0
+            ],
+            "dimensions": [
+                0.18,
+                0.01,
+                0.25
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_045",
+            "position": [
+                0.2,
+                1.88,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.25
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_108",
+            "position": [
+                1.81,
+                0.5800000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.4,
+                0.3
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_026",
+            "position": [
+                1.1,
+                1.58,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.2,
+                0.45
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_034",
+            "position": [
+                1.6,
+                0.48000000000000004,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.1,
+                0.6
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_120",
+            "position": [
+                0.61,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.08,
+                0.008
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_118",
+            "position": [
+                0.9000000000000001,
+                1.73,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.2,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_006",
+            "position": [
+                0.39,
+                0.02,
+                0.0
+            ],
+            "dimensions": [
+                0.18,
+                0.01,
+                0.25
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_030",
+            "position": [
+                0.39,
+                0.03,
+                0.0
+            ],
+            "dimensions": [
+                0.08,
+                0.008,
+                0.15
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_071",
+            "position": [
+                1.4500000000000002,
+                1.33,
+                0.0
+            ],
+            "dimensions": [
+                0.45,
+                0.35,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_114",
+            "position": [
+                0.166,
+                0.22999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.18,
+                0.25
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_094",
+            "position": [
+                0.76,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.03,
+                0.25
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_010",
+            "position": [
+                0.6000000000000001,
+                1.94,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.2,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_017",
+            "position": [
+                1.1,
+                1.78,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.45,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_009",
+            "position": [
+                0.7500000000000001,
+                1.94,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.25
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_087",
+            "position": [
+                1.81,
+                0.9800000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.18,
+                0.01
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_023",
+            "position": [
+                2.1,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.16,
+                0.24,
+                0.03
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_144",
+            "position": [
+                2.1,
+                0.32,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.25,
+                0.3
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_093",
+            "position": [
+                0.39,
+                0.038,
+                0.0
+            ],
+            "dimensions": [
+                0.08,
+                0.008,
+                0.15
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_038",
+            "position": [
+                0.76,
+                0.03,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.02,
+                0.21
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_121",
+            "position": [
+                0.76,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.03,
+                0.35
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_003",
+            "position": [
+                1.1099999999999999,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.08,
+                0.008
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_079",
+            "position": [
+                2.06,
+                0.5800000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.1
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_107",
+            "position": [
+                1.4500000000000002,
+                1.6800000000000002,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.45,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_113",
+            "position": [
+                1.1300000000000001,
+                0.28,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.16,
+                0.24
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_007",
+            "position": [
+                0.0,
+                1.23,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.6,
+                0.4
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_011",
+            "position": [
+                0.8500000000000001,
+                0.46,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.02,
+                0.3
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_141",
+            "position": [
+                0.8500000000000001,
+                0.48000000000000004,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.01,
+                0.18
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_054",
+            "position": [
+                1.9000000000000001,
+                1.33,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.4,
+                0.3
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_067",
+            "position": [
+                0.1,
+                1.38,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.35,
+                0.25
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_072",
+            "position": [
+                2.5,
+                0.32,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.4,
+                0.3
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_139",
+            "position": [
+                1.2599999999999998,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.03,
+                0.25
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_066",
+            "position": [
+                1.2000000000000002,
+                0.8200000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.08,
+                0.008
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_075",
+            "position": [
+                0.17600000000000002,
+                0.22999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.008,
+                0.15,
+                0.08
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_116",
+            "position": [
+                2.2600000000000002,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.2,
+                0.45
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_012",
+            "position": [
+                1.6099999999999999,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.08,
+                0.008
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_056",
+            "position": [
+                2.1500000000000004,
+                1.33,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.21,
+                0.02
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_015",
+            "position": [
+                0.0,
+                1.83,
+                0.0
+            ],
+            "dimensions": [
+                0.18,
+                0.25,
+                0.01
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_101",
+            "position": [
+                1.9000000000000001,
+                1.73,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.21,
+                0.02
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_024",
+            "position": [
+                0.18400000000000002,
+                0.22999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.18,
+                0.25
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_035",
+            "position": [
+                2.5,
+                0.72,
+                0.0
+            ],
+            "dimensions": [
+                0.45,
+                0.2,
+                0.35
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_057",
+            "position": [
+                1.7599999999999998,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.08,
+                0.008
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_059",
+            "position": [
+                0.8500000000000001,
+                0.49000000000000005,
+                0.0
+            ],
+            "dimensions": [
+                0.24,
+                0.03,
+                0.16
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_033",
+            "position": [
+                1.4500000000000002,
+                2.1300000000000003,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.18,
+                0.01
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_053",
+            "position": [
+                2.5,
+                0.9199999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.35,
+                0.45
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_016",
+            "position": [
+                1.9000000000000001,
+                1.94,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.1
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_130",
+            "position": [
+                2.75,
+                0.32,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.35,
+                0.03
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_134",
+            "position": [
+                2.45,
+                1.33,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.45,
+                0.35
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_097",
+            "position": [
+                2.7,
+                0.9199999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.1
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_138",
+            "position": [
+                0.76,
+                0.38,
+                0.0
+            ],
+            "dimensions": [
+                0.08,
+                0.15,
+                0.008
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_081",
+            "position": [
+                3.0,
+                0.32,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.4,
+                0.3
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_065",
+            "position": [
+                0.16,
+                1.24,
+                0.0
+            ],
+            "dimensions": [
+                0.02,
+                0.3,
+                0.21
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_086",
+            "position": [
+                1.1600000000000001,
+                0.28,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.16,
+                0.24
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_080",
+            "position": [
+                2.7,
+                1.52,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.35,
+                0.45
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_048",
+            "position": [
+                0.5,
+                1.43,
+                0.0
+            ],
+            "dimensions": [
+                0.08,
+                0.15,
+                0.008
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Printer_098",
+            "position": [
+                3.1,
+                0.9199999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.45,
+                0.35
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_127",
+            "position": [
+                0.0,
+                2.08,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.2,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_142",
+            "position": [
+                1.55,
+                1.23,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.1,
+                0.4
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_032",
+            "position": [
+                0.13,
+                1.38,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.24,
+                0.16
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_085",
+            "position": [
+                1.2599999999999998,
+                0.03,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.03,
+                0.25
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_115",
+            "position": [
+                0.5,
+                1.5799999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.4,
+                0.6
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_091",
+            "position": [
+                2.6100000000000003,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.15
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_110",
+            "position": [
+                1.2599999999999998,
+                0.06,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.02,
+                0.21
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_041",
+            "position": [
+                0.16,
+                1.54,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.24,
+                0.16
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_090",
+            "position": [
+                2.5,
+                1.94,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.25,
+                0.4
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_078",
+            "position": [
+                0.4,
+                0.22999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.18,
+                0.01,
+                0.25
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_002",
+            "position": [
+                1.9099999999999997,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.02,
+                0.3
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_076",
+            "position": [
+                3.25,
+                0.32,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.35,
+                0.03
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_014",
+            "position": [
+                0.4,
+                0.24,
+                0.0
+            ],
+            "dimensions": [
+                0.16,
+                0.03,
+                0.24
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_022",
+            "position": [
+                0.8,
+                1.33,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.25,
+                0.35
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_047",
+            "position": [
+                1.9099999999999997,
+                0.02,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.02,
+                0.21
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_140",
+            "position": [
+                2.1500000000000004,
+                1.54,
+                0.0
+            ],
+            "dimensions": [
+                0.24,
+                0.16,
+                0.03
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_100",
+            "position": [
+                1.7000000000000002,
+                2.1300000000000003,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.15,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_069",
+            "position": [
+                2.2,
+                1.73,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.18,
+                0.01
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_074",
+            "position": [
+                1.9099999999999997,
+                0.04,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.02,
+                0.3
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_105",
+            "position": [
+                0.8500000000000001,
+                0.52,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.01,
+                0.18
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Book_104",
+            "position": [
+                0.8300000000000001,
+                1.33,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.24,
+                0.16
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_058",
+            "position": [
+                1.05,
+                1.73,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.35,
+                0.25
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_111",
+            "position": [
+                0.6000000000000001,
+                2.14,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.08,
+                0.008
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_092",
+            "position": [
+                1.9099999999999997,
+                0.06,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.02,
+                0.21
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Monitor_124",
+            "position": [
+                2.9000000000000004,
+                1.52,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.6,
+                0.4
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_112",
+            "position": [
+                3.0000000000000004,
+                1.52,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.35,
+                0.03
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_031",
+            "position": [
+                3.25,
+                0.6699999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.25,
+                0.03
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_083",
+            "position": [
+                0.18,
+                1.83,
+                0.0
+            ],
+            "dimensions": [
+                0.02,
+                0.3,
+                0.21
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_018",
+            "position": [
+                3.3000000000000003,
+                0.9199999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.4,
+                0.3
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Laptop_049",
+            "position": [
+                3.5,
+                0.32,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.25,
+                0.03
+            ],
+            "weight": 2.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_146",
+            "position": [
+                0.18,
+                1.28,
+                0.0
+            ],
+            "dimensions": [
+                0.02,
+                0.21,
+                0.3
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_020",
+            "position": [
+                3.0000000000000004,
+                1.87,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.3,
+                0.02
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Document_137",
+            "position": [
+                2.1199999999999997,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.02,
+                0.21
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_136",
+            "position": [
+                2.8100000000000005,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.15,
+                0.2,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tablet_123",
+            "position": [
+                0.19,
+                1.03,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.25,
+                0.18
+            ],
+            "weight": 0.6,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_046",
+            "position": [
+                2.9600000000000004,
+                0.08,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.15
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Package_036",
+            "position": [
+                3.3000000000000003,
+                1.3199999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.25,
+                0.3
+            ],
+            "weight": 3.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Phone_147",
+            "position": [
+                0.15,
+                0.31,
+                0.0
+            ],
+            "dimensions": [
+                0.008,
+                0.08,
+                0.15
+            ],
+            "weight": 0.2,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [],
+    "best_fitness": 0.03532307200183486,
+    "generation_count": 8,
+    "optimization_method": "regular"
+}

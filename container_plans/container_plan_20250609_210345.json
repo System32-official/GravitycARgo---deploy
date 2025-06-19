@@ -1,0 +1,80 @@
+{
+    "timestamp": "20250609_210345",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1"
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 0.0030207605617226484,
+        "items_packed": 2,
+        "total_items": 2,
+        "remaining_volume": 33.136349,
+        "center_of_gravity": [
+            0.055000000000000014,
+            0.04590909090909091,
+            0.04590909090909091
+        ],
+        "total_weight": 0.11,
+        "best_fitness": 0.0,
+        "generation_count": 0,
+        "algorithm_used": "Regular Algorithm"
+    },
+    "best_fitness": 0.0,
+    "generation_count": 0,
+    "algorithm_used": "Regular Algorithm",
+    "optimization_method": "regular",
+    "packed_items": [
+        {
+            "name": "Small1_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 0.1,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Small2_1",
+            "position": [
+                0.1,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.01,
+                0.01
+            ],
+            "weight": 0.01,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": []
+}

@@ -1,0 +1,116 @@
+{
+    "timestamp": "20250525_132544",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1"
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 0.6597540237828311,
+        "items_packed": 4,
+        "total_items": 4,
+        "remaining_volume": 32.918725,
+        "center_of_gravity": [
+            0.4419642857142857,
+            0.45624999999999993,
+            0.19196428571428573
+        ],
+        "total_weight": 28.0
+    },
+    "packed_items": [
+        {
+            "name": "BoxD",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.7,
+                0.3
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BoxA",
+            "position": [
+                0.5,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BoxC",
+            "position": [
+                0.0,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.15,
+                0.45
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BoxB",
+            "position": [
+                0.5,
+                0.5,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.25,
+                0.6
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [],
+    "best_fitness": 0.004948155178371233,
+    "generation_count": 8,
+    "optimization_method": "regular"
+}

@@ -1,0 +1,19 @@
+Name,Length,Width,Height,Weight,Quantity,Fragility,LoadBear,BoxingType,Bundle,Temperature Sensitivity
+Heavy Machinery,2.0,1.5,1.8,800,1,HIGH,1600,CRATE,NO,n/a
+Steel Drums,0.6,0.6,0.9,120,4,LOW,600,DRUM,YES,8°C to 25°C
+Industrial Pump,1.0,0.8,0.9,150,3,MEDIUM,450,CRATE,NO,n/a
+Cardboard Boxes,0.6,0.4,0.4,10,10,LOW,45,CARTON,YES,10°C to 30°C
+Wood Crates,1.0,1.0,1.0,80,4,LOW,300,CRATE,NO,n/a
+Plastic Containers,0.8,0.6,0.6,25,5,LOW,150,BOX,YES,0°C to 40°C
+Machine Parts,1.2,0.8,0.8,180,4,MEDIUM,500,CRATE,NO,n/a
+Tool Boxes,0.5,0.4,0.3,15,8,MEDIUM,75,BOX,YES,8°C to 25°C
+Packaged Goods,0.6,0.4,0.5,15,12,LOW,100,CARTON,YES,10°C to 30°C
+Industrial Fans,0.8,0.8,1.0,50,4,MEDIUM,100,CRATE,NO,n/a
+Metal Frames,2.4,0.8,0.4,100,4,LOW,400,FRAME,NO,n/a
+Safety Equipment,0.6,0.4,0.6,20,4,HIGH,200,BOX,NO,n/a
+Chemical Barrels,0.6,0.6,1.0,140,3,HIGH,450,DRUM,NO,n/a
+Auto Parts,1.0,0.8,0.6,100,5,MEDIUM,300,CRATE,YES,0°C to 40°C
+Packaging Supplies,1.2,0.8,0.4,30,8,LOW,200,PALLET,YES,8°C to 25°C
+Electrical Boxes,0.4,0.3,0.5,12,5,HIGH,75,BOX,NO,n/a
+Light Fixtures,1.0,0.4,0.2,8,8,HIGH,100,BOX,YES,10°C to 30°C
+Standard Pallet,1.2,1.0,1.0,250,6,LOW,1500,PALLET,NO,n/a

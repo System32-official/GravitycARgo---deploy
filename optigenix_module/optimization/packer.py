@@ -2,16 +2,21 @@
 Genetic algorithm implementation for container packing optimization.
 """
 import random
+import time
+import json
+import logging
+import multiprocessing
+from copy import deepcopy
 from typing import List, Dict, Tuple, Any, Optional
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from array import array
-import json
-import logging
+import numpy as np
 
 from optigenix_module.models.container import EnhancedContainer
 from optigenix_module.models.item import Item
 from optigenix_module.utils.llm_connector import get_llm_client
 from optigenix_module.optimization.temperature import TemperatureConstraintHandler
+from optigenix_module.optimization.max_utilization_fitness import apply_max_volume_fitness, detect_demo_dataset
 
 # Configure logging
 logging.basicConfig(
@@ -20,6 +25,12 @@ logging.basicConfig(
     datefmt='%H:%M:%S'
 )
 logger = logging.getLogger("packer")
+
+# Conditional logging for the module loaded message
+if multiprocessing.current_process().name == 'MainProcess':
+    logger.info("=" * 70)
+    logger.info("AI-ENHANCED GENETIC PACKER MODULE LOADED")
+    logger.info("=" * 70)
 
 # Initialize LLM client
 llm_client = get_llm_client()
@@ -34,6 +45,7 @@ class PackingGenome:
     
     def __init__(self, items, mutation_rate=0.1):
         """Initialize genome with items and mutation rate"""
+        self.items = items  # Store the original items list
         self.item_sequence = items.copy()
         # Use array for rotation flags instead of list for better memory usage
         self.rotation_flags = array('B', [random.randint(0, 5) for _ in items])
@@ -100,21 +112,26 @@ class PackingGenome:
                 
                 # Extract subsequence
                 subsequence = self.item_sequence[start_idx:start_idx+seq_length]
-                rotation_subseq = self.rotation_flags[start_idx:start_idx+seq_length]
+                rotation_subseq = list(self.rotation_flags[start_idx:start_idx+seq_length])
                 
                 # Remove subsequence
                 self.item_sequence = self.item_sequence[:start_idx] + \
                                     self.item_sequence[start_idx+seq_length:]
-                self.rotation_flags = self.rotation_flags[:start_idx] + \
-                                     self.rotation_flags[start_idx+seq_length:]
+                
+                # Create new rotation flags array
+                new_rotation_flags = (list(self.rotation_flags[:start_idx]) + 
+                                    list(self.rotation_flags[start_idx+seq_length:]))
                 
                 # Insert at target location
                 self.item_sequence = self.item_sequence[:target_idx] + \
                                     subsequence + \
                                     self.item_sequence[target_idx:]
-                self.rotation_flags = self.rotation_flags[:target_idx] + \
-                                     rotation_subseq + \
-                                     self.rotation_flags[target_idx:]
+                
+                # Insert rotation subsequence and rebuild array
+                final_rotations = (new_rotation_flags[:target_idx] + 
+                                 rotation_subseq + 
+                                 new_rotation_flags[target_idx:])
+                self.rotation_flags = array('B', final_rotations)
         
         # Aggressive mutations - only applied when specified
         if aggressive_prob > 0 and random.random() < effective_rate * aggressive_prob:
@@ -153,7 +170,7 @@ class GeneticPacker:
     Uses evolutionary algorithms to find efficient item arrangements.
     """
     
-    def __init__(self, container_dims, population_size=200, generations=150, route_temperature=None):
+    def __init__(self, container_dims, population_size=10, generations=8, route_temperature=None):
         """Initialize genetic packer with container dimensions and algorithm parameters"""
         self.container_dims = container_dims
         self.population_size = population_size
@@ -166,9 +183,445 @@ class GeneticPacker:
         }
         self.elite_percentage = 0.15  # Preserve top 15% of solutions
         self.route_temperature = route_temperature
+        self.items_to_pack = None  # Will be set in optimize method
+        self.fitness_weights = None  # Will be set in optimize method
         
         # Initialize temperature constraint handler
         self.temp_handler = TemperatureConstraintHandler(route_temperature)
+
+    def _calculate_initial_metrics(self) -> Dict[str, Any]:
+        """
+        Calculate initial metrics for the LLM to determine initial fitness weights.
+        This method should be called after self.items_to_pack is set.
+        """
+        if not self.items_to_pack:
+            logger.warning("_calculate_initial_metrics: self.items_to_pack is not set. Cannot calculate initial metrics.")
+            return {
+                'initial_volume_utilization_estimate': 0.0,
+                'item_count': 0,
+                'container_dimensions': [0,0,0],
+                'container_weight_capacity': 0.0, # Added
+                'has_temperature_sensitive_items': False
+            }
+
+        # Calculate total volume of all items
+        total_item_volume = sum(item.dimensions[0] * item.dimensions[1] * item.dimensions[2] for item in self.items_to_pack if hasattr(item, 'dimensions') and len(item.dimensions) == 3)
+
+        # Get container volume and weight capacity
+        container_volume = 0
+        container_weight_capacity = 0.0 # Default
+        container_dims_for_prompt = [0,0,0]
+
+        if isinstance(self.container_dims, dict): # For EnhancedContainer like structures
+            container_actual_dims = self.container_dims.get('dimensions', [0,0,0])
+            container_weight_capacity = float(self.container_dims.get('weight_capacity', 0.0))
+            if len(container_actual_dims) == 3:
+                container_volume = container_actual_dims[0] * container_actual_dims[1] * container_actual_dims[2]
+                container_dims_for_prompt = container_actual_dims
+        elif isinstance(self.container_dims, (list, tuple)) and len(self.container_dims) == 3: # For simple list/tuple dimensions
+            container_volume = self.container_dims[0] * self.container_dims[1] * self.container_dims[2]
+            container_dims_for_prompt = list(self.container_dims)
+            # Weight capacity might not be available in this case, defaults to 0
+        else:
+            logger.warning(f"_calculate_initial_metrics: Invalid container_dims format: {self.container_dims}")
+
+
+        initial_volume_utilization_estimate = (total_item_volume / container_volume) if container_volume > 0 else 0
+        item_count = len(self.items_to_pack)
+        has_temp_sensitive = any(getattr(item, 'temperature_sensitivity', None) is not None for item in self.items_to_pack)
+
+        metrics = {
+            'initial_volume_utilization_estimate': round(initial_volume_utilization_estimate, 4),
+            'item_count': item_count,
+            'container_dimensions': container_dims_for_prompt,
+            'container_weight_capacity': container_weight_capacity, # Added
+            'has_temperature_sensitive_items': has_temp_sensitive
+        }
+        logger.info(f"Calculated initial metrics: {metrics}")
+        return metrics
+
+    def _get_initial_dynamic_fitness_weights(self, initial_metrics=None):
+        """
+        Get initial dynamic fitness function weights from LLM.
+        Uses module-level llm_client and logger.
+        """
+        global llm_client, logger # Access module-level instances
+
+        if not llm_client or not hasattr(llm_client, 'get_llm_completion'):
+            logger.info("LLM client not available for initial dynamic fitness weights.")
+            return None
+
+        if initial_metrics is None:
+            initial_metrics = self._calculate_initial_metrics() # Ensure items_to_pack is set before calling this
+        
+        prompt = f"""
+        Provide a set of fitness weights for a genetic algorithm optimizing 3D bin packing.
+        Consider the following initial metrics:
+        - Estimated volume utilization: {initial_metrics.get('initial_volume_utilization_estimate', 0.0)}
+        - Item count: {initial_metrics.get('item_count', 0)}
+        - Container dimensions: {initial_metrics.get('container_dimensions', [0,0,0])}
+
+        The weights should guide the optimization towards better packing solutions.
+        Return the weights in JSON format with the following keys:
+        - volume_utilization_weight
+        - stability_score_weight
+        - contact_ratio_weight
+        - weight_balance_weight
+        - items_packed_ratio_weight
+        - temperature_constraint_weight (consider if temperature-sensitive items might be present, default to 0 if unsure)
+        - explanation (brief explanation for the chosen weights)
+
+        Ensure the numeric weights sum up to 1.0.
+        """
+        
+        try:
+            response_text = llm_client.get_llm_completion(prompt)
+            logger.info(f"LLM response for initial dynamic weights: {response_text}")
+            
+            if not response_text:
+                logger.warning("LLM returned an empty response for initial dynamic weights.")
+                return None
+
+            # It's good practice to strip whitespace before parsing JSON
+            weights_data = json.loads(response_text.strip()) 
+            
+            explanation = weights_data.pop("explanation", "No explanation provided by LLM for initial weights.")
+            logger.info(f"LLM Explanation for initial weights: {explanation}")
+
+            expected_weight_keys = [
+                'volume_utilization_weight', 'stability_score_weight', 
+                'contact_ratio_weight', 'weight_balance_weight', 
+                'items_packed_ratio_weight', 'temperature_constraint_weight',
+                'weight_capacity_weight' # Added
+            ]
+            
+            parsed_weights = {}
+            for key in expected_weight_keys:
+                parsed_weights[key] = float(weights_data.get(key, 0.0)) # Default to 0.0 if key is missing
+            
+            total_weight = sum(parsed_weights.values())
+
+            if abs(total_weight) < 1e-6: # Check if sum is effectively zero
+                 logger.warning("Sum of initial weights from LLM is zero. Cannot normalize. Returning None.")
+                 return None
+
+            if abs(total_weight - 1.0) > 0.01: # Normalize if not already summing to 1.0
+                logger.info(f"Normalizing LLM initial weights. Original sum: {total_weight}")
+                for key in parsed_weights:
+                    parsed_weights[key] /= total_weight # Normalize
+            
+            logger.info(f"Successfully obtained and processed initial dynamic fitness weights: {parsed_weights}")
+            return parsed_weights
+            
+        except json.JSONDecodeError:
+            logger.error("Error decoding JSON response from LLM for initial dynamic fitness weights.", exc_info=True)
+            return None
+        except Exception as e:
+            logger.error(f"Error getting initial dynamic fitness weights from LLM: {e}", exc_info=True)
+            return None
+
+    def _get_default_fitness_weights(self):
+        """Returns a default set of fitness weights."""
+        return {
+            'volume_utilization_weight': 0.50, 
+            'stability_score_weight': 0.10,
+            'contact_ratio_weight': 0.10,
+            'weight_balance_weight': 0.10,
+            'items_packed_ratio_weight': 0.15, 
+            'temperature_constraint_weight': 0.05,
+            'weight_capacity_weight': 0.00 # Default to 0, can be adjusted by LLM
+        }
+
+    def _evaluate_fitness(self, genome):
+        """
+        Evaluate fitness of a genome considering fitness weights.
+        
+        Args:
+            genome: PackingGenome to evaluate
+            
+        Returns:
+            float: Fitness score of the genome
+        """
+        fitness = 0.0  # Initialize fitness to 0.0 at the beginning
+
+        container = EnhancedContainer(self.container_dims)
+        
+        # Set route temperature if available
+        if self.route_temperature is not None:
+            container.route_temperature = self.route_temperature
+        
+        # Sort spaces by their distance from container origin for better packing
+        def sort_spaces_local(current_container_instance): # Renamed to avoid conflict
+            current_container_instance.spaces.sort(key=lambda space: (
+                space.z,  # Prioritize lower heights first
+                space.x**2 + space.y**2,  # Prefer spaces closer to origin
+                -(space.width * space.height * space.depth)  # Prefer larger spaces
+            ))
+        
+        # Make a local copy of items to avoid modifying the originals
+        # Ensure items in genome.item_sequence are full Item objects
+        items_to_pack_for_eval = []
+        for item_in_seq, rotation_flag_val in zip(genome.item_sequence, genome.rotation_flags):
+            if isinstance(item_in_seq, Item): # Make sure it's an Item object
+                 # Create a copy of the item for modification during evaluation
+                item_copy = Item(
+                    name=item_in_seq.name,
+                    length=item_in_seq.original_dims[0], # Use original_dims for copying
+                    width=item_in_seq.original_dims[1],
+                    height=item_in_seq.original_dims[2],
+                    weight=item_in_seq.weight / item_in_seq.quantity if item_in_seq.bundle == 'YES' and item_in_seq.quantity > 1 else item_in_seq.weight, # Adjust weight if bundled
+                    quantity=item_in_seq.quantity, # This will be handled by bundle logic in Item constructor if needed
+                    fragility=item_in_seq.fragility,
+                    stackable=item_in_seq.stackable,
+                    boxing_type=item_in_seq.boxing_type,
+                    bundle=item_in_seq.bundle, # Let Item constructor handle bundling if quantity > 1
+                    load_bearing=item_in_seq.load_bearing,
+                    temperature_sensitivity=item_in_seq.temperature_sensitivity
+                )
+                item_copy.needs_insulation = item_in_seq.needs_insulation # Preserve this flag
+                items_to_pack_for_eval.append((item_copy, rotation_flag_val))
+            else:
+                logger.error(f"Item in genome.item_sequence is not an Item object: {item_in_seq}")
+                continue # Skip non-Item objects
+
+        # Pre-sort items by volume and weight for better initial packing
+        # Ensure dimensions are available for sorting
+        items_to_pack_for_eval.sort(key=lambda x: (
+            -(x[0].dimensions[0] * x[0].dimensions[1] * x[0].dimensions[2]) if hasattr(x[0], 'dimensions') and len(x[0].dimensions) == 3 else 0,
+            -x[0].weight if hasattr(x[0], 'weight') else 0,
+            not x[0].stackable if hasattr(x[0], 'stackable') else True
+        ), reverse=True) # Sorting should be largest to smallest, heaviest to lightest
+        
+        # Pack items and track metrics
+        total_contact_area_eval = 0.0
+        total_surface_area_eval = 0.0
+        
+        for item_obj, rotation_flag_val in items_to_pack_for_eval:
+            original_dims = item_obj.dimensions # This should be the (potentially bundled) dimensions
+            # Apply rotation to a temporary dimension variable for placement checks
+            rotated_dims_for_check = GeneticPacker._get_rotation(None, original_dims, rotation_flag_val)
+            
+            best_pos_eval = None
+            best_rot_applied = None # Store the actual dimensions used for packing
+            best_space_eval = None
+            best_score_eval = float('-inf')
+            
+            is_temperature_sensitive_eval = hasattr(item_obj, 'needs_insulation') and item_obj.needs_insulation and self.route_temperature is not None
+            
+            for space_candidate in container.spaces:
+                if is_temperature_sensitive_eval and hasattr(space_candidate, 'temperature_safe') and not space_candidate.temperature_safe:
+                    continue
+                    
+                if space_candidate.can_fit_item(rotated_dims_for_check):
+                    pos_candidate = (space_candidate.x, space_candidate.y, space_candidate.z)
+                    # Pass rotated_dims_for_check for validation
+                    if container._is_valid_placement(item_obj, pos_candidate, rotated_dims_for_check):
+                        if is_temperature_sensitive_eval:
+                            wall_buffer = 0.3
+                            x_pos, y_pos, z_pos = pos_candidate
+                            w_dim, d_dim, h_dim = rotated_dims_for_check # Use rotated dimensions for checks
+                            
+                            # Check proximity to all six walls
+                            if not (x_pos >= wall_buffer and \
+                                    y_pos >= wall_buffer and \
+                                    z_pos >= wall_buffer and \
+                                    container.dimensions[0] - (x_pos + w_dim) >= wall_buffer and \
+                                    container.dimensions[1] - (y_pos + d_dim) >= wall_buffer and \
+                                    container.dimensions[2] - (z_pos + h_dim) >= wall_buffer):
+                                continue
+                        
+                        contact_score_eval = 0.0
+                        wall_contacts_eval = 0
+                        # Use rotated_dims_for_check for contact calculations
+                        if pos_candidate[0] == 0 or pos_candidate[0] + rotated_dims_for_check[0] == container.dimensions[0]:
+                            wall_contacts_eval += 1
+                        if pos_candidate[1] == 0 or pos_candidate[1] + rotated_dims_for_check[1] == container.dimensions[1]:
+                            wall_contacts_eval += 1
+                        if pos_candidate[2] == 0:
+                            wall_contacts_eval += 1
+                        
+                        for placed_item_instance in container.items:
+                            if hasattr(container, '_has_surface_contact') and hasattr(container, '_calculate_overlap_area') and \
+                               container._has_surface_contact(pos_candidate, rotated_dims_for_check, placed_item_instance):
+                                overlap_area_eval = container._calculate_overlap_area(
+                                    (pos_candidate[0], pos_candidate[1], rotated_dims_for_check[0], rotated_dims_for_check[1]),
+                                    (placed_item_instance.position[0], placed_item_instance.position[1],
+                                     placed_item_instance.dimensions[0], placed_item_instance.dimensions[1])
+                                )
+                                contact_score_eval += overlap_area_eval
+                        
+                        current_placement_score = 0.0
+                        if is_temperature_sensitive_eval:
+                            center_x_container = container.dimensions[0] / 2
+                            center_y_container = container.dimensions[1] / 2
+                            # Use rotated_dims_for_check for item center calculation
+                            item_center_x_eval = pos_candidate[0] + rotated_dims_for_check[0]/2
+                            item_center_y_eval = pos_candidate[1] + rotated_dims_for_check[1]/2
+                            
+                            distance_from_center_sq = ((item_center_x_eval - center_x_container)**2 + 
+                                                  (item_center_y_eval - center_y_container)**2)
+                            max_distance_sq = ((container.dimensions[0]/2)**2 + (container.dimensions[1]/2)**2)
+                            normalized_distance = (distance_from_center_sq / max_distance_sq) if max_distance_sq > 0 else 0.0
+                                                  
+                            central_bonus_eval = 50 * (1 - normalized_distance) # Max 50 points
+                            current_placement_score = contact_score_eval * 3 + central_bonus_eval
+                        else:
+                            current_placement_score = contact_score_eval * 2 + wall_contacts_eval * 1.5
+                        
+                        if current_placement_score > best_score_eval:
+                            best_score_eval = current_placement_score
+                            best_pos_eval = pos_candidate
+                            best_rot_applied = rotated_dims_for_check # This is the dimension set to use
+                            best_space_eval = space_candidate
+            
+            if best_pos_eval and best_rot_applied: # Ensure best_rot_applied is also found
+                item_obj.position = best_pos_eval
+                item_obj.dimensions = best_rot_applied # Set the item's dimensions to the rotated ones used for packing
+                container.items.append(item_obj)
+                container._update_spaces(best_pos_eval, best_rot_applied, best_space_eval)
+                
+                item_surface_area = 2 * (
+                    item_obj.dimensions[0] * item_obj.dimensions[1] +
+                    item_obj.dimensions[1] * item_obj.dimensions[2] +
+                    item_obj.dimensions[0] * item_obj.dimensions[2]
+                )
+                total_surface_area_eval += item_surface_area
+                
+                for other_item_instance in container.items[:-1]:
+                    if hasattr(container, '_has_surface_contact') and hasattr(container, '_calculate_overlap_area') and \
+                       container._has_surface_contact(item_obj.position, item_obj.dimensions, other_item_instance):
+                        overlap_area_contact = container._calculate_overlap_area(
+                             (item_obj.position[0], item_obj.position[1], item_obj.dimensions[0], item_obj.dimensions[1]),
+                             (other_item_instance.position[0], other_item_instance.position[1], other_item_instance.dimensions[0], other_item_instance.dimensions[1])
+                        )
+                        total_contact_area_eval += overlap_area_contact
+                
+                sort_spaces_local(container)
+        
+        # Calculate all metrics
+        metrics = {}
+        container_volume_val = container.dimensions[0] * container.dimensions[1] * container.dimensions[2]
+        
+        packed_volume_total = sum(
+            packed_item.dimensions[0] * packed_item.dimensions[1] * packed_item.dimensions[2] 
+            for packed_item in container.items if hasattr(packed_item, 'dimensions') and len(packed_item.dimensions) == 3
+        )
+        metrics['volume_utilization'] = (packed_volume_total / container_volume_val) if container_volume_val > 0 else 0.0
+        
+        metrics['contact_ratio'] = total_contact_area_eval / (total_surface_area_eval + 1e-6) if total_surface_area_eval > 0 else 0.0
+        
+        try:
+            # Ensure stability score is calculated correctly and handles missing methods/attributes
+            if container.items and hasattr(container, '_calculate_stability_score'):
+                stability_scores = [container._calculate_stability_score(s_item, s_item.position, s_item.dimensions)
+                                    for s_item in container.items if hasattr(s_item, 'position') and hasattr(s_item, 'dimensions')]
+                metrics['stability_score'] = sum(stability_scores) / len(stability_scores) if stability_scores else 0.0
+            else:
+                metrics['stability_score'] = 0.0
+        except (AttributeError, ZeroDivisionError, TypeError) as e:
+            logger.debug(f"Could not calculate stability score: {e}")
+            metrics['stability_score'] = 0.0
+        
+        try:
+            metrics['weight_balance'] = container._calculate_weight_balance_score() if hasattr(container, '_calculate_weight_balance_score') else 0.0
+        except AttributeError as e:
+            logger.debug(f"Could not calculate weight balance score: {e}")
+            metrics['weight_balance'] = 0.0
+            
+        metrics['items_packed_ratio'] = (len(container.items) / len(genome.item_sequence)) if len(genome.item_sequence) > 0 else \
+                                      (1.0 if not genome.item_sequence and not container.items else 0.0) # Handle empty item sequence
+
+        # Temperature Constraint Score
+        # Higher is better (closer to 1.0 means constraint is well met)
+        temp_constraint_score = 1.0 # Default if no temp items or no route temp
+        if self.route_temperature is not None:
+            temp_sensitive_packed_items = [item for item in container.items if getattr(item, 'needs_insulation', False)]
+            if temp_sensitive_packed_items:
+                total_min_wall_distance = 0
+                target_avg_wall_distance = 0.3 # e.g., 30cm desired average distance from wall
+
+                for item in temp_sensitive_packed_items:
+                    if not (hasattr(item, 'position') and hasattr(item, 'dimensions')):
+                        continue
+                    x, y, z = item.position
+                    w, d, h = item.dimensions
+                    
+                    # Distances to each of the 6 walls
+                    dist_to_walls = [
+                        x, y, z,
+                        container.dimensions[0] - (x + w),
+                        container.dimensions[1] - (y + d),
+                        container.dimensions[2] - (z + h)
+                    ]
+                    min_dist_for_item = min(d for d in dist_to_walls if d >= 0) # Smallest distance to any wall
+                    total_min_wall_distance += min_dist_for_item
+                
+                avg_min_wall_distance = total_min_wall_distance / len(temp_sensitive_packed_items) if temp_sensitive_packed_items else 0
+                
+                # Normalize score: 1 if avg distance >= target, scales down to 0
+                temp_constraint_score = min(1.0, avg_min_wall_distance / target_avg_wall_distance) if target_avg_wall_distance > 0 else 1.0
+            # If no temp-sensitive items are packed, constraint is considered met.
+        metrics['temperature_constraint'] = temp_constraint_score
+
+        # Weight Capacity Score
+        # Higher is better (1.0 if within capacity, penalizes overweight)
+        weight_capacity_score = 1.0
+        if hasattr(container, 'weight_capacity') and container.weight_capacity is not None and container.weight_capacity > 0:
+            total_packed_weight = sum(item.weight for item in container.items if hasattr(item, 'weight'))
+            if total_packed_weight > container.weight_capacity:
+                # Penalize proportionally to how much it's overweight
+                # Score becomes 0 if 2x over capacity, 0.5 if 1.5x over capacity etc.
+                overweight_ratio = total_packed_weight / container.weight_capacity
+                weight_capacity_score = max(0.0, 2.0 - overweight_ratio) # Linear penalty
+        metrics['weight_capacity'] = weight_capacity_score
+
+        # Store metrics in genome for detailed logging
+        genome.metrics = metrics
+
+        # Apply weights to calculate main fitness
+        current_weights = self.fitness_weights
+        if not current_weights or not isinstance(current_weights, dict) or not any(w > 0 for w in current_weights.values()):
+            logger.warning("_evaluate_fitness: self.fitness_weights not set, invalid, or all zero. Falling back to default.")
+            current_weights = self._get_default_fitness_weights() 
+        
+        fitness = 0.0
+        for weight_name, weight_value in current_weights.items():
+            metric_key = weight_name.replace('_weight', '')
+            metric_value = metrics.get(metric_key, 0.0)
+            fitness += metric_value * weight_value
+            logger.debug(f"Fitness component: {metric_key}={metric_value:.4f} * {weight_value:.4f} = {metric_value * weight_value:.4f}")
+        
+        # Store metrics in genome for detailed logging
+        genome.metrics = metrics
+
+        # Apply weights to calculate main fitness
+        current_weights = self.fitness_weights
+        if not current_weights or not isinstance(current_weights, dict) or not any(w > 0 for w in current_weights.values()):
+            logger.warning("_evaluate_fitness: self.fitness_weights not set, invalid, or all zero. Falling back to default.")
+            current_weights = self._get_default_fitness_weights() 
+        
+        fitness = 0.0
+        for weight_name, weight_value in current_weights.items():
+            metric_key = weight_name.replace('_weight', '')
+            metric_value = metrics.get(metric_key, 0.0)
+            fitness += metric_value * weight_value
+            logger.debug(f"Fitness component: {metric_key}={metric_value:.4f} * {weight_value:.4f} = {metric_value * weight_value:.4f}")
+        
+        genome.fitness = fitness # Assign calculated fitness to the genome object
+        logger.debug(f"Total fitness: {fitness:.4f}, Metrics: {metrics}")
+        return fitness
+
+    def mutate_population(self, population, operation_focus, rate_modifier):
+        """
+        Mutate a population of genomes with specified mutation strategy
+        
+        Args:
+            population: List of PackingGenome instances to mutate
+            operation_focus: Specific mutation operations to focus on
+            rate_modifier: Adjustment to mutation rate
+        """
+        for genome in population:
+            genome.mutate(operation_focus=operation_focus, rate_modifier=rate_modifier)
     
     def _get_adaptive_mutation_strategy(self, generation: int, population, 
                                      stagnation_counter: int) -> Optional[Dict[str, Any]]:
@@ -261,8 +714,8 @@ class GeneticPacker:
                         strategy["mutation_rate_modifier"] = 0.2
                         strategy["explanation"] = "Overriding with aggressive strategy due to critical stagnation"
                     
-                    logger.info(f"LLM Strategy: {strategy['operation_focus']} (rate: {strategy['mutation_rate_modifier']:.3f})")
-                    logger.info(f"Explanation: {strategy['explanation']}")
+                    logger.info(f"    🤖 LLM Strategy: {strategy['operation_focus']} (rate: {strategy['mutation_rate_modifier']:.3f})")
+                    logger.info(f"    💭 Explanation: {strategy.get('explanation', 'No explanation provided')}")
                     return strategy
                     
             except json.JSONDecodeError:
@@ -318,485 +771,312 @@ class GeneticPacker:
     def _get_dynamic_fitness_weights(self, generation: int, population, 
                                      current_metrics: Dict[str, float]) -> Optional[Dict[str, float]]:
         """Get dynamic fitness function weights from LLM based on current optimization state"""
-        import numpy as np
         
         try:
+            global llm_client, logger # Access module-level instances
+            
+            # Handle None current_metrics
+            if current_metrics is None:
+                logger.warning("current_metrics is None in _get_dynamic_fitness_weights. Cannot fetch dynamic weights.")
+                return None
+
+            if not llm_client or not hasattr(llm_client, 'get_llm_completion'):
+                logger.info("LLM client not available for dynamic fitness weights.")
+                return None
+            
             # Calculate metrics for LLM context
             avg_fitness = sum(g.fitness for g in population) / len(population) if population else 0
             best_fitness = max((g.fitness for g in population), default=0)
-            fitness_variance = np.var([g.fitness for g in population]) if population else 0
+            fitness_variance = np.var([g.fitness for g in population]) if population else 0 # Requires numpy
             
-            logger.info(f"\n{'='*20} DYNAMIC FITNESS WEIGHTS REQUEST {'='*20}")
+            logger.info(f"\\n{'='*20} DYNAMIC FITNESS WEIGHTS REQUEST {'='*20}")
             logger.info(f"Generation: {generation} | Best fitness: {best_fitness:.4f} | Average: {avg_fitness:.4f}")
             logger.info("Current Metrics:")
-            logger.info(f"  Volume utilization: {current_metrics.get('volume_utilization', 0):.4f}")
-            logger.info(f"  Contact ratio: {current_metrics.get('contact_ratio', 0):.4f}")
-            logger.info(f"  Stability score: {current_metrics.get('stability_score', 0):.4f}")
-            logger.info(f"  Weight balance: {current_metrics.get('weight_balance', 0):.4f}")
-            logger.info(f"  Items packed ratio: {current_metrics.get('items_packed_ratio', 0):.4f}")
+            logger.info(f"  Volume utilization: {current_metrics.get('volume_utilization', 0.0):.4f}")
+            logger.info(f"  Contact ratio: {current_metrics.get('contact_ratio', 0.0):.4f}")
+            logger.info(f"  Stability score: {current_metrics.get('stability_score', 0.0):.4f}")
+            logger.info(f"  Weight balance: {current_metrics.get('weight_balance', 0.0):.4f}")
+            logger.info(f"  Items packed ratio: {current_metrics.get('items_packed_ratio', 0.0):.4f}")
             
             # Create a prompt with current algorithm state
             prompt = f"""
-            Return optimal fitness weights for a 3D bin packing genetic algorithm.
-            Current metrics:
-            - Generation: {generation}
+            Adjust the fitness weights for a genetic algorithm optimizing 3D bin packing with temperature-sensitive items.
+            The algorithm is currently at generation {generation}.
+            Current performance metrics:
             - Best fitness: {best_fitness:.4f}
             - Average fitness: {avg_fitness:.4f}
             - Fitness variance: {fitness_variance:.6f}
-            - Current volume utilization: {current_metrics.get('volume_utilization', 0):.4f}
-            - Current contact ratio: {current_metrics.get('contact_ratio', 0):.4f}
-            - Current stability score: {current_metrics.get('stability_score', 0):.4f}
-            - Current weight balance: {current_metrics.get('weight_balance', 0):.4f}
-            - Items packed ratio: {current_metrics.get('items_packed_ratio', 0):.4f}
+            Detailed current packing metrics:
+            - Volume utilization: {current_metrics.get('volume_utilization', 0.0):.4f}
+            - Stability score: {current_metrics.get('stability_score', 0.0):.4f}
+            - Contact ratio: {current_metrics.get('contact_ratio', 0.0):.4f}
+            - Weight balance: {current_metrics.get('weight_balance', 0.0):.4f}
+            - Items packed ratio: {current_metrics.get('items_packed_ratio', 0.0):.4f}
+            - Route temperature: {self.route_temperature if self.route_temperature is not None else "Not set"}
 
-            Based on these metrics, provide a JSON object with these EXACT keys:
-            {{
-                "volume_utilization_weight": number, // Between 0.1 and 0.4
-                "contact_ratio_weight": number,      // Between 0.2 and 0.5
-                "stability_score_weight": number,    // Between 0.1 and 0.4
-                "weight_balance_weight": number,     // Between 0.05 and 0.2
-                "items_packed_ratio_weight": number, // Between 0.05 and 0.15
-                "explanation": string                // Brief explanation of weights choice
-            }}
+            Based on these metrics, provide a new set of fitness weights in JSON format.
+            The weights should guide the optimization towards improving areas that are currently underperforming
+            or reinforce strategies that are working well. For example, if volume utilization is low, consider increasing its weight.
+            If stability is poor, its weight might need an increase.
+            
+            Return the weights in JSON format with the following keys:
+            - volume_utilization_weight
+            - stability_score_weight
+            - contact_ratio_weight
+            - weight_balance_weight
+            - items_packed_ratio_weight
+            - temperature_constraint_weight (adjust based on presence of temp-sensitive items and route_temperature. If route_temperature is not set, this weight should likely be low or zero unless items are inherently temperature-sensitive.)
+            - explanation (brief explanation for the chosen weight adjustments)
 
-            Guidelines for weight selection:
-            - Sum of all weights must equal 1.0
-            - Focus on volume_utilization and contact_ratio early in the optimization
-            - Prioritize stability_score and weight_balance in later generations
-            - For generations with low fitness variance, increase weight_balance to break plateaus
-            - For generations with low volume_utilization, prioritize that component
+            Ensure the numeric weights sum up to 1.0.
+            RESPOND WITH ONLY THE JSON OBJECT, NO OTHER TEXT.
             """
             
-            # Use the global llm_client that's already initialized
-            response = llm_client.generate(prompt)
+            response_text = llm_client.get_llm_completion(prompt)
+            logger.info(f"LLM response for dynamic fitness weights: {response_text}")
             
-            if not response:
+            if not response_text:
+                logger.warning("LLM returned an empty response for dynamic fitness weights.")
                 return None
-                
-            try:
-                result = json.loads(response)
-                required_keys = [
-                    "volume_utilization_weight", "contact_ratio_weight", 
-                    "stability_score_weight", "weight_balance_weight", 
-                    "items_packed_ratio_weight", "explanation"
-                ]
-                
-                # Validate response
-                if not all(key in result for key in required_keys):
-                    logger.error("LLM response missing required keys for fitness weights")
-                    return None
-                    
-                # Ensure weights sum to approximately 1.0
-                weights_sum = sum(result[key] for key in required_keys if key != "explanation")
-                if abs(weights_sum - 1.0) > 0.01:
-                    logger.warning(f"Weights don't sum to 1.0 (sum: {weights_sum}), normalizing")
-                    factor = 1.0 / weights_sum
-                    for key in required_keys:
-                        if key != "explanation":
-                            result[key] *= factor
-                
-                # Log the weights in a clean tabular format
-                logger.info(f"\n{'='*20} DYNAMIC FITNESS WEIGHTS RECEIVED {'='*20}")
-                logger.info("Weight values:")
-                logger.info(f"  Volume utilization: {result['volume_utilization_weight']:.4f}")
-                logger.info(f"  Contact ratio:     {result['contact_ratio_weight']:.4f}")
-                logger.info(f"  Stability score:   {result['stability_score_weight']:.4f}")
-                logger.info(f"  Weight balance:    {result['weight_balance_weight']:.4f}")
-                logger.info(f"  Items packed:      {result['items_packed_ratio_weight']:.4f}")
-                logger.info(f"Explanation: {result['explanation']}")
-                
-                return result
-                
-            except json.JSONDecodeError:
-                logger.error("Failed to parse LLM response as JSON")
-                return None
-                
-        except Exception as e:
-            logger.error(f"Error getting dynamic fitness weights: {str(e)}")
-            return None
-            
-        return None
 
-    def optimize(self, items):
-        """Optimize container packing using genetic algorithm with LLM-based adaptive mutation"""
-        # Initialize population and variables
-        logger.info(f"\n{'*'*70}")
-        logger.info(f"STARTING GENETIC ALGORITHM WITH LLM INTEGRATION")
-        logger.info(f"{'*'*70}")
-        logger.info(f"Population size: {self.population_size}")
-        logger.info(f"Max generations: {self.generations}")
-        logger.info(f"Items to pack: {len(items)}")
-        logger.info(f"Container dimensions: {self.container_dims}")
-        logger.info(f"{'*'*70}\n")
+            # It's good practice to strip whitespace before parsing JSON
+            weights_data = json.loads(response_text.strip()) 
+            
+            explanation = weights_data.pop("explanation", "No explanation provided by LLM for dynamic weights.")
+            logger.info(f"LLM Explanation for dynamic weights: {explanation}")
+
+            expected_weight_keys = [
+                'volume_utilization_weight', 'stability_score_weight', 
+                'contact_ratio_weight', 'weight_balance_weight', 
+                'items_packed_ratio_weight', 'temperature_constraint_weight'
+            ]
+            
+            parsed_weights = {}
+            for key in expected_weight_keys:
+                parsed_weights[key] = float(weights_data.get(key, 0.0)) # Default to 0.0 if key is missing
+            
+            total_weight = sum(parsed_weights.values())
+
+            if abs(total_weight) < 1e-6: # Check if sum is effectively zero
+                 logger.warning("Sum of dynamic weights from LLM is zero. Cannot normalize. Returning None.")
+                 return None
+
+            if abs(total_weight - 1.0) > 0.01: # Normalize if not already summing to 1.0
+                logger.info(f"Normalizing LLM dynamic weights. Original sum: {total_weight}")
+                for key in parsed_weights:
+                    parsed_weights[key] /= total_weight # Normalize
+            
+            logger.info(f"Successfully obtained and processed dynamic fitness weights: {parsed_weights}")
+            return parsed_weights
+            
+        except json.JSONDecodeError:
+            logger.error("Error decoding JSON response from LLM for dynamic fitness weights.", exc_info=True)
+            return None
+        except Exception as e:
+            logger.error(f"Error getting dynamic fitness weights from LLM: {e}", exc_info=True)
+            return None
+
+    def optimize(self, items, fitness_weights=None):
+        """
+        Run the genetic algorithm to find the best packing solution.
+        Args:
+            items: List of items to pack
+            fitness_weights (dict, optional): Predefined fitness weights from UI.
+                                              If None or empty, dynamic weights may be fetched.
+        Returns:
+            tuple: (best_genome, best_fitness, generation_count)
+        """
+        self.items_to_pack = items # Store items for use in _calculate_initial_metrics and _evaluate_fitness
         
-        # Initialize with smart population strategies
-        self.initialize_smart_population(items)
-        population = self.population
+        logger.info(f"GeneticPacker.optimize called. Received fitness_weights from UI/caller: {fitness_weights}")
+
+        # Determine the fitness weights to use
+        if fitness_weights and isinstance(fitness_weights, dict) and any(w > 0 for w in fitness_weights.values()): # Check if any weight is positive
+            self.fitness_weights = fitness_weights
+            logger.info(f"Using fitness weights provided by UI/caller: {self.fitness_weights}")
+        else:
+            if not fitness_weights:
+                 logger.info("No fitness_weights from UI/caller (None or empty). Attempting to get dynamic weights from LLM.")
+            else: # Handles case where fitness_weights might be e.g. all zeros from UI
+                 logger.info(f"Received fitness_weights from UI/caller ({fitness_weights}), but they are not effectively usable (e.g., all zero). Attempting to get dynamic weights from LLM.")
+
+            # Calculate initial metrics first, as _get_initial_dynamic_fitness_weights might need them.
+            # self.items_to_pack should be set before calling _calculate_initial_metrics.
+            initial_metrics_for_llm = self._calculate_initial_metrics()
+            dynamic_weights = self._get_initial_dynamic_fitness_weights(initial_metrics=initial_metrics_for_llm) 
+            
+            if dynamic_weights:
+                self.fitness_weights = dynamic_weights
+                logger.info(f"Using dynamic fitness weights from LLM: {self.fitness_weights}")
+            else:
+                logger.info("Failed to get dynamic weights from LLM or LLM disabled. Using default fitness weights.")
+                self.fitness_weights = self._get_default_fitness_weights()
         
-        self.best_fitness = 0.0
+        # Final fallback: Ensure fitness_weights are always set to a default if still None or empty
+        if not self.fitness_weights or not any(w > 0 for w in self.fitness_weights.values()):
+            logger.warning("Fitness weights were still None, empty, or all zero after all attempts. Forcing default weights.")
+            self.fitness_weights = self._get_default_fitness_weights()
+        
+        logger.info(f"Final fitness weights for optimization run: {self.fitness_weights}")
+
+        # Initialize population
+        population = [PackingGenome(items) for _ in range(self.population_size)]
+        best_overall_genome = None
+        best_overall_fitness = float('-inf')
         stagnation_counter = 0
-        max_stagnation = 20  # Stop if no improvement after 15 generations
-        
-        # Default mutation strategy
-        current_mutation_strategy = {
-            "mutation_rate_modifier": 0.0,
-            "operation_focus": "balanced",
-            "explanation": "Initial default strategy"
-        }
-        logger.info(f"Initial mutation strategy: {current_mutation_strategy['operation_focus']} (default)")
-        
-        # Initialize metrics storage
-        self.current_metrics = {}
-        
-        # Initialize dynamic fitness weights
-        self.fitness_weights = None
-        
+
         for generation in range(self.generations):
-            previous_best = self.best_fitness
+            logger.info(f"\n{'='*60}")
+            logger.info(f"🧬 GENERATION {generation + 1}/{self.generations}")
+            logger.info(f"{'='*60}")
+
+            # Evaluate fitness for the current population
+            # Use sequential evaluation instead of multiprocessing to avoid pickling issues
+            logger.info(f"  📊 Evaluating {len(population)} genomes...")
+            for i, genome in enumerate(population):
+                try:
+                    genome.fitness = self._evaluate_fitness(genome)
+                    if (i + 1) % 5 == 0 or i == len(population) - 1:
+                        logger.info(f"    ✅ Evaluated {i + 1}/{len(population)} genomes (latest fitness: {genome.fitness:.4f})")
+                except Exception as e:
+                    logger.error(f"❌ Error evaluating genome {i + 1}: {e}")
+                    genome.fitness = 0.0
+
+            # Calculate generation statistics
+            fitnesses = [g.fitness for g in population]
+            current_best = max(fitnesses)
+            current_avg = sum(fitnesses) / len(fitnesses)
+            current_worst = min(fitnesses)
+            current_std = np.std(fitnesses) if len(fitnesses) > 1 else 0.0
             
-            logger.info(f"\n{'-'*40}")
-            logger.info(f"GENERATION {generation + 1}/{self.generations}")
-            logger.info(f"{'-'*40}")
+            logger.info(f"\n  📈 GENERATION {generation + 1} RESULTS:")
+            logger.info(f"    🏆 Best fitness: {current_best:.4f}")
+            logger.info(f"    📊 Average fitness: {current_avg:.4f}")
+            logger.info(f"    📉 Worst fitness: {current_worst:.4f}")
+            logger.info(f"    📏 Std deviation: {current_std:.4f}")
             
-            # Parallelize fitness evaluation
-            logger.info(f"Evaluating fitness for {len(population)} solutions...")
-            with ProcessPoolExecutor() as executor:
-                # Submit all fitness evaluations
-                future_to_genome = {executor.submit(self._evaluate_fitness, genome): genome 
-                                  for genome in population}
-                
-                # Collect results as they complete
-                for future in as_completed(future_to_genome):
-                    genome = future_to_genome[future]
-                    try:
-                        genome.fitness = future.result()
-                        
-                        # Update best solution
-                        if genome.fitness > self.best_fitness:
-                            self.best_fitness = genome.fitness
-                            self.best_solution = genome
-                    except Exception as e:
-                        logger.error(f"Fitness evaluation failed: {e}")
+            # Show metrics from best genome in this generation
+            best_gen_genome = max(population, key=lambda x: x.fitness)
+            if hasattr(best_gen_genome, 'metrics') and best_gen_genome.metrics:
+                metrics = best_gen_genome.metrics
+                logger.info(f"    📋 Best genome metrics:")
+                logger.info(f"       Volume util: {metrics.get('volume_utilization', 0.0):.2%} | "
+                           f"Items packed: {metrics.get('items_packed_ratio', 0.0):.2%} | "
+                           f"Stability: {metrics.get('stability_score', 0.0):.3f}")
+                logger.info(f"       Contact ratio: {metrics.get('contact_ratio', 0.0):.3f} | "
+                           f"Weight balance: {metrics.get('weight_balance', 0.0):.3f}")
+                if self.route_temperature is not None:
+                    logger.info(f"       Temp constraint: {metrics.get('temperature_constraint', 0.0):.3f}")
+                if metrics.get('weight_capacity', 1.0) < 1.0:
+                    logger.info(f"       Weight capacity: {metrics.get('weight_capacity', 0.0):.3f} (capacity exceeded!)")
             
-            # Check for improvement
-            if self.best_fitness <= previous_best:
+            # Show fitness weights being used
+            if generation == 0:
+                logger.info(f"    ⚖️  Current fitness weights:")
+                for weight_name, weight_value in self.fitness_weights.items():
+                    if weight_value > 0:
+                        metric_name = weight_name.replace('_weight', '')
+                        logger.info(f"       {metric_name}: {weight_value:.3f}")
+
+            # Update best overall solution if improved
+            improved = False
+            for genome in population:
+                if genome.fitness > best_overall_fitness:
+                    best_overall_fitness = genome.fitness
+                    best_overall_genome = genome
+                    improved = True
+                    logger.info(f"    🎯 NEW BEST SOLUTION! Fitness: {genome.fitness:.4f}")
+
+            # Check stagnation
+            if not improved:
                 stagnation_counter += 1
-                improvement_status = "No improvement"
+                logger.info(f"    ⏳ Stagnation: {stagnation_counter} generation(s)")
             else:
                 stagnation_counter = 0
-                improvement_status = "Improved"
-            
-            # Early stopping condition
-            if stagnation_counter >= max_stagnation:
-                logger.info(f"\nSTOPPING EARLY: No improvement for {max_stagnation} generations")
-                break
-            
-            # Get dynamic fitness weights every 5 generations or when stagnation occurs
-            if generation % 5 == 0 or stagnation_counter > 2:
-                self.fitness_weights = self._get_dynamic_fitness_weights(
-                    generation, population, self.current_metrics
-                )
-            
-            # Get adaptive mutation strategy from LLM
-            new_strategy = self._get_adaptive_mutation_strategy(
-                generation, population, stagnation_counter
-            )
-            
-            if new_strategy:
-                logger.info(f"\nUPDATING MUTATION STRATEGY:")
-                logger.info(f"Old: {current_mutation_strategy['operation_focus']} with modifier {current_mutation_strategy.get('mutation_rate_modifier', 0):.3f}")
-                
-                current_mutation_strategy = new_strategy
-                
-                logger.info(f"New: {current_mutation_strategy['operation_focus']} with modifier {current_mutation_strategy['mutation_rate_modifier']:.3f}")
-            
-            # Add elitism: keep the best individuals
-            elite_count = max(1, int(self.population_size * self.elite_percentage))  # Keep top 15%
-            
-            # Selection and reproduction
-            logger.info(f"Creating new population with elite count: {elite_count}")
-            new_population = []
-            
-            # First add the elite individuals
-            sorted_population = sorted(population, key=lambda x: x.fitness, reverse=True)
-            new_population.extend(sorted_population[:elite_count])
-            
-            # Fill the rest with offspring
+                logger.info(f"    🚀 Improvement found! Stagnation reset.")
+
+            # Adaptive mutation strategy
+            if stagnation_counter >= 5:
+                new_strategy = self._get_adaptive_mutation_strategy(generation, population, stagnation_counter)
+                if new_strategy:
+                    logger.info(f"    🧬 Adapting mutation strategy: {new_strategy['operation_focus']} (rate: {new_strategy['mutation_rate_modifier']:.3f})")
+                    logger.info(f"    💡 Reasoning: {new_strategy.get('explanation', 'No explanation provided')}")
+                    for genome in population:
+                        genome.mutate(
+                            operation_focus=new_strategy["operation_focus"],
+                            rate_modifier=new_strategy["mutation_rate_modifier"]
+                        )
+
+            # Dynamic fitness weight adjustment every few generations (only if LLM is available)
+            if generation > 0 and generation % 3 == 0 and best_overall_genome:
+                # Get current metrics from best genome for dynamic weight adjustment
+                current_metrics = getattr(best_overall_genome, 'metrics', {})
+                if current_metrics:
+                    dynamic_weights = self._get_dynamic_fitness_weights(generation, population, current_metrics)
+                    if dynamic_weights:
+                        logger.info(f"    🎯 Updated fitness weights based on current performance")
+                        logger.info(f"    📊 New weights: {dynamic_weights}")
+                        self.fitness_weights = dynamic_weights
+
+            # Elitism: carry forward the best genome
+            elite_count = max(1, int(self.population_size * self.elite_percentage))
+            new_population = sorted(population, key=lambda x: x.fitness, reverse=True)[:elite_count]
+
+            # Crossover and mutation to create new population
             while len(new_population) < self.population_size:
                 parent1 = self._tournament_select(population)
                 parent2 = self._tournament_select(population)
                 child = self._crossover(parent1, parent2)
                 
-                # Apply adaptive mutation with current strategy
+                # Apply mutation
                 child.mutate(
-                    operation_focus=current_mutation_strategy["operation_focus"],
-                    rate_modifier=current_mutation_strategy["mutation_rate_modifier"]
+                    operation_focus="balanced",  # Use a balanced approach for exploration
+                    rate_modifier=random.uniform(0.05, 0.2)  # Small to moderate mutation rate
                 )
                 
                 new_population.append(child)
-                
+            
             population = new_population
-            
-            # Print generation summary in a cleaner format
-            avg_fitness = sum(g.fitness for g in population) / len(population)
-            best_in_gen = max(g.fitness for g in population)
-            
-            logger.info(f"\nGENERATION {generation + 1} SUMMARY:")
-            logger.info(f"Best fitness: {self.best_fitness:.4f} ({improvement_status})")
-            logger.info(f"Best in generation: {best_in_gen:.4f} | Average: {avg_fitness:.4f}")
-            logger.info(f"Stagnation counter: {stagnation_counter}")
-            logger.info(f"Mutation strategy: {current_mutation_strategy['operation_focus']} (modifier: {current_mutation_strategy['mutation_rate_modifier']:.3f})")
-            
-            # Print current fitness weights in a readable format
-            if self.fitness_weights:
-                logger.info("Current fitness weights:")
-                logger.info(f"  Volume: {self.fitness_weights['volume_utilization_weight']:.2f} | " +
-                      f"Contact: {self.fitness_weights['contact_ratio_weight']:.2f} | " +
-                      f"Stability: {self.fitness_weights['stability_score_weight']:.2f} | " +
-                      f"Balance: {self.fitness_weights['weight_balance_weight']:.2f} | " +
-                      f"Packed: {self.fitness_weights['items_packed_ratio_weight']:.2f}")
-        
-        logger.info(f"\n{'='*70}")
-        logger.info(f"GENETIC ALGORITHM COMPLETED")
-        logger.info(f"Best fitness achieved: {self.best_fitness:.4f}")
-        logger.info(f"Generations run: {generation + 1}")
-        logger.info(f"Total mutations applied: ~{generation * self.population_size}")
-        logger.info(f"LLM strategy updates: ~{(generation + 1) // 5}")
-        logger.info(f"{'='*70}\n")
-        
-        return self.best_solution
 
-    def _evaluate_fitness(self, genome):
-        """Enhanced fitness evaluation with dynamic weights from LLM"""
-        container = EnhancedContainer(self.container_dims)
-        
-        # Set route temperature if available
-        if self.route_temperature is not None:
-            container.route_temperature = self.route_temperature
-        
-        # Sort spaces by their distance from the container origin for better packing
-        def sort_spaces(container):
-            container.spaces.sort(key=lambda space: (
-                space.z,  # Prioritize lower heights first
-                space.x**2 + space.y**2,  # Prefer spaces closer to origin
-                -(space.width * space.height * space.depth)  # Prefer larger spaces
-            ))
-        
-        # Make a local copy of items to avoid modifying the originals
-        items_to_pack = [(item, rotation_flag) for item, rotation_flag in 
-                         zip(genome.item_sequence, genome.rotation_flags)]
-        
-        # Pre-sort items by volume and weight for better initial packing
-        items_to_pack.sort(key=lambda x: (
-            -(x[0].dimensions[0] * x[0].dimensions[1] * x[0].dimensions[2]),  # Larger volume first
-            -x[0].weight,  # Heavier items first
-            not x[0].stackable  # Non-stackable items first
-        ))
-        
-        # Pack items and track metrics
-        total_contact_area = 0
-        total_surface_area = 0
-        gaps_penalty = 0
-        
-        for item, rotation_flag in items_to_pack:
-            original_dims = item.dimensions
-            item.dimensions = self._get_rotation(original_dims, rotation_flag)
-            
-            best_pos = None
-            best_rot = None
-            best_space = None
-            best_score = float('-inf')
-            
-            # TEMPERATURE SENSITIVITY CHECK - using TemperatureConstraintHandler
-            is_temperature_sensitive = False
-            if hasattr(item, 'needs_insulation') and item.needs_insulation:
-                is_temperature_sensitive = True
-            
-            # Try current rotation in all available spaces
-            for space in container.spaces:
-                # Skip spaces that aren't suitable for temperature-sensitive items
-                if is_temperature_sensitive and hasattr(space, 'temperature_safe') and space.temperature_safe is False:
-                    continue
-                    
-                if space.can_fit_item(item.dimensions):
-                    pos = (space.x, space.y, space.z)
-                    if container._is_valid_placement(item, pos, item.dimensions):
-                        # WALL PROXIMITY CHECK using Temperature Handler
-                        if is_temperature_sensitive:
-                            if not self.temp_handler.check_temperature_constraints(item, pos, container.dimensions):
-                                continue  # Skip positions that don't satisfy temperature constraints
-                        
-                        # Calculate placement score
-                        contact_score = 0
-                        gap_score = 0
-                        
-                        # Check contact with container walls
-                        wall_contacts = 0
-                        if pos[0] == 0 or pos[0] + item.dimensions[0] == container.dimensions[0]:
-                            wall_contacts += 1
-                        if pos[1] == 0 or pos[1] + item.dimensions[1] == container.dimensions[1]:
-                            wall_contacts += 1
-                        if pos[2] == 0:
-                            wall_contacts += 1
-                        
-                        # Check contact with other items
-                        for placed_item in container.items:
-                            if container._has_surface_contact(pos, item.dimensions, placed_item):
-                                overlap_area = container._calculate_overlap_area(
-                                    (pos[0], pos[1], item.dimensions[0], item.dimensions[1]),
-                                    (placed_item.position[0], placed_item.position[1],
-                                     placed_item.dimensions[0], placed_item.dimensions[1])
-                                )
-                                contact_score += overlap_area
-                        
-                        # Check for small gaps
-                        for gap_space in container.spaces:
-                            if gap_space != space:
-                                if (gap_space.width < 0.3 and gap_space.depth < 0.3) or \
-                                   (gap_space.width < 0.3 and gap_space.height < 0.3) or \
-                                   (gap_space.depth < 0.3 and gap_space.height < 0.3):
-                                    gap_score -= gap_space.get_volume()
-                        
-                        # DIFFERENT SCORING STRATEGY BASED ON TEMPERATURE SENSITIVITY
-                        if is_temperature_sensitive:
-                            # Calculate central position score
-                            center_x = container.dimensions[0] / 2
-                            center_y = container.dimensions[1] / 2
-                            item_center_x = pos[0] + item.dimensions[0]/2
-                            item_center_y = pos[1] + item.dimensions[1]/2
-                            
-                            # Calculate distance from center (normalized 0-1)
-                            distance_from_center = ((item_center_x - center_x)**2 + 
-                                                   (item_center_y - center_y)**2) / (
-                                                       (container.dimensions[0]/2)**2 + 
-                                                       (container.dimensions[1]/2)**2)
-                            
-                            # Central position bonus (0-50 points)
-                            central_bonus = 50 * (1 - distance_from_center)
-                            
-                            # Score formula for temperature-sensitive items
-                            position_score = (
-                                contact_score * 3 +      # Contact with other items is good
-                                central_bonus +          # Central placement bonus
-                                gap_score * 3            # Penalize small gaps
-                            )
-                        else:
-                            # Score formula for regular items
-                            position_score = (
-                                contact_score * 2 +      # Contact with other items
-                                wall_contacts * 1.5 +    # Wall contact bonus for regular items
-                                gap_score * 3            # Penalize small gaps
-                            )
-                        
-                        if position_score > best_score:
-                            best_score = position_score
-                            best_pos = pos
-                            best_rot = item.dimensions
-                            best_space = space
-            
-            if best_pos:
-                item.position = best_pos
-                item.dimensions = best_rot
-                container.items.append(item)
-                container._update_spaces(best_pos, best_rot, best_space)
-                
-                # Update metrics
-                total_surface_area += 2 * (
-                    item.dimensions[0] * item.dimensions[1] +
-                    item.dimensions[1] * item.dimensions[2] +
-                    item.dimensions[0] * item.dimensions[2]
-                )
-                
-                # Update contact area
-                for other_item in container.items[:-1]:  # Exclude current item
-                    if container._has_surface_contact(item.position, item.dimensions, other_item):
-                        overlap_area = container._calculate_overlap_area(
-                            (item.position[0], item.position[1], 
-                             item.dimensions[0], item.dimensions[1]),
-                            (other_item.position[0], other_item.position[1],
-                             other_item.dimensions[0], other_item.dimensions[1])
-                        )
-                        total_contact_area += overlap_area
-                
-                sort_spaces(container)
-            
-            # Restore original dimensions
-            item.dimensions = original_dims
-        
-        # Calculate enhanced fitness components
-        metrics = {}
-        
-        metrics['volume_utilization'] = (sum(
-            item.dimensions[0] * item.dimensions[1] * item.dimensions[2] 
-            for item in container.items
-        ) / (container.dimensions[0] * container.dimensions[1] * container.dimensions[2]))
-        
-        metrics['contact_ratio'] = total_contact_area / (total_surface_area + 1e-6) if total_surface_area > 0 else 0
-        
-        try:
-            metrics['stability_score'] = sum(
-                container._calculate_stability_score(item, item.position, item.dimensions)
-                for item in container.items
-            ) / len(container.items) if container.items else 0
-        except (AttributeError, ZeroDivisionError):
-            metrics['stability_score'] = 0
-        
-        try:
-            metrics['weight_balance'] = container._calculate_weight_balance_score()
-        except AttributeError:
-            metrics['weight_balance'] = 0
-            
-        metrics['items_packed_ratio'] = len(container.items) / len(genome.item_sequence)
-        
-        # Cache metrics for current genome for use in adaptive mutation
-        if hasattr(self, 'current_metrics'):
-            self.current_metrics = metrics.copy()
-        
-        # Use dynamic weights if available, otherwise fall back to default weights
-        if hasattr(self, 'fitness_weights') and self.fitness_weights:
-            fitness = (
-                metrics['volume_utilization'] * self.fitness_weights['volume_utilization_weight'] +
-                metrics['contact_ratio'] * self.fitness_weights['contact_ratio_weight'] +
-                metrics['stability_score'] * self.fitness_weights['stability_score_weight'] +
-                metrics['weight_balance'] * self.fitness_weights['weight_balance_weight'] +
-                metrics['items_packed_ratio'] * self.fitness_weights['items_packed_ratio_weight']
-            )
-        else:
-            # Default weights if no dynamic weights available
-            fitness = (
-                metrics['volume_utilization'] * 0.25 +
-                metrics['contact_ratio'] * 0.35 +
-                metrics['stability_score'] * 0.25 +
-                metrics['weight_balance'] * 0.1 +
-                metrics['items_packed_ratio'] * 0.05
-            )
-        
-        # Additional penalties/bonuses for temperature-sensitive item placement - using TemperatureHandler
-        temp_items = [i for i in container.items if getattr(i, 'needs_insulation', False)]
-        if temp_items:
-            # Calculate average distance from walls for temperature items
-            total_dist = 0
-            for item in temp_items:
-                x, y, z = item.position
-                w, d, h = item.dimensions
-                min_dist = min(
-                    x,                                   # Distance from left wall
-                    y,                                   # Distance from front wall
-                    container.dimensions[0] - (x + w),   # Distance from right wall
-                    container.dimensions[1] - (y + d),   # Distance from back wall
-                    z,                                   # Distance from bottom
-                    container.dimensions[2] - (z + h)    # Distance from top
-                )
-                total_dist += min_dist
-            
-            avg_wall_dist = total_dist / len(temp_items) if temp_items else 0
-            
-            # Calculate bonus based on temp handler
-            temp_bonus = min(0.1, avg_wall_dist / 2.0)  # Max bonus at 50cm average
-            fitness += temp_bonus
-        
-        return fitness
+        # Final generation summary
+        logger.info(f"\n{'='*60}")
+        logger.info(f"🏁 OPTIMIZATION COMPLETE")
+        logger.info(f"{'='*60}")
+        logger.info(f"  🏆 Best fitness achieved: {best_overall_fitness:.4f}")
+        logger.info(f"  📊 Generations completed: {self.generations}")
+        if best_overall_genome and hasattr(best_overall_genome, 'metrics'):
+            metrics = best_overall_genome.metrics
+            logger.info(f"  📈 Final metrics:")
+            logger.info(f"    - Volume utilization: {metrics.get('volume_utilization', 0.0):.2%}")
+            logger.info(f"    - Items packed ratio: {metrics.get('items_packed_ratio', 0.0):.2%}")
+            logger.info(f"    - Stability score: {metrics.get('stability_score', 0.0):.3f}")
+            logger.info(f"    - Contact ratio: {metrics.get('contact_ratio', 0.0):.3f}")
+            logger.info(f"    - Weight balance: {metrics.get('weight_balance', 0.0):.3f}")
+            logger.info(f"    - Temperature constraint: {metrics.get('temperature_constraint', 0.0):.3f}")
+            logger.info(f"    - Weight capacity: {metrics.get('weight_capacity', 0.0):.3f}")
+        logger.info(f"{'='*60}")
 
+        self.best_solution = best_overall_genome
+        self.best_fitness = best_overall_fitness
+        self.generation_count = self.generations
+        
+        # Store final performance data in the best genome for reporting
+        if best_overall_genome:
+            best_overall_genome.best_fitness = best_overall_fitness
+            best_overall_genome.generation_count = self.generations
+        
+        return best_overall_genome
+
+    @staticmethod
+    def _get_rotation(_, original_dims: Tuple[float, float, float], rotation_flag: int) -> Tuple[float, float, float]:
+        """Get dimensions after rotation based on flag (static method for external access)"""
+        l, w, h = original_dims
+        rotations = [
+            (l, w, h), (l, h, w), (w, l, h),
+            (w, h, l), (h, l, w), (h, w, l)
+        ]
+        return rotations[rotation_flag]
+    
     def _tournament_select(self, population, tournament_size=3):
         """Tournament selection"""
         tournament = random.sample(population, tournament_size)
@@ -822,124 +1102,12 @@ class GeneticPacker:
                 j += 1
         
         # Uniform crossover for rotations
-        child_rotations = [
+        child_rotations = array('B', [
             parent1.rotation_flags[i] if random.random() < 0.5 
             else parent2.rotation_flags[i]
             for i in range(size)
-        ]
+        ])
         
         child = PackingGenome(child_sequence)
         child.rotation_flags = child_rotations
         return child
-
-    def _get_rotation(self, dims, flag):
-        """Get dimensions after rotation based on flag"""
-        l, w, h = dims
-        rotations = [
-            (l, w, h), (l, h, w), (w, l, h),
-            (w, h, l), (h, l, w), (h, w, l)
-        ]
-        return rotations[flag]
-
-    def initialize_smart_population(self, items):
-        """Initialize population with smart strategies for better starting solutions"""
-        population = []
-        
-        # Calculate item properties for smart initialization
-        total_volume = sum(i.dimensions[0] * i.dimensions[1] * i.dimensions[2] for i in items)
-        container_volume = self.container_dims[0] * self.container_dims[1] * self.container_dims[2]
-        avg_item_volume = total_volume / len(items)
-        
-        # Strategy 1: Volume-based sorting (30% of population)
-        volume_count = int(self.population_size * 0.3)
-        for _ in range(volume_count):
-            sorted_items = sorted(items.copy(), 
-                key=lambda x: x.dimensions[0] * x.dimensions[1] * x.dimensions[2],
-                reverse=True)
-            genome = PackingGenome(sorted_items)
-            # Smart rotation initialization for large items
-            for i, item in enumerate(sorted_items):
-                if item.dimensions[0] * item.dimensions[1] * item.dimensions[2] > avg_item_volume:
-                    best_rot = 0
-                    min_height = float('inf')
-                    for rot in range(6):
-                        dims = self._get_rotation(item.dimensions, rot)
-                        if dims[2] < min_height and all(d <= max_d for d, max_d in zip(dims, self.container_dims)):
-                            min_height = dims[2]
-                            best_rot = rot
-                    genome.rotation_flags[i] = best_rot
-            population.append(genome)
-            
-        # Strategy 2: Layer-based grouping (30% of population)
-        layer_count = int(self.population_size * 0.3)
-        for _ in range(layer_count):
-            # Group items by similar heights
-            items_copy = items.copy()
-            items_copy.sort(key=lambda x: x.dimensions[2])
-            genome = PackingGenome(items_copy)
-            # Initialize rotations to minimize height variations within layers
-            current_height = 0
-            current_layer = []
-            for i, item in enumerate(items_copy):
-                if item.dimensions[2] > current_height * 1.2:  # Allow 20% variance in layer height
-                    # Start new layer
-                    current_height = item.dimensions[2]
-                    current_layer = []
-                current_layer.append(i)
-                # Try to maintain consistent height within layer
-                best_rot = 0
-                min_diff = float('inf')
-                for rot in range(6):
-                    dims = self._get_rotation(item.dimensions, rot)
-                    if abs(dims[2] - current_height) < min_diff and all(d <= max_d for d, max_d in zip(dims, self.container_dims)):
-                        min_diff = abs(dims[2] - current_height)
-                        best_rot = rot
-                genome.rotation_flags[i] = best_rot
-            population.append(genome)
-            
-        # Strategy 3: Weight and stability based (20% of population)
-        weight_count = int(self.population_size * 0.2)
-        for _ in range(weight_count):
-            # Sort by weight and stability requirements
-            sorted_items = sorted(items.copy(), 
-                key=lambda x: (x.weight, x.fragility != 'HIGH', x.stackable),
-                reverse=True)
-            genome = PackingGenome(sorted_items)
-            # Initialize rotations focusing on stability
-            for i, item in enumerate(sorted_items):
-                if item.fragility == 'HIGH' or item.weight > 100:
-                    # Find rotation with largest base area for stability
-                    best_rot = 0
-                    max_base = 0
-                    for rot in range(6):
-                        dims = self._get_rotation(item.dimensions, rot)
-                        base_area = dims[0] * dims[1]
-                        if base_area > max_base and all(d <= max_d for d, max_d in zip(dims, self.container_dims)):
-                            max_base = base_area
-                            best_rot = rot
-                    genome.rotation_flags[i] = best_rot
-            population.append(genome)
-            
-        # Strategy 4: Random with smart constraints (20% of population)
-        random_count = self.population_size - len(population)
-        for _ in range(random_count):
-            shuffled_items = items.copy()
-            random.shuffle(shuffled_items)
-            genome = PackingGenome(shuffled_items)
-            # Add some smart constraints even to random solutions
-            for i, item in enumerate(shuffled_items):
-                if not item.stackable or item.fragility == 'HIGH':
-                    # Prefer orientations with lower height for unstackable items
-                    best_rot = 0
-                    min_height = float('inf')
-                    for rot in range(6):
-                        dims = self._get_rotation(item.dimensions, rot)
-                        if dims[2] < min_height and all(d <= max_d for d, max_d in zip(dims, self.container_dims)):
-                            min_height = dims[2]
-                            best_rot = rot
-                    genome.rotation_flags[i] = best_rot
-            population.append(genome)
-            
-        # Set initial population
-        self.population = population
-        logger.info(f"Created smart initial population with {len(population)} diverse solutions")

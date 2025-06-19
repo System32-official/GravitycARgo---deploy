@@ -1661,5 +1661,8 @@
             "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
             "reason": "Cannot stack on high fragility item (EngineUnits_1)"
         }
-    ]
+    ],
+    "best_fitness": 0.4695985044066585,
+    "generation_count": 8,
+    "optimization_method": "regular"
 }

@@ -1,0 +1,18 @@
+Name,Length,Width,Height,Weight,Quantity,Fragility,LoadBear,BoxingType,Bundle,Temperature Sensitivity
+ContainerBase_A,2.95,2.35,0.05,100,2,LOW,9999,CRATE,YES,n/a
+ContainerBase_B,2.95,2.35,0.05,100,2,LOW,9999,CRATE,YES,n/a
+OptimalFiller_A,5.9,2.35,0.05,200,1,LOW,9999,CRATE,YES,n/a
+OptimalFiller_B,5.9,2.35,0.05,200,1,LOW,9999,CRATE,YES,n/a
+MaxBoxCube_A,0.78,0.78,0.78,80,8,LOW,1000,CRATE,YES,n/a
+MaxBoxCube_B,0.78,0.78,0.78,80,8,LOW,1000,CRATE,YES,n/a
+MaxBoxCube_C,0.78,0.78,0.78,80,8,LOW,1000,CRATE,YES,n/a
+PerfectFit_A,5.9,2.35,1.0,800,1,LOW,0,CRATE,YES,n/a
+PerfectFit_B,5.9,2.35,1.0,800,1,LOW,0,CRATE,YES,n/a
+LargeCube_A,0.58,0.58,0.58,50,10,LOW,800,CRATE,YES,n/a
+LargeCube_B,0.59,0.59,0.58,50,10,LOW,800,CRATE,YES,n/a
+MediumCube_A,0.39,0.39,0.39,20,10,LOW,400,BOX,YES,n/a
+MediumCube_B,0.38,0.38,0.38,20,10,LOW,400,BOX,YES,n/a
+SmallCube_A,0.29,0.29,0.29,10,10,LOW,200,BOX,YES,n/a
+SmallCube_B,0.19,0.19,0.19,5,10,LOW,100,BOX,YES,n/a
+IdealCube_A,0.78,0.78,0.20,40,5,LOW,500,CRATE,YES,n/a
+IdealCube_B,0.58,0.58,0.20,30,5,LOW,400,CRATE,YES,n/a

@@ -1,0 +1,356 @@
+{
+    "timestamp": "20250525_124419",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1"
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 49.24956280450912,
+        "items_packed": 16,
+        "total_items": 3,
+        "remaining_volume": 16.81735,
+        "center_of_gravity": [
+            2.8333333333333335,
+            0.9833333333333333,
+            0.7791666666666667
+        ],
+        "total_weight": 120.0
+    },
+    "packed_items": [
+        {
+            "name": "Test Item 3_2",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 1_2",
+            "position": [
+                0.8,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 2_1",
+            "position": [
+                1.8,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                2.0,
+                1.5
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 3_3",
+            "position": [
+                0.0,
+                0.8,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 1_1",
+            "position": [
+                0.8,
+                1.0,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 2_2",
+            "position": [
+                3.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                2.0,
+                1.2,
+                1.5
+            ],
+            "weight": 15.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 1_4",
+            "position": [
+                3.0,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 1_5",
+            "position": [
+                4.0,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 10.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 3_7",
+            "position": [
+                5.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 3_6",
+            "position": [
+                5.0,
+                0.8,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 3_5",
+            "position": [
+                0.0,
+                0.0,
+                0.8
+            ],
+            "dimensions": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 3_10",
+            "position": [
+                0.0,
+                0.8,
+                0.8
+            ],
+            "dimensions": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 3_1",
+            "position": [
+                5.0,
+                0.0,
+                0.8
+            ],
+            "dimensions": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 3_4",
+            "position": [
+                5.0,
+                0.8,
+                0.8
+            ],
+            "dimensions": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 3_9",
+            "position": [
+                1.8,
+                0.0,
+                1.5
+            ],
+            "dimensions": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Test Item 3_8",
+            "position": [
+                1.8,
+                0.8,
+                1.5
+            ],
+            "dimensions": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [],
+    "best_fitness": 0.3693717210338184,
+    "generation_count": 8,
+    "optimization_method": "regular"
+}

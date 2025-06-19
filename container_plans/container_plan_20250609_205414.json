@@ -1,0 +1,136 @@
+{
+    "timestamp": "20250609_205414",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1"
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 0.0,
+        "items_packed": 0,
+        "total_items": 3,
+        "remaining_volume": 33.137350000000005,
+        "center_of_gravity": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "total_weight": 0.0,
+        "best_fitness": 0.0,
+        "generation_count": 0,
+        "algorithm_used": "Regular Algorithm"
+    },
+    "best_fitness": 0.0,
+    "generation_count": 0,
+    "algorithm_used": "Regular Algorithm",
+    "optimization_method": "regular",
+    "packed_items": [],
+    "unpacked_items": [
+        {
+            "name": "Box3_1",
+            "dimensions": [
+                40.0,
+                30.0,
+                20.0
+            ],
+            "weight": 8.0,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (40.00\u00d730.00\u00d720.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_1",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_2",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_3",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_1",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_2",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        }
+    ]
+}

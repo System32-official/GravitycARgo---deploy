@@ -1,0 +1,455 @@
+:root {
+  --primary-color: #3a86ff;
+  --secondary-color: #ff006e;
+  --success-color: #38b000;
+  --warning-color: #ffbe0b;
+  --danger-color: #ff5252;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --grid-border: #ddd;
+  --tooltip-bg: rgba(0, 0, 0, 0.8);
+}
+
+/* Dark theme variables */
+.dark-mode {
+  --primary-color: #4a9fff;
+  --light-color: #2d3748;
+  --dark-color: #f8f9fa;
+  --grid-border: #4a5568;
+  color-scheme: dark;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+
+.dark-mode .card,
+.dark-mode .modal-content,
+.dark-mode .border,
+.dark-mode .table {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+
+.dark-mode .bg-light {
+  background-color: #2d3748 !important;
+  color: #e2e8f0;
+}
+
+.dark-mode .text-muted {
+  color: #a0aec0 !important;
+}
+
+/* Table styles */
+.cargo-table {
+  height: 400px;
+  overflow: visible;
+  margin-bottom: 20px;
+}
+
+/* Confidence indicators */
+.confidence-high {
+  color: var(--success-color);
+}
+
+.confidence-medium {
+  color: var(--warning-color);
+}
+
+.confidence-low {
+  color: var(--danger-color);
+}
+
+/* AI Suggestions */
+.ai-suggestions {
+  min-height: 150px;
+}
+
+.ai-suggestion-item {
+  padding: 12px;
+  border-left: 4px solid var(--primary-color);
+  background-color: rgba(58, 134, 255, 0.1);
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 12px;
+  transition: all 0.2s;
+}
+
+.ai-suggestion-item:hover {
+  background-color: rgba(58, 134, 255, 0.15);
+}
+
+.ai-suggestion-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Validation feedback */
+.validation-item {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.validation-item i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.validation-warning {
+  background-color: rgba(255, 190, 11, 0.2);
+  border-left: 4px solid var(--warning-color);
+}
+
+.validation-error {
+  background-color: rgba(255, 82, 82, 0.2);
+  border-left: 4px solid var(--danger-color);
+}
+
+.validation-success {
+  background-color: rgba(56, 176, 0, 0.2);
+  border-left: 4px solid var(--success-color);
+}
+
+/* Table cell validations */
+.cell-valid {
+  background-color: rgba(56, 176, 0, 0.1) !important;
+}
+
+.cell-invalid {
+  background-color: rgba(255, 82, 82, 0.1) !important;
+}
+
+.cell-warning {
+  background-color: rgba(255, 190, 11, 0.1) !important;
+}
+
+/* Custom Handsontable styling */
+.handsontable .htDimmed {
+  color: #999;
+}
+
+/* New style to prevent red highlighting on empty rows */
+.handsontable td.htInvalid {
+  background-color: rgba(255, 82, 82, 0.1) !important;
+}
+
+/* Empty row styling - override the htInvalid class for empty rows */
+.handsontable tr:last-child td.htInvalid {
+  background-color: inherit !important;
+}
+
+.dark-mode .handsontable .htDimmed {
+  color: #718096;
+}
+
+.dark-mode .handsontable th,
+.dark-mode .handsontable td {
+  background-color: #2d3748;
+  color: #e2e8f0;
+  border-color: #4a5568;
+}
+
+.dark-mode .handsontable th {
+  background-color: #4a5568;
+}
+
+.dark-mode .handsontable .htDimmed {
+  color: #a0aec0;
+}
+
+/* Field icons */
+.field-icon {
+  margin-right: 6px;
+  color: var(--primary-color);
+}
+
+/* Tooltip styles */
+.custom-tooltip {
+  position: absolute;
+  background: var(--tooltip-bg);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  z-index: 1000;
+  font-size: 0.85rem;
+  max-width: 250px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 0.5s ease-in-out;
+}
+
+/* Preview table */
+.preview-table {
+  height: 300px;
+  overflow: auto;
+}
+
+/* Data stats cards */
+.stat-card {
+  background-color: rgba(58, 134, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.stat-label {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Micro interactions */
+button:not(:disabled):active {
+  transform: scale(0.98);
+}
+
+/* AI Suggestion Modal */
+.ai-suggestion-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.suggestion-row {
+  border-bottom: 1px solid #dee2e6;
+  padding: 12px 0;
+}
+
+.suggestion-row:last-child {
+  border-bottom: none;
+}
+
+.suggestion-field {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.suggestion-value {
+  padding: 4px 8px;
+  background-color: rgba(58, 134, 255, 0.1);
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Utility classes */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Dark mode for suggestion modal */
+.dark-mode .suggestion-row {
+  border-color: #4a5568;
+}
+
+.dark-mode .suggestion-value {
+  background-color: rgba(74, 159, 255, 0.2);
+}
+
+/* Fix for SweetAlert in dark mode */
+.dark-mode .swal2-popup {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+.dark-mode .swal2-title,
+.dark-mode .swal2-content {
+  color: #e2e8f0;
+}
+
+.dark-mode .swal2-icon.swal2-info {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Form controls in dark mode */
+.dark-mode .form-control,
+.dark-mode .form-select {
+  background-color: #1a202c;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.dark-mode .form-control:focus,
+.dark-mode .form-select:focus {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+/* Fragility name styling */
+.fragility-low {
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.fragility-medium {
+  color: var(--warning-color);
+  font-weight: bold;
+}
+
+.fragility-high {
+  color: var(--danger-color);
+  font-weight: bold;
+}
+
+/* AI filled cell styling */
+.ai-filled {
+  background-color: rgba(100, 200, 255, 0.1) !important;
+}
+
+.ai-filled-mark {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+/* Validation icons */
+.validation-icon {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 12px;
+  z-index: 1;
+}
+
+.warning-icon {
+  color: #f0ad4e;
+}
+
+.error-icon {
+  color: #d9534f;
+}
+
+/* Dropdown cell styling improvements */
+.handsontable .htDropdownMenu {
+  padding: 0;
+}
+
+.handsontable .htDropdownMenu .dropdown-menu-inner {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.handsontable .htDropdownMenu .dropdown-menu-inner li {
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.handsontable .htDropdownMenu .dropdown-menu-inner li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Custom dropdown styling */
+.htAutocompleteArrow {
+  color: #333;
+  font-size: 10px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Cell validation styling */
+.cell-warning {
+  background-color: rgba(255, 193, 7, 0.2) !important;
+  position: relative;
+}
+
+.cell-invalid {
+  background-color: rgba(220, 53, 69, 0.2) !important;
+  position: relative;
+}
+
+/* AI filled indicator styling */
+.ai-filled {
+  background-color: rgba(13, 110, 253, 0.05) !important;
+}
+
+.ai-filled-mark {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  font-size: 10px;
+}
+
+/* Validation warning dialog */
+.validation-warning ul {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.validation-warning li {
+  margin-bottom: 5px;
+}
+
+/* Add styles for dropdown cells */
+.htDropdownCell {
+  position: relative;
+}
+
+.htDropdownCell:after {
+  content: "▼";
+  font-size: 10px;
+  color: #666;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .cargo-table {
+    height: 300px;
+  }
+
+  .stat-card {
+    margin-bottom: 10px;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+}

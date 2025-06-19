@@ -2,7 +2,7 @@
 Stability analysis functions for the container packing application
 """
 import numpy as np
-from modules.utils import calculate_overlap_area
+from modules.utils import calculate_overlap_area, check_overlap_2d
 
 def analyze_layer_distribution(container):
     """Analyze how items are distributed in layers"""
@@ -145,10 +145,4 @@ def has_surface_contact(pos1, dims1, item2):
             
     return False
 
-def check_overlap_2d(rect1, rect2):
-    """Check if two rectangles overlap in 2D"""
-    x1, y1, w1, d1 = rect1
-    x2, y2, w2, d2 = rect2
-    
-    return not (x1 + w1 <= x2 or x2 + w2 <= x1 or
-               y1 + d1 <= y2 or y2 + d2 <= y1)
+"""Converted to use utility function - contents moved to utils.py"""

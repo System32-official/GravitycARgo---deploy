@@ -1,0 +1,61 @@
+{
+    "timestamp": "20250526_150311",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Sea Transport",
+        "transport_mode_id": "2",
+        "route_temperature": 25.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 0.0,
+        "items_packed": 1,
+        "total_items": 2,
+        "remaining_volume": 33.137350000000005,
+        "center_of_gravity": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "total_weight": 0.0,
+        "best_fitness": 0.525,
+        "generation_count": 0,
+        "algorithm_used": "Genetic Algorithm"
+    },
+    "best_fitness": 0.525,
+    "generation_count": 0,
+    "algorithm_used": "Genetic Algorithm",
+    "optimization_method": "genetic",
+    "packed_items": [
+        {
+            "name": "TestBox1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                5.9,
+                2.35,
+                2.39
+            ],
+            "weight": 5.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": "NORMAL",
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": []
+}

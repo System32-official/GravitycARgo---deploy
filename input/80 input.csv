@@ -1,0 +1,13 @@
+Name,Length,Width,Height,Weight,Quantity,Fragility,LoadBear,BoxingType,Bundle,Temperature Sensitivity
+IdealCube_A,0.58,0.58,0.58,30,30,LOW,350,CRATE,YES,n/a
+IdealCube_B,0.58,0.58,0.58,30,30,LOW,350,CRATE,YES,n/a
+IdealRect_A,1.16,0.58,0.58,50,15,LOW,400,CRATE,YES,n/a
+IdealRect_B,0.58,1.16,0.58,50,15,LOW,400,CRATE,YES,n/a
+IdealRect_C,0.58,0.58,1.16,50,10,LOW,400,CRATE,YES,n/a
+PerfectFit_A,1.16,1.16,0.58,70,6,LOW,500,CRATE,YES,n/a
+PerfectFit_B,1.16,0.58,1.16,70,6,LOW,500,CRATE,YES,n/a
+PerfectFit_C,0.58,1.16,1.16,70,6,LOW,500,CRATE,YES,n/a
+MaxCube_A,1.16,1.16,1.16,90,4,LOW,600,CRATE,YES,n/a
+HalfCube_A,0.29,0.29,0.29,10,40,LOW,150,BOX,YES,n/a
+SmallFiller_A,0.2,0.2,0.2,5,50,LOW,100,BOX,YES,n/a
+MicroFiller_A,0.1,0.1,0.1,1,100,LOW,50,BOX,YES,n/a

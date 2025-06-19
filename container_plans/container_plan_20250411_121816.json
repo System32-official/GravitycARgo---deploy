@@ -1181,5 +1181,8 @@
             "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
             "reason": "Cannot stack on high fragility item (ElectronicCabinet_1)"
         }
-    ]
+    ],
+    "best_fitness": 0.3582362500320635,
+    "generation_count": 8,
+    "optimization_method": "regular"
 }

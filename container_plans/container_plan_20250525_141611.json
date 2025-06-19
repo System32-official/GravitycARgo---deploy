@@ -1,0 +1,88 @@
+{
+    "timestamp": "20250525_141611",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Sea Transport",
+        "transport_mode_id": "2",
+        "route_temperature": 25.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 100.0,
+        "items_packed": 1,
+        "total_items": 3,
+        "remaining_volume": 0.0,
+        "center_of_gravity": [
+            2.95,
+            1.175,
+            1.195
+        ],
+        "total_weight": 4.0
+    },
+    "packed_items": [
+        {
+            "name": "Box C_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                5.9,
+                2.35,
+                2.39
+            ],
+            "weight": 4.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [
+        {
+            "name": "Box B_1",
+            "dimensions": [
+                5.9,
+                2.35,
+                2.39
+            ],
+            "weight": 3.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "Box A_1",
+            "dimensions": [
+                5.9,
+                2.35,
+                2.39
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        }
+    ],
+    "best_fitness": 0.75,
+    "generation_count": 8,
+    "optimization_method": "regular"
+}

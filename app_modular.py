@@ -10,41 +10,18 @@ import json
 import time
 import logging
 import subprocess
-# Make psutil import optional with fallback
-try:
-    import psutil
-except ImportError:
-    logging.warning("psutil module not found. System monitoring features will be limited.")
-    # Create a minimal mock for basic functionality
-    class PsutilMock:
-        @staticmethod
-        def Process(pid):
-            class MockProcess:
-                @staticmethod
-                def memory_info():
-                    class MemInfo:
-                        rss = 0
-                    return MemInfo()
-                @staticmethod
-                def cpu_percent():
-                    return 0
-                @staticmethod
-                def is_running():
-                    return True
-                @staticmethod
-                def terminate():
-                    pass
-            return MockProcess()
-    psutil = PsutilMock()
+import psutil
 import signal
 import threading
 import http.server
 import socketserver
+import socket
 import glob
 import shutil
 from logging.handlers import RotatingFileHandler
 from flask_socketio import SocketIO, emit
 import multiprocessing
+import numpy as np
 from routing.Server import app as route_temp_app
 
 # Update imports to use the new package structure
@@ -52,10 +29,15 @@ from routing.Server import app as route_temp_app
 # Import configuration from config.py
 from config import UPLOAD_FOLDER, PLANS_FOLDER, MAX_CONTENT_LENGTH, SECRET_KEY
 
-# Constants
-STANDARD_JSON_FILENAME = "latest_container_plan.json"  # Standard JSON filename for serving
-NGROK_DOMAIN = "destined-mammoth-flowing.ngrok-free.app"  # Fixed ngrok domain
-JSON_SERVER_PORT = 8000
+# Configuration constants - moved from hardcoded values
+class AppConfig:
+    STANDARD_JSON_FILENAME = "latest_container_plan.json"
+    NGROK_DOMAIN = os.getenv('NGROK_DOMAIN', "destined-mammoth-flowing.ngrok-free.app")
+    JSON_SERVER_PORT = int(os.getenv('JSON_SERVER_PORT', '8000'))
+    ROUTE_TEMP_PORT = int(os.getenv('ROUTE_TEMP_PORT', '5001'))
+    MAIN_APP_PORT = int(os.getenv('MAIN_APP_PORT', '5000'))
+    LOG_MAX_BYTES = int(os.getenv('LOG_MAX_BYTES', str(1024 * 1024)))  # 1MB
+    LOG_BACKUP_COUNT = int(os.getenv('LOG_BACKUP_COUNT', '10'))
 
 # Import other modules
 from modules.handlers import (
@@ -76,7 +58,7 @@ class JSONServerService:
     _server = None
     _server_thread = None
     _ngrok_process = None
-    _ngrok_url = f"https://{NGROK_DOMAIN}/{STANDARD_JSON_FILENAME}"
+    _ngrok_url = f"https://{AppConfig.NGROK_DOMAIN}/{AppConfig.STANDARD_JSON_FILENAME}"
     _is_running = False
     _lock = threading.Lock()
     
@@ -92,7 +74,7 @@ class JSONServerService:
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
         self.data_dir = os.path.join(self.script_dir, "container_plans")
         self.staging_dir = os.path.join(self.script_dir, "serving")
-        self.json_path = os.path.join(self.staging_dir, STANDARD_JSON_FILENAME)
+        self.json_path = os.path.join(self.staging_dir, AppConfig.STANDARD_JSON_FILENAME)
         
         # Prepare the staging directory
         os.makedirs(self.staging_dir, exist_ok=True)
@@ -163,7 +145,7 @@ class JSONServerService:
                 
             # Copy to staging directory
             shutil.copy2(latest_json, self.json_path)
-            print(f"Copied to staging as: {STANDARD_JSON_FILENAME}")
+            print(f"Copied to staging as: {AppConfig.STANDARD_JSON_FILENAME}")
             return True
         except Exception as e:
             print(f"ERROR copying JSON file: {e}")
@@ -197,7 +179,7 @@ class JSONServerService:
                     return False
                 
                 # Check if the default port is in use
-                port_to_use = JSON_SERVER_PORT
+                port_to_use = AppConfig.JSON_SERVER_PORT
                 if self.is_port_in_use(port_to_use):
                     print(f"Port {port_to_use} is already in use!")
                     
@@ -234,8 +216,11 @@ class JSONServerService:
                 self.stop_server()  # Clean up if partially started
                 return False
     
-    def _start_ngrok(self, port=JSON_SERVER_PORT):
+    def _start_ngrok(self, port=None):
         """Start ngrok tunnel"""
+        if port is None:
+            port = AppConfig.JSON_SERVER_PORT
+            
         try:
             # Check if ngrok is installed
             result = subprocess.run(["ngrok", "version"], 
@@ -247,7 +232,7 @@ class JSONServerService:
                 return False
                 
             # Start ngrok with the specified domain
-            cmd = f"ngrok http {port} --domain={NGROK_DOMAIN}"
+            cmd = f"ngrok http {port} --domain={AppConfig.NGROK_DOMAIN}"
             print(f"Starting ngrok: {cmd}")
             
             # Try to terminate any existing ngrok processes first
@@ -393,30 +378,7 @@ def create_app():
     including upload directories, secret key, and JSON encoder. It sets up all
     route handlers, registers blueprints, configures error handlers, and
     establishes logging infrastructure.
-    Configuration:
-    - Sets static and template folders
-    - Configures upload folder and maximum content length
-    - Sets secret key and custom JSON encoder for numpy compatibility
-    - Creates necessary directories for uploads and container plans
-    Routes:
-    - Landing page, start page, optimization endpoints
-    - Report generation and download functionality
-    - Alternative container plan generation
-    - API endpoints for container statistics and item details
-    - Container status and management endpoints
-    Error Handling:
-    - 413: Payload too large (file size exceeds limit)
-    - 404: Resource not found
-    - 500: Internal server error
-    - Generic exception handler for unexpected errors
-    Logging:
-    - Configures rotating file-based logging when not in debug mode
-    - Creates log directory if needed
-    - Sets appropriate log format and level
-    Returns:
-        Flask: Configured Flask application instance ready to run
     """
-    """Create and configure the Flask application"""
     app = Flask(__name__, static_folder='static', template_folder='templates')
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
@@ -503,8 +465,8 @@ def create_app():
         try:
             import requests
             
-            # Try to connect to the local server
-            local_url = "http://localhost:8000/latest_container_plan.json"
+            # Try to connect to the local server using configured port
+            local_url = f"http://localhost:{AppConfig.JSON_SERVER_PORT}/{AppConfig.STANDARD_JSON_FILENAME}"
             try:
                 response = requests.get(local_url, timeout=2)
                 if response.status_code == 200:
@@ -574,8 +536,8 @@ def create_app():
         # Set up file handler
         file_handler = RotatingFileHandler(
             'logs/container_packing.log', 
-            maxBytes=1024 * 1024,  # 1MB
-            backupCount=10
+            maxBytes=AppConfig.LOG_MAX_BYTES,
+            backupCount=AppConfig.LOG_BACKUP_COUNT
         )
         file_handler.setFormatter(logging.Formatter(
             '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'
@@ -610,25 +572,46 @@ def create_socketio(app):
             
     return socketio
 
+import socket
+
+def is_port_in_use(port):
+    """Check if a port is already in use"""
+    import socket
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        return s.connect_ex(('localhost', port)) == 0
+
 def start_route_temp_server():
     """Start the route temperature calculation server"""
-    route_temp_app.run(host='0.0.0.0', port=5001, debug=False)
+    try:
+        if not is_port_in_use(AppConfig.ROUTE_TEMP_PORT):
+            route_temp_app.run(host='0.0.0.0', port=AppConfig.ROUTE_TEMP_PORT, debug=False, use_reloader=False)
+        else:
+            print(f"Route temperature server already running on port {AppConfig.ROUTE_TEMP_PORT}")
+    except Exception as e:
+        print(f"Failed to start route temperature server: {e}")
 
 if __name__ == '__main__':
     app = create_app()
     socketio = create_socketio(app)
     
     try:
-        # Start route temperature server in a separate process
-        route_temp_process = multiprocessing.Process(target=start_route_temp_server)
-        route_temp_process.daemon = True  # This ensures the process is terminated when the main process ends
-        route_temp_process.start()
-        print("Route temperature server started at http://localhost:5001")
+        # Check if route temperature server is already running
+        if not is_port_in_use(AppConfig.ROUTE_TEMP_PORT):
+            try:
+                # Start route temperature server in a separate process
+                route_temp_process = multiprocessing.Process(target=start_route_temp_server)
+                route_temp_process.daemon = True  # This ensures the process is terminated when the main process ends
+                route_temp_process.start()
+                print(f"Route temperature server started at http://localhost:{AppConfig.ROUTE_TEMP_PORT}")
+            except Exception as e:
+                print(f"Warning: Could not start route temperature server: {e}")
+        else:
+            print(f"Route temperature server already running at http://localhost:{AppConfig.ROUTE_TEMP_PORT}")
         
         # Run main application
-        print("Starting application at http://localhost:5000 using optigenix_module")
+        print(f"Starting application at http://localhost:{AppConfig.MAIN_APP_PORT} using optigenix_module")
         print("Enhanced with LLM-powered dynamic fitness function and adaptive mutation")
-        socketio.run(app, debug=True, host='0.0.0.0', port=5000)
+        socketio.run(app, debug=True, host='0.0.0.0', port=AppConfig.MAIN_APP_PORT, use_reloader=False)
     except Exception as e:
         print(f"Failed to start application: {e}")
         raise

@@ -1,64 +1,41 @@
-# Use pre-built wheels instead of building from source
---only-binary=:all:
-
-# Core Flask dependencies
-Flask==2.0.1
-Werkzeug==2.0.1
-Jinja2==3.1.6
-itsdangerous==2.2.0
-click==8.1.8
-
-# Socket.IO for real-time communication
+# Flask and web application dependencies
+flask==2.0.1
 flask-socketio==5.1.1
-python-socketio==5.4.0
-python-engineio==4.3.0
+flask-cors>=3.0.10
+Werkzeug==2.0.1
+Jinja2==3.0.1
+itsdangerous==2.0.1
 
-# System monitoring
-psutil>=5.9.0
+# HTTP and API handling
+requests==2.26.0
 
-# Web server and WebSocket support
-gunicorn==20.1.0
-gevent==23.9.1
-gevent-websocket==0.10.1
-greenlet==3.1.1
+# Data processing and computation
+numpy==1.21.2
+pandas>=1.5.3
+plotly>=5.13.0
 
-# Data processing
-numpy==1.24.3
-pandas==1.5.3
-python-dateutil==2.9.0.post0
-pytz==2025.2
-six==1.17.0
+# System utilities
+psutil==5.9.0
 
-# Visualization
-plotly==5.18.0
-dash==2.16.1
-dash-core-components==2.0.0
-dash-html-components==2.0.0
-dash-table==5.0.0
-matplotlib==3.7.2
+# Routing and visualization dependencies
+dash>=2.9.0
+dash-leaflet>=0.1.23
+polyline>=2.0.0
+tenacity>=8.2.0
 
-# Build tools
-setuptools>=58.0.0
-wheel>=0.45.1
+# Documentation
+Sphinx==4.3.2
+sphinx-rtd-theme==1.0.0
 
-# Additional utilities
-bidict==0.23.1  # Required by python-socketio
-zope.event==5.0  # Required by gevent
-zope.interface==7.2  # Required by gevent
-MarkupSafe==3.0.2  # Required by Jinja2
-tenacity==9.1.2  # Required by plotly
-packaging==24.2  # Required by various packages
+# Development and testing
+pytest==6.2.5
+pytest-cov==2.12.1
+black==21.9b0
+flake8==4.0.1
 
-# Environment variables
-python-dotenv==1.0.1
+# Machine learning (if used)
+scikit-learn==1.0.1
+scipy==1.7.3
 
-# API/HTTP clients
-aiohttp==3.9.5  # Required for async HTTP requests
-requests>=2.25.0  # Required for HTTP requests
-polyline>=2.0.0  # Required for routing functionality
-
-# LLM Integration - Note: Not using groq package, using direct API calls
-# But we'll keep the package in case future versions need it
-
-# For serialization/deserialization
-PyYAML==6.0  # For YAML configuration
+# Google Gemini API
+google-generativeai>=0.8.0

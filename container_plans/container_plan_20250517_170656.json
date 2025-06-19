@@ -1,0 +1,3538 @@
+{
+    "timestamp": "20250517_170656",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "dimensions": "5.9m \u00d7 2.35m \u00d7 2.39m",
+        "route_temperature": 29.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 41.36872743294205,
+        "items_packed": 124,
+        "total_items": 6,
+        "remaining_volume": 19.428849999999983,
+        "center_of_gravity": [
+            3.134732142857143,
+            1.220357142857143,
+            0.7715178571428571
+        ],
+        "total_weight": 2800.0
+    },
+    "packed_items": [
+        {
+            "name": "SensitiveBox_E_1",
+            "position": [
+                0.3,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SensitiveBox_E_2",
+            "position": [
+                0.3,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SensitiveBox_E_3",
+            "position": [
+                0.8999999999999999,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SensitiveBox_E_4",
+            "position": [
+                0.8999999999999999,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SensitiveBox_E_5",
+            "position": [
+                1.5,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SensitiveBox_E_6",
+            "position": [
+                1.9,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SensitiveBox_E_7",
+            "position": [
+                1.9,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SensitiveBox_E_8",
+            "position": [
+                2.5,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SensitiveBox_E_9",
+            "position": [
+                2.5,
+                1.2999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "SensitiveBox_E_10",
+            "position": [
+                2.9,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.4
+            ],
+            "weight": 15.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": "0\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "BaseCrate_A_1",
+            "position": [
+                0.8999999999999999,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                1.4,
+                0.7,
+                1.1
+            ],
+            "weight": 350.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BaseCrate_A_2",
+            "position": [
+                3.1,
+                1.2999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                1.4,
+                0.7,
+                1.1
+            ],
+            "weight": 350.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SidePallet_D_1",
+            "position": [
+                4.5,
+                1.2999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                1.0,
+                1.15
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongNarrow_F_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                1.9,
+                0.3
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongNarrow_F_2",
+            "position": [
+                0.3,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.9,
+                0.3,
+                0.3
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongNarrow_F_3",
+            "position": [
+                2.1999999999999997,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.9,
+                0.3,
+                0.3
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongNarrow_F_4",
+            "position": [
+                0.8999999999999999,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                1.9,
+                0.3,
+                0.3
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongNarrow_F_5",
+            "position": [
+                4.1,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                1.9
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongNarrow_F_6",
+            "position": [
+                4.3999999999999995,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                1.9
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongNarrow_F_7",
+            "position": [
+                4.699999999999999,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                1.9
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongNarrow_F_8",
+            "position": [
+                4.999999999999999,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                1.9
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongNarrow_F_9",
+            "position": [
+                5.299999999999999,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                1.9
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongNarrow_F_10",
+            "position": [
+                5.599999999999999,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.3,
+                1.9
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_1",
+            "position": [
+                4.1,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.7,
+                0.5,
+                0.55
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_2",
+            "position": [
+                4.8,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.7,
+                0.5,
+                0.55
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_3",
+            "position": [
+                0.3,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.55,
+                0.5,
+                0.7
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_4",
+            "position": [
+                0.3,
+                1.6,
+                0.0
+            ],
+            "dimensions": [
+                0.55,
+                0.5,
+                0.7
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_5",
+            "position": [
+                2.5,
+                1.6999999999999997,
+                0.0
+            ],
+            "dimensions": [
+                0.55,
+                0.5,
+                0.7
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_6",
+            "position": [
+                3.3,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.55,
+                0.5,
+                0.7
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_7",
+            "position": [
+                4.1,
+                0.3,
+                0.55
+            ],
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_8",
+            "position": [
+                4.8,
+                0.3,
+                0.55
+            ],
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_9",
+            "position": [
+                0.3,
+                1.1,
+                0.7
+            ],
+            "dimensions": [
+                0.55,
+                0.7,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_10",
+            "position": [
+                4.1,
+                0.3,
+                1.05
+            ],
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_11",
+            "position": [
+                4.8,
+                0.3,
+                1.05
+            ],
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_12",
+            "position": [
+                0.8999999999999999,
+                1.5,
+                1.1
+            ],
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_13",
+            "position": [
+                1.5999999999999999,
+                1.5,
+                1.1
+            ],
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_14",
+            "position": [
+                3.1,
+                1.2999999999999998,
+                1.1
+            ],
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_15",
+            "position": [
+                3.8,
+                1.2999999999999998,
+                1.1
+            ],
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_16",
+            "position": [
+                4.5,
+                1.2999999999999998,
+                1.15
+            ],
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_17",
+            "position": [
+                0.3,
+                1.1,
+                1.2
+            ],
+            "dimensions": [
+                0.55,
+                0.5,
+                0.7
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_18",
+            "position": [
+                4.1,
+                0.3,
+                1.55
+            ],
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MidBox_B_19",
+            "position": [
+                4.8,
+                0.3,
+                1.55
+            ],
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_1",
+            "position": [
+                5.5,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.3,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_2",
+            "position": [
+                5.5,
+                0.6,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.3,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_3",
+            "position": [
+                2.8,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_4",
+            "position": [
+                3.3,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_5",
+            "position": [
+                3.8,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.35,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_6",
+            "position": [
+                5.5,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.3,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_7",
+            "position": [
+                5.5,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.3,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_8",
+            "position": [
+                5.5,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.3,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_9",
+            "position": [
+                5.5,
+                1.8,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.3,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_10",
+            "position": [
+                4.1,
+                0.8,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_11",
+            "position": [
+                4.6,
+                0.8,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_12",
+            "position": [
+                5.1,
+                0.8,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.3,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_13",
+            "position": [
+                3.1,
+                1.9999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_14",
+            "position": [
+                3.6,
+                1.9999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_15",
+            "position": [
+                4.1,
+                1.9999999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.3,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_16",
+            "position": [
+                0.0,
+                0.0,
+                0.3
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_17",
+            "position": [
+                0.0,
+                0.5,
+                0.3
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_18",
+            "position": [
+                0.0,
+                1.0,
+                0.3
+            ],
+            "dimensions": [
+                0.3,
+                0.35,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_19",
+            "position": [
+                0.0,
+                1.35,
+                0.3
+            ],
+            "dimensions": [
+                0.3,
+                0.35,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_20",
+            "position": [
+                3.1,
+                1.9999999999999998,
+                0.3
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_21",
+            "position": [
+                3.6,
+                1.9999999999999998,
+                0.3
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_22",
+            "position": [
+                0.8999999999999999,
+                0.3,
+                0.3
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_23",
+            "position": [
+                1.4,
+                0.3,
+                0.3
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_24",
+            "position": [
+                1.9,
+                0.3,
+                0.3
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_25",
+            "position": [
+                2.8,
+                0.3,
+                0.3
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_26",
+            "position": [
+                3.3,
+                0.3,
+                0.3
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_27",
+            "position": [
+                5.5,
+                0.3,
+                0.5
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_28",
+            "position": [
+                5.5,
+                0.8999999999999999,
+                0.5
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_29",
+            "position": [
+                5.5,
+                1.5,
+                0.5
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_30",
+            "position": [
+                3.1,
+                1.9999999999999998,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_31",
+            "position": [
+                3.6,
+                1.9999999999999998,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_32",
+            "position": [
+                0.8999999999999999,
+                0.3,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_33",
+            "position": [
+                1.4,
+                0.3,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_34",
+            "position": [
+                1.9,
+                0.3,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_35",
+            "position": [
+                2.8,
+                0.3,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_36",
+            "position": [
+                3.3,
+                0.3,
+                0.6
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_37",
+            "position": [
+                0.0,
+                0.0,
+                0.6499999999999999
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_38",
+            "position": [
+                0.0,
+                0.5,
+                0.6499999999999999
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_39",
+            "position": [
+                2.5,
+                1.6999999999999997,
+                0.7
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_40",
+            "position": [
+                3.3,
+                0.7,
+                0.7
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_41",
+            "position": [
+                0.0,
+                1.0,
+                0.8
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_42",
+            "position": [
+                5.5,
+                0.3,
+                0.8
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_43",
+            "position": [
+                5.5,
+                0.8999999999999999,
+                0.8
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_44",
+            "position": [
+                5.5,
+                1.5,
+                0.8
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_45",
+            "position": [
+                3.1,
+                1.9999999999999998,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_46",
+            "position": [
+                3.6,
+                1.9999999999999998,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_47",
+            "position": [
+                0.8999999999999999,
+                0.3,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_48",
+            "position": [
+                1.4,
+                0.3,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_49",
+            "position": [
+                1.9,
+                0.3,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_50",
+            "position": [
+                2.8,
+                0.3,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_51",
+            "position": [
+                3.3,
+                0.3,
+                0.8999999999999999
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_52",
+            "position": [
+                0.0,
+                0.0,
+                0.9999999999999999
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_53",
+            "position": [
+                0.0,
+                0.5,
+                0.9999999999999999
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_54",
+            "position": [
+                2.5,
+                1.6999999999999997,
+                1.0
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_55",
+            "position": [
+                3.3,
+                0.7,
+                1.0
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_56",
+            "position": [
+                5.5,
+                0.3,
+                1.1
+            ],
+            "dimensions": [
+                0.3,
+                0.35,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_57",
+            "position": [
+                5.5,
+                0.8999999999999999,
+                1.1
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_58",
+            "position": [
+                5.5,
+                1.5,
+                1.1
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_59",
+            "position": [
+                0.0,
+                1.0,
+                1.15
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_60",
+            "position": [
+                4.5,
+                1.8499999999999999,
+                1.15
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_61",
+            "position": [
+                5.0,
+                1.8499999999999999,
+                1.15
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_62",
+            "position": [
+                0.8999999999999999,
+                0.3,
+                1.2
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_63",
+            "position": [
+                1.4,
+                0.3,
+                1.2
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_64",
+            "position": [
+                1.9,
+                0.3,
+                1.2
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_65",
+            "position": [
+                2.8,
+                0.3,
+                1.2
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_66",
+            "position": [
+                3.3,
+                0.3,
+                1.2
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_67",
+            "position": [
+                3.1,
+                1.9999999999999998,
+                1.2
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_68",
+            "position": [
+                3.6,
+                1.9999999999999998,
+                1.2
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_69",
+            "position": [
+                2.5,
+                1.6999999999999997,
+                1.3
+            ],
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_70",
+            "position": [
+                3.3,
+                0.7,
+                1.3
+            ],
+            "dimensions": [
+                0.35,
+                0.3,
+                0.5
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_71",
+            "position": [
+                0.0,
+                0.0,
+                1.3499999999999999
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_72",
+            "position": [
+                0.0,
+                0.5,
+                1.3499999999999999
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_73",
+            "position": [
+                5.5,
+                0.8999999999999999,
+                1.4000000000000001
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_74",
+            "position": [
+                5.5,
+                1.5,
+                1.4000000000000001
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_75",
+            "position": [
+                4.5,
+                1.8499999999999999,
+                1.45
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_76",
+            "position": [
+                0.0,
+                1.0,
+                1.5
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_77",
+            "position": [
+                5.5,
+                0.3,
+                1.6
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_78",
+            "position": [
+                0.0,
+                0.0,
+                1.6999999999999997
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_79",
+            "position": [
+                0.0,
+                0.5,
+                1.6999999999999997
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_80",
+            "position": [
+                5.5,
+                0.8999999999999999,
+                1.7000000000000002
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_81",
+            "position": [
+                5.5,
+                1.5,
+                1.7000000000000002
+            ],
+            "dimensions": [
+                0.35,
+                0.5,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TopFiller_C_82",
+            "position": [
+                0.0,
+                1.0,
+                1.85
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.35
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [
+        {
+            "name": "BaseCrate_A_3",
+            "dimensions": [
+                1.4,
+                1.1,
+                0.7
+            ],
+            "weight": 350.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "BaseCrate_A_4",
+            "dimensions": [
+                1.4,
+                1.1,
+                0.7
+            ],
+            "weight": 350.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "BaseCrate_A_5",
+            "dimensions": [
+                1.4,
+                1.1,
+                0.7
+            ],
+            "weight": 350.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "BaseCrate_A_6",
+            "dimensions": [
+                1.4,
+                1.1,
+                0.7
+            ],
+            "weight": 350.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "BaseCrate_A_7",
+            "dimensions": [
+                1.4,
+                1.1,
+                0.7
+            ],
+            "weight": 350.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "BaseCrate_A_8",
+            "dimensions": [
+                1.4,
+                1.1,
+                0.7
+            ],
+            "weight": 350.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "SidePallet_D_2",
+            "dimensions": [
+                1.15,
+                0.8,
+                1.0
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "SidePallet_D_3",
+            "dimensions": [
+                1.15,
+                0.8,
+                1.0
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "SidePallet_D_4",
+            "dimensions": [
+                1.15,
+                0.8,
+                1.0
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "MidBox_B_20",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_21",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_22",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_23",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_24",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_25",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_26",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_27",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_28",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_29",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_30",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_31",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_32",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_33",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_34",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_35",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_36",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_37",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_38",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_39",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_40",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_41",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_42",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_43",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_44",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_45",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_46",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_47",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_48",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_49",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_50",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_51",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_52",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_53",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_54",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_55",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_56",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_57",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_58",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_59",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "MidBox_B_60",
+            "dimensions": [
+                0.7,
+                0.55,
+                0.5
+            ],
+            "weight": 40.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_8)"
+        },
+        {
+            "name": "TopFiller_C_83",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_84",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_85",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_86",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_87",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_88",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_89",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_90",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_91",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_92",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_93",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_94",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_95",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_96",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_97",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_98",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_99",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        },
+        {
+            "name": "TopFiller_C_100",
+            "dimensions": [
+                0.5,
+                0.35,
+                0.3
+            ],
+            "weight": 10.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (SensitiveBox_E_1)"
+        }
+    ],
+    "best_fitness": 0.31026545574706543,
+    "generation_count": 8,
+    "optimization_method": "regular"
+}

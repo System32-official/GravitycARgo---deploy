@@ -71,17 +71,16 @@ document.addEventListener("DOMContentLoaded", function () {
         face.style.height = `var(--width)`;
         face.style.transform = `translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(calc(var(--height) / 2))`;
       }
-    });
-
-    // Update the specification values
-    document.getElementById("lengthValue").textContent = `${length}m`;
-    document.getElementById("widthValue").textContent = `${width}m`;
-    document.getElementById("heightValue").textContent = `${height}m`;
-    document.getElementById("volumeValue").textContent = `${(
-      length *
-      width *
-      height
-    ).toFixed(2)} m³`;
+    });    // Update the specification values
+    const lengthValue = document.querySelector("#lengthValue");
+    const widthValue = document.querySelector("#widthValue");
+    const heightValue = document.querySelector("#heightValue");
+    const volumeValue = document.querySelector("#volumeValue");
+    
+    if (lengthValue) lengthValue.textContent = `${length}m`;
+    if (widthValue) widthValue.textContent = `${width}m`;
+    if (heightValue) heightValue.textContent = `${height}m`;
+    if (volumeValue) volumeValue.textContent = `${(length * width * height).toFixed(2)} m³`;
   };
 
   // Add interactivity - make container rotate on hover/mouse movement
@@ -107,7 +106,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initialize with a default container size if needed
   const defaultDimensions = [12, 2.4, 2.6]; // Length, Width, Height
-  updateContainerModel(defaultDimensions);
+  if (containerModel) {
+    updateContainerModel(defaultDimensions);
+  }
 
   // Connect to container selection if it exists in the page
   const containerOptions = document.querySelectorAll(".container-option");

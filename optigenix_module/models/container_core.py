@@ -6,6 +6,7 @@ from typing import List, Tuple
 
 from optigenix_module.models.item import Item
 from optigenix_module.models.space import MaximalSpace
+from modules.utils import check_overlap_2d
 
 class ContainerCore:
     """Contains core container operations and basic geometry checks"""
@@ -31,13 +32,9 @@ class ContainerCore:
         return rotations
 
     def _check_overlap_2d(self, rect1: Tuple[float, float, float, float], 
-                         rect2: Tuple[float, float, float, float]) -> bool:
-        """Check if two rectangles overlap in 2D"""
-        x1, y1, w1, d1 = rect1
-        x2, y2, w2, d2 = rect2
-        
-        return not (x1 + w1 <= x2 or x2 + w2 <= x1 or
-                   y1 + d1 <= y2 or y2 + d2 <= y1)
+                       rect2: Tuple[float, float, float, float]) -> bool:
+        """Check if two rectangles overlap in 2D using shared utility"""
+        return check_overlap_2d(rect1, rect2)
 
     def _check_overlap_3d(self, box1: Tuple[float, float, float, float, float, float],
                          box2: Tuple[float, float, float, float, float, float]) -> bool:
@@ -109,22 +106,20 @@ class ContainerCore:
                 
                 if below_item.load_bearing > 0 and item.weight > below_item.load_bearing * weight_ratio:
                     return False
-                    
-            # Check if current item can support weight above it based on its fragility
+                      # Check if current item can support weight above it based on its fragility
             if item.fragility == 'HIGH':
                 # Don't allow any items to be stacked on high fragility items
                 for placed_item in self.items:
                     if (placed_item.position and 
                         placed_item.position[2] > z + h and
-                        self._check_overlap_2d(
+                        check_overlap_2d(
                             (x, y, w, d),
                             (placed_item.position[0], placed_item.position[1],
                              placed_item.dimensions[0], placed_item.dimensions[1])
-                        )):
-                        return False
+                        )):                        return False
                 
         return True
-
+        
     def _get_items_below(self, pos: Tuple[float, float, float], 
                         dims: Tuple[float, float]) -> List[Item]:
         """Find items directly below the given position"""
@@ -134,7 +129,7 @@ class ContainerCore:
         
         for item in self.items:
             if (abs(item.position[2] + item.dimensions[2] - z) < 0.001 and
-                self._check_overlap_2d(
+                check_overlap_2d(
                     (x, y, w, d),
                     (item.position[0], item.position[1], 
                      item.dimensions[0], item.dimensions[1])
@@ -150,11 +145,10 @@ class ContainerCore:
             
         x, y, z = pos
         w, d, h = dims
-        
-        # Check if there's an item directly below
+          # Check if there's an item directly below
         for item in self.items:
             if (item.position[2] + item.dimensions[2] == z and
-                self._check_overlap_2d(
+                check_overlap_2d(
                     (x, y, w, d),
                     (item.position[0], item.position[1], 
                      item.dimensions[0], item.dimensions[1])

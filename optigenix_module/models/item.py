@@ -3,6 +3,7 @@ Item class definition for container packing
 """
 import random
 from typing import Tuple
+from modules.utils import check_overlap_2d
 
 class Item:
     def __init__(self, name, length, width, height, weight, quantity, fragility, stackable, boxing_type, bundle, load_bearing=0, temperature_sensitivity=None):
@@ -92,11 +93,16 @@ class Item:
         # If still no solution, return minimal stacking arrangement
         return (orig_l, orig_w, orig_h * min(qty, max_layers))
 
-    def _check_overlap_2d(self, rect1: Tuple[float, float, float, float], 
-                        rect2: Tuple[float, float, float, float]) -> bool:
-        """Check if two rectangles overlap in 2D"""
-        x1, y1, w1, d1 = rect1
-        x2, y2, w2, d2 = rect2
-        
-        return not (x1 + w1 <= x2 or x2 + w2 <= x1 or
-                   y1 + d1 <= y2 or y2 + d2 <= y1)
+    def __eq__(self, other):
+        """Equality comparison based on item name"""
+        if not isinstance(other, Item):
+            return False
+        return self.name == other.name
+
+    def __hash__(self):
+        """Hash based on item name for use in sets and dictionaries"""
+        return hash(self.name)
+
+    def __repr__(self):
+        """String representation for debugging"""
+        return f"Item(name='{self.name}', dims={self.dimensions}, weight={self.weight})"

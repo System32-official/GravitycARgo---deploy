@@ -1161,5 +1161,8 @@
             "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
             "reason": "Temperature-sensitive item could not be placed away from container walls. These items must maintain a 30cm buffer from all walls and top of container."
         }
-    ]
+    ],
+    "best_fitness": 0.39291011502126727,
+    "generation_count": 8,
+    "optimization_method": "regular"
 }

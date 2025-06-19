@@ -1301,5 +1301,8 @@
             "temperature_sensitivity": null,
             "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
         }
-    ]
+    ],
+    "best_fitness": 0.002461942490875099,
+    "generation_count": 8,
+    "optimization_method": "regular"
 }

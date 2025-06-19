@@ -1,0 +1,2040 @@
+{
+    "timestamp": "20250609_210713",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1"
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 0.0,
+        "items_packed": 0,
+        "total_items": 2,
+        "remaining_volume": 33.137350000000005,
+        "center_of_gravity": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "total_weight": 0.0,
+        "best_fitness": 0.0,
+        "generation_count": 0,
+        "algorithm_used": "Regular Algorithm"
+    },
+    "best_fitness": 0.0,
+    "generation_count": 0,
+    "algorithm_used": "Regular Algorithm",
+    "optimization_method": "regular",
+    "packed_items": [],
+    "unpacked_items": [
+        {
+            "name": "Box2_1",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_2",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_3",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_4",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_5",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_6",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_7",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_8",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_9",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_10",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_11",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_12",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_13",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_14",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_15",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_16",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_17",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_18",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_19",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_20",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_21",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_22",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_23",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_24",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_25",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_26",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_27",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_28",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_29",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_30",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_31",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_32",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_33",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_34",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_35",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_36",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_37",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_38",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_39",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_40",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_41",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_42",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_43",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_44",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_45",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_46",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_47",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_48",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_49",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_50",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_51",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_52",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_53",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_54",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_55",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_56",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_57",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_58",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_59",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_60",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_61",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_62",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_63",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_64",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_65",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_66",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_67",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_68",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_69",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_70",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_71",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_72",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_73",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_74",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box2_75",
+            "dimensions": [
+                25.0,
+                25.0,
+                10.0
+            ],
+            "weight": 3.2,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (25.00\u00d725.00\u00d710.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_1",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_2",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_3",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_4",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_5",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_6",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_7",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_8",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_9",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_10",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_11",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_12",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_13",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_14",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_15",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_16",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_17",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_18",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_19",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_20",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_21",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_22",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_23",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_24",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_25",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_26",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_27",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_28",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_29",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_30",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_31",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_32",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_33",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_34",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_35",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_36",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_37",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_38",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_39",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_40",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_41",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_42",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_43",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_44",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_45",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_46",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_47",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_48",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_49",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Box1_50",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        }
+    ]
+}

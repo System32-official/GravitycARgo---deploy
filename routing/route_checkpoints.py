@@ -1,34 +1,10 @@
 import requests
 from typing import List, Tuple, Optional, Dict
 from tenacity import retry, stop_after_attempt, wait_exponential, before_log, after_log
+import polyline
 import logging
 import sys
-
-# Try to import polyline with fallback
-try:
-    import polyline
-except ImportError:
-    logging.warning("polyline module not found. Attempting to install...")
-    try:
-        import subprocess
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "polyline"])
-        import polyline
-        logging.info("Successfully installed polyline")
-    except Exception as e:
-        logging.error(f"Failed to install polyline: {e}")
-        # Minimal polyline mock for basic functionality
-        class PolylineMock:
-            @staticmethod
-            def decode(encoded_str):
-                logging.warning("Using mock polyline.decode - returning empty path")
-                return []
-            @staticmethod
-            def encode(coordinates):
-                logging.warning("Using mock polyline.encode - returning empty string")
-                return ""
-        polyline = PolylineMock()
 import numpy as np
-from math import sin, cos, radians, atan2, sqrt
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)  # Change DEBUG to INFO

@@ -1086,5 +1086,8 @@
             "temperature_sensitivity": null,
             "reason": "Cannot stack on high fragility item (ElectricalBoxes_4)"
         }
-    ]
+    ],
+    "best_fitness": 0.3502694089901576,
+    "generation_count": 8,
+    "optimization_method": "regular"
 }

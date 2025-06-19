@@ -1,0 +1,141 @@
+{
+    "timestamp": "20250527_141502",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1",
+        "route_temperature": 25.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 45.40194071040683,
+        "items_packed": 5,
+        "total_items": 5,
+        "remaining_volume": 18.092350000000003,
+        "center_of_gravity": [
+            2.4800438596491228,
+            0.9391812865497076,
+            0.8074561403508771
+        ],
+        "total_weight": 342.0,
+        "best_fitness": 0.39743074846548193,
+        "generation_count": 5,
+        "algorithm_used": "Genetic Algorithm"
+    },
+    "best_fitness": 0.39743074846548193,
+    "generation_count": 5,
+    "algorithm_used": "Genetic Algorithm",
+    "optimization_method": "genetic",
+    "packed_items": [
+        {
+            "name": "Industrial Equipment",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                3.0,
+                2.0,
+                1.8
+            ],
+            "weight": 200.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Heavy",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Large Appliance",
+            "position": [
+                3.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                1.5,
+                1.8
+            ],
+            "weight": 80.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Electronics",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Office Desk",
+            "position": [
+                4.2,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.75,
+                1.5,
+                0.8
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Furniture",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Smart TV",
+            "position": [
+                3.0,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.1,
+                0.8
+            ],
+            "weight": 15.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Electronics",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Small Box",
+            "position": [
+                0.0,
+                2.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.2,
+                0.15
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": []
+}

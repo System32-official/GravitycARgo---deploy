@@ -1,0 +1,109 @@
+{
+    "timestamp": "20250610_064511",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1"
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 3.017742818903744,
+        "items_packed": 1,
+        "total_items": 3,
+        "remaining_volume": 32.137350000000005,
+        "center_of_gravity": [
+            0.5,
+            0.5,
+            0.5
+        ],
+        "total_weight": 0.1,
+        "best_fitness": 0.0,
+        "generation_count": 0,
+        "algorithm_used": "Regular Algorithm"
+    },
+    "best_fitness": 0.0,
+    "generation_count": 0,
+    "algorithm_used": "Regular Algorithm",
+    "optimization_method": "regular",
+    "packed_items": [
+        {
+            "name": "EdgeCase1_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 0.1,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [
+        {
+            "name": "EdgeCase2_1",
+            "dimensions": [
+                999.0,
+                999.0,
+                999.0
+            ],
+            "weight": 999.9,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (999.00\u00d7999.00\u00d7999.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Normal_1",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        },
+        {
+            "name": "Normal_2",
+            "dimensions": [
+                30.0,
+                20.0,
+                15.0
+            ],
+            "weight": 5.5,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false,
+            "reason": "Item dimensions (30.00\u00d720.00\u00d715.00m) exceed container dimensions (5.90\u00d72.35\u00d72.39m)"
+        }
+    ]
+}

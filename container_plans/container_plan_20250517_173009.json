@@ -1,0 +1,5108 @@
+{
+    "timestamp": "20250517_173009",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "dimensions": "5.9m \u00d7 2.35m \u00d7 2.39m",
+        "route_temperature": 28.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 38.24089735600433,
+        "items_packed": 252,
+        "total_items": 12,
+        "remaining_volume": 20.4653300000001,
+        "center_of_gravity": [
+            2.8786953405017868,
+            0.9934695340501785,
+            0.6548530465949818
+        ],
+        "total_weight": 2790.0
+    },
+    "packed_items": [
+        {
+            "name": "StableBase_A_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                2.95,
+                2.35,
+                0.1
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StableBase_A_2",
+            "position": [
+                2.95,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                2.95,
+                2.35,
+                0.1
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_A_1",
+            "position": [
+                0.0,
+                0.0,
+                0.1
+            ],
+            "dimensions": [
+                1.47,
+                1.17,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_A_2",
+            "position": [
+                0.0,
+                1.17,
+                0.1
+            ],
+            "dimensions": [
+                1.47,
+                1.17,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_A_3",
+            "position": [
+                1.47,
+                0.0,
+                0.1
+            ],
+            "dimensions": [
+                1.17,
+                1.47,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_A_4",
+            "position": [
+                2.6399999999999997,
+                0.0,
+                0.1
+            ],
+            "dimensions": [
+                1.47,
+                1.17,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_A_5",
+            "position": [
+                4.109999999999999,
+                0.0,
+                0.1
+            ],
+            "dimensions": [
+                1.47,
+                1.17,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_A_6",
+            "position": [
+                2.6399999999999997,
+                1.17,
+                0.1
+            ],
+            "dimensions": [
+                1.47,
+                1.17,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_A_7",
+            "position": [
+                5.579999999999999,
+                0.0,
+                0.1
+            ],
+            "dimensions": [
+                0.15,
+                1.47,
+                1.17
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_A_8",
+            "position": [
+                5.7299999999999995,
+                0.0,
+                0.1
+            ],
+            "dimensions": [
+                0.15,
+                1.47,
+                1.17
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_A_9",
+            "position": [
+                4.109999999999999,
+                1.17,
+                0.1
+            ],
+            "dimensions": [
+                1.47,
+                1.17,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_A_10",
+            "position": [
+                0.0,
+                0.0,
+                0.25
+            ],
+            "dimensions": [
+                1.17,
+                1.47,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_B_1",
+            "position": [
+                2.6399999999999997,
+                0.0,
+                0.25
+            ],
+            "dimensions": [
+                1.17,
+                1.47,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_B_2",
+            "position": [
+                3.8099999999999996,
+                0.0,
+                0.25
+            ],
+            "dimensions": [
+                1.17,
+                1.47,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_B_3",
+            "position": [
+                1.47,
+                0.0,
+                0.25
+            ],
+            "dimensions": [
+                1.17,
+                1.47,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_B_4",
+            "position": [
+                4.9799999999999995,
+                0.0,
+                0.25
+            ],
+            "dimensions": [
+                0.15,
+                1.47,
+                1.17
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_B_5",
+            "position": [
+                5.13,
+                0.0,
+                0.25
+            ],
+            "dimensions": [
+                0.15,
+                1.47,
+                1.17
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_B_6",
+            "position": [
+                5.28,
+                0.0,
+                0.25
+            ],
+            "dimensions": [
+                0.15,
+                1.47,
+                1.17
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_B_7",
+            "position": [
+                1.17,
+                0.0,
+                0.25
+            ],
+            "dimensions": [
+                0.15,
+                1.47,
+                1.17
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_B_8",
+            "position": [
+                1.3199999999999998,
+                0.0,
+                0.25
+            ],
+            "dimensions": [
+                0.15,
+                1.47,
+                1.17
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_B_9",
+            "position": [
+                0.0,
+                0.0,
+                0.4
+            ],
+            "dimensions": [
+                1.17,
+                1.47,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "FlatLayer_B_10",
+            "position": [
+                1.47,
+                0.0,
+                0.4
+            ],
+            "dimensions": [
+                1.47,
+                1.17,
+                0.15
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_1",
+            "position": [
+                5.579999999999999,
+                1.47,
+                0.1
+            ],
+            "dimensions": [
+                0.3,
+                0.59,
+                0.59
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_2",
+            "position": [
+                1.47,
+                1.47,
+                0.1
+            ],
+            "dimensions": [
+                0.59,
+                0.59,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_3",
+            "position": [
+                2.06,
+                1.47,
+                0.1
+            ],
+            "dimensions": [
+                0.3,
+                0.59,
+                0.59
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_4",
+            "position": [
+                1.47,
+                1.17,
+                0.4
+            ],
+            "dimensions": [
+                0.59,
+                0.59,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_5",
+            "position": [
+                2.94,
+                0.0,
+                0.4
+            ],
+            "dimensions": [
+                0.59,
+                0.59,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_6",
+            "position": [
+                3.53,
+                0.0,
+                0.4
+            ],
+            "dimensions": [
+                0.59,
+                0.59,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_7",
+            "position": [
+                4.12,
+                0.0,
+                0.4
+            ],
+            "dimensions": [
+                0.59,
+                0.59,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_8",
+            "position": [
+                3.53,
+                0.59,
+                0.4
+            ],
+            "dimensions": [
+                0.59,
+                0.59,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_9",
+            "position": [
+                2.94,
+                0.59,
+                0.4
+            ],
+            "dimensions": [
+                0.59,
+                0.59,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_10",
+            "position": [
+                4.12,
+                0.59,
+                0.4
+            ],
+            "dimensions": [
+                0.59,
+                0.59,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_11",
+            "position": [
+                0.0,
+                0.0,
+                0.55
+            ],
+            "dimensions": [
+                0.59,
+                0.59,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_12",
+            "position": [
+                0.0,
+                0.59,
+                0.55
+            ],
+            "dimensions": [
+                0.59,
+                0.59,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_13",
+            "position": [
+                1.47,
+                0.0,
+                0.55
+            ],
+            "dimensions": [
+                0.59,
+                0.3,
+                0.59
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_14",
+            "position": [
+                2.06,
+                0.0,
+                0.55
+            ],
+            "dimensions": [
+                0.59,
+                0.3,
+                0.59
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_A_15",
+            "position": [
+                0.59,
+                0.0,
+                0.55
+            ],
+            "dimensions": [
+                0.3,
+                0.59,
+                0.59
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_1",
+            "position": [
+                0.59,
+                0.59,
+                0.55
+            ],
+            "dimensions": [
+                0.58,
+                0.3,
+                0.58
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_2",
+            "position": [
+                0.59,
+                0.8899999999999999,
+                0.55
+            ],
+            "dimensions": [
+                0.58,
+                0.3,
+                0.58
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_3",
+            "position": [
+                1.47,
+                0.3,
+                0.55
+            ],
+            "dimensions": [
+                0.58,
+                0.3,
+                0.58
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_4",
+            "position": [
+                2.05,
+                0.3,
+                0.55
+            ],
+            "dimensions": [
+                0.58,
+                0.3,
+                0.58
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_5",
+            "position": [
+                2.63,
+                0.3,
+                0.55
+            ],
+            "dimensions": [
+                0.3,
+                0.58,
+                0.58
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_6",
+            "position": [
+                5.579999999999999,
+                1.47,
+                0.69
+            ],
+            "dimensions": [
+                0.3,
+                0.58,
+                0.58
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_7",
+            "position": [
+                2.06,
+                1.47,
+                0.69
+            ],
+            "dimensions": [
+                0.3,
+                0.58,
+                0.58
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_8",
+            "position": [
+                2.94,
+                0.0,
+                0.7
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_9",
+            "position": [
+                3.52,
+                0.0,
+                0.7
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_10",
+            "position": [
+                4.1,
+                0.0,
+                0.7
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_11",
+            "position": [
+                1.47,
+                1.17,
+                0.7
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_12",
+            "position": [
+                2.94,
+                0.59,
+                0.7
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_13",
+            "position": [
+                3.52,
+                0.59,
+                0.7
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_14",
+            "position": [
+                4.1,
+                0.59,
+                0.7
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LowCube_B_15",
+            "position": [
+                0.0,
+                0.0,
+                0.8500000000000001
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.3
+            ],
+            "weight": 20.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_1",
+            "position": [
+                2.36,
+                1.47,
+                0.1
+            ],
+            "dimensions": [
+                0.25,
+                0.49,
+                0.49
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_2",
+            "position": [
+                4.71,
+                0.0,
+                0.4
+            ],
+            "dimensions": [
+                0.25,
+                0.49,
+                0.49
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_3",
+            "position": [
+                4.71,
+                0.49,
+                0.4
+            ],
+            "dimensions": [
+                0.25,
+                0.49,
+                0.49
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_4",
+            "position": [
+                4.71,
+                0.98,
+                0.4
+            ],
+            "dimensions": [
+                0.25,
+                0.49,
+                0.49
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_5",
+            "position": [
+                3.53,
+                1.18,
+                0.4
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_6",
+            "position": [
+                4.02,
+                1.18,
+                0.4
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_7",
+            "position": [
+                2.94,
+                1.18,
+                0.4
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_8",
+            "position": [
+                0.8899999999999999,
+                0.0,
+                0.55
+            ],
+            "dimensions": [
+                0.25,
+                0.49,
+                0.49
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_9",
+            "position": [
+                1.47,
+                0.6,
+                0.55
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_10",
+            "position": [
+                1.96,
+                0.6,
+                0.55
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_11",
+            "position": [
+                0.0,
+                1.18,
+                0.55
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_12",
+            "position": [
+                0.59,
+                1.19,
+                0.55
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_13",
+            "position": [
+                2.36,
+                1.47,
+                0.59
+            ],
+            "dimensions": [
+                0.25,
+                0.49,
+                0.49
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_14",
+            "position": [
+                2.94,
+                1.18,
+                0.65
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_15",
+            "position": [
+                3.53,
+                1.18,
+                0.65
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_16",
+            "position": [
+                4.02,
+                1.18,
+                0.65
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_17",
+            "position": [
+                0.0,
+                1.18,
+                0.8
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_18",
+            "position": [
+                1.47,
+                0.6,
+                0.8
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_19",
+            "position": [
+                1.96,
+                0.6,
+                0.8
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_A_20",
+            "position": [
+                0.59,
+                1.19,
+                0.8
+            ],
+            "dimensions": [
+                0.49,
+                0.49,
+                0.25
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_1",
+            "position": [
+                2.36,
+                1.96,
+                0.1
+            ],
+            "dimensions": [
+                0.2,
+                0.39,
+                0.39
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_2",
+            "position": [
+                2.36,
+                1.96,
+                0.49
+            ],
+            "dimensions": [
+                0.2,
+                0.39,
+                0.39
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_3",
+            "position": [
+                0.0,
+                0.59,
+                0.8500000000000001
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_4",
+            "position": [
+                2.36,
+                1.96,
+                0.88
+            ],
+            "dimensions": [
+                0.2,
+                0.39,
+                0.39
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_5",
+            "position": [
+                4.71,
+                0.0,
+                0.89
+            ],
+            "dimensions": [
+                0.2,
+                0.39,
+                0.39
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_6",
+            "position": [
+                4.71,
+                0.98,
+                0.89
+            ],
+            "dimensions": [
+                0.2,
+                0.39,
+                0.39
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_7",
+            "position": [
+                4.71,
+                0.49,
+                0.89
+            ],
+            "dimensions": [
+                0.2,
+                0.39,
+                0.39
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_8",
+            "position": [
+                2.94,
+                1.18,
+                0.9
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_9",
+            "position": [
+                3.53,
+                1.18,
+                0.9
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_10",
+            "position": [
+                3.92,
+                1.18,
+                0.9
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_11",
+            "position": [
+                2.94,
+                0.0,
+                1.0
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_12",
+            "position": [
+                3.33,
+                0.0,
+                1.0
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_13",
+            "position": [
+                3.72,
+                0.0,
+                1.0
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_14",
+            "position": [
+                4.11,
+                0.0,
+                1.0
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_15",
+            "position": [
+                1.47,
+                1.17,
+                1.0
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_16",
+            "position": [
+                2.94,
+                0.59,
+                1.0
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_17",
+            "position": [
+                3.33,
+                0.59,
+                1.0
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_18",
+            "position": [
+                3.72,
+                0.59,
+                1.0
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_19",
+            "position": [
+                4.11,
+                0.59,
+                1.0
+            ],
+            "dimensions": [
+                0.39,
+                0.39,
+                0.2
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ShortBox_B_20",
+            "position": [
+                0.8899999999999999,
+                0.0,
+                1.04
+            ],
+            "dimensions": [
+                0.2,
+                0.39,
+                0.39
+            ],
+            "weight": 12.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_1",
+            "position": [
+                5.579999999999999,
+                2.06,
+                0.1
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_2",
+            "position": [
+                1.47,
+                2.06,
+                0.1
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_3",
+            "position": [
+                1.76,
+                2.06,
+                0.1
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_4",
+            "position": [
+                2.05,
+                2.06,
+                0.1
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_5",
+            "position": [
+                5.579999999999999,
+                2.06,
+                0.39
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_6",
+            "position": [
+                1.47,
+                2.06,
+                0.39
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_7",
+            "position": [
+                1.76,
+                2.06,
+                0.39
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_8",
+            "position": [
+                2.06,
+                1.17,
+                0.4
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_9",
+            "position": [
+                2.35,
+                1.17,
+                0.4
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_10",
+            "position": [
+                2.64,
+                1.17,
+                0.4
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_11",
+            "position": [
+                2.65,
+                0.0,
+                0.55
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_12",
+            "position": [
+                1.47,
+                2.06,
+                0.6799999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_13",
+            "position": [
+                1.76,
+                2.06,
+                0.6799999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_14",
+            "position": [
+                5.579999999999999,
+                2.06,
+                0.6799999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_15",
+            "position": [
+                2.06,
+                1.17,
+                0.69
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_16",
+            "position": [
+                2.35,
+                1.17,
+                0.69
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_17",
+            "position": [
+                2.65,
+                0.0,
+                0.8400000000000001
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_18",
+            "position": [
+                1.47,
+                2.06,
+                0.97
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_19",
+            "position": [
+                1.76,
+                2.06,
+                0.97
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_20",
+            "position": [
+                5.579999999999999,
+                2.06,
+                0.97
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_21",
+            "position": [
+                2.06,
+                1.17,
+                0.98
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_22",
+            "position": [
+                2.35,
+                1.17,
+                0.98
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_23",
+            "position": [
+                0.0,
+                0.59,
+                1.05
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_24",
+            "position": [
+                0.0,
+                1.18,
+                1.05
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_25",
+            "position": [
+                1.47,
+                0.6,
+                1.05
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_26",
+            "position": [
+                1.76,
+                0.6,
+                1.05
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_27",
+            "position": [
+                2.05,
+                0.6,
+                1.05
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_28",
+            "position": [
+                0.59,
+                1.19,
+                1.05
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_29",
+            "position": [
+                2.94,
+                1.18,
+                1.1
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_A_30",
+            "position": [
+                3.53,
+                1.18,
+                1.1
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_1",
+            "position": [
+                2.05,
+                2.06,
+                0.39
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_2",
+            "position": [
+                4.51,
+                1.18,
+                0.4
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_3",
+            "position": [
+                2.63,
+                0.8799999999999999,
+                0.55
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_4",
+            "position": [
+                2.05,
+                2.06,
+                0.5900000000000001
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_5",
+            "position": [
+                4.51,
+                1.18,
+                0.6000000000000001
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_6",
+            "position": [
+                2.64,
+                1.17,
+                0.69
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_7",
+            "position": [
+                2.63,
+                0.8799999999999999,
+                0.75
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_8",
+            "position": [
+                2.05,
+                2.06,
+                0.79
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_9",
+            "position": [
+                4.51,
+                1.18,
+                0.8
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_10",
+            "position": [
+                2.64,
+                1.17,
+                0.8899999999999999
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_11",
+            "position": [
+                2.63,
+                0.8799999999999999,
+                0.95
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_12",
+            "position": [
+                2.05,
+                2.06,
+                0.99
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_13",
+            "position": [
+                4.51,
+                1.18,
+                1.0
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_14",
+            "position": [
+                0.0,
+                1.47,
+                1.05
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_15",
+            "position": [
+                0.2,
+                1.47,
+                1.05
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_16",
+            "position": [
+                0.8799999999999999,
+                1.19,
+                1.05
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_17",
+            "position": [
+                0.8799999999999999,
+                1.39,
+                1.05
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_18",
+            "position": [
+                1.47,
+                0.8899999999999999,
+                1.05
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_19",
+            "position": [
+                1.67,
+                0.8899999999999999,
+                1.05
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_20",
+            "position": [
+                1.8699999999999999,
+                0.8899999999999999,
+                1.05
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_21",
+            "position": [
+                2.07,
+                0.8899999999999999,
+                1.05
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_22",
+            "position": [
+                0.59,
+                1.48,
+                1.05
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_23",
+            "position": [
+                0.29,
+                1.18,
+                1.05
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_24",
+            "position": [
+                2.36,
+                1.47,
+                1.08
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_25",
+            "position": [
+                2.36,
+                1.67,
+                1.08
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_26",
+            "position": [
+                2.64,
+                1.17,
+                1.0899999999999999
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_27",
+            "position": [
+                3.82,
+                1.18,
+                1.1
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_28",
+            "position": [
+                4.02,
+                1.18,
+                1.1
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_29",
+            "position": [
+                1.47,
+                0.3,
+                1.13
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_30",
+            "position": [
+                1.67,
+                0.3,
+                1.13
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_31",
+            "position": [
+                1.8699999999999999,
+                0.3,
+                1.13
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_32",
+            "position": [
+                2.07,
+                0.3,
+                1.13
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_33",
+            "position": [
+                2.27,
+                0.3,
+                1.13
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_34",
+            "position": [
+                2.63,
+                0.3,
+                1.13
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_35",
+            "position": [
+                2.63,
+                0.5,
+                1.13
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_36",
+            "position": [
+                0.59,
+                0.59,
+                1.13
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_37",
+            "position": [
+                0.79,
+                0.59,
+                1.13
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_38",
+            "position": [
+                0.59,
+                0.8899999999999999,
+                1.13
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_39",
+            "position": [
+                0.79,
+                0.8899999999999999,
+                1.13
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_B_40",
+            "position": [
+                2.65,
+                0.0,
+                1.1300000000000001
+            ],
+            "dimensions": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_1",
+            "position": [
+                2.45,
+                0.6,
+                0.55
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_2",
+            "position": [
+                2.45,
+                0.75,
+                0.55
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_3",
+            "position": [
+                2.45,
+                0.9,
+                0.55
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_4",
+            "position": [
+                2.45,
+                0.6,
+                0.7000000000000001
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_5",
+            "position": [
+                2.45,
+                0.75,
+                0.7000000000000001
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_6",
+            "position": [
+                2.45,
+                0.9,
+                0.7000000000000001
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_7",
+            "position": [
+                0.0,
+                0.98,
+                0.8500000000000001
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_8",
+            "position": [
+                2.45,
+                0.6,
+                0.8500000000000001
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_9",
+            "position": [
+                2.45,
+                0.75,
+                0.8500000000000001
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_10",
+            "position": [
+                2.45,
+                0.9,
+                0.8500000000000001
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_11",
+            "position": [
+                0.15,
+                0.98,
+                0.8500000000000001
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_12",
+            "position": [
+                0.3,
+                0.98,
+                0.8500000000000001
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_13",
+            "position": [
+                0.39,
+                0.59,
+                0.8500000000000001
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_14",
+            "position": [
+                0.39,
+                0.74,
+                0.8500000000000001
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_15",
+            "position": [
+                4.31,
+                1.18,
+                0.9
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_16",
+            "position": [
+                4.31,
+                1.3299999999999998,
+                0.9
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_17",
+            "position": [
+                4.31,
+                1.4799999999999998,
+                0.9
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_18",
+            "position": [
+                0.0,
+                0.98,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_19",
+            "position": [
+                4.5,
+                0.0,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_20",
+            "position": [
+                0.15,
+                0.98,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_21",
+            "position": [
+                2.45,
+                0.6,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_22",
+            "position": [
+                2.45,
+                0.75,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_23",
+            "position": [
+                2.45,
+                0.9,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_24",
+            "position": [
+                4.5,
+                0.15,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_25",
+            "position": [
+                4.5,
+                0.3,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_26",
+            "position": [
+                0.39,
+                0.59,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_27",
+            "position": [
+                0.39,
+                0.74,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_28",
+            "position": [
+                4.11,
+                0.39,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_29",
+            "position": [
+                4.260000000000001,
+                0.39,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_30",
+            "position": [
+                4.5,
+                0.59,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_31",
+            "position": [
+                4.5,
+                0.74,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_32",
+            "position": [
+                4.5,
+                0.89,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_33",
+            "position": [
+                4.11,
+                0.98,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_34",
+            "position": [
+                4.260000000000001,
+                0.98,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_35",
+            "position": [
+                1.47,
+                1.56,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_36",
+            "position": [
+                1.6199999999999999,
+                1.56,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_37",
+            "position": [
+                1.7699999999999998,
+                1.56,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_38",
+            "position": [
+                1.8599999999999999,
+                1.17,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_39",
+            "position": [
+                1.8599999999999999,
+                1.3199999999999998,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TinyFiller_A_40",
+            "position": [
+                2.94,
+                0.39,
+                1.0
+            ],
+            "dimensions": [
+                0.15,
+                0.15,
+                0.15
+            ],
+            "weight": 3.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_1",
+            "position": [
+                5.430000000000001,
+                0.0,
+                0.25
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_2",
+            "position": [
+                5.430000000000001,
+                0.1,
+                0.25
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_3",
+            "position": [
+                5.430000000000001,
+                0.2,
+                0.25
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_4",
+            "position": [
+                5.430000000000001,
+                0.30000000000000004,
+                0.25
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_5",
+            "position": [
+                5.430000000000001,
+                0.4,
+                0.25
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_6",
+            "position": [
+                5.430000000000001,
+                0.5,
+                0.25
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_7",
+            "position": [
+                5.430000000000001,
+                0.6,
+                0.25
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_8",
+            "position": [
+                5.430000000000001,
+                0.7,
+                0.25
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_9",
+            "position": [
+                5.430000000000001,
+                0.7999999999999999,
+                0.25
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_10",
+            "position": [
+                5.430000000000001,
+                0.8999999999999999,
+                0.25
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_11",
+            "position": [
+                5.430000000000001,
+                0.9999999999999999,
+                0.25
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_12",
+            "position": [
+                5.430000000000001,
+                0.0,
+                0.35
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_13",
+            "position": [
+                5.430000000000001,
+                0.1,
+                0.35
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_14",
+            "position": [
+                5.430000000000001,
+                0.2,
+                0.35
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_15",
+            "position": [
+                5.430000000000001,
+                0.30000000000000004,
+                0.35
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_16",
+            "position": [
+                5.430000000000001,
+                0.4,
+                0.35
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_17",
+            "position": [
+                5.430000000000001,
+                0.5,
+                0.35
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_18",
+            "position": [
+                5.430000000000001,
+                0.6,
+                0.35
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_19",
+            "position": [
+                5.430000000000001,
+                0.7,
+                0.35
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_20",
+            "position": [
+                5.430000000000001,
+                0.7999999999999999,
+                0.35
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_21",
+            "position": [
+                5.430000000000001,
+                0.8999999999999999,
+                0.35
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_22",
+            "position": [
+                5.430000000000001,
+                0.9999999999999999,
+                0.35
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_23",
+            "position": [
+                3.4299999999999997,
+                1.18,
+                0.4
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_24",
+            "position": [
+                3.4299999999999997,
+                1.28,
+                0.4
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_25",
+            "position": [
+                5.430000000000001,
+                0.0,
+                0.44999999999999996
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_26",
+            "position": [
+                5.430000000000001,
+                0.1,
+                0.44999999999999996
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_27",
+            "position": [
+                5.430000000000001,
+                0.2,
+                0.44999999999999996
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_28",
+            "position": [
+                5.430000000000001,
+                0.30000000000000004,
+                0.44999999999999996
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_29",
+            "position": [
+                5.430000000000001,
+                0.4,
+                0.44999999999999996
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_30",
+            "position": [
+                5.430000000000001,
+                0.5,
+                0.44999999999999996
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_31",
+            "position": [
+                5.430000000000001,
+                0.6,
+                0.44999999999999996
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_32",
+            "position": [
+                5.430000000000001,
+                0.7,
+                0.44999999999999996
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_33",
+            "position": [
+                5.430000000000001,
+                0.7999999999999999,
+                0.44999999999999996
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_34",
+            "position": [
+                5.430000000000001,
+                0.8999999999999999,
+                0.44999999999999996
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_35",
+            "position": [
+                5.430000000000001,
+                0.9999999999999999,
+                0.44999999999999996
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_36",
+            "position": [
+                3.4299999999999997,
+                1.18,
+                0.5
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_37",
+            "position": [
+                3.4299999999999997,
+                1.28,
+                0.5
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_38",
+            "position": [
+                5.430000000000001,
+                0.0,
+                0.5499999999999999
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_39",
+            "position": [
+                5.430000000000001,
+                0.1,
+                0.5499999999999999
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_40",
+            "position": [
+                5.430000000000001,
+                0.2,
+                0.5499999999999999
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_41",
+            "position": [
+                5.430000000000001,
+                0.30000000000000004,
+                0.5499999999999999
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_42",
+            "position": [
+                5.430000000000001,
+                0.4,
+                0.5499999999999999
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_43",
+            "position": [
+                5.430000000000001,
+                0.5,
+                0.5499999999999999
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_44",
+            "position": [
+                5.430000000000001,
+                0.6,
+                0.5499999999999999
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_45",
+            "position": [
+                5.430000000000001,
+                0.7,
+                0.5499999999999999
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_46",
+            "position": [
+                5.430000000000001,
+                0.7999999999999999,
+                0.5499999999999999
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_47",
+            "position": [
+                5.430000000000001,
+                0.8999999999999999,
+                0.5499999999999999
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_48",
+            "position": [
+                5.430000000000001,
+                0.9999999999999999,
+                0.5499999999999999
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_49",
+            "position": [
+                0.49,
+                1.18,
+                0.55
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MicroFiller_A_50",
+            "position": [
+                0.49,
+                1.28,
+                0.55
+            ],
+            "dimensions": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "weight": 1.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [
+        {
+            "name": "StableBase_B_1",
+            "dimensions": [
+                2.95,
+                2.35,
+                0.1
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "StableBase_B_2",
+            "dimensions": [
+                2.95,
+                2.35,
+                0.1
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        }
+    ],
+    "best_fitness": 0.2868067301700325,
+    "generation_count": 8,
+    "optimization_method": "regular"
+}

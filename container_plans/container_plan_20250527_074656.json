@@ -1,0 +1,632 @@
+{
+    "timestamp": "20250527_074656",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1",
+        "route_temperature": 25.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 28.475421239175734,
+        "items_packed": 19,
+        "total_items": 33,
+        "remaining_volume": 23.701350000000005,
+        "center_of_gravity": [
+            2.3579066705675835,
+            0.8552004095962552,
+            0.4094499707431247
+        ],
+        "total_weight": 2278.6666666666665,
+        "best_fitness": 0.4587711063717753,
+        "generation_count": 8,
+        "algorithm_used": "Genetic Algorithm"
+    },
+    "best_fitness": 0.4587711063717753,
+    "generation_count": 8,
+    "algorithm_used": "Genetic Algorithm",
+    "optimization_method": "genetic",
+    "packed_items": [
+        {
+            "name": "StandardPallet1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                1.2,
+                1.0
+            ],
+            "weight": 900.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "YES",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "IndustrialPump_1",
+            "position": [
+                1.2,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.9,
+                1.0,
+                0.8
+            ],
+            "weight": 75.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "StorageBox",
+            "position": [
+                0.0,
+                1.2,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.8,
+                0.6
+            ],
+            "weight": 160.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "YES",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "PackagingSupplies",
+            "position": [
+                2.1,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.2,
+                0.4,
+                0.8
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "YES",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "WoodCrates_1",
+            "position": [
+                3.3,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "WoodCrates_2",
+            "position": [
+                4.3,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SteelDrums",
+            "position": [
+                5.3,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.9,
+                0.6
+            ],
+            "weight": 360.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "YES",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "PlasticContainers",
+            "position": [
+                1.2,
+                1.0,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                0.6,
+                0.6
+            ],
+            "weight": 75.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "YES",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "ElectronicCabinet_1",
+            "position": [
+                2.1,
+                0.4,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                1.8,
+                0.6
+            ],
+            "weight": 40.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MachineParts_1",
+            "position": [
+                3.3,
+                1.0,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                0.8,
+                1.2
+            ],
+            "weight": 90.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MachineParts_2",
+            "position": [
+                4.1,
+                1.0,
+                0.0
+            ],
+            "dimensions": [
+                0.8,
+                1.2,
+                0.8
+            ],
+            "weight": 90.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "IndustrialPump_2",
+            "position": [
+                4.8999999999999995,
+                1.0,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                0.8,
+                0.9
+            ],
+            "weight": 75.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SafetyEquipment_3",
+            "position": [
+                1.2,
+                1.6,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.6
+            ],
+            "weight": 6.666666666666667,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "PackagedGoods",
+            "position": [
+                1.6,
+                1.6,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.5
+            ],
+            "weight": 90.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "YES",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "LightFixtures",
+            "position": [
+                2.9000000000000004,
+                0.4,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                1.0,
+                0.4
+            ],
+            "weight": 48.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "YES",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "ToolBoxes",
+            "position": [
+                3.3,
+                1.8,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.5
+            ],
+            "weight": 60.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "YES",
+            "temperature_sensitivity": "8\u00b0C to 25\u00b0C",
+            "needs_insulation": false
+        },
+        {
+            "name": "ElectricalBoxes_1",
+            "position": [
+                3.5999999999999996,
+                1.8,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.4
+            ],
+            "weight": 3.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ElectricalBoxes_2",
+            "position": [
+                4.8999999999999995,
+                1.8,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.3,
+                0.4
+            ],
+            "weight": 3.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "ElectricalBoxes_3",
+            "position": [
+                5.3999999999999995,
+                1.8,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.5,
+                0.3
+            ],
+            "weight": 3.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [
+        {
+            "name": "ElectronicCabinet_2",
+            "dimensions": [
+                0.8,
+                0.6,
+                1.8
+            ],
+            "weight": 40.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "HeavyMachinery",
+            "dimensions": [
+                1.8,
+                2.0,
+                1.5
+            ],
+            "weight": 800.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "AutoParts",
+            "dimensions": [
+                0.6,
+                0.8,
+                1.0
+            ],
+            "weight": 300.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "YES",
+            "temperature_sensitivity": "0\u00b0C to 40\u00b0C",
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "MetalFrames_1",
+            "dimensions": [
+                0.4,
+                2.4,
+                0.8
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "FRAME",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "IndustrialFans_1",
+            "dimensions": [
+                0.8,
+                0.8,
+                1.0
+            ],
+            "weight": 16.666666666666668,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "IndustrialFans_2",
+            "dimensions": [
+                1.0,
+                0.8,
+                0.8
+            ],
+            "weight": 16.666666666666668,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "IndustrialFans_3",
+            "dimensions": [
+                0.8,
+                1.0,
+                0.8
+            ],
+            "weight": 16.666666666666668,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "CardboardBoxes",
+            "dimensions": [
+                0.4,
+                0.6,
+                0.4
+            ],
+            "weight": 60.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "YES",
+            "temperature_sensitivity": "10\u00b0C to 30\u00b0C",
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "ChemicalBarrels_1",
+            "dimensions": [
+                0.6,
+                1.0,
+                0.6
+            ],
+            "weight": 70.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "ChemicalBarrels_2",
+            "dimensions": [
+                0.6,
+                0.6,
+                1.0
+            ],
+            "weight": 70.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "DRUM",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "SafetyEquipment_1",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.6
+            ],
+            "weight": 6.666666666666667,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "SafetyEquipment_2",
+            "dimensions": [
+                0.6,
+                0.4,
+                0.6
+            ],
+            "weight": 6.666666666666667,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "MetalFrames_2",
+            "dimensions": [
+                0.4,
+                2.4,
+                0.8
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "FRAME",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        },
+        {
+            "name": "ElectricalBoxes_4",
+            "dimensions": [
+                0.5,
+                0.4,
+                0.3
+            ],
+            "weight": 3.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Failed to place item with genetic algorithm - Try adjusting algorithm parameters"
+        }
+    ]
+}

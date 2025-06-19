@@ -1,0 +1,100 @@
+{
+    "timestamp": "20250610_070456",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1"
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 3.7721785236296803,
+        "items_packed": 3,
+        "total_items": 2,
+        "remaining_volume": 31.887350000000005,
+        "center_of_gravity": [
+            0.8749999999999999,
+            0.5,
+            0.37499999999999994
+        ],
+        "total_weight": 0.2,
+        "best_fitness": 0.0,
+        "generation_count": 0,
+        "algorithm_used": "Regular Algorithm"
+    },
+    "best_fitness": 0.0,
+    "generation_count": 0,
+    "algorithm_used": "Regular Algorithm",
+    "optimization_method": "regular",
+    "packed_items": [
+        {
+            "name": "EdgeCase1_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "weight": 0.1,
+            "fragility": "NO",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "EdgeCase2_1",
+            "position": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 0.05,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "EdgeCase2_2",
+            "position": [
+                1.0,
+                0.5,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "weight": 0.05,
+            "fragility": "YES",
+            "stackable": "NO",
+            "boxing_type": "STANDARD",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": []
+}

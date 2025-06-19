@@ -1221,5 +1221,8 @@
             "temperature_sensitivity": null,
             "reason": "Cannot stack on high fragility item (LightFixtures_3)"
         }
-    ]
+    ],
+    "best_fitness": 0.14586486245882668,
+    "generation_count": 8,
+    "optimization_method": "regular"
 }

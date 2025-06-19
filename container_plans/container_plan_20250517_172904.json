@@ -1,0 +1,6263 @@
+{
+    "timestamp": "20250517_172904",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "dimensions": "5.9m \u00d7 2.35m \u00d7 2.39m",
+        "route_temperature": 28.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 45.512480629863035,
+        "items_packed": 156,
+        "total_items": 9,
+        "remaining_volume": 18.055720000000086,
+        "center_of_gravity": [
+            2.933117647058828,
+            1.2281176470588242,
+            0.8012941176470593
+        ],
+        "total_weight": 2550.0
+    },
+    "packed_items": [
+        {
+            "name": "CoolBox_1",
+            "position": [
+                0.3,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "CoolBox_2",
+            "position": [
+                0.8799999999999999,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "CoolBox_3",
+            "position": [
+                0.8799999999999999,
+                0.8799999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "CoolBox_4",
+            "position": [
+                1.46,
+                0.8799999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "CoolBox_5",
+            "position": [
+                2.04,
+                0.8799999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.58,
+                0.58,
+                0.4
+            ],
+            "weight": 20.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": "2\u00b0C to 8\u00b0C",
+            "needs_insulation": true
+        },
+        {
+            "name": "BaseUnit_1",
+            "position": [
+                0.8799999999999999,
+                1.46,
+                0.0
+            ],
+            "dimensions": [
+                1.46,
+                0.4,
+                1.16
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BaseUnit_2",
+            "position": [
+                2.34,
+                1.46,
+                0.0
+            ],
+            "dimensions": [
+                1.46,
+                0.4,
+                1.16
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BaseUnit_3",
+            "position": [
+                3.8,
+                1.46,
+                0.0
+            ],
+            "dimensions": [
+                1.46,
+                0.4,
+                1.16
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BaseUnit_4",
+            "position": [
+                1.46,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                1.16,
+                0.4,
+                1.46
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BaseUnit_5",
+            "position": [
+                2.62,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                1.16,
+                1.46
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BaseUnit_6",
+            "position": [
+                3.02,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                1.16,
+                1.46
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BaseUnit_7",
+            "position": [
+                3.42,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                1.16,
+                1.46
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "BaseUnit_8",
+            "position": [
+                3.82,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                1.16,
+                1.46
+            ],
+            "weight": 120.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "PALLET",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongItem_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                2.92,
+                0.19,
+                0.38
+            ],
+            "weight": 30.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongItem_2",
+            "position": [
+                2.92,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                2.92,
+                0.19,
+                0.38
+            ],
+            "weight": 30.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongItem_3",
+            "position": [
+                0.8799999999999999,
+                1.8599999999999999,
+                0.0
+            ],
+            "dimensions": [
+                2.92,
+                0.19,
+                0.38
+            ],
+            "weight": 30.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongItem_4",
+            "position": [
+                0.8799999999999999,
+                2.05,
+                0.0
+            ],
+            "dimensions": [
+                2.92,
+                0.19,
+                0.38
+            ],
+            "weight": 30.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongItem_5",
+            "position": [
+                0.8799999999999999,
+                1.8599999999999999,
+                0.38
+            ],
+            "dimensions": [
+                2.92,
+                0.38,
+                0.19
+            ],
+            "weight": 30.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongItem_6",
+            "position": [
+                0.8799999999999999,
+                1.8599999999999999,
+                0.5700000000000001
+            ],
+            "dimensions": [
+                2.92,
+                0.19,
+                0.38
+            ],
+            "weight": 30.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongItem_7",
+            "position": [
+                0.8799999999999999,
+                1.8599999999999999,
+                0.9500000000000001
+            ],
+            "dimensions": [
+                2.92,
+                0.38,
+                0.19
+            ],
+            "weight": 30.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongItem_8",
+            "position": [
+                0.8799999999999999,
+                1.8599999999999999,
+                1.1400000000000001
+            ],
+            "dimensions": [
+                2.92,
+                0.38,
+                0.19
+            ],
+            "weight": 30.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongItem_9",
+            "position": [
+                0.8799999999999999,
+                1.46,
+                1.16
+            ],
+            "dimensions": [
+                2.92,
+                0.19,
+                0.38
+            ],
+            "weight": 30.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "LongItem_10",
+            "position": [
+                0.8799999999999999,
+                1.8599999999999999,
+                1.33
+            ],
+            "dimensions": [
+                2.92,
+                0.38,
+                0.19
+            ],
+            "weight": 30.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "WideBox_1",
+            "position": [
+                0.3,
+                0.8799999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.58,
+                1.46,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "WideBox_2",
+            "position": [
+                3.8,
+                1.8599999999999999,
+                0.0
+            ],
+            "dimensions": [
+                1.46,
+                0.4,
+                0.58
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "WideBox_3",
+            "position": [
+                4.22,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.58,
+                0.4,
+                1.46
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "WideBox_4",
+            "position": [
+                4.22,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.58,
+                0.4,
+                1.46
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "WideBox_5",
+            "position": [
+                4.8,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.58,
+                1.46
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "WideBox_6",
+            "position": [
+                4.8,
+                0.8799999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.58,
+                1.46
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "WideBox_7",
+            "position": [
+                5.2,
+                0.8799999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.58,
+                1.46
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "WideBox_8",
+            "position": [
+                5.2,
+                0.3,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.58,
+                1.46
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "WideBox_9",
+            "position": [
+                0.3,
+                0.8799999999999999,
+                0.4
+            ],
+            "dimensions": [
+                0.4,
+                0.58,
+                1.46
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "WideBox_10",
+            "position": [
+                3.8,
+                1.46,
+                1.16
+            ],
+            "dimensions": [
+                1.46,
+                0.58,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "TallBox_1",
+            "position": [
+                0.3,
+                1.46,
+                0.4
+            ],
+            "dimensions": [
+                0.58,
+                0.73,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_1",
+            "position": [
+                3.8,
+                1.8599999999999999,
+                0.58
+            ],
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_2",
+            "position": [
+                4.279999999999999,
+                1.8599999999999999,
+                0.58
+            ],
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_3",
+            "position": [
+                4.76,
+                1.8599999999999999,
+                0.58
+            ],
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "SmallBox_4",
+            "position": [
+                0.3,
+                1.46,
+                1.2000000000000002
+            ],
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_1",
+            "position": [
+                0.0,
+                0.19,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_2",
+            "position": [
+                0.0,
+                0.48,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_3",
+            "position": [
+                0.0,
+                0.77,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_4",
+            "position": [
+                0.0,
+                1.06,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_5",
+            "position": [
+                0.0,
+                1.35,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_6",
+            "position": [
+                0.0,
+                1.6400000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_7",
+            "position": [
+                0.0,
+                1.9300000000000002,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_8",
+            "position": [
+                4.22,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_9",
+            "position": [
+                4.51,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_10",
+            "position": [
+                5.26,
+                1.46,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_11",
+            "position": [
+                5.26,
+                1.75,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_12",
+            "position": [
+                5.26,
+                2.04,
+                0.0
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_13",
+            "position": [
+                0.0,
+                0.19,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_14",
+            "position": [
+                0.0,
+                0.48,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_15",
+            "position": [
+                0.0,
+                0.77,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_16",
+            "position": [
+                0.0,
+                1.06,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_17",
+            "position": [
+                0.0,
+                1.35,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_18",
+            "position": [
+                0.0,
+                1.6400000000000001,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_19",
+            "position": [
+                0.0,
+                1.9300000000000002,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_20",
+            "position": [
+                4.22,
+                1.1,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_21",
+            "position": [
+                4.51,
+                1.1,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_22",
+            "position": [
+                5.26,
+                1.46,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_23",
+            "position": [
+                5.26,
+                1.75,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_24",
+            "position": [
+                5.26,
+                2.04,
+                0.29
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_25",
+            "position": [
+                0.0,
+                0.19,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_26",
+            "position": [
+                0.0,
+                0.48,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_27",
+            "position": [
+                0.0,
+                0.77,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_28",
+            "position": [
+                0.0,
+                1.06,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_29",
+            "position": [
+                0.0,
+                1.35,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_30",
+            "position": [
+                0.0,
+                1.6400000000000001,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_31",
+            "position": [
+                0.0,
+                1.9300000000000002,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_32",
+            "position": [
+                4.22,
+                1.1,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_33",
+            "position": [
+                4.51,
+                1.1,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_34",
+            "position": [
+                5.26,
+                1.46,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_35",
+            "position": [
+                5.26,
+                1.75,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_36",
+            "position": [
+                5.26,
+                2.04,
+                0.58
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_37",
+            "position": [
+                0.0,
+                0.19,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_38",
+            "position": [
+                0.0,
+                0.48,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_39",
+            "position": [
+                0.0,
+                0.77,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_40",
+            "position": [
+                0.0,
+                1.06,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_41",
+            "position": [
+                0.0,
+                1.35,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_42",
+            "position": [
+                0.0,
+                1.6400000000000001,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_43",
+            "position": [
+                0.0,
+                1.9300000000000002,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_44",
+            "position": [
+                4.22,
+                1.1,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_45",
+            "position": [
+                4.51,
+                1.1,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_46",
+            "position": [
+                5.26,
+                1.46,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_47",
+            "position": [
+                5.26,
+                1.75,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_48",
+            "position": [
+                5.26,
+                2.04,
+                0.8699999999999999
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_49",
+            "position": [
+                0.0,
+                0.19,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_50",
+            "position": [
+                0.0,
+                0.48,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_51",
+            "position": [
+                0.0,
+                0.77,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_52",
+            "position": [
+                0.0,
+                1.06,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_53",
+            "position": [
+                0.0,
+                1.35,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_54",
+            "position": [
+                0.0,
+                1.6400000000000001,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_55",
+            "position": [
+                0.0,
+                1.9300000000000002,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_56",
+            "position": [
+                4.22,
+                1.1,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_57",
+            "position": [
+                4.51,
+                1.1,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_58",
+            "position": [
+                5.26,
+                1.46,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_59",
+            "position": [
+                5.26,
+                1.75,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_60",
+            "position": [
+                5.26,
+                2.04,
+                1.16
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_61",
+            "position": [
+                0.3,
+                1.8399999999999999,
+                1.2000000000000002
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_62",
+            "position": [
+                0.59,
+                1.8399999999999999,
+                1.2000000000000002
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_63",
+            "position": [
+                0.0,
+                0.19,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_64",
+            "position": [
+                0.0,
+                0.48,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_65",
+            "position": [
+                0.0,
+                0.77,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_66",
+            "position": [
+                0.0,
+                1.06,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_67",
+            "position": [
+                0.0,
+                1.35,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_68",
+            "position": [
+                0.0,
+                1.6400000000000001,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_69",
+            "position": [
+                0.0,
+                1.9300000000000002,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_70",
+            "position": [
+                5.26,
+                1.46,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_71",
+            "position": [
+                5.26,
+                1.75,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_72",
+            "position": [
+                5.26,
+                2.04,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_73",
+            "position": [
+                4.22,
+                1.1,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_74",
+            "position": [
+                4.51,
+                1.1,
+                1.45
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_75",
+            "position": [
+                4.8,
+                0.8799999999999999,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_76",
+            "position": [
+                4.8,
+                1.17,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_77",
+            "position": [
+                5.09,
+                1.17,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_78",
+            "position": [
+                5.09,
+                0.8799999999999999,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_79",
+            "position": [
+                4.22,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_80",
+            "position": [
+                4.51,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_81",
+            "position": [
+                4.8,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_82",
+            "position": [
+                4.8,
+                0.59,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_83",
+            "position": [
+                5.09,
+                0.59,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_84",
+            "position": [
+                5.09,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_85",
+            "position": [
+                4.22,
+                0.7,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_86",
+            "position": [
+                4.51,
+                0.7,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_87",
+            "position": [
+                1.46,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_88",
+            "position": [
+                1.75,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_89",
+            "position": [
+                2.04,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_90",
+            "position": [
+                2.62,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_91",
+            "position": [
+                2.91,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_92",
+            "position": [
+                2.91,
+                0.59,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_93",
+            "position": [
+                2.62,
+                0.59,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_94",
+            "position": [
+                2.91,
+                0.8799999999999999,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_95",
+            "position": [
+                2.62,
+                0.8799999999999999,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_96",
+            "position": [
+                3.2,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_97",
+            "position": [
+                3.2,
+                0.59,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_98",
+            "position": [
+                3.2,
+                0.8799999999999999,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_99",
+            "position": [
+                3.49,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_100",
+            "position": [
+                3.49,
+                0.59,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_101",
+            "position": [
+                3.49,
+                0.8799999999999999,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_102",
+            "position": [
+                3.82,
+                0.3,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_103",
+            "position": [
+                3.82,
+                0.59,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_104",
+            "position": [
+                3.82,
+                0.8799999999999999,
+                1.46
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_105",
+            "position": [
+                0.0,
+                0.19,
+                1.74
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_106",
+            "position": [
+                0.0,
+                0.48,
+                1.74
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_107",
+            "position": [
+                0.0,
+                0.77,
+                1.74
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_108",
+            "position": [
+                0.0,
+                1.06,
+                1.74
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_109",
+            "position": [
+                0.0,
+                1.35,
+                1.74
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_110",
+            "position": [
+                0.0,
+                1.6400000000000001,
+                1.74
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_111",
+            "position": [
+                0.0,
+                1.9300000000000002,
+                1.74
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_112",
+            "position": [
+                0.0,
+                0.19,
+                2.03
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_113",
+            "position": [
+                0.0,
+                0.48,
+                2.03
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_114",
+            "position": [
+                0.0,
+                0.77,
+                2.03
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_115",
+            "position": [
+                0.0,
+                1.06,
+                2.03
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_116",
+            "position": [
+                0.0,
+                1.35,
+                2.03
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_117",
+            "position": [
+                0.0,
+                1.6400000000000001,
+                2.03
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "MiniCube_118",
+            "position": [
+                0.0,
+                1.9300000000000002,
+                2.03
+            ],
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [
+        {
+            "name": "WideBox_11",
+            "dimensions": [
+                1.46,
+                0.58,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_3)"
+        },
+        {
+            "name": "WideBox_12",
+            "dimensions": [
+                1.46,
+                0.58,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_3)"
+        },
+        {
+            "name": "WideBox_13",
+            "dimensions": [
+                1.46,
+                0.58,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_3)"
+        },
+        {
+            "name": "WideBox_14",
+            "dimensions": [
+                1.46,
+                0.58,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_3)"
+        },
+        {
+            "name": "WideBox_15",
+            "dimensions": [
+                1.46,
+                0.58,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_3)"
+        },
+        {
+            "name": "WideBox_16",
+            "dimensions": [
+                1.46,
+                0.58,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_3)"
+        },
+        {
+            "name": "WideBox_17",
+            "dimensions": [
+                1.46,
+                0.58,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_3)"
+        },
+        {
+            "name": "WideBox_18",
+            "dimensions": [
+                1.46,
+                0.58,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_3)"
+        },
+        {
+            "name": "WideBox_19",
+            "dimensions": [
+                1.46,
+                0.58,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_3)"
+        },
+        {
+            "name": "WideBox_20",
+            "dimensions": [
+                1.46,
+                0.58,
+                0.4
+            ],
+            "weight": 50.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_3)"
+        },
+        {
+            "name": "FlatBox_1",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_2",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_3",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_4",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_5",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_6",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_7",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_8",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_9",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_10",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_11",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_12",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_13",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_14",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_15",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_16",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_17",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_18",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_19",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "FlatBox_20",
+            "dimensions": [
+                0.73,
+                1.16,
+                0.4
+            ],
+            "weight": 45.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "TallBox_2",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_3",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_4",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_5",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_6",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_7",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_8",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_9",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_10",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_11",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_12",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_13",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_14",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_15",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_16",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_17",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_18",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_19",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_20",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_21",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_22",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_23",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_24",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_25",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_26",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_27",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_28",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_29",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_30",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_31",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_32",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_33",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_34",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_35",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_36",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_37",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_38",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_39",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "TallBox_40",
+            "dimensions": [
+                0.73,
+                0.58,
+                0.8
+            ],
+            "weight": 40.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "No suitable position found - Complex constraint violation involving stability, support, and space requirements"
+        },
+        {
+            "name": "CubeCrate_1",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_2",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_3",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_4",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_5",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_6",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_7",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_8",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_9",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_10",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_11",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_12",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_13",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_14",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_15",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_16",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_17",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_18",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_19",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_20",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_21",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_22",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_23",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_24",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_25",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_26",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_27",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_28",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_29",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_30",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_31",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_32",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_33",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_34",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_35",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_36",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_37",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_38",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_39",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_40",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_41",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_42",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_43",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_44",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_45",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_46",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_47",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_48",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_49",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_50",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_51",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_52",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_53",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_54",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_55",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_56",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_57",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_58",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_59",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "CubeCrate_60",
+            "dimensions": [
+                0.58,
+                0.58,
+                0.58
+            ],
+            "weight": 25.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "CRATE",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_5",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_6",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_7",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_8",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_9",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_10",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_11",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_12",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_13",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_14",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_15",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_16",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_17",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_18",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_19",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_20",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_21",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_22",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_23",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_24",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_25",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_26",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_27",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_28",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_29",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_30",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_31",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_32",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_33",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_34",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_35",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_36",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_37",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_38",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_39",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_40",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_41",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_42",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_43",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_44",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_45",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_46",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_47",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_48",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_49",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_50",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_51",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_52",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_53",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_54",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_55",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_56",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_57",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_58",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_59",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_60",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_61",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_62",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_63",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_64",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_65",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_66",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_67",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_68",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_69",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_70",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_71",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_72",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_73",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_74",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_75",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_76",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_77",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_78",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_79",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "SmallBox_80",
+            "dimensions": [
+                0.48,
+                0.38,
+                0.38
+            ],
+            "weight": 15.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "CARTON",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "MiniCube_119",
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        },
+        {
+            "name": "MiniCube_120",
+            "dimensions": [
+                0.29,
+                0.29,
+                0.29
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "BOX",
+            "bundle": "NO",
+            "temperature_sensitivity": null,
+            "reason": "Cannot stack on high fragility item (CoolBox_1)"
+        }
+    ],
+    "best_fitness": 0.34134360472397274,
+    "generation_count": 8,
+    "optimization_method": "regular"
+}

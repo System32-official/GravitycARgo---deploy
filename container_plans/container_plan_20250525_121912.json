@@ -1,0 +1,2977 @@
+{
+    "timestamp": "20250525_121912",
+    "container_info": {
+        "type": "Twenty-foot",
+        "transport_mode": "Road Transport",
+        "transport_mode_id": "1",
+        "route_temperature": 25.0
+    },
+    "container_dimensions": [
+        5.9,
+        2.35,
+        2.39
+    ],
+    "statistics": {
+        "container_dims": [
+            5.9,
+            2.35,
+            2.39
+        ],
+        "volume_utilization": 7.841091698642163,
+        "items_packed": 147,
+        "total_items": 147,
+        "remaining_volume": 30.539020000000004,
+        "center_of_gravity": [
+            2.3127254588986417,
+            1.063571428571428,
+            0.1670218143123172
+        ],
+        "total_weight": 375.90000000000026
+    },
+    "packed_items": [
+        {
+            "name": "Boxes_125",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_088",
+            "position": [
+                0.3,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.05,
+                0.35
+            ],
+            "weight": 1.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_069",
+            "position": [
+                0.3,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_138",
+            "position": [
+                0.0,
+                0.4,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.3,
+                0.01
+            ],
+            "weight": 0.1,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_095",
+            "position": [
+                0.21,
+                0.4,
+                0.0
+            ],
+            "dimensions": [
+                0.05,
+                0.1,
+                0.35
+            ],
+            "weight": 1.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_005",
+            "position": [
+                0.4,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.01,
+                0.3
+            ],
+            "weight": 0.1,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_071",
+            "position": [
+                0.3,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.2,
+                0.1
+            ],
+            "weight": 2.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_144",
+            "position": [
+                0.6,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.35,
+                0.05
+            ],
+            "weight": 1.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_029",
+            "position": [
+                0.0,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.2,
+                0.3
+            ],
+            "weight": 2.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_066",
+            "position": [
+                0.4,
+                0.01,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.03,
+                0.18
+            ],
+            "weight": 0.8,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_035",
+            "position": [
+                0.7,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_104",
+            "position": [
+                0.1,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.4,
+                0.3
+            ],
+            "weight": 5.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_065",
+            "position": [
+                0.6,
+                0.39999999999999997,
+                0.0
+            ],
+            "dimensions": [
+                0.05,
+                0.3,
+                0.4
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_093",
+            "position": [
+                0.7,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.05
+            ],
+            "weight": 0.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_024",
+            "position": [
+                0.7,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.18,
+                0.25,
+                0.03
+            ],
+            "weight": 0.8,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_103",
+            "position": [
+                0.26,
+                0.4,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.21,
+                0.3
+            ],
+            "weight": 0.1,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_127",
+            "position": [
+                0.1,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.1,
+                0.3
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_058",
+            "position": [
+                0.30000000000000004,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.05
+            ],
+            "weight": 0.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_101",
+            "position": [
+                0.65,
+                0.39999999999999997,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.25,
+                0.18
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_081",
+            "position": [
+                0.0,
+                0.8999999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.35,
+                0.05
+            ],
+            "weight": 1.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_028",
+            "position": [
+                0.8799999999999999,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_014",
+            "position": [
+                1.1,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.2,
+                0.4
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_009",
+            "position": [
+                0.0,
+                1.25,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.05
+            ],
+            "weight": 0.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_068",
+            "position": [
+                0.4,
+                0.04,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.01,
+                0.3
+            ],
+            "weight": 0.1,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_116",
+            "position": [
+                0.6,
+                0.7,
+                0.0
+            ],
+            "dimensions": [
+                0.05,
+                0.35,
+                0.1
+            ],
+            "weight": 1.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_006",
+            "position": [
+                1.2999999999999998,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_083",
+            "position": [
+                0.8799999999999999,
+                1.15,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_030",
+            "position": [
+                0.30000000000000004,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.05
+            ],
+            "weight": 0.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_121",
+            "position": [
+                0.7,
+                1.0,
+                0.0
+            ],
+            "dimensions": [
+                0.05,
+                0.4,
+                0.3
+            ],
+            "weight": 0.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_067",
+            "position": [
+                1.1,
+                0.65,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.1,
+                0.05
+            ],
+            "weight": 1.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_117",
+            "position": [
+                0.61,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.01,
+                0.3
+            ],
+            "weight": 0.1,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_082",
+            "position": [
+                0.27,
+                0.4,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.3,
+                0.21
+            ],
+            "weight": 0.1,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_004",
+            "position": [
+                0.82,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.05,
+                0.35
+            ],
+            "weight": 1.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_122",
+            "position": [
+                0.21,
+                0.5,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.18,
+                0.25
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_007",
+            "position": [
+                0.7000000000000001,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_074",
+            "position": [
+                0.9199999999999999,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.05,
+                0.35
+            ],
+            "weight": 1.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_073",
+            "position": [
+                0.3,
+                0.65,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.03,
+                0.18
+            ],
+            "weight": 0.8,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_010",
+            "position": [
+                0.65,
+                0.6499999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.18,
+                0.25
+            ],
+            "weight": 0.8,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_032",
+            "position": [
+                0.75,
+                1.0,
+                0.0
+            ],
+            "dimensions": [
+                0.05,
+                0.35,
+                0.1
+            ],
+            "weight": 1.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_110",
+            "position": [
+                0.28,
+                0.4,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.21,
+                0.3
+            ],
+            "weight": 0.1,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_019",
+            "position": [
+                0.0,
+                1.65,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.21,
+                0.01
+            ],
+            "weight": 0.1,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_092",
+            "position": [
+                1.48,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.2,
+                0.3
+            ],
+            "weight": 2.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_111",
+            "position": [
+                1.6999999999999997,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_017",
+            "position": [
+                1.2799999999999998,
+                1.15,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.18,
+                0.03
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_118",
+            "position": [
+                1.58,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.4,
+                0.3
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_108",
+            "position": [
+                1.7000000000000002,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.18,
+                0.25,
+                0.03
+            ],
+            "weight": 0.8,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_080",
+            "position": [
+                1.02,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.18,
+                0.03,
+                0.25
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_013",
+            "position": [
+                0.0,
+                1.8599999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.4,
+                0.3
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_119",
+            "position": [
+                1.5299999999999998,
+                1.15,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.6,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_021",
+            "position": [
+                0.7000000000000001,
+                1.9,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_015",
+            "position": [
+                1.2999999999999998,
+                0.35,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.1,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_070",
+            "position": [
+                1.8800000000000001,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.2,
+                0.4
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_046",
+            "position": [
+                1.5999999999999999,
+                0.35,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.1,
+                0.05
+            ],
+            "weight": 1.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_022",
+            "position": [
+                1.9499999999999997,
+                0.35,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.1,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_018",
+            "position": [
+                1.2,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.05,
+                0.1
+            ],
+            "weight": 1.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_053",
+            "position": [
+                0.6,
+                1.0499999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.05,
+                0.35
+            ],
+            "weight": 1.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_016",
+            "position": [
+                2.08,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.05
+            ],
+            "weight": 0.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_091",
+            "position": [
+                2.0999999999999996,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.2,
+                0.4
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_133",
+            "position": [
+                1.9299999999999997,
+                1.15,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.2,
+                0.6
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_001",
+            "position": [
+                0.5,
+                1.8599999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.3,
+                0.1
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_056",
+            "position": [
+                1.3,
+                1.9,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_036",
+            "position": [
+                1.48,
+                0.95,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.2,
+                0.3
+            ],
+            "weight": 2.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_084",
+            "position": [
+                1.9299999999999997,
+                1.3499999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.2,
+                0.4
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_043",
+            "position": [
+                1.3,
+                1.5,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.3,
+                0.1
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_038",
+            "position": [
+                0.6000000000000001,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.25,
+                0.18
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_143",
+            "position": [
+                1.5499999999999998,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.03,
+                0.18
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_085",
+            "position": [
+                1.9299999999999997,
+                1.5499999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.3,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_049",
+            "position": [
+                2.48,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.6,
+                0.4
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_008",
+            "position": [
+                1.4500000000000002,
+                0.65,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.1,
+                0.3
+            ],
+            "weight": 2.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_089",
+            "position": [
+                0.61,
+                0.04,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.01,
+                0.3
+            ],
+            "weight": 0.1,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_129",
+            "position": [
+                0.6300000000000001,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.25,
+                0.18
+            ],
+            "weight": 0.8,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_114",
+            "position": [
+                0.8,
+                1.0,
+                0.0
+            ],
+            "dimensions": [
+                0.05,
+                0.3,
+                0.4
+            ],
+            "weight": 0.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_072",
+            "position": [
+                0.8799999999999999,
+                1.45,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.05,
+                0.4
+            ],
+            "weight": 0.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_020",
+            "position": [
+                2.03,
+                1.5499999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_123",
+            "position": [
+                0.75,
+                1.35,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.05,
+                0.35
+            ],
+            "weight": 1.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_107",
+            "position": [
+                1.9299999999999997,
+                1.8499999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.05
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_027",
+            "position": [
+                2.6999999999999997,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_135",
+            "position": [
+                2.68,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.05
+            ],
+            "weight": 0.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_039",
+            "position": [
+                1.8800000000000001,
+                0.65,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.1,
+                0.05
+            ],
+            "weight": 1.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_141",
+            "position": [
+                2.68,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.3,
+                0.1
+            ],
+            "weight": 2.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_087",
+            "position": [
+                2.3299999999999996,
+                1.15,
+                0.0
+            ],
+            "dimensions": [
+                0.25,
+                0.18,
+                0.03
+            ],
+            "weight": 0.8,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_047",
+            "position": [
+                2.5799999999999996,
+                1.15,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.21,
+                0.01
+            ],
+            "weight": 0.1,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_100",
+            "position": [
+                1.7999999999999998,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.05,
+                0.3
+            ],
+            "weight": 0.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_120",
+            "position": [
+                1.2799999999999998,
+                1.3299999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.1,
+                0.3
+            ],
+            "weight": 2.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_142",
+            "position": [
+                2.38,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.05,
+                0.3,
+                0.4
+            ],
+            "weight": 0.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_102",
+            "position": [
+                2.0999999999999996,
+                0.25,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.1,
+                0.05
+            ],
+            "weight": 1.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_051",
+            "position": [
+                0.30000000000000004,
+                1.8,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.05,
+                0.4
+            ],
+            "weight": 0.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_136",
+            "position": [
+                0.6600000000000001,
+                1.1,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.25,
+                0.18
+            ],
+            "weight": 0.8,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_034",
+            "position": [
+                2.4299999999999997,
+                1.5499999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.4
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_137",
+            "position": [
+                1.18,
+                1.45,
+                0.0
+            ],
+            "dimensions": [
+                0.35,
+                0.05,
+                0.1
+            ],
+            "weight": 1.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_077",
+            "position": [
+                2.8800000000000003,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.2,
+                0.4
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_106",
+            "position": [
+                2.8800000000000003,
+                0.95,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.2,
+                0.1
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_109",
+            "position": [
+                2.2299999999999995,
+                1.8499999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.35,
+                0.05
+            ],
+            "weight": 1.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_057",
+            "position": [
+                3.0999999999999996,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.3,
+                0.1
+            ],
+            "weight": 2.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_105",
+            "position": [
+                2.8799999999999994,
+                1.15,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.2,
+                0.6
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_044",
+            "position": [
+                3.08,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.05
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_040",
+            "position": [
+                0.68,
+                0.39999999999999997,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.21,
+                0.3
+            ],
+            "weight": 0.1,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_076",
+            "position": [
+                2.7299999999999995,
+                1.5499999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_097",
+            "position": [
+                2.7299999999999995,
+                1.8499999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_023",
+            "position": [
+                2.4299999999999997,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.05,
+                0.3,
+                0.4
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_050",
+            "position": [
+                2.3299999999999996,
+                1.8499999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.3,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_033",
+            "position": [
+                2.4299999999999997,
+                2.05,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.3,
+                0.01
+            ],
+            "weight": 0.1,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_146",
+            "position": [
+                3.2799999999999994,
+                1.15,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.5,
+                0.3
+            ],
+            "weight": 5.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_037",
+            "position": [
+                3.3,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.05
+            ],
+            "weight": 0.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_011",
+            "position": [
+                3.1299999999999994,
+                1.5499999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.05,
+                0.35,
+                0.1
+            ],
+            "weight": 1.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_115",
+            "position": [
+                2.6399999999999997,
+                2.05,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.25,
+                0.18
+            ],
+            "weight": 0.8,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_132",
+            "position": [
+                3.4800000000000004,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.4,
+                0.3
+            ],
+            "weight": 5.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_130",
+            "position": [
+                3.1799999999999993,
+                1.5499999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.05,
+                0.35,
+                0.1
+            ],
+            "weight": 1.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_062",
+            "position": [
+                3.2799999999999994,
+                1.65,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_026",
+            "position": [
+                0.68,
+                0.61,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.3,
+                0.21
+            ],
+            "weight": 0.1,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_147",
+            "position": [
+                3.6999999999999997,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.4,
+                0.2
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_025",
+            "position": [
+                3.0299999999999994,
+                1.8499999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.35,
+                0.05
+            ],
+            "weight": 1.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_078",
+            "position": [
+                2.4499999999999997,
+                0.25,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.2,
+                0.3
+            ],
+            "weight": 2.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_064",
+            "position": [
+                2.55,
+                0.25,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.2,
+                0.3
+            ],
+            "weight": 2.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_059",
+            "position": [
+                2.6699999999999995,
+                2.05,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.25,
+                0.18
+            ],
+            "weight": 0.8,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_139",
+            "position": [
+                3.6799999999999993,
+                1.15,
+                0.0
+            ],
+            "dimensions": [
+                0.5,
+                0.4,
+                0.3
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Tools_060",
+            "position": [
+                0.75,
+                1.4000000000000001,
+                0.0
+            ],
+            "dimensions": [
+                0.1,
+                0.05,
+                0.35
+            ],
+            "weight": 1.5,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_099",
+            "position": [
+                1.5299999999999998,
+                1.75,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.1,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_145",
+            "position": [
+                0.3,
+                0.68,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.01,
+                0.3
+            ],
+            "weight": 0.1,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_113",
+            "position": [
+                2.6999999999999997,
+                0.35,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.1,
+                0.2
+            ],
+            "weight": 2.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_031",
+            "position": [
+                3.48,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.18,
+                0.25,
+                0.03
+            ],
+            "weight": 0.8,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_002",
+            "position": [
+                3.66,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.05
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_128",
+            "position": [
+                2.1999999999999997,
+                0.0,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.05,
+                0.3
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_079",
+            "position": [
+                3.229999999999999,
+                1.5499999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.05,
+                0.4,
+                0.3
+            ],
+            "weight": 0.5,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_112",
+            "position": [
+                3.579999999999999,
+                1.65,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.2,
+                0.4
+            ],
+            "weight": 8.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_124",
+            "position": [
+                3.2799999999999994,
+                2.05,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.21,
+                0.01
+            ],
+            "weight": 0.1,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_042",
+            "position": [
+                2.8799999999999994,
+                1.3499999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.2,
+                0.6
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Electronics_134",
+            "position": [
+                2.2499999999999996,
+                0.35,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.1,
+                0.3
+            ],
+            "weight": 2.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_045",
+            "position": [
+                2.6999999999999993,
+                2.05,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.25,
+                0.18
+            ],
+            "weight": 0.8,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_098",
+            "position": [
+                3.9800000000000004,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.4,
+                0.6
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_003",
+            "position": [
+                0.1,
+                1.2000000000000002,
+                0.0
+            ],
+            "dimensions": [
+                0.18,
+                0.03,
+                0.25
+            ],
+            "weight": 0.8,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_063",
+            "position": [
+                4.180000000000001,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.6,
+                0.4
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_126",
+            "position": [
+                3.579999999999999,
+                1.8499999999999999,
+                0.0
+            ],
+            "dimensions": [
+                0.6,
+                0.2,
+                0.4
+            ],
+            "weight": 8.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Equipment_140",
+            "position": [
+                4.3,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.2,
+                0.6,
+                0.4
+            ],
+            "weight": 8.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_075",
+            "position": [
+                3.579999999999999,
+                2.05,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.21,
+                0.01
+            ],
+            "weight": 0.1,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_096",
+            "position": [
+                0.8500000000000001,
+                1.0,
+                0.0
+            ],
+            "dimensions": [
+                0.01,
+                0.3,
+                0.21
+            ],
+            "weight": 0.1,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_055",
+            "position": [
+                4.180000000000001,
+                1.35,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.4
+            ],
+            "weight": 5.0,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_090",
+            "position": [
+                4.380000000000001,
+                0.75,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.5,
+                0.3
+            ],
+            "weight": 5.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Clothing_086",
+            "position": [
+                3.879999999999999,
+                2.05,
+                0.0
+            ],
+            "dimensions": [
+                0.4,
+                0.3,
+                0.05
+            ],
+            "weight": 0.5,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_048",
+            "position": [
+                4.5,
+                0.05,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.4,
+                0.5
+            ],
+            "weight": 5.0,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_094",
+            "position": [
+                0.65,
+                0.8299999999999998,
+                0.0
+            ],
+            "dimensions": [
+                0.03,
+                0.18,
+                0.25
+            ],
+            "weight": 0.8,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_131",
+            "position": [
+                4.0600000000000005,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.21,
+                0.3,
+                0.01
+            ],
+            "weight": 0.1,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Books_052",
+            "position": [
+                4.5,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.18,
+                0.25,
+                0.03
+            ],
+            "weight": 0.8,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Boxes_041",
+            "position": [
+                4.48,
+                1.35,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.5,
+                0.4
+            ],
+            "weight": 5.0,
+            "fragility": "MEDIUM",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_061",
+            "position": [
+                4.68,
+                0.45,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.21,
+                0.01
+            ],
+            "weight": 0.1,
+            "fragility": "LOW",
+            "stackable": "NO",
+            "boxing_type": "Standard",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_054",
+            "position": [
+                4.279999999999999,
+                2.05,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.21,
+                0.01
+            ],
+            "weight": 0.1,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        },
+        {
+            "name": "Documents_012",
+            "position": [
+                1.5299999999999998,
+                1.85,
+                0.0
+            ],
+            "dimensions": [
+                0.3,
+                0.01,
+                0.21
+            ],
+            "weight": 0.1,
+            "fragility": "HIGH",
+            "stackable": "NO",
+            "boxing_type": "Fragile",
+            "bundle": false,
+            "temperature_sensitivity": null,
+            "needs_insulation": false
+        }
+    ],
+    "unpacked_items": [],
+    "best_fitness": 0.05880818773981623,
+    "generation_count": 8,
+    "optimization_method": "regular"
+}
