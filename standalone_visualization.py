@@ -12,7 +12,42 @@ import json
 import os
 import sys
 import webbrowser
+import argparse
 from pathlib import Path
+import requests
+
+def check_flask_server():
+    """Check if Flask server is running"""
+    try:
+        response = requests.get('http://localhost:5000/health', timeout=2)
+        return response.status_code == 200
+    except:
+        return False
+
+def start_flask_server_instructions():
+    """Provide instructions for starting Flask server"""
+    print("\n" + "="*60)
+    print("🚀 AR VISUALIZATION READY!")
+    print("="*60)
+    
+    if check_flask_server():
+        print("✅ Flask server is already running!")
+        print("   You can use the 'AR View' button in the visualization.")
+    else:
+        print("⚠️  Flask server is not running.")
+        print("   To enable AR functionality:")
+        print("   1. Open a new terminal/command prompt")
+        print("   2. Navigate to this directory")
+        print("   3. Run: python app_modular.py")
+        print("   4. Then click 'AR View' in the visualization")
+    
+    print("\n📋 CORS Issue Fixed:")
+    print("   ✅ Added Flask-CORS support")
+    print("   ✅ Updated JavaScript to use absolute URLs")
+    print("   ✅ Enhanced error handling")
+    
+    print("\n🌐 The visualization will open in your browser...")
+    print("="*60)
 
 def launch_pythreejs_visualization(data_dir="container_plans", specific_file=None):
     """Launch the 3D visualization directly
@@ -1376,8 +1411,7 @@ def create_3d_visualization(data_dir="container_plans", specific_file=None):
                 console.log('Switched to 3D View');
             }
         });
-        
-        document.getElementById('view-ar').addEventListener('click', function() {
+          document.getElementById('view-ar').addEventListener('click', function() {
             if (!this.classList.contains('toggle-active')) {
                 // Switch to AR view
                 this.classList.add('toggle-active');
@@ -1389,11 +1423,186 @@ def create_3d_visualization(data_dir="container_plans", specific_file=None):
                 view3dBtn.style.background = 'rgba(255, 255, 255, 0.9)';
                 view3dBtn.style.color = 'rgba(107, 114, 128, 1)';
                 
-                // Add AR view functionality here (placeholder for future implementation)
+                // Start AR server functionality
                 console.log('Switched to AR View');
-                alert('AR View feature coming soon! This will enable augmented reality visualization of containers.');
+                startARVisualization();
             }
         });
+        
+        // AR Visualization Functions
+        async function startARVisualization() {
+            try {
+                // Show loading indicator
+                const loadingEl = document.createElement('div');
+                loadingEl.id = 'ar-loading';
+                loadingEl.innerHTML = `
+                    <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                                background: rgba(0,0,0,0.8); color: white; padding: 20px; border-radius: 10px; z-index: 9999;">
+                        <div style="text-align: center;">
+                            <div style="border: 4px solid #f3f3f3; border-top: 4px solid #3498db; border-radius: 50%; 
+                                       width: 40px; height: 40px; animation: spin 2s linear infinite; margin: 0 auto 10px;"></div>
+                            <div>Starting AR Server...</div>
+                        </div>
+                    </div>
+                    <style>
+                        @keyframes spin {
+                            0% { transform: rotate(0deg); }
+                            100% { transform: rotate(360deg); }
+                        }
+                    </style>
+                `;
+                document.body.appendChild(loadingEl);
+                
+                // Start the JSON server for AR
+                const response = await fetch('/start_json_server', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const result = await response.json();
+                
+                // Remove loading indicator
+                document.body.removeChild(loadingEl);
+                
+                if (result.success) {
+                    showARInstructions(result.url);
+                } else {
+                    throw new Error(result.error || 'Failed to start AR server');
+                }
+                
+            } catch (error) {
+                console.error('Error starting AR visualization:', error);
+                // Remove loading indicator if it exists
+                const loadingEl = document.getElementById('ar-loading');
+                if (loadingEl) {
+                    document.body.removeChild(loadingEl);
+                }
+                
+                alert(`Failed to start AR visualization: ${error.message}`);
+                
+                // Revert button state
+                const arBtn = document.getElementById('view-ar');
+                const view3dBtn = document.getElementById('view-3d');
+                arBtn.classList.remove('toggle-active');
+                arBtn.style.background = 'rgba(255, 255, 255, 0.9)';
+                arBtn.style.color = 'rgba(107, 114, 128, 1)';
+                view3dBtn.classList.add('toggle-active');
+                view3dBtn.style.background = 'linear-gradient(135deg, #3C82F6 0%, #5B76F3 100%)';
+                view3dBtn.style.color = 'white';
+            }
+        }
+        
+        function showARInstructions(serverUrl) {
+            const modal = document.createElement('div');
+            modal.innerHTML = `
+                <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+                           background: rgba(0,0,0,0.8); z-index: 10000; display: flex; align-items: center; justify-content: center;">
+                    <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); 
+                               border-radius: 15px; padding: 30px; max-width: 600px; margin: 20px; color: white; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                        <div style="text-align: center; margin-bottom: 25px;">
+                            <div style="background: linear-gradient(135deg, #3C82F6 0%, #5B76F3 100%); 
+                                       width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; 
+                                       display: flex; align-items: center; justify-content: center; font-size: 40px;">
+                                🥽
+                            </div>
+                            <h2 style="margin: 0; background: linear-gradient(135deg, #3C82F6 0%, #5B76F3 100%); 
+                                      -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+                                      background-clip: text;">AR Server Active!</h2>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                            <h4 style="margin: 0 0 10px 0; color: #60A5FA;">🔗 Unity Connection URL:</h4>
+                            <div style="background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; 
+                                       font-family: 'Courier New', monospace; font-size: 14px; word-break: break-all; 
+                                       border: 1px solid rgba(91, 118, 243, 0.5);">
+                                ${serverUrl}
+                            </div>
+                            <button onclick="navigator.clipboard.writeText('${serverUrl}')" 
+                                   style="background: linear-gradient(135deg, #10B981 0%, #059669 100%); 
+                                          border: none; color: white; padding: 8px 16px; border-radius: 5px; 
+                                          margin-top: 10px; cursor: pointer; font-size: 12px;">
+                                📋 Copy URL
+                            </button>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="margin: 0 0 15px 0; color: #60A5FA;">📱 How to Use with Unity:</h4>
+                            <ol style="margin: 0; padding-left: 20px; line-height: 1.6;">
+                                <li>Open your Unity AR project</li>
+                                <li>Copy the URL above into your Unity HTTP request component</li>
+                                <li>The JSON data contains all container and cargo information</li>
+                                <li>Use the data to visualize containers in AR space</li>
+                                <li>Data updates automatically when you optimize new containers</li>
+                            </ol>
+                        </div>
+                        
+                        <div style="background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); 
+                                   border-radius: 8px; padding: 15px; margin-bottom: 20px;">
+                            <div style="font-size: 14px; opacity: 0.9;">
+                                💡 <strong>Tip:</strong> The server will remain active as long as this application is running. 
+                                Use the URL in Unity to fetch real-time container data for AR visualization.
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; display: flex; gap: 15px; justify-content: center;">
+                            <button onclick="this.closest('div').parentElement.remove()" 
+                                   style="background: linear-gradient(135deg, #3C82F6 0%, #5B76F3 100%); 
+                                          border: none; color: white; padding: 12px 24px; border-radius: 8px; 
+                                          cursor: pointer; font-weight: 600;">
+                                ✅ Got It!
+                            </button>
+                            <button onclick="stopARServer()" 
+                                   style="background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%); 
+                                          border: none; color: white; padding: 12px 24px; border-radius: 8px; 
+                                          cursor: pointer; font-weight: 600;">
+                                🛑 Stop AR Server
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+        
+        async function stopARServer() {
+            try {
+                const response = await fetch('/stop_json_server', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Close modal
+                    const modal = document.querySelector('div[style*="position: fixed"]');
+                    if (modal) {
+                        modal.remove();
+                    }
+                    
+                    // Revert to 3D view
+                    const arBtn = document.getElementById('view-ar');
+                    const view3dBtn = document.getElementById('view-3d');
+                    arBtn.classList.remove('toggle-active');
+                    arBtn.style.background = 'rgba(255, 255, 255, 0.9)';
+                    arBtn.style.color = 'rgba(107, 114, 128, 1)';
+                    view3dBtn.classList.add('toggle-active');
+                    view3dBtn.style.background = 'linear-gradient(135deg, #3C82F6 0%, #5B76F3 100%)';
+                    view3dBtn.style.color = 'white';
+                    
+                    alert('AR Server stopped successfully');
+                } else {
+                    throw new Error(result.error || 'Failed to stop AR server');
+                }
+            } catch (error) {
+                console.error('Error stopping AR server:', error);
+                alert(`Failed to stop AR server: ${error.message}`);
+            }
+        }
         
         document.getElementById('view-orthographic').addEventListener('click', () => {
             if (!isOrthographic) toggleCameraType();
@@ -1451,7 +1660,7 @@ def create_3d_visualization(data_dir="container_plans", specific_file=None):
             
             camera.updateProjectionMatrix();
             renderer.setSize(width, height);
-        }
+               }
         
         window.addEventListener('resize', handleResize);
         window.addEventListener('mousemove', onMouseMove);

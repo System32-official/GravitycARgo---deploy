@@ -4,6 +4,7 @@ This module uses the new optigenix_module structure while maintaining
 the same functionality as the original app.py
 """
 from flask import Flask, jsonify, request, current_app
+from flask_cors import CORS
 import os
 import sys
 import json
@@ -18,10 +19,12 @@ import socketserver
 import socket
 import glob
 import shutil
+import requests
 from logging.handlers import RotatingFileHandler
 from flask_socketio import SocketIO, emit
 import multiprocessing
 import numpy as np
+from pathlib import Path
 from routing.Server import app as route_temp_app
 
 # Update imports to use the new package structure
@@ -264,8 +267,7 @@ class JSONServerService:
                 ngrok_thread.daemon = True
                 ngrok_thread.start()
                 
-                # Wait for ngrok to start
-                time.sleep(5)
+                # Wait for ngrok to start                time.sleep(5)
                 
                 self._is_running = True
                 print(f"JSON server is running. URL: {self._ngrok_url}")
@@ -288,8 +290,16 @@ class JSONServerService:
                                    stderr=subprocess.PIPE,
                                    text=True)
             if result.returncode != 0:
-                print("Error: ngrok is not installed or not in PATH")
-                return False
+                print("Warning: ngrok is not installed or not in PATH")
+                print("The JSON server will run locally only.")
+                print("For Unity AR access, you can:")
+                print("1. Install ngrok from https://ngrok.com/")
+                print("2. Use local network access if on same network")
+                print(f"3. Access directly at http://localhost:{port}/{AppConfig.STANDARD_JSON_FILENAME}")
+                
+                # Set local URL instead of ngrok URL
+                self._ngrok_url = f"http://localhost:{port}/{AppConfig.STANDARD_JSON_FILENAME}"
+                return True  # Consider this successful for local development
                 
             # Start ngrok with the specified domain
             cmd = f"ngrok http {port} --domain={AppConfig.NGROK_DOMAIN}"
@@ -309,14 +319,30 @@ class JSONServerService:
             if self._ngrok_process.poll() is not None:
                 stderr = self._ngrok_process.stderr.read().decode('utf-8')
                 print(f"Failed to start ngrok: {stderr}")
-                return False
+                print("Falling back to local server only")
+                self._ngrok_url = f"http://localhost:{port}/{AppConfig.STANDARD_JSON_FILENAME}"
+                return True  # Fallback to local
                 
             print(f"ngrok started successfully with URL: {self._ngrok_url}")
             return True
             
+        except FileNotFoundError:
+            print("Warning: ngrok not found in system PATH")
+            print("The JSON server will run locally only.")
+            print("To enable external access:")
+            print("1. Install ngrok: https://ngrok.com/download")
+            print("2. Add ngrok to your system PATH")
+            print(f"3. For now, use local URL: http://localhost:{port}/{AppConfig.STANDARD_JSON_FILENAME}")
+            
+            # Set local URL as fallback
+            self._ngrok_url = f"http://localhost:{port}/{AppConfig.STANDARD_JSON_FILENAME}"
+            return True
+            
         except Exception as e:
-            print(f"Error starting ngrok: {e}")
-            return False
+            print(f"Error with ngrok setup: {e}")
+            print("Falling back to local server only")
+            self._ngrok_url = f"http://localhost:{port}/{AppConfig.STANDARD_JSON_FILENAME}"
+            return True
             
     def _kill_existing_ngrok(self):
         """Attempt to kill any existing ngrok processes"""
@@ -440,6 +466,11 @@ def create_app():
     establishes logging infrastructure.
     """
     app = Flask(__name__, static_folder='static', template_folder='templates')
+    
+    # Enable CORS for all domains (needed for local HTML files)
+    CORS(app, origins=['*'], methods=['GET', 'POST', 'OPTIONS'], 
+         allow_headers=['Content-Type', 'Authorization'])
+    
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
     app.secret_key = SECRET_KEY
